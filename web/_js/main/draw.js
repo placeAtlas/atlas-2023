@@ -2,7 +2,7 @@
  * The 2023 r/place Atlas
  * Copyright (c) 2017 Roland Rytz <roland@draemm.li>
  * Copyright (c) 2023 Place Atlas contributors
- * Licensed under AGPL-3.0 (https://place-atlas.stefanocoding.me/license.txt)
+ * Licensed under AGPL-3.0 (https://2023.place-atlas.stefanocoding.me/license.txt)
  */
 
 const finishButton = document.getElementById("finishButton")
@@ -921,17 +921,6 @@ function initPeriodGroups() {
 		if (pathWithPeriods.length === 1) periodDeleteEl.disabled = true
 
 		startPeriodEl.addEventListener('input', () => {
-			if (path.length >= 3) {
-				periodCenter = calculateCenter(path)
-				// @instance-only
-				if ((periodCenter[1] > 1000) && (startPeriodEl.valueAsNumber <= variationsConfig[getCurrentVariation()].expansions[1])) {
-					// Second expansion
-					startPeriodEl.value = variationsConfig[getCurrentVariation()].expansions[1];
-				} else if ((periodCenter[0] > 1000) && (startPeriodEl.valueAsNumber <= variationsConfig[getCurrentVariation()].expansions[0])) {
-					// First expansion
-					startPeriodEl.value = variationsConfig[getCurrentVariation()].expansions[0];
-				}
-			}
 			startPeriodUpdate(startPeriodEl.value)
 		})
 		startPeriodLeftEl.addEventListener('click', () => {
@@ -971,37 +960,15 @@ function initPeriodGroups() {
 				startPeriodLeftEl.disabled = false
 				startPeriodRightEl.disabled = true
 			} else {
-				if (path.length >= 3) {
-					periodCenter = calculateCenter(path)
-					// @instance-only
-					if ((periodCenter[1] > 1000) && (startPeriodEl.valueAsNumber <= variationsConfig[getCurrentVariation()].expansions[1])) {
-						// Second expansion
-						startPeriodLeftEl.disabled = true
-						startPeriodRightEl.disabled = false
-					} else if ((periodCenter[0] > 1000) && (startPeriodEl.valueAsNumber <= variationsConfig[getCurrentVariation()].expansions[0])) {
-						// First expansion
-						startPeriodLeftEl.disabled = true
-						startPeriodRightEl.disabled = false
-					} else {
-						// Starting area
-						startPeriodLeftEl.disabled = false
-						startPeriodRightEl.disabled = false
-					}
-				}
+				// Starting area
+				startPeriodLeftEl.disabled = false
+				startPeriodRightEl.disabled = false
 			}
 		}
 
 		endPeriodEl.addEventListener('input', () => {
 			if (path.length >= 3) {
 				periodCenter = calculateCenter(path)
-				// @instance-only
-				if ((periodCenter[1] > 1000) && (endPeriodEl.valueAsNumber <= variationsConfig[getCurrentVariation()].expansions[1])) {
-					// Second expansion
-					endPeriodEl.value = variationsConfig[getCurrentVariation()].expansions[1];
-				} else if ((periodCenter[0] > 1000) && (endPeriodEl.valueAsNumber <= variationsConfig[getCurrentVariation()].expansions[0])) {
-					// First expansion
-					endPeriodEl.value = variationsConfig[getCurrentVariation()].expansions[0];
-				}
 			}
 			endPeriodUpdate(endPeriodEl.value)
 		})
@@ -1037,23 +1004,8 @@ function initPeriodGroups() {
 				endPeriodLeftEl.disabled = false
 				endPeriodRightEl.disabled = true
 			} else {
-				if (path.length >= 3) {
-					periodCenter = calculateCenter(path)
-					// @instance-only
-					if (periodCenter && (periodCenter[1] > 1000) && (endPeriodEl.valueAsNumber <= variationsConfig[getCurrentVariation()].expansions[1])) {
-						// Second expansion
-						endPeriodLeftEl.disabled = true
-						endPeriodRightEl.disabled = false
-					} else if (periodCenter && (periodCenter[0] > 1000) && (endPeriodEl.valueAsNumber <= variationsConfig[getCurrentVariation()].expansions[0])) {
-						// First expansion
-						endPeriodLeftEl.disabled = true
-						endPeriodRightEl.disabled = false
-					} else {
-						// Starting area
-						endPeriodLeftEl.disabled = false
-						endPeriodRightEl.disabled = false
-					}
-				}
+				endPeriodLeftEl.disabled = false
+				endPeriodRightEl.disabled = false
 			}
 		}
 
@@ -1216,7 +1168,6 @@ function updatePeriodGroups() {
 			else periodDeleteEl.disabled = false
 
 			// Set start incremental button disabled states
-			// @instance-only
 			if (startPeriodEl.value === startPeriodEl.min) {
 				startPeriodLeftEl.disabled = true
 				startPeriodRightEl.disabled = false
@@ -1224,23 +1175,11 @@ function updatePeriodGroups() {
 				startPeriodLeftEl.disabled = false
 				startPeriodRightEl.disabled = true
 			} else {
-				if (periodCenter && (periodCenter[1] > 1000) && (startPeriodEl.valueAsNumber <= variationsConfig[periodVariationEl.value].expansions[1])) {
-					// Second expansion
-					startPeriodLeftEl.disabled = true
-					startPeriodRightEl.disabled = false
-				} else if (periodCenter && (periodCenter[0] > 1000) && (startPeriodEl.valueAsNumber <= variationsConfig[periodVariationEl.value].expansions[0])) {
-					// First expansion
-					startPeriodLeftEl.disabled = true
-					startPeriodRightEl.disabled = false
-				} else {
-					// Starting area
-					startPeriodLeftEl.disabled = false
-					startPeriodRightEl.disabled = false
-				}
+				startPeriodLeftEl.disabled = false
+				startPeriodRightEl.disabled = false
 			}
 
 			// Set end incremental button disabled states
-			// @instance-only
 			if (endPeriodEl.value === endPeriodEl.min) {
 				endPeriodLeftEl.disabled = true
 				endPeriodRightEl.disabled = false
@@ -1248,19 +1187,8 @@ function updatePeriodGroups() {
 				endPeriodLeftEl.disabled = false
 				endPeriodRightEl.disabled = true
 			} else {
-				if (periodCenter && (periodCenter[1] > 1000) && (endPeriodEl.valueAsNumber <= variationsConfig[periodVariationEl.value].expansions[1])) {
-					// Second expansion
-					endPeriodLeftEl.disabled = true
-					endPeriodRightEl.disabled = false
-				} else if (periodCenter && (periodCenter[0] > 1000) && (endPeriodEl.valueAsNumber <= variationsConfig[periodVariationEl.value].expansions[0])) {
-					// First expansion
-					endPeriodLeftEl.disabled = true
-					endPeriodRightEl.disabled = false
-				} else {
-					// Starting area
-					endPeriodLeftEl.disabled = false
-					endPeriodRightEl.disabled = false
-				}
+				endPeriodLeftEl.disabled = false
+				endPeriodRightEl.disabled = false
 			}
 		}
 	})

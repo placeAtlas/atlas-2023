@@ -2,7 +2,7 @@
 // Please also check code indicated with "@instance-only" outside this file.
 // TODO: Avoid having instance-only code inside the main scripts to make updating easier.
 
-const prodDomain = "place-atlas.stefanocoding.me"
+const prodDomain = "2023.place-atlas.stefanocoding.me"
 window.prodDomain = prodDomain
 
 const instanceId = "2023"
@@ -38,9 +38,9 @@ const variationsConfig = {
 		drawableRegions: [
 			[[0, 0], [0, 0, 2000, 2000]],
 		],
-		expansions: [55, 109],
+		// expansions: [],
 		versions: [
-			{ "timestamp": 1687478400, "url": ["./_img/canvas/place30ex/start.png"] },
+			{ "timestamp": 1687478400, "url": ["./_img/canvas/main-ex/start.png"] },
 		],
 		icon: '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 192 192" aria-hidden="true"><polygon points="154 0 154 38 39 38 39 192 0 192 0 0"/><polygon points="192 38 192 192 77 192 77 153 154 153 154 38"/><rect x="77" y="77" width="38" height="38"/></svg>'
 	},
@@ -59,9 +59,9 @@ window.useNumericalId = useNumericalId
 console.info(`%cThe 2023 r/place Atlas
 %cCopyright (c) 2017 Roland Rytz <roland@draemm.li>
 Copyright (c) 2023 Place Atlas contributors
-Licensed under AGPL-3.0 (https://place-atlas.stefanocoding.me/license.txt)
+Licensed under AGPL-3.0 (https://2023.place-atlas.stefanocoding.me/license.txt)
 
-https://place-atlas.stefanocoding.me/
+https://2023.place-atlas.stefanocoding.me/
 https://discord.gg/pJkm23b2nA
 https://reddit.com/r/placeatlas2
 https://github.com/placeAtlas/atlas-2023

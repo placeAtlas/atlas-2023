@@ -14,7 +14,7 @@ This project was established by Roland Rytz for the event in 2017, and further d
 
 This project is licensed under the [GNU Affero General Public License v3.0](LICENSE).
 
-You can check out the website by visiting [place-atlas.stefanocoding.me](https://place-atlas.stefanocoding.me/). If you want to keep distance from GitHub, you may visit [r/placeAtlas2](https://www.reddit.com/r/placeAtlas2/).
+You can check out the website by visiting [2023.place-atlas.stefanocoding.me](https://2023.place-atlas.stefanocoding.me/). If you want to keep distance from GitHub, you may visit [r/placeAtlas2](https://www.reddit.com/r/placeAtlas2/).
 
 ## Contributing
 
@@ -53,4 +53,4 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. This section only includes GitHub contributions. Other credits are shown on [the About page](https://place-atlas.stefanocoding.me/about).
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. This section only includes GitHub contributions. Other credits are shown on [the About page](https://2023.place-atlas.stefanocoding.me/about).

@@ -2,7 +2,7 @@
  * The 2023 r/place Atlas
  * Copyright (c) 2017 Roland Rytz <roland@draemm.li>
  * Copyright (c) 2023 Place Atlas contributors
- * Licensed under AGPL-3.0 (https://place-atlas.stefanocoding.me/license.txt)
+ * Licensed under AGPL-3.0 (https://2023.place-atlas.stefanocoding.me/license.txt)
  */
 
 function initOverlap() {
