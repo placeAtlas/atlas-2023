@@ -63,7 +63,7 @@ Licensed under AGPL-3.0 (https://2023.place-atlas.stefanocoding.me/license.txt)
 
 https://2023.place-atlas.stefanocoding.me/
 https://discord.gg/pJkm23b2nA
-https://reddit.com/r/placeatlas2
+https://reddit.com/r/placeAtlas2023
 https://github.com/placeAtlas/atlas-2023
 
 To get the image of the canvas, use downloadCanvas().

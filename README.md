@@ -3,7 +3,7 @@
 [![Netlify](https://img.shields.io/netlify/1e7291ce-0680-45ed-9843-47a32a992bbb?logo=netlify&logoColor=white)](https://app.netlify.com/sites/place-atlas/deploys)
 [![License](https://img.shields.io/github/license/placeAtlas/atlas)](https://github.com/placeAtlas/atlas-2023/blob/master/LICENSE)  
 [![Discord](https://img.shields.io/discord/960791635342524496?color=%235865F2&logo=discord&logoColor=white)](https://discord.gg/pJkm23b2nA)
-[![Subreddit subscribers](https://img.shields.io/reddit/subreddit-subscribers/placeAtlas2?color=%23FF4500&label=r%2FplaceAtlas2&logo=reddit&logoColor=white)](https://www.reddit.com/r/placeAtlas2/)
+[![Subreddit subscribers](https://img.shields.io/reddit/subreddit-subscribers/placeAtlas2?color=%23FF4500&label=r%2FplaceAtlas2&logo=reddit&logoColor=white)](https://www.reddit.com/r/placeAtlas2023/)
 [![Website](https://img.shields.io/static/v1?label=website&message=2023.place-atlas.stefanocoding.me&color=blue)](https://2023.place-atlas.stefanocoding.me/)
 
 # The 2023 r/place Atlas
@@ -14,7 +14,7 @@ This project was established by Roland Rytz for the event in 2017, and further d
 
 This project is licensed under the [GNU Affero General Public License v3.0](LICENSE).
 
-You can check out the website by visiting [2023.place-atlas.stefanocoding.me](https://2023.place-atlas.stefanocoding.me/). If you want to keep distance from GitHub, you may visit [r/placeAtlas2](https://www.reddit.com/r/placeAtlas2/).
+You can check out the website by visiting [2023.place-atlas.stefanocoding.me](https://2023.place-atlas.stefanocoding.me/). If you want to keep distance from GitHub, you may visit [r/placeAtlas2023](https://www.reddit.com/r/placeAtlas2023/).
 
 ## Contributing
 
@@ -22,7 +22,7 @@ This project is open source, and contributions are welcome. In fact, the Atlas r
 
 Please read [CONTRIBUTING.md](CONTRIBUTING.md) to learn how to submit a new entry, edit existing entries, or contribute to the development of the codebase.
 
-[The r/placeAlas2 subreddit](https://reddit.com/r/placeAtlas2/) and [the Discord server](https://discord.gg/pJkm23b2nA) is also the place to submit all bug reports, feature requests, or questions.
+[The r/placeAlas2 subreddit](https://reddit.com/r/placeAtlas2023/) and [the Discord server](https://discord.gg/pJkm23b2nA) is also the place to submit all bug reports, feature requests, or questions.
 
 ## Contributors
 

@@ -2,7 +2,7 @@
 
 This project is open source, and contributions are welcome. In fact, the Atlas relies on user contributions.
 
-You may contribute to the project by submitting a Pull Request on the GitHub repo or sending your submissions through [Reddit](https://www.reddit.com/r/placeAtlas2). Other than that, you can get help from [Discord](https://discord.gg/pJkm23b2nA) or [Reddit](https://www.reddit.com/r/placeAtlas2).
+You may contribute to the project by submitting a Pull Request on the GitHub repo or sending your submissions through [Reddit](https://www.reddit.com/r/placeAtlas2023). Other than that, you can get help from [Discord](https://discord.gg/pJkm23b2nA) or [Reddit](https://www.reddit.com/r/placeAtlas2023).
 
 ## New Atlas entries
 
@@ -30,7 +30,7 @@ Once you've entered all the information, you'll be presented with a pop-up windo
 
 You can press the <kbd>Post Direct to Reddit</kbd> button, which will open a page with the title and body already been filled for you. You don't need to change anything what has been prepared.
 
-If that didn't work, copy the entire JSON text and [create a new text post on the subreddit](https://www.reddit.com/r/placeAtlas2/submit). You don't need to add any other text; just directly send the data. 
+If that didn't work, copy the entire JSON text and [create a new text post on the subreddit](https://www.reddit.com/r/placeAtlas2023/submit). You don't need to add any other text; just directly send the data. 
 
 Remember to flair your post with <kbd>New Entry</kbd>. On New Reddit, click the <kbd>Flair</kbd> button on the bottom part, and select <kbd>New Entry</kbd>. On Old Reddit, click the <kbd>select</kbd> button on the "choose a flair" section instead.
 

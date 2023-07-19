@@ -4,7 +4,7 @@
 	"scope": "/",
 	"start_url": "/",
 	"name": "The 2023 r/place Atlas",
-	"short_name": "r/placeAtlas2",
+	"short_name": "r/placeAtlas2023",
 	"description": "The atlas for Reddit's r/place event of 2023.",
 	"icons": [
 		{
