@@ -8,7 +8,7 @@ window.prodDomain = prodDomain
 const instanceId = "2023"
 window.instanceId = instanceId
 
-const instanceSubreddit = "placeAtlas2"
+const instanceSubreddit = "placeAtlas2023"
 window.instanceSubreddit = instanceSubreddit
 
 const instanceRepo = "https://github.com/placeAtlas/atlas-2023"

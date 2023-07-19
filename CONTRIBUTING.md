@@ -20,7 +20,7 @@ When you're happy with the shape you've drawn, press <kbd>Finish</kbd>. You will
 	- **Website**: If you're describing a project, the project's main website would be suitable here.
 	- **Subreddit**: Format it like `r/subreddit`.
 	- **Discord**: Write the invite code, that the invite link without the `discord.gg/` part.
-	- **Wiki**: The page title of [The r/place Wiki](https://place-wiki.stefanocoding.me/).
+	- **Wiki**: The page title of [the r/place Wiki](https://place-wiki.stefanocoding.me/).
 
 All fields but the name are optional. For example, a country flag doesn't necessarily need a description.
 
@@ -88,7 +88,7 @@ Hereforth is an example of the structured data. The example has been expanded, b
 	"name": "An entry",
 	"description": "This is an entry, it is remarkable.",
 	"links": {
-		"subreddit": ["placeAtlas2", "subreddit1", "subreddit2"],
+		"subreddit": ["placeAtlas2023", "subreddit1", "subreddit2"],
 		"discord": ["pJkm23b2nA"],
 		"website": ["https://example.com"],
 		"wiki": ["An_Entry", "An_Entry_2"]
