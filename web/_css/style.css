@@ -1,0 +1,448 @@
+/*!
+ * The 2023 r/place Atlas
+ * Copyright (c) 2017 Roland Rytz <roland@draemm.li>
+ * Copyright (c) 2023 Place Atlas contributors
+ * Licensed under AGPL-3.0 (https://place-atlas.stefanocoding.me/license.txt)
+ */
+
+/* purgecss start ignore */
+
+/* @font-face {
+	DejaVuSans-ExtraLight 2.37 - https://dejavu-fonts.github.io/
+	font-family: 'dejavu';
+	src: url('dejavusans-extralight.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+} */
+
+html, body {
+	min-height: 100%;
+	min-width: 100%;
+	height: 100%;
+	width: 100%;
+}
+
+svg.icon {
+	display: inline-block;
+	vertical-align: -.125em;
+}
+
+body[data-mode] {
+	overflow: hidden;
+	background-color: #111;
+}
+
+#wrapper {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	-webkit-overflow-scrolling: touch;
+}
+
+.navbar {
+	z-index: 1100 !important;
+	padding-left: env(safe-area-inset-left);
+	padding-right: env(safe-area-inset-left);
+}
+
+.offcanvas {
+	top: 3.7rem !important;
+	padding-left: env(safe-area-inset-left);
+}
+
+@supports (backdrop-filter: blur()) or (-webkit-backdrop-filter: blur()) {
+	.navbar, .offcanvas {
+		-webkit-backdrop-filter: saturate(180%) blur(15px);
+		backdrop-filter: saturate(180%) blur(15px);
+		--bs-bg-opacity: .9 !important;
+	}
+}
+
+body[data-mode]:not([data-mode="draw"]) #drawNavButtons, [data-mode="draw"] #defaultNavButtons {
+	display: none;
+}
+
+@media (max-width: 400px) {
+	.offcanvas-start.show {
+		border-right: none !important;
+	}
+}
+
+#linesCanvas {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -500;
+}
+
+#container {
+	width: calc(100% - 400px);
+	height: 100%;
+	margin-left: 400px;
+	touch-action: manipulation;
+	overflow: hidden;
+}
+
+#loading {
+	position: absolute;
+	background-color: rgba(17, 17, 17, .9);
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	-webkit-backdrop-filter: saturate(180%) blur(10px);
+	backdrop-filter: saturate(180%) blur(10px);
+}
+
+.listHidden #container{
+	width: 100%;
+	margin-left: 0;
+}
+
+#innerContainer {
+    height: 2000px;
+    width: 2000px;
+    position: absolute;
+    z-index: -2000;
+}
+
+body[data-init-done] .listTransitioning #innerContainer {
+	transition: left .3s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	body[data-init-done] .listTransitioning #innerContainer {
+		transition: none;
+	}
+}
+
+#innerContainer > * {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	image-rendering: -webkit-optimize-contrast;
+	image-rendering: pixelated;
+	user-select: none;
+}
+
+#image {
+	z-index: -1500;
+}
+
+#highlightCanvas {
+	z-index: -1200;
+}
+
+#atlasSize:empty {
+	display: none;
+}
+
+#searchList {
+	width: 25%;
+}
+
+#objectsList {
+	max-width: 300px;
+	width: 100%;
+	position: absolute;
+	right: env(safe-area-inset-right, 0);
+	top: 3.7rem;
+	max-height: calc(100% - 3.7rem);
+	overflow-y: auto;
+	z-index: 0;
+}
+
+#closeObjectsListButton {
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	top: 4.25rem;
+	right: calc(300px + env(safe-area-inset-right, 0));
+}
+
+#objectsListOverflowNotice {
+	max-width: 300px;
+	width: 100%;
+	position: absolute;
+	right: env(safe-area-inset-right, 0);
+	bottom: 1rem;
+	box-shadow: 0 .25rem 1rem rgba(17,17,17,.75) !important;
+}
+
+@media (max-width: 976px) {
+	#wrapper:not(.listHidden) > #objectsList {
+		max-width: calc(300px - 3rem);
+	}
+	#wrapper:not(.listHidden) > #closeObjectsListButton {
+		right: calc(300px - 3rem + env(safe-area-inset-right, 0));
+	}
+}
+
+@media (max-width: 750px) {
+	#wrapper:not(.listHidden) > #objectsList {
+		display: none;
+	}
+	#wrapper:not(.listHidden) > #closeObjectsListButton {
+		display: none;
+	}
+	#wrapper:not(.listHidden) > #objectsListOverflowNotice {
+		display: none;
+	}
+}
+
+@media (max-width: 576px) {
+	#objectsList {
+		max-width: calc(300px - 3rem);
+	}
+	#closeObjectsListButton {
+		right: calc(300px - 3rem);
+	}
+}
+
+@media (max-width: 540px) {
+	#wrapper:not(.listHidden) > #bottomBar {
+		display: none !important;
+	}
+}
+
+#objectInfo textarea {
+	resize: none;
+}
+
+#objectDescription p {
+	margin-bottom: 0.5rem;
+}
+
+#objectDescription p:last-child {
+	margin-bottom: 0;
+}
+
+#exportString {
+	min-height: 300px;
+}
+
+#bottomBar {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding-left: max(0.5rem, env(safe-area-inset-left)) !important;
+	padding-right: max(0.5rem, env(safe-area-inset-right)) !important;
+	padding-bottom: max(0.5rem, env(safe-area-inset-bottom)) !important;
+}
+
+#bottomBar:hover, #bottomBar:focus-within {
+	z-index: 1;
+}
+
+#wrapper.listTransitioning #bottomBar {
+    transition: left .3s ease-in-out, padding-left .3s linear;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	#bottomBar {
+		transition: none;
+	}
+}
+
+#wrapper:not(.listHidden) > #bottomBar {
+	padding-left: 0.5rem !important;
+	left: 400px !important;
+}
+
+#author {
+	flex: 1 1 auto;
+}
+
+#variantControls {
+	flex: 1 0 auto;
+}
+
+#timeControls {
+	position: relative;
+	flex: 6 0 300px;
+}
+
+#bottomBar.no-time-slider #timeControls {
+	display: none;
+}
+
+@media (min-width: 800px) {
+	#wrapper.listHidden #bottomBar.no-time-slider {
+		align-items: flex-end;
+	}
+	#wrapper.listHidden #bottomBar.no-time-slider #variantControls {
+		flex: none;
+	}
+	#wrapper.listHidden #bottomBar.no-time-slider #author {
+		flex: none;
+		margin-left: auto;
+	}
+}
+
+@media (min-width: 1300px) {
+	#wrapper:not(.listHidden) #bottomBar.no-time-slider {
+		align-items: flex-end;
+	}
+	#wrapper:not(.listHidden) #bottomBar.no-time-slider #variantControls {
+		flex: none;
+	}
+	#wrapper:not(.listHidden) #bottomBar.no-time-slider #author {
+		flex: none;
+		margin-left: auto;
+	}
+}
+
+#timeControls {
+	display: flex;
+	align-items: center;
+}
+
+#timeControlsTooltip {
+	bottom: 2.75rem;
+	visibility: hidden;
+	transition: visibility .15s linear, opacity .15s linear;
+}
+
+@supports (backdrop-filter: blur()) or (-webkit-backdrop-filter: blur()) {
+	#timeControlsTooltip div, #author {
+		-webkit-backdrop-filter: saturate(180%) blur(15px);
+		backdrop-filter: saturate(180%) blur(15px);
+		--bs-bg-opacity: .8 !important;
+	}
+}
+
+#timeControls:hover #timeControlsTooltip, 
+#timeControlsSlider:focus + #timeControlsTooltip,
+body[data-canvas-loading][data-init-done] #timeControlsTooltip,
+body[data-init-done] #timeControlsTooltip[data-force-visible] {
+	opacity: 1;
+	visibility: visible;
+}
+
+#timeControlsSlider {
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+#timeControlsSlider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 0.75rem;
+	height: 1.5rem;
+	margin-top: -0.25rem;
+	border-radius: .25rem;
+	outline: 1px solid var(--bs-body-bg);
+}
+
+#timeControlsSlider::-webkit-slider-runnable-track {
+	height: 1rem;
+	border-radius: .25rem;
+}
+
+#timeControlsSlider::-moz-range-thumb {
+	width: 0.75rem;
+	height: 1.5rem;
+	margin-top: -0.25rem;
+	border-radius: .25rem;
+	outline: 1px solid var(--bs-body-bg);
+}
+
+#timeControlsSlider::-moz-range-track {
+	height: 1rem;
+	border-radius: .25rem;
+}
+
+#entriesList .card {
+	box-shadow: none !important;
+	transition: box-shadow 0.15s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	#entriesList .card {
+		transition: none;
+	}
+}
+
+#entriesList:not(.disableHover) .card:hover {
+	box-shadow: 0 0 0 .15rem rgba(var(--bs-primary-rgb), .75) !important;
+}
+
+[data-mode="explore"] #entriesListControls {
+    display: none;
+}
+
+body:not([data-dev]) .show-only-on-dev {
+	display: none !important;
+}
+
+.nav-link.active {
+	font-weight: 700;
+}
+
+.period-group {
+	transition: box-shadow 0.15s ease-in-out;
+}
+
+.period-group[data-active=true] {
+	box-shadow: 0 0 0 .15rem rgba(var(--bs-primary-rgb), .75);
+}
+
+.period-group[data-active=true][data-status=active] {
+	box-shadow: 0 0 0 .15rem rgba(var(--bs-primary-rgb), .75);
+}
+
+.period-group[data-status=active] {
+	box-shadow: 0 0 0 .1rem rgba(var(--bs-primary-rgb), .5);
+}
+
+.period-group[data-active=true][data-status=error] {
+	animation: 1s infinite alternate periodGroupActiveError;
+}
+
+.period-group[data-status=error] {
+	box-shadow: 0 0 0 .1rem rgba(var(--bs-danger-rgb), .25);
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.period-group {
+		transition: none;
+	}
+	.period-group[data-active=true][data-status=error] {
+		box-shadow: 0 0 0 .15rem rgba(var(--bs-danger-rgb), 1);
+		animation: none;
+	}
+}
+
+@keyframes periodGroupActiveError {
+	from {
+		box-shadow: 0 0 0 .15rem rgba(var(--bs-danger-rgb), 1);
+	}
+	to {
+		box-shadow: 0 0 0 .15rem rgba(var(--bs-danger-rgb), .5);
+	}
+}
+
+#periods #periodsStatus:empty {
+	display: none;
+}
+
+.period-group.no-time-slider input,
+.period-group.no-time-slider .period-input-controls {
+	display: none !important;
+}
+
+/* about.html */
+
+#credits a {
+	text-decoration: none;
+}
+
+#credits a:hover {
+	text-decoration: underline;
+}
+
+/* purgecss end ignore */
