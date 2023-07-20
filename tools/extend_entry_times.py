@@ -1,0 +1,47 @@
+from io import TextIOWrapper
+import json
+import os
+import tqdm
+
+pre_extend_times = [4, 5]
+post_extend_time = 6
+post_extend_time = str(post_extend_time)
+
+while not os.path.exists('README.md'):
+	os.chdir('..')
+	
+with open('web/atlas.json', 'r', encoding='utf-8') as atlas_file:
+	atlas_data = json.loads(atlas_file.read())
+
+def per_line_entries(entries: list, file: TextIOWrapper):
+	"""
+	Returns a string of all the entries, with every entry in one line.
+	"""
+	file.write("[\n")
+	line_temp = ""
+	for entry in tqdm.tqdm(entries):
+		if line_temp:
+			file.write(line_temp + ",\n")
+		line_temp = json.dumps(entry, ensure_ascii=False)
+	file.write(line_temp + "\n]")
+
+def extend_time_key(items):
+	for key, value in list(items.items()):
+		if '-' in key:
+			end_time = key[key.find('-') + 1:]
+		else:
+			end_time = key
+		if int(end_time) in pre_extend_times:
+			if '-' in key:
+				new_key = key.replace(end_time, post_extend_time)
+			else:
+				new_key = f'{key}-{post_extend_time}'
+			del items[key]
+			items[new_key] = value
+
+for entry in atlas_data:
+	extend_time_key(entry['path'])
+	extend_time_key(entry['center'])
+	
+with open('web/atlas.json', 'w', encoding='utf-8') as atlas_file:
+	per_line_entries(atlas_data, atlas_file)
