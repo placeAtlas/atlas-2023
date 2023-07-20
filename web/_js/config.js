@@ -39,8 +39,8 @@ const variationsConfig = {
 	default: {
 		name: "r/place",
 		code: "",
-		default: 11,
-		drawablePeriods: [1, 11],
+		default: 12,
+		drawablePeriods: [1, 12],
 		drawableRegions: [
 			[[0, 10], [-500, -500, 499, 499]],
 		],
@@ -58,6 +58,7 @@ const variationsConfig = {
 			{ "timestamp": 1689874200, "url": ["./_img/canvas/main/1689874200.png"] },
 			{ "timestamp": 1689876002, "url": ["./_img/canvas/main/1689876002.png"] },
 			{ "timestamp": 1689877825, "url": ["./_img/canvas/main/1689877825.png"] },
+			{ "timestamp": 1689879898, "url": ["./_img/canvas/main/1689879898.png"] },
 		],
 		icon: '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 192 192" aria-hidden="true"><polygon points="154 0 154 38 39 38 39 192 0 192 0 0"/><polygon points="192 38 192 192 77 192 77 153 154 153 154 38"/><rect x="77" y="77" width="38" height="38"/></svg>'
 	},
