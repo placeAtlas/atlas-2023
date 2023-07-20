@@ -229,8 +229,8 @@ function updateLines() {
 				)
 			}
 			linesContext.lineTo(
-				~~(hovered[i].center[0] * zoom) + innerContainer.offsetLeft,
-				~~(hovered[i].center[1] * zoom) + innerContainer.offsetTop
+				~~((hovered[i].center[0] - canvasOffset.x) * zoom) + innerContainer.offsetLeft,
+				~~((hovered[i].center[1] - canvasOffset.y) * zoom) + innerContainer.offsetTop
 			)
 			linesContext.stroke()
 		}
@@ -259,8 +259,8 @@ function updateLines() {
 				)
 			}
 			linesContext.lineTo(
-				~~(hovered[i].center[0] * zoom) + innerContainer.offsetLeft,
-				~~(hovered[i].center[1] * zoom) + innerContainer.offsetTop
+				~~((hovered[i].center[0] - canvasOffset.x) * zoom) + innerContainer.offsetLeft,
+				~~((hovered[i].center[1] - canvasOffset.y) * zoom) + innerContainer.offsetTop
 			)
 			linesContext.stroke()
 		}
@@ -287,12 +287,12 @@ function renderBackground(atlas) {
 
 		if (path[0]) {
 			//backgroundContext.moveTo(path[0][0]*zoom, path[0][1]*zoom)
-			backgroundContext.moveTo(path[0][0], path[0][1])
+			backgroundContext.moveTo(path[0][0] - canvasOffset.x, path[0][1] - canvasOffset.y)
 		}
 
 		for (let p = 1; p < path.length; p++) {
 			//backgroundContext.lineTo(path[p][0]*zoom, path[p][1]*zoom)
-			backgroundContext.lineTo(path[p][0], path[p][1])
+			backgroundContext.lineTo(path[p][0] - canvasOffset.x, path[p][1] - canvasOffset.y)
 		}
 
 		backgroundContext.closePath()
@@ -498,12 +498,12 @@ async function render() {
 
 		if (path[0]) {
 			//context.moveTo(path[0][0]*zoom, path[0][1]*zoom)
-			highlightContext.moveTo(path[0][0], path[0][1])
+			highlightContext.moveTo(path[0][0] - canvasOffset.x, path[0][1]- canvasOffset.y)
 		}
 
 		for (let p = 1; p < path.length; p++) {
 			//context.lineTo(path[p][0]*zoom, path[p][1]*zoom)
-			highlightContext.lineTo(path[p][0], path[p][1])
+			highlightContext.lineTo(path[p][0] - canvasOffset.x, path[p][1] - canvasOffset.y)
 		}
 
 		highlightContext.closePath()
@@ -583,8 +583,8 @@ function updateHovering(e, tapped) {
 	if (dragging || (fixed && !tapped)) return
 
 	const pos = [
-		(e.clientX - (container.clientWidth / 2 - innerContainer.clientWidth / 2 + zoomOrigin[0] + container.offsetLeft)) / zoom,
-		(e.clientY - (container.clientHeight / 2 - innerContainer.clientHeight / 2 + zoomOrigin[1] + container.offsetTop)) / zoom
+		(e.clientX - (container.clientWidth / 2 - innerContainer.clientWidth / 2 + zoomOrigin[0] + container.offsetLeft)) / zoom + canvasOffset.x,
+		(e.clientY - (container.clientHeight / 2 - innerContainer.clientHeight / 2 + zoomOrigin[1] + container.offsetTop)) / zoom + canvasOffset.y
 	]
 	const coordsEl = document.getElementById("coords_p")
 
@@ -595,8 +595,8 @@ function updateHovering(e, tapped) {
 		coordsEl.textContent = Math.ceil(pos[0]) + ", " + Math.ceil(pos[1])
 	}
 
-	if (!(pos[0] <= 2200 && pos[0] >= -100 && pos[0] <= 2200 && pos[0] >= -100)) return
-
+	if (!(pos[0] <= canvasSize.x + canvasOffset.x + 200 && pos[0] >= canvasOffset.x - 200 && pos[1] <= canvasSize.y + canvasOffset.y + 200 && pos[1] >= canvasOffset.x - 200)) return
+	
 	const newHovered = []
 	for (const entry of atlasDisplay) {
 		if (pointIsInPolygon(pos, entry.path)) newHovered.push(entry)

@@ -145,8 +145,8 @@ function initDraw() {
 		y -= container.offsetTop
 
 		const pos = [
-			~~((x - (container.clientWidth / 2 - innerContainer.clientWidth / 2 + zoomOrigin[0])) / zoom) + 0.5,
-			~~((y - (container.clientHeight / 2 - innerContainer.clientHeight / 2 + zoomOrigin[1])) / zoom) + 0.5
+			~~((x - (container.clientWidth / 2 - innerContainer.clientWidth / 2 + zoomOrigin[0])) / zoom) + 0.5 + canvasOffset.x,
+			~~((y - (container.clientHeight / 2 - innerContainer.clientHeight / 2 + zoomOrigin[1])) / zoom) + 0.5 + canvasOffset.y
 		]
 
 		if (shiftPressed && path.length > 0) {
@@ -498,11 +498,11 @@ function initDraw() {
 			backgroundContext.beginPath()
 
 			if (path[0]) {
-				backgroundContext.moveTo(path[0][0], path[0][1])
+				backgroundContext.moveTo(path[0][0] - canvasOffset.x, path[0][1] - canvasOffset.y)
 			}
 
 			for (let p = 1; p < path.length; p++) {
-				backgroundContext.lineTo(path[p][0], path[p][1])
+				backgroundContext.lineTo(path[p][0] - canvasOffset.x, path[p][1] - canvasOffset.y)
 			}
 
 			backgroundContext.closePath()
@@ -530,11 +530,11 @@ function initDraw() {
 		highlightContext.beginPath()
 
 		if (path[0]) {
-			highlightContext.moveTo(path[0][0], path[0][1])
+			highlightContext.moveTo(path[0][0] - canvasOffset.x, path[0][1] - canvasOffset.y)
 		}
 
 		for (let i = 1; i < path.length; i++) {
-			highlightContext.lineTo(path[i][0], path[i][1])
+			highlightContext.lineTo(path[i][0] - canvasOffset.x, path[i][1] - canvasOffset.y)
 		}
 
 		highlightContext.closePath()
