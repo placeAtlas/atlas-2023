@@ -3,8 +3,8 @@ import json
 import os
 import tqdm
 
-pre_extend_times = [6]
-post_extend_time = 7
+pre_extend_times = [6, 7]
+post_extend_time = 8
 post_extend_time = str(post_extend_time)
 
 while not os.path.exists('README.md'):
