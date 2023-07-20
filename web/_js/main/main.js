@@ -44,8 +44,8 @@ function applyView() {
 
 	zoomOrigin = [scaleZoomOrigin[0] * zoom, scaleZoomOrigin[1] * zoom]
 
-	innerContainer.style.height = (~~(zoom * canvasSize.x)) + "px"
-	innerContainer.style.width = (~~(zoom * canvasSize.y)) + "px"
+	innerContainer.style.width = (~~(zoom * canvasSize.x)) + "px"
+	innerContainer.style.height = (~~(zoom * canvasSize.y)) + "px"
 
 	innerContainer.style.left = ~~(container.clientWidth / 2 - innerContainer.clientWidth / 2 + zoomOrigin[0] + container.offsetLeft) + "px"
 	innerContainer.style.top = ~~(container.clientHeight / 2 - innerContainer.clientHeight / 2 + zoomOrigin[1] + container.offsetTop) + "px"

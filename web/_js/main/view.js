@@ -498,7 +498,7 @@ async function render() {
 
 		if (path[0]) {
 			//context.moveTo(path[0][0]*zoom, path[0][1]*zoom)
-			highlightContext.moveTo(path[0][0] - canvasOffset.x, path[0][1]- canvasOffset.y)
+			highlightContext.moveTo(path[0][0] - canvasOffset.x, path[0][1] - canvasOffset.y)
 		}
 
 		for (let p = 1; p < path.length; p++) {
@@ -547,12 +547,12 @@ async function render() {
 
 		if (path[0]) {
 			//context.moveTo(path[0][0]*zoom, path[0][1]*zoom)
-			highlightContext.moveTo(path[0][0], path[0][1])
+			highlightContext.moveTo(path[0][0] - canvasOffset.x, path[0][1] - canvasOffset.y)
 		}
 
 		for (let p = 1; p < path.length; p++) {
 			//context.lineTo(path[p][0]*zoom, path[p][1]*zoom)
-			highlightContext.lineTo(path[p][0], path[p][1])
+			highlightContext.lineTo(path[p][0] - canvasOffset.x, path[p][1] - canvasOffset.y)
 		}
 
 		highlightContext.closePath()
