@@ -39,13 +39,13 @@ function applyView() {
 	//console.log(zoomOrigin, scaleZoomOrigin)
 	//console.log(scaleZoomOrigin[0])
 
-	scaleZoomOrigin[0] = Math.max(-canvasCenter.x, Math.min(canvasCenter.x, scaleZoomOrigin[0]))
-	scaleZoomOrigin[1] = Math.max(-canvasCenter.y, Math.min(canvasCenter.y, scaleZoomOrigin[1]))
+	scaleZoomOrigin[0] = Math.max(-canvasCenter.x + canvasOffset.x, Math.min(canvasCenter.x - canvasOffset.x, scaleZoomOrigin[0]))
+	scaleZoomOrigin[1] = Math.max(-canvasCenter.y + canvasOffset.y, Math.min(canvasCenter.y - canvasOffset.y, scaleZoomOrigin[1]))
 
 	zoomOrigin = [scaleZoomOrigin[0] * zoom, scaleZoomOrigin[1] * zoom]
 
-	innerContainer.style.height = (~~(zoom * canvasSize.x)) + "px"
-	innerContainer.style.width = (~~(zoom * canvasSize.y)) + "px"
+	innerContainer.style.width = (~~(zoom * canvasSize.x)) + "px"
+	innerContainer.style.height = (~~(zoom * canvasSize.y)) + "px"
 
 	innerContainer.style.left = ~~(container.clientWidth / 2 - innerContainer.clientWidth / 2 + zoomOrigin[0] + container.offsetLeft) + "px"
 	innerContainer.style.top = ~~(container.clientHeight / 2 - innerContainer.clientHeight / 2 + zoomOrigin[1] + container.offsetTop) + "px"
@@ -411,8 +411,6 @@ async function init() {
 	}
 
 	function touchmove(e) {
-
-		updateLines()
 
 		if (e.touches.length === 1) {
 

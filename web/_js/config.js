@@ -18,14 +18,20 @@ const pageTitle = "The 2023 r/place Atlas"
 window.pageTitle = pageTitle
 
 const canvasSize = {
-	x: 2000,
+	x: 1000,
 	y: 2000
 }
 window.canvasSize = canvasSize
 
+const canvasOffset = {
+	x: -500,
+	y: -1000
+}
+window.canvasOffset = canvasOffset
+
 const canvasCenter = {
-	x: canvasSize.x/2,
-	y: canvasSize.y/2
+	x: canvasSize.x/2 + canvasOffset.x,
+	y: canvasSize.y/2 + canvasOffset.y
 }
 window.canvasCenter = canvasCenter
 
@@ -33,14 +39,18 @@ const variationsConfig = {
 	default: {
 		name: "r/place",
 		code: "",
-		default: 0,
-		drawablePeriods: [0, 0],
+		default: 4,
+		drawablePeriods: [1, 4],
 		drawableRegions: [
-			[[0, 0], [0, 0, 2000, 2000]],
+			[[0, 4], [-500, -500, 499, 499]],
 		],
 		// expansions: [],
 		versions: [
-			{ "timestamp": 1687478400, "url": ["./_img/canvas/main-ex/start.png"] },
+			{ "timestamp": 1689858000, "url": ["./_img/canvas/main-ex/start.png"] },
+			{ "timestamp": 1689859449, "url": ["./_img/canvas/main/1689859449.png"] },
+			{ "timestamp": 1689861680, "url": ["./_img/canvas/main/1689861680.png"] },
+			{ "timestamp": 1689863453, "url": ["./_img/canvas/main/1689863453.png"] },
+			{ "timestamp": 1689865307, "url": ["./_img/canvas/main/1689865307.png"] },
 		],
 		icon: '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 192 192" aria-hidden="true"><polygon points="154 0 154 38 39 38 39 192 0 192 0 0"/><polygon points="192 38 192 192 77 192 77 153 154 153 154 38"/><rect x="77" y="77" width="38" height="38"/></svg>'
 	},
