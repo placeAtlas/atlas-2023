@@ -1,0 +1,78 @@
+{
+	"id": -1,
+	"name": "Hololive Production Logo",
+	"description": "Hololive Production is a virtual YouTuber (vtuber) agency owned by Cover Corporation, a Japanese tech entertainment company. The brand gained popularity as a talent agency for popular vtubers, managing 75 talents as of January 2023. Among them are the most subscribed active vtubers in Japan (Houshou Marine), South East Asia (Kobo Kanaeru), and North America (Gawr Gura). The \"star-like\" logo on the right depicts \"Holostars\", the male-only branch, while \"Hololive\" depicts the female-only unit.",
+	"links": {
+		"website": [
+			"https://hololivepro.com/en/"
+		],
+		"subreddit": [
+			"hololive"
+		],
+		"discord": [
+			"vtubersplace"
+		]
+	},
+	"path": {
+		"19": [
+			[
+				-169,
+				388
+			],
+			[
+				-170,
+				388
+			],
+			[
+				-170,
+				437
+			],
+			[
+				-165,
+				440
+			],
+			[
+				-163,
+				440
+			],
+			[
+				-130,
+				423
+			],
+			[
+				-129,
+				422
+			],
+			[
+				-57,
+				422
+			],
+			[
+				-57,
+				406
+			],
+			[
+				-129,
+				406
+			],
+			[
+				-163,
+				389
+			],
+			[
+				-163,
+				388
+			],
+			[
+				-170,
+				388
+			]
+		]
+	},
+	"center": {
+		"19": [
+			-152,
+			414
+		]
+	}
+}
