@@ -1,0 +1,66 @@
+{
+	"id": 26,
+	"name": "Flag of Austria",
+	"description": "Austria is a country in Central Europe.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Austria",
+			"https://en.wikipedia.org/wiki/Flag_of_Austria"
+		],
+		"subreddit": [
+			"Austria",
+			"placeAustria"
+		],
+		"discord": [
+			"f5ky84vGku"
+		]
+	},
+	"path": {
+		"1-2": [
+			[
+				-501,
+				-42
+			],
+			[
+				-501,
+				-26
+			],
+			[
+				-326,
+				-26
+			],
+			[
+				-326,
+				-42
+			]
+		],
+		"3-20": [
+			[
+				-368,
+				-56
+			],
+			[
+				-368,
+				-26
+			],
+			[
+				439,
+				-26
+			],
+			[
+				440,
+				-56
+			]
+		]
+	},
+	"center": {
+		"1-2": [
+			-413,
+			-34
+		],
+		"3-20": [
+			36,
+			-41
+		]
+	}
+}
