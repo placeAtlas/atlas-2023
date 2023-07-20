@@ -3,7 +3,7 @@ import json
 import os
 import tqdm
 
-pre_extend_times = []
+pre_extend_times = [17, 18]
 post_extend_time = 19
 
 if len(pre_extend_times) == 0:
