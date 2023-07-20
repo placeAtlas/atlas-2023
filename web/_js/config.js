@@ -18,13 +18,13 @@ const pageTitle = "The 2023 r/place Atlas"
 window.pageTitle = pageTitle
 
 const canvasSize = {
-	x: 1000,
+	x: 3000,
 	y: 2000
 }
 window.canvasSize = canvasSize
 
 const canvasOffset = {
-	x: -500,
+	x: -1500,
 	y: -1000
 }
 window.canvasOffset = canvasOffset
@@ -39,10 +39,10 @@ const variationsConfig = {
 	default: {
 		name: "r/place",
 		code: "",
-		default: 6,
-		drawablePeriods: [1, 6],
+		default: 7,
+		drawablePeriods: [1, 7],
 		drawableRegions: [
-			[[0, 6], [-500, -500, 499, 499]],
+			[[0, 7], [-500, -500, 499, 499]],
 		],
 		// expansions: [],
 		versions: [
@@ -53,6 +53,7 @@ const variationsConfig = {
 			{ "timestamp": 1689865307, "url": ["./_img/canvas/main/1689865307.png"] },
 			{ "timestamp": 1689867430, "url": ["./_img/canvas/main/1689867430.png"] },
 			{ "timestamp": 1689868839, "url": ["./_img/canvas/main/1689868839.png"] },
+			{ "timestamp": 1689870611, "url": ["./_img/canvas/main/1689870611.png"] },
 		],
 		icon: '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 192 192" aria-hidden="true"><polygon points="154 0 154 38 39 38 39 192 0 192 0 0"/><polygon points="192 38 192 192 77 192 77 153 154 153 154 38"/><rect x="77" y="77" width="38" height="38"/></svg>'
 	},
