@@ -122,7 +122,7 @@ function initDraw() {
 	let lShiftPressed = false
 	let shiftPressed = false
 
-	let highlightUncharted = false
+	let highlightUncharted = true
 
 	renderBackground(atlas)
 	applyView()
