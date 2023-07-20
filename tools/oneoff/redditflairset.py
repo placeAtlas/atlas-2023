@@ -61,12 +61,12 @@ def set_flair(submission, flair):
 total_all_flairs = 0
 rejected_count = 0
 processed_count = 0
-for submission in reddit.subreddit('placeAtlas2').new(limit=1000):
-#for submission in reddit.subreddit('placeAtlas2').search('flair:"New Entry"',limit=1000,syntax='lucene', sort="top"):
-#for submission in reddit.subreddit('placeAtlas2').search('flair:"New Entry"',limit=1000,syntax='lucene', sort="comments"):
-#for submission in reddit.subreddit('placeAtlas2').search('flair:"New Entry"',limit=1000,syntax='lucene', sort="hot"):
-#for submission in reddit.subreddit('placeAtlas2').search('flair:"New Entry"',limit=1000,syntax='lucene', sort="new"):
-#for submission in reddit.subreddit('placeAtlas2').search('flair:"New Entry"',limit=1000,syntax='lucene', sort="relevance"):
+for submission in reddit.subreddit('placeAtlas2023').new(limit=1000):
+#for submission in reddit.subreddit('placeAtlas2023').search('flair:"New Entry"',limit=1000,syntax='lucene', sort="top"):
+#for submission in reddit.subreddit('placeAtlas2023').search('flair:"New Entry"',limit=1000,syntax='lucene', sort="comments"):
+#for submission in reddit.subreddit('placeAtlas2023').search('flair:"New Entry"',limit=1000,syntax='lucene', sort="hot"):
+#for submission in reddit.subreddit('placeAtlas2023').search('flair:"New Entry"',limit=1000,syntax='lucene', sort="new"):
+#for submission in reddit.subreddit('placeAtlas2023').search('flair:"New Entry"',limit=1000,syntax='lucene', sort="relevance"):
 	"""
 	Auth setup
 	1. Head to https://www.reddit.com/prefs/apps

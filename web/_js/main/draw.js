@@ -122,7 +122,9 @@ function initDraw() {
 	let lShiftPressed = false
 	let shiftPressed = false
 
-	let highlightUncharted = false
+	// @instance-only
+	// Default is false. When changing, also check HTML of #highlightUncharted
+	let highlightUncharted = true
 
 	renderBackground(atlas)
 	applyView()
