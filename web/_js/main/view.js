@@ -59,7 +59,7 @@ moreEntriesButton.addEventListener('click', () => {
 	render()
 })
 
-const moreEntriesObserver = new IntersectionObserver((entries, observer) => {
+const moreEntriesObserver = new IntersectionObserver(entries => {
 	for (const entry of entries) {
 		if (!entry.isIntersecting) continue
 		moreEntriesButton.click()
@@ -728,6 +728,8 @@ function setZoomByPath(path) {
 	]
 	zoom = Math.min(clientSize[0] / boundingBoxSize[0], clientSize[1] / boundingBoxSize[1])
 	zoom = Math.min(4, zoom/2)
+
+	return zoom
 
 }
 

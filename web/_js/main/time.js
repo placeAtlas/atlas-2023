@@ -137,7 +137,7 @@ async function updateTime(newPeriod = currentPeriod, newVariation = currentVaria
 	}
 	document.body.dataset.canvasLoading = ""
 
-	const oldPeriod = currentPeriod
+	// const oldPeriod = currentPeriod
 	const oldVariation = currentVariation
 
 	if (!variationsConfig[newVariation]) newVariation = defaultVariation
