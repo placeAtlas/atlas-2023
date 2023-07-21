@@ -30,17 +30,20 @@ def per_line_entries(entries: list, file: TextIOWrapper):
 
 def extend_time_key(items):
 	for key, value in list(items.items()):
-		if '-' in key:
-			end_time = key[key.find('-') + 1:]
-		else:
-			end_time = key
-		if int(end_time) in pre_extend_times:
-			if '-' in key:
-				new_key = key.replace(end_time, post_extend_time)
+		times = key.split(', ')
+		for time in times:
+			if '-' in time:
+				end_time = time[time.find('-') + 1:]
 			else:
-				new_key = f'{key}-{post_extend_time}'
-			del items[key]
-			items[new_key] = value
+				end_time = time
+			if int(end_time) in pre_extend_times:
+				if '-' in key:
+					new_key = key.replace(end_time, post_extend_time)
+				else:
+					new_key = key.replace(end_time, f'{key}-{post_extend_time}')
+				del items[key]
+				items[new_key] = value
+				break
 
 for entry in atlas_data:
 	extend_time_key(entry['path'])
