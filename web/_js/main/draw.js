@@ -1341,6 +1341,7 @@ function getOutOfBounds() {
 		for (let j = start; j <= end; j++) {
 			for (const [refPeriod, refRegion] of variationsConfig[variation]?.drawableRegions) {
 				if (!isOnPeriod(refPeriod[0], refPeriod[1], variation, j, variation) || checkedRefPeriods.includes(refPeriod)) continue
+				checkedRefPeriods.push(refPeriod)
 				const [ refX1, refY1, refX2, refY2 ] = refRegion
 				for (const point of path) {
 					const isOutOfBounds = !pointIsInPolygon(point, [[refX1, refY1], [refX2, refY1], [refX2, refY2], [refX1, refY2]])
