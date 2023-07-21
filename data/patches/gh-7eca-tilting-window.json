@@ -1,0 +1,41 @@
+{
+	"id": -1,
+	"name": "Tilting Window",
+	"description": "German windows can tilt and are therefore better than windows that don't tilt. ",
+	"links": {
+		"website": [
+			"https://www.reddit.com/r/me_irl/comments/u1ts2i/me_irl/"
+		],
+		"subreddit": [
+			"de",
+			"ich_iel",
+			"placede"
+		]
+	},
+	"path": {
+		"68": [
+			[
+				-427,
+				-434
+			],
+			[
+				-427,
+				-398
+			],
+			[
+				-399,
+				-398
+			],
+			[
+				-396,
+				-432
+			]
+		]
+	},
+	"center": {
+		"68": [
+			-412,
+			-416
+		]
+	}
+}
