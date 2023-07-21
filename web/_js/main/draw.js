@@ -1246,7 +1246,7 @@ function updateErrors() {
 		periodsStatus.textContent = "No paths available on this period!"
 	}
 
-	const { conflicts, insufficientPaths } = getErrors()
+	const { conflicts, insufficientPaths, outOfBounds, periodOutOfBounds } = getErrors()
 	let errorCount = 0
 	// console.log(conflicts, invalidPaths, allErrors)
 
@@ -1254,10 +1254,16 @@ function updateErrors() {
 		const { periodStatusEl, startPeriodViewEl, endPeriodViewEl, periodGroupEl } = el
 		periodStatusEl.textContent = ""
 		periodStatusEl.classList.add("d-none")
-		if (conflicts[index] !== undefined) {
+		if (conflicts?.[index]) {
 			periodStatusEl.textContent += `Period conflicts with path${conflicts[index].length === 1 ? "" : "s"} ${conflicts[index].join(", ")}.\n`
 		}
-		if (insufficientPaths[index] !== undefined) {
+		if (outOfBounds?.[index]) {
+			periodStatusEl.textContent += `A point is placed out of bounds.\n`
+		}
+		if (periodOutOfBounds?.[index]) {
+			periodStatusEl.textContent += `The period is out of bounds for editing.\n`
+		}
+		if (insufficientPaths?.[index]) {
 			periodStatusEl.textContent += `Insufficient paths. Got ${insufficientPaths[index]}, need at least 3.\n`
 			startPeriodViewEl.disabled = true
 			endPeriodViewEl.disabled = true
@@ -1324,8 +1330,53 @@ function getConflicts() {
 
 }
 
+function getOutOfBounds() {
+
+	const outOfBounds = {}
+
+	pathCheck: for (const i in pathWithPeriods) {
+		const [period, path] = pathWithPeriods[i]
+		const [start, end, variation] = parsePeriod(period)
+		const checkedRefPeriods = []
+		for (let j = start; j <= end; j++) {
+			for (const [refPeriod, refRegion] of variationsConfig[variation]?.drawableRegions) {
+				if (!isOnPeriod(refPeriod[0], refPeriod[1], variation, j, variation) || checkedRefPeriods.includes(refPeriod)) continue
+				const [ refX1, refY1, refX2, refY2 ] = refRegion
+				for (const point of path) {
+					const isOutOfBounds = !pointIsInPolygon(point, [[refX1, refY1], [refX2, refY1], [refX2, refY2], [refX1, refY2]])
+					if (!isOutOfBounds) continue
+					outOfBounds[i] = true
+					continue pathCheck
+				}
+			}
+		}
+	}
+
+	return outOfBounds
+
+}
+
+function getPeriodOutOfBounds() {
+
+	const outOfBounds = {}
+
+	pathCheck: for (const i in pathWithPeriods) {
+		const [period] = pathWithPeriods[i]
+		// console.log(i)
+		const [start, end, variation] = parsePeriod(period)
+		for (let j = start; j <= end; j++) {
+			const [refStart, refEnd] = variationsConfig[variation]?.drawablePeriods
+			if (isOnPeriod(refStart, refEnd, variation, j, variation)) continue
+			outOfBounds[i] = true
+			continue pathCheck
+		}
+	}
+
+	return outOfBounds
+
+}
+
 function getErrors() {
-	const conflicts = getConflicts()
 	const insufficientPaths = {}
 
 	pathWithPeriods.forEach(([period, path], i) => {
@@ -1336,8 +1387,10 @@ function getErrors() {
 	// console.info('invalid paths', invalidPaths)
 
 	return {
-		conflicts,
+		conflicts: getConflicts(),
 		insufficientPaths,
+		outOfBounds: getOutOfBounds(),
+		periodOutOfBounds: getPeriodOutOfBounds()
 	}
 }
 
