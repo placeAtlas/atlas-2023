@@ -1,0 +1,123 @@
+{
+	"id": 114,
+	"name": "Youtuber Jules Surprised Pikachu",
+	"description": "Surprised Pikachu, a.k.a. Shocked Pikachu, is a meme featuring the character Pikachu from the Pokémon franchise with its mouth open, expressing surprise. The meme is used in when a predictable outcome to a situation nevertheless leaves one surprised. It was added to honor German Youtuber Jules who made a fantastic recap of last year's r/place history. The shocked Pikachu with sunglasses is his profile picture on Youtube.",
+	"links": {
+		"website": [
+			"https://knowyourmeme.com/memes/surprised-pikachu",
+			"https://youtu.be/JRvmpw3yH14"
+		],
+		"subreddit": [
+			"placeDE",
+			"ich_iel",
+			"de",
+			"germany"
+		]
+	},
+	"path": {
+		"6-68": [
+			[
+				-4,
+				-431
+			],
+			[
+				-2,
+				-424
+			],
+			[
+				0,
+				-421
+			],
+			[
+				1,
+				-421
+			],
+			[
+				3,
+				-419
+			],
+			[
+				3,
+				-417
+			],
+			[
+				0,
+				-410
+			],
+			[
+				0,
+				-403
+			],
+			[
+				2,
+				-400
+			],
+			[
+				2,
+				-393
+			],
+			[
+				0,
+				-391
+			],
+			[
+				0,
+				-390
+			],
+			[
+				44,
+				-390
+			],
+			[
+				44,
+				-393
+			],
+			[
+				42,
+				-393
+			],
+			[
+				36,
+				-415
+			],
+			[
+				36,
+				-418
+			],
+			[
+				44,
+				-427
+			],
+			[
+				45,
+				-429
+			],
+			[
+				45,
+				-431
+			],
+			[
+				35,
+				-431
+			],
+			[
+				25,
+				-425
+			],
+			[
+				12,
+				-425
+			],
+			[
+				7,
+				-431
+			]
+		]
+	},
+	"center": {
+		"6-68": [
+			19,
+			-408
+		]
+	}
+}
