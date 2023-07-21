@@ -1,0 +1,36 @@
+{
+	"id": -1,
+	"name": "Torro name of twitch streamer",
+	"description": "Torro is the name of an german twitch streamer. ",
+	"links": {
+		"website": [
+			"https://www.twitch.tv/torro"
+		]
+	},
+	"path": {
+		"68": [
+			[
+				688,
+				-115
+			],
+			[
+				688,
+				-97
+			],
+			[
+				681,
+				-97
+			],
+			[
+				682,
+				-115
+			]
+		]
+	},
+	"center": {
+		"68": [
+			685,
+			-106
+		]
+	}
+}
