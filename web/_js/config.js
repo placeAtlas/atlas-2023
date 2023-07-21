@@ -107,6 +107,7 @@ const variationsConfig = {
 			{ "timestamp": 1689960605, "url": ["./_img/canvas/main/1689960605.png"] },
 			{ "timestamp": 1689962431, "url": ["./_img/canvas/main/1689962431.png"] },
 			{ "timestamp": 1689964199, "url": ["./_img/canvas/main/1689964199.png"] },
+			{ "timestamp": 1689966028, "url": ["./_img/canvas/main/1689966028.png"] },
 		],
 		icon: '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 192 192" aria-hidden="true"><polygon points="154 0 154 38 39 38 39 192 0 192 0 0"/><polygon points="192 38 192 192 77 192 77 153 154 153 154 38"/><rect x="77" y="77" width="38" height="38"/></svg>'
 	},
