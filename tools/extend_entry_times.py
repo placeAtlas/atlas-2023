@@ -3,8 +3,8 @@ import json
 import os
 import tqdm
 
-pre_extend_times = [49, 50, 51, 52]
-post_extend_time = 53
+pre_extend_times = []
+post_extend_time = 54
 
 if len(pre_extend_times) == 0:
 	pre_extend_times.append(post_extend_time - 1)
