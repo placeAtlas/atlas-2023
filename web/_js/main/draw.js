@@ -360,7 +360,7 @@ function initDraw() {
 		}
 		redditPostButton.href = redditPostUrl
 
-		if (exportObject.id === 0) document.getElementById("redditFlair").textContent = "New Entry"
+		if (exportObject.id === -1) document.getElementById("redditFlair").textContent = "New Entry"
 		else document.getElementById("redditFlair").textContent = "Edit Entry"
 
 		// GitHub
