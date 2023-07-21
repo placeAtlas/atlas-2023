@@ -233,6 +233,7 @@ function isOnPeriod(start, end, variation, currentPeriod, currentVariation) {
 	if (start > end) [start, end] = [end, start]
 	return currentPeriod >= start && currentPeriod <= end && variation === currentVariation
 }
+window.isOnPeriod = isOnPeriod
 
 function parsePeriod(periodString) {
 	let variation = defaultVariation
