@@ -562,7 +562,7 @@ function initDraw() {
 		if (isNaN(pos[0])) {
 			coordsEl.textContent = "0, 0"
 		} else {
-			coordsEl.textContent = Math.ceil(pos[0]) + ", " + Math.ceil(pos[1])
+			coordsEl.textContent = Math.floor(pos[0]) + ", " + Math.floor(pos[1])
 		}
 	}
 
@@ -570,7 +570,6 @@ function initDraw() {
 		if (!id) return
 		const entries = atlasAll.filter(entry => entry.id.toString() === id.toString())
 		if (entries.length === 1) return entries[0]
-		return
 	}
 
 	function addFieldButton(inputButton, inputGroup, array, index, name) {
@@ -1341,9 +1340,10 @@ function getOutOfBounds() {
 		for (let j = start; j <= end; j++) {
 			for (const [refPeriod, refRegion] of variationsConfig[variation]?.drawableRegions) {
 				if (!isOnPeriod(refPeriod[0], refPeriod[1], variation, j, variation) || checkedRefPeriods.includes(refPeriod)) continue
+				checkedRefPeriods.push(refPeriod)
 				const [ refX1, refY1, refX2, refY2 ] = refRegion
 				for (const point of path) {
-					const isOutOfBounds = !pointIsInPolygon(point, [[refX1, refY1], [refX2, refY1], [refX2, refY2], [refX1, refY2]])
+					const isOutOfBounds = !pointIsInPolygon(point, [[refX1 - 2, refY1 - 2], [refX2 + 2, refY1 - 2], [refX2 + 2, refY2 + 2], [refX1 - 2, refY2 + 2]])
 					if (!isOutOfBounds) continue
 					outOfBounds[i] = true
 					continue pathCheck
@@ -1389,7 +1389,7 @@ function getErrors() {
 	return {
 		conflicts: getConflicts(),
 		insufficientPaths,
-		outOfBounds: false,
+		outOfBounds: getOutOfBounds(),
 		periodOutOfBounds: getPeriodOutOfBounds()
 	}
 }

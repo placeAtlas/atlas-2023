@@ -3,7 +3,7 @@
 [![Netlify](https://img.shields.io/netlify/1e7291ce-0680-45ed-9843-47a32a992bbb?logo=netlify&logoColor=white)](https://app.netlify.com/sites/place-atlas/deploys)
 [![License](https://img.shields.io/github/license/placeAtlas/atlas)](https://github.com/placeAtlas/atlas-2023/blob/master/LICENSE)  
 [![Discord](https://img.shields.io/discord/960791635342524496?color=%235865F2&logo=discord&logoColor=white)](https://discord.gg/pJkm23b2nA)
-[![Subreddit subscribers](https://img.shields.io/reddit/subreddit-subscribers/placeAtlas2?color=%23FF4500&label=r%2FplaceAtlas2&logo=reddit&logoColor=white)](https://www.reddit.com/r/placeAtlas2023/)
+[![Subreddit subscribers](https://img.shields.io/reddit/subreddit-subscribers/placeAtlas2023?color=%23FF4500&label=r%2FplaceAtlas2023&logo=reddit&logoColor=white)](https://www.reddit.com/r/placeAtlas2023/)
 [![Website](https://img.shields.io/static/v1?label=website&message=2023.place-atlas.stefanocoding.me&color=blue)](https://2023.place-atlas.stefanocoding.me/)
 
 # The 2023 r/place Atlas

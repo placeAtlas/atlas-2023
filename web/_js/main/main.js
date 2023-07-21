@@ -121,8 +121,8 @@ async function init() {
 	let initialPinchZoom = 0
 	let initialPinchZoomOrigin = [0, 0]
 
-	let desiredZoom
-	let zoomAnimationFrame
+	// let desiredZoom
+	// let zoomAnimationFrame
 
 	document.body.dataset.mode = mode
 

@@ -59,7 +59,7 @@ moreEntriesButton.addEventListener('click', () => {
 	render()
 })
 
-const moreEntriesObserver = new IntersectionObserver((entries, observer) => {
+const moreEntriesObserver = new IntersectionObserver(entries => {
 	for (const entry of entries) {
 		if (!entry.isIntersecting) continue
 		moreEntriesButton.click()
@@ -592,7 +592,7 @@ function updateHovering(e, tapped) {
 	if (isNaN(pos[0])) {
 		coordsEl.textContent = "0, 0"
 	} else {
-		coordsEl.textContent = Math.ceil(pos[0]) + ", " + Math.ceil(pos[1])
+		coordsEl.textContent = Math.floor(pos[0]) + ", " + Math.floor(pos[1])
 	}
 
 	if (!(pos[0] <= canvasSize.x + canvasOffset.x + 200 && pos[0] >= canvasOffset.x - 200 && pos[1] <= canvasSize.y + canvasOffset.y + 200 && pos[1] >= canvasOffset.x - 200)) return
@@ -729,6 +729,8 @@ function setZoomByPath(path) {
 	zoom = Math.min(clientSize[0] / boundingBoxSize[0], clientSize[1] / boundingBoxSize[1])
 	zoom = Math.min(4, zoom/2)
 
+	return zoom
+
 }
 
 function initView() {
@@ -763,15 +765,15 @@ function initExplore() {
 	function updateHovering(e, tapped) {
 		if (dragging || (fixed && !tapped)) return
 		const pos = [
-			(e.clientX - (container.clientWidth / 2 - innerContainer.clientWidth / 2 + zoomOrigin[0] + container.offsetLeft)) / zoom,
-			(e.clientY - (container.clientHeight / 2 - innerContainer.clientHeight / 2 + zoomOrigin[1] + container.offsetTop)) / zoom
-		]
+			(e.clientX - (container.clientWidth / 2 - innerContainer.clientWidth / 2 + zoomOrigin[0] + container.offsetLeft)) / zoom + canvasOffset.x,
+			(e.clientY - (container.clientHeight / 2 - innerContainer.clientHeight / 2 + zoomOrigin[1] + container.offsetTop)) / zoom + canvasOffset.y
+			]
 		const coordsEl = document.getElementById("coords_p")
 		// Displays coordinates as zero instead of NaN
 		if (isNaN(pos[0])) {
 			coordsEl.textContent = "0, 0"
 		} else {
-			coordsEl.textContent = Math.ceil(pos[0]) + ", " + Math.ceil(pos[1])
+			coordsEl.textContent = Math.floor(pos[0]) + ", " + Math.floor(pos[1])
 		}
 	}
 
