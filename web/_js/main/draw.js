@@ -562,7 +562,7 @@ function initDraw() {
 		if (isNaN(pos[0])) {
 			coordsEl.textContent = "0, 0"
 		} else {
-			coordsEl.textContent = Math.ceil(pos[0]) + ", " + Math.ceil(pos[1])
+			coordsEl.textContent = Math.floor(pos[0]) + ", " + Math.floor(pos[1])
 		}
 	}
 

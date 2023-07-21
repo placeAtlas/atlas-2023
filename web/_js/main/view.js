@@ -592,7 +592,7 @@ function updateHovering(e, tapped) {
 	if (isNaN(pos[0])) {
 		coordsEl.textContent = "0, 0"
 	} else {
-		coordsEl.textContent = Math.ceil(pos[0]) + ", " + Math.ceil(pos[1])
+		coordsEl.textContent = Math.floor(pos[0]) + ", " + Math.floor(pos[1])
 	}
 
 	if (!(pos[0] <= canvasSize.x + canvasOffset.x + 200 && pos[0] >= canvasOffset.x - 200 && pos[1] <= canvasSize.y + canvasOffset.y + 200 && pos[1] >= canvasOffset.x - 200)) return
@@ -773,7 +773,7 @@ function initExplore() {
 		if (isNaN(pos[0])) {
 			coordsEl.textContent = "0, 0"
 		} else {
-			coordsEl.textContent = Math.ceil(pos[0]) + ", " + Math.ceil(pos[1])
+			coordsEl.textContent = Math.floor(pos[0]) + ", " + Math.floor(pos[1])
 		}
 	}
 
