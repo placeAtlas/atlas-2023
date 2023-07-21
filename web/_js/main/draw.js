@@ -1343,7 +1343,7 @@ function getOutOfBounds() {
 				checkedRefPeriods.push(refPeriod)
 				const [ refX1, refY1, refX2, refY2 ] = refRegion
 				for (const point of path) {
-					const isOutOfBounds = !pointIsInPolygon(point, [[refX1, refY1], [refX2, refY1], [refX2, refY2], [refX1, refY2]])
+					const isOutOfBounds = !pointIsInPolygon(point, [[refX1 - 2, refY1 - 2], [refX2 + 2, refY1 - 2], [refX2 + 2, refY2 + 2], [refX1 - 2, refY2 + 2]])
 					if (!isOutOfBounds) continue
 					outOfBounds[i] = true
 					continue pathCheck
@@ -1389,7 +1389,7 @@ function getErrors() {
 	return {
 		conflicts: getConflicts(),
 		insufficientPaths,
-		outOfBounds: false,
+		outOfBounds: getOutOfBounds(),
 		periodOutOfBounds: getPeriodOutOfBounds()
 	}
 }

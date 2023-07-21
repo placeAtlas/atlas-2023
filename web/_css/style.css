@@ -435,6 +435,11 @@ body:not([data-dev]) .show-only-on-dev {
 	display: none !important;
 }
 
+[data-mode="explore"] #entriesListControls,
+[data-mode="explore"] #entriesList {
+	display: none !important
+}
+
 /* about.html */
 
 #credits a {
