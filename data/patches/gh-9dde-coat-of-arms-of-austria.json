@@ -1,0 +1,75 @@
+{
+	"id": 139,
+	"name": "Coat of arms of Austria",
+	"description": "The coat of arms of Austria features a crowned black eagle. The eagle wears the so called \"Mauerkrone\" (Wallcrown) to represent the Bourgeoisie, hold Hammer and Sickle to represent Workers and Peasants and features broken chains to represent freedom from Nazi opression. ",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Coat_of_arms_of_Austria"
+		],
+		"subreddit": [
+			"placeAustria",
+			"Austria"
+		],
+		"discord": [
+			"f5ky84vGku"
+		]
+	},
+	"path": {
+		"14-48": [
+			[
+				-279,
+				-55
+			],
+			[
+				-279,
+				-36
+			],
+			[
+				-277,
+				-32
+			],
+			[
+				-271,
+				-26
+			],
+			[
+				-260,
+				-26
+			],
+			[
+				-253,
+				-33
+			],
+			[
+				-252,
+				-36
+			],
+			[
+				-252,
+				-55
+			],
+			[
+				-259,
+				-55
+			],
+			[
+				-260,
+				-56
+			],
+			[
+				-271,
+				-56
+			],
+			[
+				-272,
+				-55
+			]
+		]
+	},
+	"center": {
+		"14-48": [
+			-265,
+			-42
+		]
+	}
+}
