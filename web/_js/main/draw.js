@@ -570,7 +570,6 @@ function initDraw() {
 		if (!id) return
 		const entries = atlasAll.filter(entry => entry.id.toString() === id.toString())
 		if (entries.length === 1) return entries[0]
-		return
 	}
 
 	function addFieldButton(inputButton, inputGroup, array, index, name) {
