@@ -1,0 +1,36 @@
+{
+	"id": -1,
+	"name": "Emote from Suun",
+	"description": "The image shown on the canvas here is an emote from the twitch streamer Suun.",
+	"links": {
+		"website": [
+			"https://www.twitch.tv/suun"
+		]
+	},
+	"path": {
+		"68": [
+			[
+				704,
+				-115
+			],
+			[
+				705,
+				-97
+			],
+			[
+				691,
+				-97
+			],
+			[
+				690,
+				-115
+			]
+		]
+	},
+	"center": {
+		"68": [
+			698,
+			-106
+		]
+	}
+}
