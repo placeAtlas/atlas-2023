@@ -3,9 +3,11 @@ on:
   push:
     paths:
       - web/atlas.json
+      - data/patches/*.json
   pull_request:
     paths:
       - web/atlas.json
+      - data/patches/*.json
 jobs:
   validate:
     name: Validate
