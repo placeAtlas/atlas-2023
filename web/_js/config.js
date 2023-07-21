@@ -35,14 +35,15 @@ const canvasCenter = {
 }
 window.canvasCenter = canvasCenter
 
+const lastPeriod = 23
 const variationsConfig = {
 	default: {
 		name: "r/place",
 		code: "",
-		default: undefined,
-		drawablePeriods: [1, undefined],
+		default: lastPeriod,
+		drawablePeriods: [1, lastPeriod],
 		drawableRegions: [
-			[[0, undefined], [-500, -500, 499, 499]],
+			[[0, lastPeriod], [-500, -500, 499, 499]],
 		],
 		// expansions: [],
 		versions: [
@@ -75,11 +76,6 @@ const variationsConfig = {
 	},
 }
 window.variationsConfig = variationsConfig
-
-const lastPeriod = variationsConfig.default.versions.length - 1
-variationsConfig.default = lastPeriod
-variationsConfig.drawableRegions[1] = lastPeriod
-variationsConfig.default.drawablePeriods[0][1] = lastPeriod
 
 let defaultVariation = 'default'
 window.defaultVariation = defaultVariation
