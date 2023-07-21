@@ -1389,7 +1389,7 @@ function getErrors() {
 	return {
 		conflicts: getConflicts(),
 		insufficientPaths,
-		outOfBounds: getOutOfBounds(),
+		outOfBounds: false,
 		periodOutOfBounds: getPeriodOutOfBounds()
 	}
 }
