@@ -140,6 +140,7 @@ async function init() {
 	} else if (mode === "explore") {
 		initExplore()
 	} else if (mode.startsWith("diff")) {
+		console.log("!")
 		try {
 			const liveAtlasRef = params.get('liveatlas') || `https://${prodDomain}/atlas.json`
 			const liveAtlasResp = await fetch(liveAtlasRef)
@@ -154,8 +155,10 @@ async function init() {
 			atlasAll = atlasAll.map(function (entry) {
 				if (liveAtlasReduced[entry.id] === undefined) {
 					entry.diff = "add"
+					console.log(entry.diff)
 				} else if (JSON.stringify(entry) !== JSON.stringify(liveAtlasReduced[entry.id])) {
 					entry.diff = "edit"
+					console.log(entry.diff)
 				}
 				return entry
 			})
@@ -175,7 +178,7 @@ async function init() {
 
 			if (mode.includes("only")) {
 				atlasAll = atlasAll.filter(function (entry) {
-					return typeof entry.diff === "string"
+					return entry.diff
 				})
 			}
 
