@@ -17,7 +17,7 @@ fetch('all-authors.txt')
 	.then(text => text.trim().split('\n').sort((a, b) => {
 		const aSplit = a.split(':')
 		const bSplit = b.split(':')
-		return aSplit[aSplit.length - 1] > bSplit[bSplit.length - 1]
+		return aSplit[aSplit.length - 1].localeCompare(bSplit[bSplit.length - 1])
 	}))
 	.then(contributors => {
 		document.querySelector('#contributors-count').textContent = contributors.length
