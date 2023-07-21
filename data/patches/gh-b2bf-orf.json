@@ -1,0 +1,86 @@
+{
+	"id": -1,
+	"name": "ORF",
+	"description": "ORF, short for \"Österreichischer Rundfunk\" (Austrian Broadcasting), is the Austrian national broadcaster. ",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/ORF_(broadcaster)"
+		],
+		"subreddit": [
+			"placeAustria"
+		],
+		"discord": [
+			"f5ky84vGku"
+		]
+	},
+	"path": {
+		"39-51": [
+			[
+				-245,
+				-54
+			],
+			[
+				-246,
+				-53
+			],
+			[
+				-246,
+				-49
+			],
+			[
+				-245,
+				-48
+			],
+			[
+				-244,
+				-47
+			],
+			[
+				-243,
+				-47
+			],
+			[
+				-235,
+				-47
+			],
+			[
+				-234,
+				-48
+			],
+			[
+				-234,
+				-50
+			],
+			[
+				-233,
+				-50
+			],
+			[
+				-232,
+				-51
+			],
+			[
+				-231,
+				-54
+			],
+			[
+				-232,
+				-55
+			],
+			[
+				-244,
+				-55
+			],
+			[
+				-245,
+				-54
+			]
+		]
+	},
+	"center": {
+		"39-51": [
+			-238,
+			-51
+		]
+	}
+}

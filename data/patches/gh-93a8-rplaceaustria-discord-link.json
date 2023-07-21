@@ -1,0 +1,43 @@
+{
+	"id": -1,
+	"name": "r/placeAustria Discord Link",
+	"description": "A shortened Link to the Discord Server of r/placeAustria",
+	"links": {
+		"subreddit": [
+			"placeAustria"
+		],
+		"discord": [
+			"f5ky84vGku"
+		]
+	},
+	"path": {
+		"13-50": [
+			[
+				-360,
+				-38
+			],
+			[
+				-360,
+				-45
+			],
+			[
+				-286,
+				-46
+			],
+			[
+				-284,
+				-38
+			],
+			[
+				-359,
+				-37
+			]
+		]
+	},
+	"center": {
+		"13-50": [
+			-343,
+			-41
+		]
+	}
+}
