@@ -163,7 +163,21 @@ async function updateTime(newPeriod = currentPeriod, newVariation = currentVaria
 
 	await updateBackground(newPeriod, newVariation)
 
-	atlas = []
+	atlas = generateAtlasForPeriod(newPeriod, newVariation)
+
+	dispatchTimeUpdateEvent(newPeriod, newVariation, atlas)
+	delete document.body.dataset.canvasLoading
+	tooltip.dataset.forceVisible = ""
+	clearTimeout(tooltipDelayHide)
+	tooltipDelayHide = setTimeout(() => {
+		delete tooltip.dataset.forceVisible
+	}, 1000)
+
+}
+
+function generateAtlasForPeriod(newPeriod = currentPeriod, newVariation = currentVariation) {
+
+	const atlas = []
 	for (const entry of atlasAll) {
 		let chosenIndex
 
@@ -194,13 +208,7 @@ async function updateTime(newPeriod = currentPeriod, newVariation = currentVaria
 		})
 	}
 
-	dispatchTimeUpdateEvent(newPeriod, newVariation, atlas)
-	delete document.body.dataset.canvasLoading
-	tooltip.dataset.forceVisible = ""
-	clearTimeout(tooltipDelayHide)
-	tooltipDelayHide = setTimeout(() => {
-		delete tooltip.dataset.forceVisible
-	}, 1000)
+	return atlas
 
 }
 
