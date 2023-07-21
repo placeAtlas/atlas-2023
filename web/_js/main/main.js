@@ -140,47 +140,46 @@ async function init() {
 	} else if (mode === "explore") {
 		initExplore()
 	} else if (mode.startsWith("diff")) {
-		console.log("!")
 		try {
 			const liveAtlasRef = params.get('liveatlas') || `https://${prodDomain}/atlas.json`
 			const liveAtlasResp = await fetch(liveAtlasRef)
 			let liveAtlas = await liveAtlasResp.json()
 			liveAtlas = updateAtlasAll(liveAtlas)
 
-			const liveAtlasReduced = liveAtlas.reduce(function (a, c) {
-				a[c.id] = c
-				return a
+			const liveAtlasReduced = liveAtlas.reduce((atlas, entry) => {
+				delete entry._index
+				atlas[entry.id] = entry
+				return atlas
 			}, {})
 			// Mark added/edited entries
 			atlasAll = atlasAll.map(function (entry) {
-				if (liveAtlasReduced[entry.id] === undefined) {
+				delete entry._index
+				if (!liveAtlasReduced[entry.id]) {
 					entry.diff = "add"
-					console.log(entry.diff)
 				} else if (JSON.stringify(entry) !== JSON.stringify(liveAtlasReduced[entry.id])) {
 					entry.diff = "edit"
-					console.log(entry.diff)
 				}
 				return entry
 			})
 
 			// Mark removed entries
-			const atlasReduced = atlasAll.reduce(function (a, c) {
-				a[c.id] = c
-				return a
+			const atlasReduced = atlasAll.reduce((atlas, entry) => {
+				delete entry._index
+				atlas[entry.id] = entry
+				return atlas
 			}, {})
-			const removedEntries = liveAtlas.filter(entry =>
-				atlasReduced[entry.id] === undefined
-			).map(entry => {
+			const removedEntries = liveAtlas.filter(entry => !atlasReduced[entry.id]).map(entry => {
+				delete entry._index
 				entry.diff = "delete"
 				return entry
 			})
 			atlasAll.push(...removedEntries)
 
 			if (mode.includes("only")) {
-				atlasAll = atlasAll.filter(function (entry) {
-					return entry.diff
-				})
+				atlasAll = atlasAll.filter(entry => entry.diff)
 			}
+
+			atlas = generateAtlasForPeriod()
 
 		} catch (error) {
 			console.warn("Diff mode failed to load, reverting to normal view.", error)
