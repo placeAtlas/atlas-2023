@@ -338,7 +338,7 @@ function initDraw() {
 
 		let redditPostJsonString = "    " + prettyJsonString.split("\n").join("\n    ")
 		let redditPostUrl = `https://www.reddit.com/r/${instanceSubreddit}/submit?selftext=true&title=`
-		if (exportObject.id === 0) redditPostUrl += `✨%20${encodeURIComponent(exportObject.name ?? entry.name)}`
+		if (exportObject.id === -1) redditPostUrl += `✨%20${encodeURIComponent(exportObject.name ?? entry.name)}`
 		else redditPostUrl += `✏%20${encodeURIComponent(exportObject.name ?? entry.name)}`
 		redditPostUrl += "&text="
 
