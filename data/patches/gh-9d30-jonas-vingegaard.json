@@ -1,0 +1,58 @@
+{
+	"id": -1,
+	"name": "Jonas Vingegaard",
+	"description": "Jonas Vingegaard Rasmussen (born 10 December 1996) is a Danish professional cyclist who rides for UCI WorldTeam Team Jumbo–Visma. He won the 2022 edition of the Tour de France and is currently 3rd on the leaderboard of the 2023 edition of the Tour de France (on 23/07/2023).",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Jonas_Vingegaard",
+			"https://www.letour.fr/en/rankings/stage-20",
+			"https://en.wikipedia.org/wiki/Team_Jumbo%E2%80%93Visma_(men%27s_team)"
+		]
+	},
+	"path": {
+		"97-112": [
+			[
+				-137,
+				-273
+			],
+			[
+				-137,
+				-244
+			],
+			[
+				-80,
+				-244
+			],
+			[
+				-80,
+				-264
+			],
+			[
+				-82,
+				-264
+			],
+			[
+				-83,
+				-274
+			],
+			[
+				-119,
+				-275
+			],
+			[
+				-120,
+				-274
+			],
+			[
+				-136,
+				-273
+			]
+		]
+	},
+	"center": {
+		"97-112": [
+			-109,
+			-259
+		]
+	}
+}
