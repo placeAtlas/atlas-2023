@@ -456,7 +456,7 @@ function initDraw() {
 			websiteGroup.replaceChildren()
 			subredditGroup.replaceChildren()
 			discordGroup.replaceChildren()
-			wikiGroup.replaceChildren()
+			// wikiGroup.replaceChildren()
 			addWebsiteFields("", 0, [0])
 			addSubredditFields("", 0, [0])
 			addDiscordFields("", 0, [0])
@@ -728,7 +728,7 @@ function initDraw() {
 
 	function addWikiFields(link, index, array) {
 		const inputGroup = baseInputGroup.cloneNode()
-		wikiGroup.appendChild(inputGroup)
+		// wikiGroup.appendChild(inputGroup)
 
 		const inputField = baseInputField.cloneNode()
 		inputField.id = "wikiField" + index
