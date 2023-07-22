@@ -1,0 +1,56 @@
+{
+	"id": -1,
+	"name": "The Little Prince",
+	"description": "The Little Prince (French: Le Petit Prince is a novella written and illustrated by French aristocrat, writer, and military pilot Antoine de Saint-Exupéry. It was first published in English and French in the United States by Reynal & Hitchcock in April 1943 and was published posthumously in France following liberation.\nThe Little Prince became Saint-Exupéry's most successful work, selling an estimated 140 million copies worldwide, which makes it one of the best-selling in history. The book has been translated into over 505 different languages and dialects worldwide, being the second most translated work ever published, trailing only the Bible. The Little Prince has been adapted to numerous art forms and media, including audio recordings, radio plays, live stage, film, television, ballet, and opera.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/The_Little_Prince"
+		]
+	},
+	"path": {
+		"86-102": [
+			[
+				979,
+				245
+			],
+			[
+				968,
+				247
+			],
+			[
+				971,
+				225
+			],
+			[
+				975,
+				222
+			],
+			[
+				978,
+				222
+			],
+			[
+				981,
+				224
+			],
+			[
+				994,
+				225
+			],
+			[
+				996,
+				234
+			],
+			[
+				998,
+				253
+			]
+		]
+	},
+	"center": {
+		"86-102": [
+			985,
+			235
+		]
+	}
+}
