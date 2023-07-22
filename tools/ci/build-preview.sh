@@ -8,7 +8,7 @@ rm -rf .parcel-cache
 cp -r web/ dist-temp/
 
 npm i
-pip -r tools/ci/requirements.txt
+pip install -r tools/ci/requirements.txt
 
 python tools/ci/cdn_to_local.py
 python tools/merge_out.py	# On previews, attempt to merge patches
