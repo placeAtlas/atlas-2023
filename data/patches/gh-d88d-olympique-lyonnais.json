@@ -1,0 +1,56 @@
+{
+	"id": -1,
+	"name": "Olympique Lyonnais",
+	"description": "Olympique Lyonnais is a French professional football club based in Lyon in Auvergne-Rhône-Alpes. The men play in France's highest football division, Ligue 1. Founded in 1950, the club won its first Ligue 1 championship in 2002, starting a national record-setting streak of seven successive titles. Lyon has also won eight Trophées des Champions, five Coupes de France, and three Ligue 2 titles.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Olympique_Lyonnais"
+		]
+	},
+	"path": {
+		"87-102": [
+			[
+				-794,
+				-268
+			],
+			[
+				-794,
+				-231
+			],
+			[
+				-793,
+				-229
+			],
+			[
+				-779,
+				-227
+			],
+			[
+				-777,
+				-223
+			],
+			[
+				-772,
+				-222
+			],
+			[
+				-768,
+				-227
+			],
+			[
+				-753,
+				-227
+			],
+			[
+				-754,
+				-268
+			]
+		]
+	},
+	"center": {
+		"87-102": [
+			-774,
+			-247
+		]
+	}
+}
