@@ -1,0 +1,64 @@
+{
+	"id": -1,
+	"name": "German streamers",
+	"description": "Sukidingels has designed this draft. It displays different german streamers, redpanda and the wheel are iconic for Bonjwa, the pinguin in the back represents Shortytv, Dhalucard is placed with his heads and the yellow goggles. Torro takes place with the tinhead called \"RÄCHER\". Edopeh is represented with his Rimworld pawn Matt who holds a glass in his hand for streamer Smashlunatic. Left to the pawn is Sukindingels herself and last but not least is Suun in the left bottom corner. ",
+	"links": {
+		"website": [
+			"https://www.twitch.tv/dhalucard/bonjwa/sukidingels/shortytv/suun/edopeh/smashlunatic/torro"
+		]
+	},
+	"path": {
+		"94": [
+			[
+				-774,
+				-302
+			],
+			[
+				-770,
+				-359
+			],
+			[
+				-732,
+				-365
+			],
+			[
+				-692,
+				-359
+			],
+			[
+				-698,
+				-324
+			],
+			[
+				-700,
+				-302
+			],
+			[
+				-750,
+				-301
+			],
+			[
+				-763,
+				-298
+			],
+			[
+				-763,
+				-298
+			],
+			[
+				-766,
+				-298
+			],
+			[
+				-766,
+				-298
+			]
+		]
+	},
+	"center": {
+		"94": [
+			-732,
+			-333
+		]
+	}
+}
