@@ -1,0 +1,48 @@
+{
+	"id": 28,
+	"name": "Turkish Flag",
+	"description": "Turkey is a country located between the Anatolian Peninsula in West Asia, with a small portion of the Balkan Peninsula in Southeast Europe. The flag depicts the star and crescent, directly derived from the Ottoman Empire.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Turkey",
+			"https://en.wikipedia.org/wiki/Flag_of_Turkey"
+		],
+		"subreddit": [
+			"Turkey"
+		]
+	},
+	"path": {
+		"69": [
+			[
+				-364,
+				445
+			],
+			[
+				-364,
+				292
+			],
+			[
+				-168,
+				291
+			],
+			[
+				-167,
+				388
+			],
+			[
+				-170,
+				390
+			],
+			[
+				-170,
+				443
+			]
+		]
+	},
+	"center": {
+		"69": [
+			-268,
+			368
+		]
+	}
+}
