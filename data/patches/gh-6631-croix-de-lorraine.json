@@ -1,0 +1,40 @@
+{
+	"id": -1,
+	"name": "Croix de lorraine",
+	"description": "In France, the Cross of Lorraine was the symbol of Free France and resistance during World War II, the liberation of France from Nazi Germany and Vichy France along with the allies the United Kingdom and the United States, and Gaullism and includes several variations of a two-barred cross.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Cross_of_Lorraine"
+		]
+	},
+	"path": {
+		"97-114": [
+			[
+				-398,
+				-221
+			],
+			[
+				-407,
+				-204
+			],
+			[
+				-386,
+				-204
+			],
+			[
+				-380,
+				-212
+			],
+			[
+				-386,
+				-221
+			]
+		]
+	},
+	"center": {
+		"97-114": [
+			-393,
+			-212
+		]
+	}
+}
