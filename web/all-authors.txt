@@ -64,3 +64,5 @@ swiss-gin
 available_1
 robertocp50
 not_willywonka
+Grog_Rock
+mc_ace19
