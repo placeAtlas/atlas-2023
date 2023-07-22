@@ -23,7 +23,7 @@ if (window.devicePixelRatio) {
 }
 
 const maxZoom = 128
-const minZoom = 0.1
+const minZoom = 0.125
 
 let zoomOrigin = [0, 0]
 let scaleZoomOrigin = [0, 0]
@@ -49,6 +49,9 @@ function applyView() {
 
 	innerContainer.style.left = ~~(container.clientWidth / 2 - innerContainer.clientWidth / 2 + zoomOrigin[0] + container.offsetLeft) + "px"
 	innerContainer.style.top = ~~(container.clientHeight / 2 - innerContainer.clientHeight / 2 + zoomOrigin[1] + container.offsetTop) + "px"
+
+	const zoomEl = document.getElementById("zoom_p")
+	zoomEl.textContent = Number(zoom).toFixed(2) + "x"
 
 }
 
