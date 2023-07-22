@@ -155,6 +155,7 @@ const variationsConfig = {
 			{ "timestamp": 1690048803, "url": ["./_img/canvas/main/1690048803.png"] },
 			{ "timestamp": 1690048803, "url": ["./_img/canvas/main/1690050632.png"] },
 			{ "timestamp": 1690052399, "url": ["./_img/canvas/main/1690052399.png"] },
+			{ "timestamp": 1690054225, "url": ["./_img/canvas/main/1690054225.png"] },
 		],
 		icon: '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 192 192" aria-hidden="true"><polygon points="154 0 154 38 39 38 39 192 0 192 0 0"/><polygon points="192 38 192 192 77 192 77 153 154 153 154 38"/><rect x="77" y="77" width="38" height="38"/></svg>'
 	},
