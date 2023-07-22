@@ -1,0 +1,43 @@
+{
+	"id": -1,
+	"name": "Dhalucard",
+	"description": "German streamer Dhalucard",
+	"links": {
+		"website": [
+			"https://www.twitch.tv/dhalucard"
+		],
+		"discord": [
+			"dhalucard"
+		]
+	},
+	"path": {
+		"91": [
+			[
+				-694,
+				-368
+			],
+			[
+				-670,
+				-368
+			],
+			[
+				-670,
+				-328
+			],
+			[
+				-695,
+				-328
+			],
+			[
+				-695,
+				-329
+			]
+		]
+	},
+	"center": {
+		"91": [
+			-682,
+			-348
+		]
+	}
+}
