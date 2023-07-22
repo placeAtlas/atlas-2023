@@ -1,0 +1,51 @@
+{
+	"id": -1,
+	"name": "Counter Strike 1.6 main menu screen",
+	"description": "Created by viewers of  ohnePixel, this is a pixel-recreation of the Counter-Strike 1.6 main menu.",
+	"links": {
+		"subreddit": [
+			"csgo"
+		],
+		"discord": [
+			"ohnepixel"
+		]
+	},
+	"path": {
+		"110": [
+			[
+				-769,
+				366
+			],
+			[
+				-769,
+				366
+			],
+			[
+				-658,
+				365
+			],
+			[
+				-659,
+				428
+			],
+			[
+				-770,
+				428
+			],
+			[
+				-769,
+				367
+			],
+			[
+				-765,
+				405
+			]
+		]
+	},
+	"center": {
+		"110": [
+			-714,
+			397
+		]
+	}
+}
