@@ -3,6 +3,11 @@ import os
 from aformatter import format_all_entries, per_line_entries
 import traceback
 
+IS_DEPLOY_PREVIEW = False
+
+if os.getenv('NETLIFY') == 'true' and os.getenv('CONTEXT') == 'deploy-preview':
+	IS_DEPLOY_PREVIEW = True
+
 out_ids = []
 atlas_ids = {}
 authors = []
@@ -21,11 +26,12 @@ with open('web/atlas.json', 'r', encoding='utf-8') as atlas_file:
 
 last_id = 0
 
-for i, entry in enumerate(atlas_data):
-	atlas_ids[entry['id']] = i
-	id = entry['id']
-	if id.isnumeric() and int(id) > last_id and int(id) - last_id < 100:
-		last_id = int(id)
+if not IS_DEPLOY_PREVIEW:
+	for i, entry in enumerate(atlas_data):
+		atlas_ids[entry['id']] = i
+		id = entry['id']
+		if id.isnumeric() and int(id) > last_id and int(id) - last_id < 100:
+			last_id = int(id)
 
 patches_dir = "data/patches/"
 permanent_patch_file = "tools/temp-atlas.json"
@@ -80,7 +86,10 @@ for filename in filenames:
 					del entry['_author']
 
 				if isinstance(entry['id'], int) and entry['id'] < 1 or entry['id'] == '0':
-					last_id += 1
+					if IS_DEPLOY_PREVIEW:
+						last_id -= 1
+					else:
+						last_id += 1
 					print(f"{filename}: Entry is new, assigned ID {last_id}")
 					entry['id'] = str(last_id)
 				elif isinstance(entry['id'], int):
