@@ -1,0 +1,61 @@
+{
+	"id": -1,
+	"name": "Rimuru the Slime",
+	"description": "Rimuru Tempest (リムル゠テンペスト Rimuru Tenpesuto), or Rimuru the Slime, is the main protagonist of an anime titled \"That Time I Got Reincarnated as a Slime\". In their normal form, Rimuru takes the appearance of a spherical mass of slightly blue and translucent ooze. Rimuru can take a human form as the anime progresses and sometimes wears a mask (depicted top right) titular to their story. Rimuru is loved for their cute and innocent appearance, which contradicts their powerful magical abilities.",
+	"links": {
+		"website": [
+			"https://tensura.fandom.com/wiki/Rimuru_Tempest",
+			"https://en.wikipedia.org/wiki/That_Time_I_Got_Reincarnated_as_a_Slime"
+		]
+	},
+	"path": {
+		"87": [
+			[
+				-132,
+				404
+			],
+			[
+				-134,
+				400
+			],
+			[
+				-134,
+				391
+			],
+			[
+				-127,
+				386
+			],
+			[
+				-123,
+				385
+			],
+			[
+				-113,
+				385
+			],
+			[
+				-109,
+				390
+			],
+			[
+				-109,
+				403
+			],
+			[
+				-111,
+				405
+			],
+			[
+				-131,
+				405
+			]
+		]
+	},
+	"center": {
+		"87": [
+			-121,
+			395
+		]
+	}
+}
