@@ -1,0 +1,63 @@
+{
+	"id": -1,
+	"name": "1 Croatian Kuna coin",
+	"description": "The kuna (HRK) was the currency of Croatia from 30 May 1994. until 31 December 2022. It was replaced by the euro (€, EUR).\nKuna in croatian means Marten.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Croatian_kuna"
+		],
+		"subreddit": [
+			"Croatia"
+		]
+	},
+	"path": {
+		"107": [
+			[
+				350,
+				-129
+			],
+			[
+				353,
+				-129
+			],
+			[
+				355,
+				-127
+			],
+			[
+				355,
+				-124
+			],
+			[
+				353,
+				-122
+			],
+			[
+				350,
+				-122
+			],
+			[
+				348,
+				-124
+			],
+			[
+				348,
+				-127
+			],
+			[
+				350,
+				-129
+			],
+			[
+				351,
+				-129
+			]
+		]
+	},
+	"center": {
+		"107": [
+			352,
+			-125
+		]
+	}
+}
