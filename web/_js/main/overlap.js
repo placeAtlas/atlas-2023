@@ -44,11 +44,11 @@ function initOverlap() {
 			backgroundContext.beginPath()
 
 			if (path[0]) {
-				backgroundContext.moveTo(path[0][0], path[0][1])
+				backgroundContext.moveTo(path[0][0] - canvasOffset.x, path[0][1] - canvasOffset.y)
 			}
 
 			for (let p = 1; p < path.length; p++) {
-				backgroundContext.lineTo(path[p][0], path[p][1])
+				backgroundContext.lineTo(path[p][0] - canvasOffset.x, path[p][1] - canvasOffset.y)
 			}
 
 			backgroundContext.closePath()
