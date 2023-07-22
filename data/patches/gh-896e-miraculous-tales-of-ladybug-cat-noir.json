@@ -1,0 +1,44 @@
+{
+	"id": -1,
+	"name": "Miraculous: Tales of Ladybug & Cat Noir",
+	"description": "Miraculous: Tales of Ladybug & Cat Noir (French: Miraculous, les aventures de Ladybug et Chat Noir) is a magical girl superhero[ television series produced by French companies Zagtoon and Method Animation, and co-produced with Japanese studio Toei Animation's European division, and several international companies. \nThe series focuses on two Parisian teenagers, Marinette Dupain-Cheng and Adrien Agreste, who transform into the superheroes Ladybug and Cat Noir, respectively, to protect the city from supervillains.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Miraculous:_Tales_of_Ladybug_%26_Cat_Noir"
+		]
+	},
+	"path": {
+		"97-102": [
+			[
+				996,
+				-246
+			],
+			[
+				982,
+				-243
+			],
+			[
+				971,
+				-231
+			],
+			[
+				979,
+				-217
+			],
+			[
+				999,
+				-221
+			],
+			[
+				998,
+				-245
+			]
+		]
+	},
+	"center": {
+		"97-102": [
+			987,
+			-230
+		]
+	}
+}

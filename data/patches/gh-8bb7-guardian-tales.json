@@ -1,0 +1,44 @@
+{
+	"id": -1,
+	"name": "Guardian Tales",
+	"description": "Guardian Tales is an action role-playing game developed for mobile phones by Kong Studios and published by Kakao Games.",
+	"links": {
+		"website": [
+			"https://guardiantales.com",
+			"https://en.wikipedia.org/wiki/Guardian_Tales"
+		],
+		"subreddit": [
+			"GuardianTales"
+		]
+	},
+	"path": {
+		"45-102": [
+			[
+				-342,
+				147
+			],
+			[
+				-310,
+				147
+			],
+			[
+				-310,
+				167
+			],
+			[
+				-342,
+				167
+			],
+			[
+				-342,
+				147
+			]
+		]
+	},
+	"center": {
+		"45-102": [
+			-326,
+			157
+		]
+	}
+}

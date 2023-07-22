@@ -1,0 +1,47 @@
+{
+	"id": 690,
+	"name": "German Emergency Services",
+	"description": "In Germany, a significant part of the emergency services, including the ambulance, fire department, and Technical Relief Agency (THW), relies on volunteers. These dedicated individuals play a vital role in providing essential assistance during emergencies and crises. Their selfless commitment is crucial in ensuring the safety and well-being of the community.",
+	"links": {
+		"website": [
+			"https://thw.de",
+			"https://en.wikipedia.org/wiki/Technisches_Hilfswerk",
+			"https://en.wikipedia.org/wiki/German_Fire_Services",
+			"https://helfenkannjeder.de/"
+		],
+		"subreddit": [
+			"feuerwehr",
+			"blaulicht"
+		]
+	},
+	"path": {
+		"102-103": [
+			[
+				911,
+				-430
+			],
+			[
+				1000,
+				-431
+			],
+			[
+				999,
+				-389
+			],
+			[
+				853,
+				-391
+			],
+			[
+				853,
+				-430
+			]
+		]
+	},
+	"center": {
+		"102-103": [
+			958,
+			-410
+		]
+	}
+}
