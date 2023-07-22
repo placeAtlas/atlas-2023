@@ -1,0 +1,100 @@
+{
+	"id": -1,
+	"name": "Dante",
+	"description": "The Executive Manager of Limbus Company, and main character of the game Limbus Company a Turn-Based Strategy RPG Gacha Game developed and published by South Korean independent video game studio Project Moon. Having lost both their memory and their original head, they now work alongside the Sinners in their quest to recover both and retrieve the Golden Boughs.\n\n",
+	"links": {
+		"website": [
+			"https://limbuscompany.com"
+		],
+		"subreddit": [
+			"limbuscompany",
+			"Project_Moon"
+		]
+	},
+	"path": {
+		"91-105": [
+			[
+				-722,
+				179
+			],
+			[
+				-728,
+				173
+			],
+			[
+				-730,
+				167
+			],
+			[
+				-736,
+				163
+			],
+			[
+				-731,
+				161
+			],
+			[
+				-730,
+				144
+			],
+			[
+				-726,
+				141
+			],
+			[
+				-729,
+				135
+			],
+			[
+				-722,
+				131
+			],
+			[
+				-723,
+				138
+			],
+			[
+				-709,
+				131
+			],
+			[
+				-689,
+				133
+			],
+			[
+				-694,
+				137
+			],
+			[
+				-699,
+				138
+			],
+			[
+				-710,
+				166
+			],
+			[
+				-715,
+				160
+			],
+			[
+				-717,
+				167
+			],
+			[
+				-721,
+				169
+			],
+			[
+				-721,
+				178
+			]
+		]
+	},
+	"center": {
+		"91-105": [
+			-716,
+			148
+		]
+	}
+}
