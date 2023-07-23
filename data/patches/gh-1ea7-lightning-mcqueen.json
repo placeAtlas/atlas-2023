@@ -1,0 +1,36 @@
+{
+	"id": 938,
+	"name": "Lightning McQueen",
+	"description": "Lightning McQueen is the main character of the Disney/Pixar movie franchise Cars. Kachow!",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Lightning_McQueen"
+		]
+	},
+	"path": {
+		"119-145": [
+			[
+				203,
+				-912
+			],
+			[
+				203,
+				-797
+			],
+			[
+				392,
+				-797
+			],
+			[
+				392,
+				-912
+			]
+		]
+	},
+	"center": {
+		"119-145": [
+			298,
+			-854
+		]
+	}
+}
