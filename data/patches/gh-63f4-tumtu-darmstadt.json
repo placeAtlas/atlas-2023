@@ -1,0 +1,40 @@
+{
+	"id": -1,
+	"name": "TUM+TU Darmstadt",
+	"description": "The Technical University of Darmstadt and Technical University of Munich Logo",
+	"links": {
+		"website": [
+			"https://www.tum.de/",
+			"https://www.tu-darmstadt.de/"
+		],
+		"subreddit": [
+			"tumunich"
+		]
+	},
+	"path": {
+		"144-153": [
+			[
+				-331,
+				-76
+			],
+			[
+				-286,
+				-77
+			],
+			[
+				-287,
+				-57
+			],
+			[
+				-331,
+				-58
+			]
+		]
+	},
+	"center": {
+		"144-153": [
+			-301,
+			-67
+		]
+	}
+}
