@@ -1,0 +1,42 @@
+{
+	"id": -1,
+	"name": "TCT (The Campaign Trail)",
+	"description": "The Campaign Trail is a browser game that lets you play as candidates running for President of the United States.",
+	"links": {
+		"website": [
+			"https://www.newcampaigntrail.com/campaign-trail/index.html"
+		],
+		"subreddit": [
+			"thecampaigntrail"
+		],
+		"discord": [
+			"thecampaigntrail"
+		]
+	},
+	"path": {
+		"66-145": [
+			[
+				40,
+				138
+			],
+			[
+				50,
+				138
+			],
+			[
+				50,
+				142
+			],
+			[
+				40,
+				142
+			]
+		]
+	},
+	"center": {
+		"66-145": [
+			45,
+			140
+		]
+	}
+}
