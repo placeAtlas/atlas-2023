@@ -77,15 +77,6 @@ async function init() {
 	const args = window.location.search
 	const params = new URLSearchParams(args)
 
-	// For Reviewing Reddit Changes
-	// const atlasRef = '../tools/temp-atlas.json'
-	const atlasRef = params.get('atlas') || './atlas.json'
-	const atlasResp = await fetch(atlasRef)
-	atlas = await atlasResp.json()
-	atlas.sort((a, b) => a.center[1] - b.center[1])
-
-	atlasAll = updateAtlasAll(atlas)
-
 	let mode = "view"
 
 	if (args) {
@@ -101,6 +92,15 @@ async function init() {
 			window.history.replaceState({}, '', newLocation)
 		}
 	}
+
+	if (mode === "about") window.location.replace("./about.html")
+
+	// For Reviewing Reddit Changes
+	// const atlasRef = '../tools/temp-atlas.json'
+	const atlasRef = params.get('atlas') || './atlas.json'
+	const atlasResp = await fetch(atlasRef)
+	atlas = await atlasResp.json()
+	atlasAll = updateAtlasAll(atlas)
 
 	const hash = window.location.hash.substring(1)
 	const [, period] = hash.split('/')
@@ -131,12 +131,8 @@ async function init() {
 
 	if (mode === "draw") {
 		initDraw()
-	} else if (mode === "about") {
-		window.location = "./about.html"
 	} else if (mode === "overlap") {
-		if (initOverlap) {
-			initOverlap()
-		}
+		if (initOverlap) initOverlap()
 	} else if (mode === "explore") {
 		initExplore()
 	} else if (mode.startsWith("diff")) {
