@@ -1,0 +1,40 @@
+{
+	"id": -1,
+  "_author": "gh:tarikfanboy",
+	"name": "VALORANT",
+	"description": "Valorant is a free-to-play first-person tactical hero shooter developed and published by Riot Games, for Windows.",
+	"links": {
+		"website": [
+			"https://playvalorant.com"
+		],
+		"subreddit": [
+			"VALORANT"
+		]
+	},
+	"path": {
+		"119-127": [
+			[
+				681,
+				-501
+			],
+			[
+				849,
+				-501
+			],
+			[
+				849,
+				-676
+			],
+			[
+				681,
+				-676
+			]
+		]
+	},
+	"center": {
+		"119-127": [
+			765,
+			-588
+		]
+	}
+}
