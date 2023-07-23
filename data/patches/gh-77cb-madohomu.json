@@ -1,0 +1,46 @@
+{
+	"id": 411,
+	"name": "MadoHomu",
+	"description": "An art of Madoka Kaname and Homura Akemi from the 2011 anime series Puella Magi Madoka Magica animated by Shaft studio.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Puella_Magi_Madoka_Magica"
+		],
+		"subreddit": [
+			"MadokaMagica"
+		],
+		"discord": [
+			"madoka"
+		]
+	},
+	"path": {
+		"27-153": [
+			[
+				3,
+				142
+			],
+			[
+				3,
+				196
+			],
+			[
+				51,
+				196
+			],
+			[
+				51,
+				142
+			],
+			[
+				38,
+				142
+			]
+		]
+	},
+	"center": {
+		"27-153": [
+			27,
+			169
+		]
+	}
+}
