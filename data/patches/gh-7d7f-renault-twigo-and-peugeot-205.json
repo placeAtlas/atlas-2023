@@ -1,0 +1,45 @@
+{
+	"id": -1,
+	"name": "'Renault Twigo' and 'Peugeot 205'",
+	"description": "The Peugeot 205 is a supermini (B-segment) car produced by the French manufacturer Peugeot from 1983 to 1999.\nIt was declared \"car of the decade\" by CAR Magazine in 1990. It was a popular car because of its low price at the time and its sustainability\n\nThe Renault Twingo is a four-seater passenger city car manufactured and marketed by the French automaker Renault, introduced in 1992 and currently in its third generation. It was also a popular car because of its low price at the time and its sustainability",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Peugeot_205",
+			"https://en.wikipedia.org/wiki/Renault_Twingo"
+		],
+		"subreddit": [
+			"france",
+			"placefr"
+		]
+	},
+	"path": {
+		"139-148": [
+			[
+				403,
+				-676
+			],
+			[
+				403,
+				-610
+			],
+			[
+				541,
+				-609
+			],
+			[
+				541,
+				-676
+			],
+			[
+				470,
+				-675
+			]
+		]
+	},
+	"center": {
+		"139-148": [
+			506,
+			-642
+		]
+	}
+}
