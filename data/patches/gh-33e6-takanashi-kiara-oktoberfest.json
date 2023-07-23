@@ -1,0 +1,43 @@
+{
+	"id": 1072,
+	"name": "Takanashi Kiara Oktoberfest",
+	"description": "A depiction of Takanashi Kiara, an Austrian vtuber from Hololive English, wearing a dirndl outfit, typically worn during Oktoberfest. Kobo Kanaeru from Hololive Indonesia is also depicted accompanying her (bottom right), crying while drinking the overflowing beer. Kobo is often paired with Kiara by their fans for their wholesome mother-daughter relationship.",
+	"links": {
+		"subreddit": [
+			"hololive"
+		],
+		"discord": [
+			"vtubersplace"
+		]
+	},
+	"path": {
+		"129-153": [
+			[
+				-225,
+				-824
+			],
+			[
+				-159,
+				-824
+			],
+			[
+				-159,
+				-912
+			],
+			[
+				-225,
+				-912
+			],
+			[
+				-225,
+				-882
+			]
+		]
+	},
+	"center": {
+		"129-153": [
+			-192,
+			-868
+		]
+	}
+}
