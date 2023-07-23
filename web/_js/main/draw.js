@@ -9,6 +9,7 @@ const finishButton = document.getElementById("finishButton")
 const resetButton = document.getElementById("resetButton")
 const undoButton = document.getElementById("undoButton")
 const redoButton = document.getElementById("redoButton")
+const highlightUnchartedEl = document.getElementById("highlightUncharted")
 const highlightUnchartedLabel = document.getElementById("highlightUnchartedLabel")
 
 const drawControlsBody = document.getElementById("offcanvasDraw-drawControls")
@@ -122,9 +123,7 @@ function initDraw() {
 	let lShiftPressed = false
 	let shiftPressed = false
 
-	// @instance-only
-	// Default is false. When changing, also check HTML of #highlightUncharted
-	let highlightUncharted = true
+	let highlightUncharted = highlightUnchartedEl.checked
 
 	renderBackground(atlas)
 	applyView()
@@ -268,7 +267,7 @@ function initDraw() {
 		}
 	})
 
-	document.getElementById("highlightUncharted").addEventListener("click", function () {
+	highlightUnchartedEl.addEventListener("click", function () {
 		highlightUncharted = this.checked
 		render(path)
 	})

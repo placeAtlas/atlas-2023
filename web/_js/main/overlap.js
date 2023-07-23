@@ -11,13 +11,13 @@ function initOverlap() {
 
 	// const hovered = []
 
-	buildObjectsList(null, null)
+	resetEntriesList()
 	renderBackground(atlas)
 	render()
 
 	document.addEventListener('timeupdate', () => {
 		atlasDisplay = atlas.slice()
-		resetEntriesList(null, null)
+		resetEntriesList()
 		renderBackground(atlasDisplay)
 		render()
 	})
