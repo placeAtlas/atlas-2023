@@ -31,7 +31,8 @@ const objectsContainer = document.getElementById("objectsList")
 const closeObjectsListButton = document.getElementById("closeObjectsListButton")
 const objectsListOverflowNotice = document.getElementById("objectsListOverflowNotice")
 
-const filterInput = document.getElementById("searchList")
+const searchInput = document.getElementById("searchList")
+const sortInput = document.getElementById("sort")
 
 const entriesList = document.getElementById("entriesList")
 
@@ -69,34 +70,18 @@ const moreEntriesObserver = new IntersectionObserver(entries => {
 
 moreEntriesObserver.observe(moreEntriesButton)
 
-let defaultSort = "shuffle"
-document.getElementById("sort").value = defaultSort
+let defaultSort = sortInput.value 
 
 let lastPos = [0, 0]
 
 let fixed = false; // Fix hovered items in place, so that clicking on links is possible
 
-filterInput.addEventListener("input", function () {
-	entriesOffset = 0
-	entriesList.replaceChildren()
-	entriesList.appendChild(moreEntriesButton)
-
-	if (this.value === "") {
-		document.getElementById("relevantOption").disabled = true
-		atlasDisplay = atlas.slice(0)
-		buildObjectsList(null, null)
-	} else {
-		document.getElementById("relevantOption").disabled = false
-		buildObjectsList(this.value.toLowerCase(), "relevant")
-	}
-
+searchInput.addEventListener("input", function () {
+	resetEntriesList()
 })
 
-document.getElementById("sort").addEventListener("input", function () {
-	if (this.value !== "relevant") {
-		defaultSort = this.value
-	}
-	resetEntriesList(filterInput.value.toLowerCase(), this.value)
+sortInput.addEventListener("input", function () {
+	resetEntriesList()
 })
 
 offcanvasDraw.addEventListener('show.bs.offcanvas', () => {
@@ -468,8 +453,10 @@ function resetEntriesList() {
 	entriesList.replaceChildren()
 	entriesList.appendChild(moreEntriesButton)
 
-	buildObjectsList(filter = null, sort = null)
+	let sort = sortInput.value || defaultSort
+	let search = searchInput?.value.toLowerCase()
 
+	buildObjectsList(search, sort)
 }
 
 async function render() {
@@ -741,7 +728,7 @@ function initView() {
 	
 	document.addEventListener('timeupdate', () => {
 		atlasDisplay = atlas.slice()
-		resetEntriesList(null, null)
+		resetEntriesList()
 	})
 
 	// parse linked atlas entry id from link hash
