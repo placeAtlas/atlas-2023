@@ -1,0 +1,20 @@
+{
+	"id": -1,
+	"name": "Black MIDI",
+	"description": "Black MIDI is a music genre consisting of compositions that use the MIDI format to create a song or a remix containing numerous notes. It is given its name due to its appearance in sheet music, being so dense it completely blackens it.",
+	"links": {
+		"website": ["https://en.wikipedia.org/wiki/Black_MIDI"],
+		"subreddit": ["BlackMIDI"],
+		"discord": ["FXHZJG7zu4"]
+	},
+	"path": {
+		"119": [
+			[-556, -514],
+			[-536, -514],
+			[-536, -502],
+			[-556, -502]
+		]
+	},
+	"center": { "119": [-546, -508] },
+	"_author": "gh:6gh"
+}
