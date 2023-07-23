@@ -4,11 +4,11 @@ import os
 import tqdm
 
 pre_extend_times = []
-post_extend_time = 144
+post_extend_time = 145
 
 if len(pre_extend_times) == 0:
 	pre_extend_times.append(post_extend_time - 1)
-	pre_extend_times.append(post_extend_time - 2)
+	# pre_extend_times.append(post_extend_time - 2)
 post_extend_time = str(post_extend_time)
 
 while not os.path.exists('README.md'):
