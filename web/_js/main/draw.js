@@ -1262,7 +1262,7 @@ function updateErrors() {
 		if (periodOutOfBounds?.[index]) {
 			periodStatusEl.textContent += `The period is out of bounds for editing.\n`
 		}
-		if (insufficientPaths?.[index]) {
+		if (insufficientPaths?.[index] !== undefined) {
 			periodStatusEl.textContent += `Insufficient paths. Got ${insufficientPaths[index]}, need at least 3.\n`
 			startPeriodViewEl.disabled = true
 			endPeriodViewEl.disabled = true
