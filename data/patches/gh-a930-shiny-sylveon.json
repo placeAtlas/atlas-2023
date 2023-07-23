@@ -1,0 +1,46 @@
+{
+	"id": -1,
+	"name": "Shiny Sylveon",
+	"description": "Just a small Shiny Sylveon",
+	"links": {
+		"website": [
+			"https://peerstudios.net"
+		],
+		"subreddit": [
+			"peerstudios"
+		],
+		"discord": [
+			"aHrqhwGyYh"
+		]
+	},
+	"path": {
+		"150": [
+			[
+				472,
+				-912
+			],
+			[
+				472,
+				-880
+			],
+			[
+				495,
+				-880
+			],
+			[
+				495,
+				-912
+			],
+			[
+				472,
+				-912
+			]
+		]
+	},
+	"center": {
+		"150": [
+			484,
+			-896
+		]
+	}
+}
