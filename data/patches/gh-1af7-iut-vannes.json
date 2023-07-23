@@ -1,0 +1,40 @@
+{
+	"id": -1,
+	"name": "IUT Vannes",
+	"description": "The logo of the University of Vannes in France, was made by the computer science students.",
+	"links": {
+		"website": [
+			"https://www.iutvannes.fr/"
+		]
+	},
+	"path": {
+		"136": [
+			[
+				-836,
+				405
+			],
+			[
+				-799,
+				405
+			],
+			[
+				-798,
+				430
+			],
+			[
+				-836,
+				430
+			],
+			[
+				-836,
+				404
+			]
+		]
+	},
+	"center": {
+		"136": [
+			-817,
+			418
+		]
+	}
+}
