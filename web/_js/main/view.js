@@ -306,13 +306,13 @@ function renderBackground(atlas) {
 	}
 }
 
-function buildObjectsList(filter, sort = defaultSort) {
+function buildObjectsList(filter = "", sort = defaultSort) {
 
 	if (entriesList.contains(moreEntriesButton)) {
 		entriesList.removeChild(moreEntriesButton)
 	}
 
-	atlasDisplay ||= atlas.slice()
+	atlasDisplay = atlas.slice()
 
 	if (filter) {
 		atlasDisplay = atlas.filter(entry => {
@@ -328,11 +328,10 @@ function buildObjectsList(filter, sort = defaultSort) {
 		document.getElementById("atlasSize").innerHTML = "The Atlas contains " + atlasDisplay.length + " entries."
 	}
 
-	sort ||= defaultSort
-
 	renderBackground(atlasDisplay)
 	render()
 
+	sort ||= defaultSort
 	document.getElementById("sort").value = sort
 
 	//console.log(sort)
