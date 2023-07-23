@@ -99,8 +99,7 @@ async function init() {
 	// const atlasRef = '../tools/temp-atlas.json'
 	const atlasRef = params.get('atlas') || './atlas.json'
 	const atlasResp = await fetch(atlasRef)
-	atlas = await atlasResp.json()
-	atlasAll = updateAtlasAll(atlas)
+	atlasAll = updateAtlasAll(await atlasResp.json())
 
 	const hash = window.location.hash.substring(1)
 	const [, period] = hash.split('/')
