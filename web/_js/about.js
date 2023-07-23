@@ -28,7 +28,8 @@ fetch('all-authors.txt')
 				const contributor1 = contributorSplit[1]
 				userEl.href = 'https://github.com/' + contributor1
 				userEl.appendChild(gitHubEl.cloneNode())
-				userEl.appendChild(document.createTextNode(' ' + contributor1))
+				userEl.appendChild(document.createTextNode(' ' + contributor1))
+				//                        punctuation space ^
 			} else {
 				userEl.href = 'https://reddit.com/user/' + contributor
 				userEl.textContent = contributor
