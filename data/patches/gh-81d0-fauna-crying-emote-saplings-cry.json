@@ -1,0 +1,58 @@
+{
+	"id": -1,
+	"name": "Fauna Crying Emote (Saplings Cry)",
+	"description": "The Crying emoji of Ceres Fauna, a vtuber from Hololive English. The emote is often associated with Fauna's fanbase (also known as Saplings). The emote is also a meme within the vtubing community for its association with the Fauna's signature \"uuuu~\" cries and her fanbase's apparent neediness.",
+	"links": {
+		"website": [
+			"https://imissfauna.com/"
+		],
+		"subreddit": [
+			"hololive"
+		],
+		"discord": [
+			"vtubersplace"
+		]
+	},
+	"path": {
+		"153": [
+			[
+				-537,
+				-368
+			],
+			[
+				-537,
+				-346
+			],
+			[
+				-533,
+				-343
+			],
+			[
+				-532,
+				-340
+			],
+			[
+				-530,
+				-335
+			],
+			[
+				-502,
+				-335
+			],
+			[
+				-501,
+				-335
+			],
+			[
+				-501,
+				-368
+			]
+		]
+	},
+	"center": {
+		"153": [
+			-518,
+			-352
+		]
+	}
+}
