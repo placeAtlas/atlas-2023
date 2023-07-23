@@ -1,4 +1,4 @@
-name: Validate Atlas data
+name: Validate JSON files
 on:
   push:
     paths:
