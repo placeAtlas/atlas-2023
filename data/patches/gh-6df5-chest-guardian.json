@@ -1,0 +1,60 @@
+{
+	"id": -1,
+	"name": "Chest Guardian",
+	"description": "Meet Azure Avian, dubbed the 'Chest Guardian', this vivid, upright blue bird with a substantial beak hails from the tropics. Famed as the 'vanquisher of voluptuousness', there's a rumor fluttering about that this bird could be a distant cousin of the Great Tits species.",
+	"links": {},
+	"path": {
+		"109-130": [
+			[
+				-752,
+				-288
+			],
+			[
+				-754,
+				-289
+			],
+			[
+				-754,
+				-289
+			],
+			[
+				-757,
+				-294
+			],
+			[
+				-751,
+				-302
+			],
+			[
+				-744,
+				-300
+			],
+			[
+				-744,
+				-296
+			],
+			[
+				-745,
+				-294
+			],
+			[
+				-744,
+				-291
+			],
+			[
+				-747,
+				-285
+			],
+			[
+				-752,
+				-287
+			]
+		]
+	},
+	"center": {
+		"109-130": [
+			-750,
+			-294
+		]
+	}
+}
