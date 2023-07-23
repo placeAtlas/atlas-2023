@@ -44,7 +44,7 @@ objectEditNav.className = "btn btn-outline-primary"
 objectEditNav.id = "objectEditNav"
 objectEditNav.textContent = "Edit"
 
-let atlasDisplay
+let atlasDisplay = []
 
 const entriesLimit = 50
 let entriesOffset = 0
