@@ -1,0 +1,92 @@
+{
+	"id": -1,
+	"name": "Bonjwa",
+  "_author": "gh:bastian-thiede",
+	"description": "Bonjwa is a group of German streamers, Youtubers, and podcasters. The picture shows a recent meme of Matteo (1.5 meters wide) in the centre and the logo on the right-hand side. Also, TouristHistories is depicted just alongside the logo sitting on a chair. She is also a streamer and was shortly part of the Bonjwa team. On the left-hand side, there is Peepo, the dog of Leon (redpanda). Between Matteo and Peepo is Marius, or Fischersnet, who streams regularly with Bonjwa and was part of the original meme.",
+	"links": {
+		"website": [
+			"http://www.twitch.tv/bonjwa",
+			"https://www.bonjwa.de/",
+			"http://www.youtube.com/user/BonjwaDE",
+			"https://twitter.com/BonjwaDE"
+		]
+	},
+	"path": {
+		"153": [
+			[
+				-311,
+				-367
+			],
+			[
+				-262,
+				-367
+			],
+			[
+				-262,
+				-374
+			],
+			[
+				-260,
+				-382
+			],
+			[
+				-251,
+				-385
+			],
+			[
+				-241,
+				-384
+			],
+			[
+				-234,
+				-379
+			],
+			[
+				-233,
+				-374
+			],
+			[
+				-234,
+				-369
+			],
+			[
+				-178,
+				-368
+			],
+			[
+				-178,
+				-346
+			],
+			[
+				-178,
+				-331
+			],
+			[
+				-241,
+				-331
+			],
+			[
+				-276,
+				-331
+			],
+			[
+				-277,
+				-341
+			],
+			[
+				-287,
+				-344
+			],
+			[
+				-311,
+				-344
+			]
+		]
+	},
+	"center": {
+		"153": [
+			-246,
+			-352
+		]
+	}
+}
