@@ -24,7 +24,7 @@ When you're happy with the shape you've drawn, press <kbd>Finish</kbd>. You will
 
 All fields but the name are optional. For example, a country flag doesn't necessarily need a description.
 
-Once you've entered all the information, you'll be presented with a pop-up window containing some [JSON](https://en.wikipedia.org/wiki/JSON)-formatted submission data. Depending on the method, there are two preferred methods. 
+Once you've entered all the information, you'll be presented with a pop-up window containing some [JSON](https://en.wikipedia.org/wiki/JSON)-formatted data. This is the patch that you are going to submit. Depending on the method, there are two preferred methods. 
 
 ### Through Reddit
 
@@ -48,9 +48,9 @@ If you want to do this manually (e.g. you don't have Python), you can create a p
 {
 	"id": 0, 
 	// ...
-	"_author": "Hans5958_",
+	"_author": "Hans5958_",    // Links to https://reddit.com/user/Hans5958_
 	// or...
-	"_author": "gh:Hans5958",
+	"_author": "gh:Hans5958",  // Links to https://github.com/Hans5958
 }
 ```
 
@@ -68,9 +68,9 @@ Upon submitting, if you use Reddit, please flair it as <kbd>Edit Entry</kbd> ins
 
 As an alternative, you can also submit an issue on GitHub using [this form](https://github.com/placeAtlas/atlas-2023/issues/new?assignees=&labels=entry+update&template=edit-entry.yml) or report it on our Discord server.
 
-### Manually
+### Manually by direct edits
 
-Edits are also welcome on this repository using Git through GitHub. You may use Git or GitHub for bulk or large-scale changes, such as removing duplicates.
+Direct edits to the `web/atlas.json` are also welcome on this repository using Git through GitHub. You may use Git or GitHub for bulk or large-scale changes, such as removing duplicates, or doing those that are not possible by using patches, such as removing an entry. Keep in mind that this may causes conflicts, so only do it when necessary. 
 
 `web/atlas.json` is where the Atlas data is located, in which you can edit on GitHub. The next section includes an example of an entry.
 
