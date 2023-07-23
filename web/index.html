@@ -105,10 +105,14 @@
 	</head>
 	<body>
 		<div id="wrapper" class="listHidden">
-			<div class="fixed-top">
-				<div class="container-fluid bg-info">
-					AAAA
-				</div>
+			<header class="fixed-top">
+				<aside class="container-fluid alert-primary collapse" id="headerAnnouncement">
+					<div class="d-flex w-100 py-2 align-items-center">
+						<i class="bi bi-info-circle-fill fs-5"></i>
+						<p class="mb-0 flex-grow-1 px-2"></p>
+						<a class="fs-5" data-bs-toggle="collapse" href="#headerAnnouncement" role="button" aria-expanded="false" aria-controls="headerAnnouncement"><i class="bi bi-x-lg"></i></a>	
+					</div>
+				</aside>
 				<nav id="main-navbar" class="navbar navbar-expand-md bg-body border-bottom">
 					<div class="container-fluid">
 						<a class="navbar-brand text-body d-flex align-items-center" href="./">
@@ -156,8 +160,7 @@
 						</div>
 					</div>
 				</nav>
-	
-			</div>
+			</header>
 			<div id="container">
 				<div id="loading" class="d-flex justify-content-center">
 					<div id="loadingContent" class="my-auto mx-3 text-center text-white">
