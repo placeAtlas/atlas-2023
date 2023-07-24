@@ -66,8 +66,9 @@ for filename in filenames:
 
 			format_all_entries(entries)
 			
-			print(entries)
 			for entry in entries:
+				if entry is None:
+					continue
 				if '_reddit_id' in entry:
 					reddit_id = entry['_reddit_id']
 					if reddit_id in out_ids:
