@@ -1,0 +1,67 @@
+{
+	"id": 934,
+	"name": "Flag of Argentina",
+	"description": "Argentina, officially the Argentine Republic, is a country in the southern part of South America.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Argentina",
+			"https://en.wikipedia.org/wiki/Flag_of_Argentina"
+		],
+		"subreddit": [
+			"PlaceArg",
+			"argentina",
+			"Republica_Argentina"
+		],
+		"discord": [
+			"placearg"
+		]
+	},
+	"path": {
+		"142-167": [
+			[
+				447,
+				-797
+			],
+			[
+				447,
+				-676
+			],
+			[
+				849,
+				-676
+			],
+			[
+				849,
+				-797
+			]
+		],
+		"168-188, 117-141": [
+			[
+				203,
+				-797
+			],
+			[
+				203,
+				-676
+			],
+			[
+				1000,
+				-676
+			],
+			[
+				1000,
+				-797
+			]
+		]
+	},
+	"center": {
+		"142-167": [
+			648,
+			-736
+		],
+		"168-188, 117-141": [
+			602,
+			-736
+		]
+	}
+}
