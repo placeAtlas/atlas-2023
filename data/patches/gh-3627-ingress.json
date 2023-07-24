@@ -1,0 +1,36 @@
+{
+	"id": -1,
+	"name": "Ingress",
+	"description": "Ingress is an augmented reality/alternate reality computer game developed by Niantic Labs, now Niantic, Inc. for mobile devices running Android and iOS operating systems. and over 60 fellow players from around the world created and built the game logo.",
+	"links": {
+		"website": [
+			"https://www.ingress.com/"
+		]
+	},
+	"path": {
+		"195": [
+			[
+				-999,
+				-368
+			],
+			[
+				-969,
+				-368
+			],
+			[
+				-969,
+				-332
+			],
+			[
+				-999,
+				-332
+			]
+		]
+	},
+	"center": {
+		"195": [
+			-984,
+			-350
+		]
+	}
+}
