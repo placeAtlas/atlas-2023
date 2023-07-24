@@ -1,0 +1,39 @@
+{
+	"id": -1,
+	"name": "The Blue Corner",
+	"description": "Returning from previous r/place events, the blue corner (as the name suggests) has the goal of making the corner blue",
+	"links": {
+		"subreddit": [
+			"thebluecorner"
+		],
+		"discord": [
+			"sAzgcBqeRy"
+		]
+	},
+	"path": {
+		"153-166": [
+			[
+				899,
+				899
+			],
+			[
+				999,
+				899
+			],
+			[
+				999,
+				999
+			],
+			[
+				899,
+				999
+			]
+		]
+	},
+	"center": {
+		"153-166": [
+			949,
+			949
+		]
+	}
+}
