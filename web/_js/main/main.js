@@ -371,12 +371,13 @@ async function init() {
 	}
 
 	window.addEventListener("mousemove", e => {
-		updateLines()
+		// updateLines()
 		mousemove(e.clientX, e.clientY)
 		if (dragging) {
 			e.preventDefault()
 		}
 	})
+
 	window.addEventListener("touchmove", e => {
 
 		if (e.touches.length === 2 || e.scale > 1) {
@@ -465,17 +466,14 @@ async function init() {
 	window.addEventListener("touchend", touchend)
 
 	function mouseup(x, y) {
-		if (dragging) {
-			dragging = false
-		}
+		dragging = false
 	}
 
 	function touchend(e) {
-
 		if (e.touches.length === 0) {
-
 			mouseup()
 			setTimeout(() => updateLines(), 0)
+			dragging = false
 
 		} else if (e.touches.length === 1) {
 			initialPinchZoom = zoom

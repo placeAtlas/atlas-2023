@@ -814,19 +814,15 @@ function initViewGlobal() {
 	container.addEventListener("touchend", e => {
 		e.preventDefault()
 
-		//console.log(e)
-		//console.log(e.changedTouches[0].clientX)
 		if (e.changedTouches.length !== 1) return
 
 		e = e.changedTouches[0]
-		//console.log(lastPos[0] - e.clientX)
 
-		if (Math.abs(lastPos[0] - e.clientX) + Math.abs(lastPos[1] - e.clientY) > 4)
+		if (Math.sqrt(Math.pow(lastPos[0] - e.clientX, 2) + Math.pow(lastPos[1] - e.clientY, 2)) < 10)
+			setTimeout(() => updateHovering(e, true), 0)
 
-		//console.log("Foo!!")
 		dragging = false
 		fixed = false
-		setTimeout(() => updateHovering(e, true), 0)
 	})
 
 	if (window.location.hash) { // both "/" and just "/#" will be an empty hash string
