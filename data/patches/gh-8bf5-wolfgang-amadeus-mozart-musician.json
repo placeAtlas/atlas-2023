@@ -1,0 +1,91 @@
+{
+	"id": -1,
+	"name": "Wolfgang Amadeus Mozart (Musician)",
+	"description": "Wolfgang Amadeus Mozart (27 January 1756 – 5 December 1791) was a prolific and influential composer of the Classical period. Despite his short life, his rapid pace of composition resulted in more than 800 works of virtually every genre of his time. Many of these compositions are acknowledged as pinnacles of the symphonic, concertante, chamber, operatic, and choral repertoire. Mozart is widely regarded as among the greatest composers in the history of Western music, with his music admired for its \"melodic beauty, its formal elegance and its richness of harmony and texture\". He was born and raised in Salzburg, Austria.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Wolfgang_Amadeus_Mozart"
+		],
+		"subreddit": [
+			"placeAustria",
+			"Austria"
+		],
+		"discord": [
+			"f5ky84vGku"
+		]
+	},
+	"path": {
+		"189": [
+			[
+				-55,
+				-28
+			],
+			[
+				-52,
+				-33
+			],
+			[
+				-58,
+				-36
+			],
+			[
+				-57,
+				-41
+			],
+			[
+				-54,
+				-46
+			],
+			[
+				-51,
+				-49
+			],
+			[
+				-48,
+				-46
+			],
+			[
+				-45,
+				-47
+			],
+			[
+				-43,
+				-49
+			],
+			[
+				-37,
+				-42
+			],
+			[
+				-35,
+				-39
+			],
+			[
+				-34,
+				-35
+			],
+			[
+				-38,
+				-35
+			],
+			[
+				-41,
+				-33
+			],
+			[
+				-37,
+				-28
+			],
+			[
+				-45,
+				-28
+			]
+		]
+	},
+	"center": {
+		"189": [
+			-47,
+			-38
+		]
+	}
+}
