@@ -362,8 +362,8 @@ async function init() {
 			]
 
 			mousedown(
-				(e.touches[0].clientX + e.touches[1].clientX) / 2,
-				(e.touches[0].clientY + e.touches[1].clientY) / 2
+				(e.touches[0].clientX + e.touches[1].clientX) / 2 - container.offsetLeft,
+				(e.touches[0].clientY + e.touches[1].clientY) / 2 - container.offsetTop
 			)
 
 		}
