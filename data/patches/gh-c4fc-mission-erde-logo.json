@@ -1,0 +1,51 @@
+{
+	"id": -1,
+	"name": "\"Mission Erde\" Logo",
+	"description": "Logo of a nature conservation oragnisation based in germany. It was initiated by the german underwater nature photographer Robert Mark Lehmann.",
+	"links": {
+		"website": [
+			"https://missionerde.de/"
+		],
+		"subreddit": [
+			"placede"
+		]
+	},
+	"path": {
+		"168": [
+			[
+				43,
+				-987
+			],
+			[
+				51,
+				-938
+			],
+			[
+				65,
+				-928
+			],
+			[
+				82,
+				-928
+			],
+			[
+				95,
+				-937
+			],
+			[
+				102,
+				-986
+			],
+			[
+				74,
+				-994
+			]
+		]
+	},
+	"center": {
+		"168": [
+			73,
+			-967
+		]
+	}
+}
