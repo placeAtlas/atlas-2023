@@ -1,0 +1,52 @@
+{
+	"id": -1,
+	"name": "Twin Center",
+	"description": "The Casablanca Twin Center  is a complex of two skyscrapers located at Casablanca, Morocco. The two structures, the West Tower and the East Tower, have 28 floors each.",
+	"links": {},
+	"path": {
+		"211": [
+			[
+				262,
+				125
+			],
+			[
+				237,
+				125
+			],
+			[
+				239,
+				98
+			],
+			[
+				264,
+				97
+			],
+			[
+				263,
+				98
+			],
+			[
+				263,
+				98
+			],
+			[
+				265,
+				98
+			],
+			[
+				263,
+				98
+			],
+			[
+				263,
+				102
+			]
+		]
+	},
+	"center": {
+		"211": [
+			250,
+			111
+		]
+	}
+}
