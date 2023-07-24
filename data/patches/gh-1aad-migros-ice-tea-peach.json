@@ -1,0 +1,52 @@
+{
+	"id": -1,
+	"name": "Migros ice tea peach",
+	"description": "Swiss popular brevage. The lemon version is better than the peach",
+	"links": {
+		"website": [
+			"https://www.migros.ch/fr/product/120255000000"
+		]
+	},
+	"path": {
+		"163": [
+			[
+				814,
+				-356
+			],
+			[
+				818,
+				-356
+			],
+			[
+				818,
+				-357
+			],
+			[
+				819,
+				-357
+			],
+			[
+				819,
+				-356
+			],
+			[
+				821,
+				-356
+			],
+			[
+				821,
+				-345
+			],
+			[
+				814,
+				-345
+			]
+		]
+	},
+	"center": {
+		"163": [
+			818,
+			-351
+		]
+	}
+}
