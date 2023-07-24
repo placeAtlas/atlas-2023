@@ -30,7 +30,9 @@ if not IS_DEPLOY_PREVIEW:
 	for i, entry in enumerate(atlas_data):
 		atlas_ids[entry['id']] = i
 		id = entry['id']
-		if id.isnumeric() and int(id) > last_id and int(id) - last_id < 100:
+		if type(id) is str and id.isnumeric():
+			id = id.isnumeric()
+		if type(id) is int and id > last_id and id - last_id < 100:
 			last_id = int(id)
 
 patches_dir = "data/patches/"
@@ -91,10 +93,10 @@ for filename in filenames:
 					else:
 						last_id += 1
 					print(f"{filename}: Entry is new, assigned ID {last_id}")
-					entry['id'] = str(last_id)
-				elif isinstance(entry['id'], int):
-					entry['id'] = str(entry['id'])
-				elif not is_permanent_file and entry['id'] not in out_ids:
+					entry['id'] = last_id
+				elif isinstance(entry['id'], str) and entry['id'].isnumeric():
+					entry['id'] = int(entry['id'])
+				elif not is_permanent_file and type(entry['id']) is str and len(entry['id']) > 5 and entry['id'] not in out_ids:
 					out_ids.append(entry['id'])
 
 				if entry['id'] in atlas_ids:
@@ -105,8 +107,8 @@ for filename in filenames:
 					print(f"{filename}: Added {entry['id']}.")
 					atlas_data.append(entry)
 
-			if not is_permanent_file:
-				os.remove(f)
+		if not is_permanent_file:
+			os.remove(f)
 
 	except:
 		print(f"{filename}: Something went wrong; patch couldn't be implemented. Skipping.")
