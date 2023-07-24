@@ -91,9 +91,9 @@ for filename in filenames:
 					else:
 						last_id += 1
 					print(f"{filename}: Entry is new, assigned ID {last_id}")
-					entry['id'] = str(last_id)
-				elif isinstance(entry['id'], int):
-					entry['id'] = str(entry['id'])
+					entry['id'] = last_id
+				elif isinstance(entry['id'], str) and entry['id'].isnumeric():
+					entry['id'] = int(entry['id'])
 				elif not is_permanent_file and entry['id'] not in out_ids:
 					out_ids.append(entry['id'])
 
