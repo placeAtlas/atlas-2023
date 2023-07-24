@@ -1,0 +1,36 @@
+{
+	"id": -1,
+	"name": "Resistance in Ingress",
+	"description": "The key represents the symbol of the Resistance faction of the game Ingress, an augmented reality/alternate reality computer game. Chilean agents of the Resistance started it and other RES agents of the world have seen their graphics and have taken over the representation",
+	"links": {},
+	"path": {
+		"177": [
+			[
+				-968,
+				-369
+			],
+			[
+				-968,
+				-331
+			],
+			[
+				-946,
+				-331
+			],
+			[
+				-946,
+				-369
+			],
+			[
+				-946,
+				-369
+			]
+		]
+	},
+	"center": {
+		"177": [
+			-957,
+			-350
+		]
+	}
+}
