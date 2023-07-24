@@ -1,0 +1,51 @@
+{
+	"id": -1,
+	"name": "SBB CFF FFS Logo",
+	"description": "Swiss Federal Railways (German: Schweizerische Bundesbahnen, SBB; French: Chemins de fer fédéraux suisses, CFF; Italian: Ferrovie federali svizzere, FFS)[1] is the national railway company of Switzerland. It is usually referred to by the initials of its three official names",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Swiss_Federal_Railways",
+			"https://www.sbb.ch/"
+		],
+		"subreddit": [
+			"placeCH"
+		],
+		"discord": [
+			"placech"
+		]
+	},
+	"path": {
+		"150-206": [
+			[
+				211,
+				-359
+			],
+			[
+				221,
+				-359
+			],
+			[
+				221,
+				-355
+			],
+			[
+				219,
+				-354
+			],
+			[
+				216,
+				-353
+			],
+			[
+				211,
+				-353
+			]
+		]
+	},
+	"center": {
+		"150-206": [
+			214,
+			-356
+		]
+	}
+}
