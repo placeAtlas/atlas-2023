@@ -1,0 +1,50 @@
+{
+	"id": -1,
+	"name": "Muse",
+  "_author": "gh:jcx200",
+	"description": "Area dedicated to the British three piece rock band Muse, showing their logo on the orange colour of the album Origin of Symmetry, along with two tuning forks either side, also from the album.\n\nUnderneath the logo is the message \"For Lina\", dedicating the space to a fan well known to the community who passed away a week prior to r/place 2023 beginning.\n\nSecond location on the canvas after first one was covered over.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Muse_(band)",
+			"https://en.wikipedia.org/wiki/Origin_of_Symmetry",
+			"https://www.muse.mu/",
+			"https://www.instagram.com/p/CuxhoCjKQET/"
+		],
+		"subreddit": [
+			"muse"
+		],
+		"discord": [
+			"muse"
+		]
+	},
+	"path": {
+		"155-177": [
+			[
+				643,
+				-520
+			],
+			[
+				680,
+				-520
+			],
+			[
+				680,
+				-501
+			],
+			[
+				643,
+				-501
+			],
+			[
+				643,
+				-501
+			]
+		]
+	},
+	"center": {
+		"155-177": [
+			662,
+			-510
+		]
+	}
+}
