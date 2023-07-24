@@ -1,0 +1,138 @@
+{
+	"id": -1,
+	"name": "Bigoudène",
+	"description": "A Bigoudène, feminine denonym of the inhabitants of the Bigouden district in Brittany. Bigoudens are known for their traditional attire and customs, and most notably for their tall white caps.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Bigouden"
+		],
+		"subreddit": [
+			"Bretagne"
+		],
+		"discord": [
+			"8EGb5u9JZF"
+		]
+	},
+	"path": {
+		"159-173": [
+			[
+				-112,
+				520
+			],
+			[
+				-112,
+				519
+			],
+			[
+				-111,
+				518
+			],
+			[
+				-106,
+				513
+			],
+			[
+				-107,
+				512
+			],
+			[
+				-107,
+				510
+			],
+			[
+				-106,
+				509
+			],
+			[
+				-106,
+				504
+			],
+			[
+				-104,
+				504
+			],
+			[
+				-104,
+				509
+			],
+			[
+				-103,
+				509
+			],
+			[
+				-101,
+				507
+			],
+			[
+				-103,
+				509
+			],
+			[
+				-103,
+				510
+			],
+			[
+				-101,
+				510
+			],
+			[
+				-100,
+				509
+			],
+			[
+				-101,
+				510
+			],
+			[
+				-103,
+				510
+			],
+			[
+				-103,
+				512
+			],
+			[
+				-104,
+				513
+			],
+			[
+				-99,
+				518
+			],
+			[
+				-98,
+				520
+			],
+			[
+				-99,
+				521
+			],
+			[
+				-102,
+				520
+			],
+			[
+				-102,
+				522
+			],
+			[
+				-108,
+				522
+			],
+			[
+				-108,
+				521
+			],
+			[
+				-111,
+				521
+			]
+		]
+	},
+	"center": {
+		"159-173": [
+			-105,
+			518
+		]
+	}
+}
