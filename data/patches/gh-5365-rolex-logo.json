@@ -1,0 +1,63 @@
+{
+	"id": 1939,
+	"name": "Rolex logo",
+	"description": "Rolex is a Swiss watch designer and manufacturer based in Geneva, Switzerland",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Rolex",
+			"https://rolex.com/"
+		],
+		"subreddit": [
+			"placeCH"
+		],
+		"discord": [
+			"placech"
+		]
+	},
+	"path": {
+		"201-207": [
+			[
+				-558,
+				814
+			],
+			[
+				-558,
+				815
+			],
+			[
+				-557,
+				817
+			],
+			[
+				-556,
+				819
+			],
+			[
+				-554,
+				822
+			],
+			[
+				-550,
+				822
+			],
+			[
+				-546,
+				814
+			],
+			[
+				-548,
+				812
+			],
+			[
+				-552,
+				810
+			]
+		]
+	},
+	"center": {
+		"201-207": [
+			-552,
+			816
+		]
+	}
+}
