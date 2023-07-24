@@ -38,7 +38,7 @@ Remember to flair your post with <kbd>New Entry</kbd>. On New Reddit, click the 
 
 If you know about Git and how to create a pull request on GitHub, you can try create a patch that will be merged, along with other patches, by one of the members.
 
-You can try pressing the <kbd>Submit Direct to GitHub</kbd> button, which will open a page with the patch file already been prepared to you. If you haven't forked the repository, you would need to fork it with the provided instruction shown on the page. You may add attribution by adding an `_author` key, explained in the next paragraphs. After that, you can press <kbd>Submit changes</kbd>, add follow the steps to create a pull request within GitHub.
+You can try pressing the <kbd>Submit Direct to GitHub</kbd> button, which will open a page with the patch file already been prepared to you. If you haven't forked the repository, you would need to fork it with the provided instruction shown on the page. You may add attribution by adding an `_author` key, explained in the next paragraphs. After that, you can press <kbd>Submit changes</kbd>, add follow the steps to create a pull request within GitHub. The commit message and description doesn't matter, but you may change it into something more descriptive to make it easier for checking (e.g. <kbd>Add Foo Bar</kbd> or <kbd>Edit Foo Bar</kbd>).
 
 If you can fork and clone the repository, you can use the provided `tools/create_patch.py` script. This script helps you to create a working patch, along with additional data such as your name for attribution sakes. Simply run the script inside the `tools/` folder and follow the given instructions. 
 
