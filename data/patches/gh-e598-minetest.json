@@ -1,0 +1,43 @@
+{
+	"id": -1,
+	"name": "Minetest",
+	"description": "The logo of Minetest. Minetest is a free and open-source voxel game engine and game sharing platform. Minetest was created in 2010 by Perttu \"celeron55\" Ahola and was inspired by games like Minecraft and Infiniminer, at first it was a simple Minecraft-like survival game but as it evolved, it became a multipurpose engine allowing for the creation of original games. The logo was created on the Windows Vista taskbar by the PlaceMinetest group founded by Migdyn in 2022.",
+	"links": {
+		"website": [
+			"https://www.minetest.net",
+			"https://en.wikipedia.org/wiki/Minetest"
+		],
+		"subreddit": [
+			"Minetest"
+		],
+		"discord": [
+			"minetest"
+		]
+	},
+	"path": {
+		"205-206": [
+			[
+				-533,
+				998
+			],
+			[
+				-559,
+				998
+			],
+			[
+				-559,
+				971
+			],
+			[
+				-533,
+				971
+			]
+		]
+	},
+	"center": {
+		"205-206": [
+			-546,
+			985
+		]
+	}
+}
