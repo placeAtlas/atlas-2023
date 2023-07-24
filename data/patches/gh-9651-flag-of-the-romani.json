@@ -1,0 +1,41 @@
+{
+	"id": -1,
+	"name": "Flag of the Romani",
+	"description": "The flag of the Romani people, colloquially known as the Roma or Gypsies (considered a pejorative) are an Indo-Aryan ethnic group who lived a nomadic lifestyle in Europe. \nGenetic and Linguistic evidence suggests that they originated from modern-day Rajasthan, a state in India and spread out around 1000 CE.\nTheir population numbers from around 2-12 million. During the 2nd World War and the Holocaust, the Nazis committed systematic genocide against the Romani, with victims estimated to be up to 1.5 million\nMade by the Indian place community et al. ",
+	"author": "AnElongated_Muskrat",
+  "links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Romani_people"
+		]
+	},
+	"path": {
+		"200": [
+			[
+				-1194,
+				-189
+			],
+			[
+				-1194,
+				-172
+			],
+			[
+				-1164,
+				-172
+			],
+			[
+				-1164,
+				-189
+			],
+			[
+				-1194,
+				-189
+			]
+		]
+	},
+	"center": {
+		"200": [
+			-1179,
+			-180
+		]
+	}
+}
