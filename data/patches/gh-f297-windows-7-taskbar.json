@@ -1,0 +1,59 @@
+{
+	"id": -1,
+	"name": "Windows 7 taskbar",
+	"description": "A Start menu for r/place, styled after Windows 7. It has a collection of tabs that reference other communities on r/place.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Windows_7"
+		],
+		"subreddit": [
+			"placestart"
+		]
+	},
+	"path": {
+		"176-200": [
+			[
+				-1500,
+				971
+			],
+			[
+				-1487,
+				971
+			],
+			[
+				-1476,
+				964
+			],
+			[
+				-1462,
+				965
+			],
+			[
+				-1454,
+				971
+			],
+			[
+				-549,
+				971
+			],
+			[
+				-14,
+				971
+			],
+			[
+				-13,
+				998
+			],
+			[
+				-1500,
+				999
+			]
+		]
+	},
+	"center": {
+		"176-200": [
+			-1472,
+			982
+		]
+	}
+}
