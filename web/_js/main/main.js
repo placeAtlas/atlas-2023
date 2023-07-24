@@ -362,8 +362,8 @@ async function init() {
 			]
 
 			mousedown(
-				(e.touches[0].clientX + e.touches[1].clientX) / 2,
-				(e.touches[0].clientY + e.touches[1].clientY) / 2
+				(e.touches[0].clientX + e.touches[1].clientX) / 2 - container.offsetLeft,
+				(e.touches[0].clientY + e.touches[1].clientY) / 2 - container.offsetTop
 			)
 
 		}
@@ -371,12 +371,13 @@ async function init() {
 	}
 
 	window.addEventListener("mousemove", e => {
-		updateLines()
+		// updateLines()
 		mousemove(e.clientX, e.clientY)
 		if (dragging) {
 			e.preventDefault()
 		}
 	})
+
 	window.addEventListener("touchmove", e => {
 
 		if (e.touches.length === 2 || e.scale > 1) {
@@ -465,17 +466,14 @@ async function init() {
 	window.addEventListener("touchend", touchend)
 
 	function mouseup(x, y) {
-		if (dragging) {
-			dragging = false
-		}
+		dragging = false
 	}
 
 	function touchend(e) {
-
 		if (e.touches.length === 0) {
-
 			mouseup()
 			setTimeout(() => updateLines(), 0)
+			dragging = false
 
 		} else if (e.touches.length === 1) {
 			initialPinchZoom = zoom
