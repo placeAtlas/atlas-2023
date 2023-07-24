@@ -46,7 +46,8 @@ const variationsConfig = {
 			[[55, 85], [-500, -500, 999, 499]],
 			[[86, 114], [-1000, -500, 999, 499]],
 			[[115, 152], [-1000, -1000, 999, 499]],
-			[[153, undefined], [-1000, -1000, 999, 999]],
+			[[153, 168], [-1000, -1000, 999, 999]],
+			[[169, undefined], [-1500, -1000, 999, 999]],
 		],
 		// expansions: [],
 		versions: [
@@ -219,6 +220,7 @@ const variationsConfig = {
 			{ "timestamp": 1690160406, "url": ["./_img/canvas/main/1690160406.png"] },
 			{ "timestamp": 1690162244, "url": ["./_img/canvas/main/1690162244.png"] },
 			{ "timestamp": 1690163961, "url": ["./_img/canvas/main/1690163961.png"] },
+			{ "timestamp": 1690165855, "url": ["./_img/canvas/main/1690165855.png"] },
 		],
 		icon: '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 192 192" aria-hidden="true"><polygon points="154 0 154 38 39 38 39 192 0 192 0 0"/><polygon points="192 38 192 192 77 192 77 153 154 153 154 38"/><rect x="77" y="77" width="38" height="38"/></svg>'
 	},
@@ -228,7 +230,7 @@ window.variationsConfig = variationsConfig
 const lastPeriod = variationsConfig.default.versions.length - 1
 variationsConfig.default.default = lastPeriod
 variationsConfig.default.drawablePeriods[1] = lastPeriod
-variationsConfig.default.drawableRegions[4][0][1] = lastPeriod
+variationsConfig.default.drawableRegions[5][0][1] = lastPeriod
 
 let defaultVariation = 'default'
 window.defaultVariation = defaultVariation
