@@ -1,0 +1,121 @@
+{
+	"id": 1202,
+	"name": "2014 FIFA World Cup",
+	"description": "A representation of the trophy from the 2014 FIFA World Cup hosted in Brazil. It was built by Brazil in collaboration with Argentina, respectively the 4th and 2nd placed countries in the event. Later an alliance was made, ironically and poetically, with Germany (the winner of the event) to give the trophy a better design and help protect it from griefing, as people constantly tried to write \"7-1\" in it (explained below) or turn it into a phallic object.\n\nThe most infamous game was the semifinal between Brazil and Germany. The Brazil vs. Germany football match that took place on 8 July 2014 at the Estádio Mineirão in Belo Horizonte was the first of two semifinal matches of the 2014 FIFA World Cup.\n\nBoth Brazil and Germany reached the semifinals with an undefeated record in the competition, with the Brazilians' quarterfinal with Colombia causing them to lose forward Neymar to injury, and defender and captain Thiago Silva to accumulation of yellow cards. Despite the absence of these players, a close match was expected, given both teams were traditional FIFA World Cup forces, sharing eight tournaments won and having previously met in the 2002 FIFA World Cup Final, where Brazil won 2-0 and earned their fifth title. This match, however, ended in a shocking loss for Brazil; Germany led 5-0 at half time, with four goals scored within six minutes, and subsequently brought the score up to 7-0 in the second half. Brazil scored a consolation goal in the last minute, ending the match 7-1. Germany's Toni Kroos was selected as the man of the match.\n\nThe game marked several tournament records. Germany's win marked the largest margin of victory in a FIFA World Cup semifinal. The game saw Germany overtake Brazil as the highest scoring team in World Cup tournament history and become the first team to reach eight World Cup Finals. Miroslav Klose scored his 16th career World Cup goal and surpassed Brazil's own Ronaldo as the tournament's all-time record goalscorer. Brazil's loss broke their 62-match unbeaten streak at home in competitive matches, going back to the 1975 Copa América (where they lost 3-1 to Peru in the same stadium), and equalled their biggest margin of defeat in a match alongside a 6-0 loss to Uruguay in 1920. Ultimately, the match was described as a national humiliation.\n\nThe game has subsequently been dubbed the Mineirazo (Mineiraço [minejˈɾasu], Agony of Mineirão), evoking a previous \"spirit of national shame\" known as the Maracanazo (Maracanaço) in which Brazil unexpectedly lost the 1950 FIFA World Cup on home soil to Uruguay. Brazil subsequently lost 3-0 to the Netherlands in the third-place play-off. Germany went on to win the World Cup for the fourth time, defeating Argentina in the final.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/2014_FIFA_World_Cup"
+		],
+		"subreddit": [
+			"PlaceArg",
+			"argentina",
+			"Republica_Argentina"
+		]
+	},
+	"path": {
+		"119-182": [
+			[
+				800,
+				-771
+			],
+			[
+				795,
+				-767
+			],
+			[
+				789,
+				-760
+			],
+			[
+				786,
+				-752
+			],
+			[
+				786,
+				-741
+			],
+			[
+				798,
+				-701
+			],
+			[
+				798,
+				-692
+			],
+			[
+				796,
+				-692
+			],
+			[
+				796,
+				-689
+			],
+			[
+				794,
+				-687
+			],
+			[
+				794,
+				-684
+			],
+			[
+				793,
+				-683
+			],
+			[
+				793,
+				-681
+			],
+			[
+				797,
+				-677
+			],
+			[
+				817,
+				-677
+			],
+			[
+				822,
+				-681
+			],
+			[
+				822,
+				-686
+			],
+			[
+				818,
+				-692
+			],
+			[
+				818,
+				-701
+			],
+			[
+				827,
+				-734
+			],
+			[
+				827,
+				-754
+			],
+			[
+				822,
+				-764
+			],
+			[
+				817,
+				-769
+			],
+			[
+				812,
+				-771
+			]
+		]
+	},
+	"center": {
+		"119-182": [
+			807,
+			-742
+		]
+	}
+}
