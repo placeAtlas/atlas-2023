@@ -1,0 +1,36 @@
+{
+	"id": -1,
+	"name": "1000 Swiss Franc bill",
+	"description": "The 1000-franc note focuses on Switzerland’s communicative flair – expressed by language, the note’s key motif.",
+	"links": {
+		"website": [
+			"https://www.snb.ch/en/iabout/cash/series9/design_series9/id/cash_series9_design_1000"
+		]
+	},
+	"path": {
+		"167": [
+			[
+				-553,
+				910
+			],
+			[
+				-535,
+				910
+			],
+			[
+				-535,
+				955
+			],
+			[
+				-553,
+				955
+			]
+		]
+	},
+	"center": {
+		"167": [
+			-544,
+			933
+		]
+	}
+}

@@ -1,0 +1,52 @@
+{
+	"id": -1,
+	"name": "Migros ice tea lemon",
+	"description": "Swiss popular brevage.  The best iced tea in the world",
+	"links": {
+		"website": [
+			"https://www.migros.ch/fr/product/120250600000"
+		]
+	},
+	"path": {
+		"163": [
+			[
+				823,
+				-356
+			],
+			[
+				827,
+				-356
+			],
+			[
+				827,
+				-357
+			],
+			[
+				828,
+				-357
+			],
+			[
+				828,
+				-356
+			],
+			[
+				830,
+				-356
+			],
+			[
+				830,
+				-342
+			],
+			[
+				823,
+				-342
+			]
+		]
+	},
+	"center": {
+		"163": [
+			827,
+			-349
+		]
+	}
+}
