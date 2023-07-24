@@ -1,0 +1,44 @@
+{
+	"id": -1,
+	"name": "Indian Train Coach",
+	"description": "A familiar sight to many Indians, this depicts not just the coach of an indian train but also a famous scene from the Hindi movie Dilwale Dulhania Le Jayenge",
+  "_author": "AnElongated_Muskrat",
+	"links": {
+		"subreddit": [
+			"indiaplace"
+		],
+		"discord": [
+			"AkMhfejtkP"
+		]
+	},
+	"path": {
+		"166": [
+			[
+				364,
+				-194
+			],
+			[
+				364,
+				-222
+			],
+			[
+				500,
+				-221
+			],
+			[
+				500,
+				-193
+			],
+			[
+				364,
+				-194
+			]
+		]
+	},
+	"center": {
+		"166": [
+			432,
+			-207
+		]
+	}
+}
