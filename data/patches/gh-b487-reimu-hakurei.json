@@ -1,0 +1,43 @@
+{
+	"id": -1,
+	"name": "Reimu Hakurei",
+	"description": "One of the main playable characters in the Touhou franchise. Was deleted over twenty times by Canadian dissidents and bots.",
+	"links": {
+		"subreddit": [
+			"touhou"
+		],
+		"discord": [
+			"apl"
+		]
+	},
+	"path": {
+		"8-206": [
+			[
+				150,
+				202
+			],
+			[
+				159,
+				201
+			],
+			[
+				159,
+				160
+			],
+			[
+				139,
+				162
+			],
+			[
+				141,
+				189
+			]
+		]
+	},
+	"center": {
+		"8-206": [
+			150,
+			182
+		]
+	}
+}
