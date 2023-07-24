@@ -1,0 +1,40 @@
+{
+	"id": -1,
+	"name": "MrWissen2go",
+	"description": "MrWissen2go is a german YouTube channel covering current political and social issues by Mirko Drotschmann",
+	"links": {
+		"website": [
+			"https://www.youtube.com/channel/UCZHpIFMfoJJ_1QxNGLJTzyA"
+		]
+	},
+	"path": {
+		"188-203": [
+			[
+				-667,
+				-999
+			],
+			[
+				-641,
+				-999
+			],
+			[
+				-641,
+				-973
+			],
+			[
+				-667,
+				-973
+			],
+			[
+				-667,
+				-999
+			]
+		]
+	},
+	"center": {
+		"188-203": [
+			-654,
+			-986
+		]
+	}
+}
