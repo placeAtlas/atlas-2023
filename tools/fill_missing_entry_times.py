@@ -3,13 +3,9 @@ import json
 import os
 import tqdm
 
-pre_extend_times = []
-post_extend_time = 183
+missing_times = [83, 93]
 
-if len(pre_extend_times) == 0:
-	pre_extend_times.append(post_extend_time - 1)
-	pre_extend_times.append(post_extend_time - 2)
-post_extend_time = str(post_extend_time)
+missing_times.sort(reverse=True)
 
 while not os.path.exists('README.md'):
 	os.chdir('..')
@@ -29,26 +25,32 @@ def per_line_entries(entries: list, file: TextIOWrapper):
 		line_temp = json.dumps(entry, ensure_ascii=False)
 	file.write(line_temp + "\n]")
 
-def extend_time_key(items):
+def fill_time(etimes: int):
+	for mtimes in missing_times:
+		if mtimes <= etimes:
+			etimes += 1
+	return etimes
+
+def fill_time_entry(items):
 	for key, value in list(items.items()):
 		times = key.split(', ')
+		new_times = []
 		for time in times:
 			if '-' in time:
-				end_time = time[time.find('-') + 1:]
+				new_keys = time.split('-')
+				new_keys[0] = str(fill_time(int(new_keys[0])))
+				new_keys[1] = str(fill_time(int(new_keys[1])))
+				new_key = '-'.join(new_keys)
 			else:
-				end_time = time
-			if int(end_time) in pre_extend_times:
-				if '-' in key:
-					new_key = key.replace(end_time, post_extend_time)
-				else:
-					new_key = key.replace(end_time, f'{key}-{post_extend_time}')
-				del items[key]
-				items[new_key] = value
-				break
+				new_key = str(fill_time(int(time)))
+			new_times.append(new_key)
+		new_key = ', '.join(new_times)
+		del items[key]
+		items[new_key] = value
 
 for entry in atlas_data:
-	extend_time_key(entry['path'])
-	extend_time_key(entry['center'])
+	fill_time_entry(entry['path'])
+	fill_time_entry(entry['center'])
 	
 with open('web/atlas.json', 'w', encoding='utf-8') as atlas_file:
 	per_line_entries(atlas_data, atlas_file)
