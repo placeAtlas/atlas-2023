@@ -1,0 +1,36 @@
+{
+	"id": -1,
+	"name": "Hassan 2 mosque",
+	"description": "The Hassan II Mosque is a mosque in Casablanca, Morocco. It is the largest functioning mosque in Africa and is the 7th largest in the world",
+	"links": {
+		"website": [
+			"https://www.fmh2.ma/en"
+		]
+	},
+	"path": {
+		"211": [
+			[
+				232,
+				125
+			],
+			[
+				168,
+				125
+			],
+			[
+				172,
+				99
+			],
+			[
+				231,
+				99
+			]
+		]
+	},
+	"center": {
+		"211": [
+			200,
+			112
+		]
+	}
+}
