@@ -1,0 +1,61 @@
+{
+	"id": -1,
+	"name": "Factorio Cracktorio",
+	"description": "Highly popular construction and engineering simulation indie game developed by Czech Studio 'Wube Software'. The game follows an engineer who crash-lands onto an alien planet, exploiting its resources to build a rocket to escape, while battling native insect-like attackers.\nCommonly referred to by fans as Cracktorio",
+	"author": "AnElongated_Muskrat:,
+  "links": {
+		"subreddit": [
+			"factorio"
+		]
+	},
+	"path": {
+		"168": [
+			[
+				-299,
+				604
+			],
+			[
+				-232,
+				604
+			],
+			[
+				-232,
+				609
+			],
+			[
+				-235,
+				609
+			],
+			[
+				-241,
+				615
+			],
+			[
+				-243,
+				615
+			],
+			[
+				-243,
+				616
+			],
+			[
+				-244,
+				616
+			],
+			[
+				-244,
+				622
+			],
+			[
+				-299,
+				622
+			]
+		]
+	},
+	"center": {
+		"168": [
+			-265,
+			613
+		]
+	}
+}
