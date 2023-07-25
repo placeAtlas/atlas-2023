@@ -254,7 +254,7 @@ const variationsConfig = {
 			{ "timestamp": 1690216249, "url": ["./_img/canvas/main/1690216249.png"] },
 			{ "timestamp": 1690218028, "url": ["./_img/canvas/main/1690218028.png"] },
 			{ "timestamp": 1690219804, "url": ["./_img/canvas/main/1690219804.png"] },
-			{ "timestamp": 1690221610, "url": ["./_img/canvas/main/1690221610.png"] },
+			{ "timestamp": ['Sixth Expansion', 1690221610], "url": ["./_img/canvas/main/1690221610.png"] },
 			{ "timestamp": 1690223452, "url": ["./_img/canvas/main/1690223452.png"] },
 			{ "timestamp": 1690225253, "url": ["./_img/canvas/main/1690225253.png"] },
 			{ "timestamp": 1690227039, "url": ["./_img/canvas/main/1690227039.png"] },

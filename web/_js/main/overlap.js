@@ -27,7 +27,7 @@ function initOverlap() {
 	updateLines()
 
 	if (window.location.hash) {
-		highlightEntryFromUrl()
+		updateViewFromHash()
 	}
 
 	function renderBackground(atlas) {
