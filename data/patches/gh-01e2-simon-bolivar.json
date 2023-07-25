@@ -1,0 +1,43 @@
+{
+	"id": -1,
+	"name": "Simón Bolívar",
+	"description": "Simón José Antonio de la Santísima Trinidad Bolívar Ponte y Palacios Blanco, was the liberator of Venezuela, Colombia, Ecuador, and Panama, and an important figure in the independence of Perú, and Bolivia, during the Latin American wars for independence, he still revered and praised as a figure of liberty",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Sim%C3%B3n_Bol%C3%ADvar"
+		],
+		"subreddit": [
+			"vzla"
+		]
+	},
+	"path": {
+		"254": [
+			[
+				-904,
+				280
+			],
+			[
+				-891,
+				280
+			],
+			[
+				-877,
+				317
+			],
+			[
+				-878,
+				321
+			],
+			[
+				-902,
+				321
+			]
+		]
+	},
+	"center": {
+		"254": [
+			-892,
+			309
+		]
+	}
+}
