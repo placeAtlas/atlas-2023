@@ -1,0 +1,39 @@
+{
+	"id": -1,
+	"name": "H E X E D",
+	"description": "H E X E D is a Group of a few Germans and 2 Developers who create clients in Games\n\nShoutout to : Umbra , Saya , Keith , ERPSmoke , Marius etc for creating this Art.",
+	"links": {
+		"website": [
+			"https://lougout.rip",
+			"https://umbra.rest/",
+			"https://home.Keith-drinks.vodka",
+			"https://notsaya.de/"
+		]
+	},
+	"path": {
+		"254": [
+			[
+				1476,
+				-680
+			],
+			[
+				1498,
+				-680
+			],
+			[
+				1498,
+				-673
+			],
+			[
+				1476,
+				-673
+			]
+		]
+	},
+	"center": {
+		"254": [
+			1487,
+			-676
+		]
+	}
+}

@@ -1,0 +1,117 @@
+{
+	"id": 3225,
+	"name": "Hatsune Miku Head",
+	"description": "A small Hatsune Miku head made in collaboration with the Jerma r/place and Hatsune Miku community. Jerma has played \"Hatsune Miku: Project DIVA Mega Mix\" and \"Hatsune Miku Logic Paint S\" on his twitch.",
+	"links": {
+		"website": [
+			"https://ec.crypton.co.jp/pages/prod/virtualsinger/cv01_us",
+			"https://en.wikipedia.org/wiki/Hatsune_Miku"
+		],
+		"subreddit": [
+			"hatsune",
+			"jerma985"
+		],
+		"discord": [
+			"hatsune",
+			"jerma"
+		]
+	},
+	"path": {
+		"226-257": [
+			[
+				-1089,
+				117
+			],
+			[
+				-1090,
+				118
+			],
+			[
+				-1091,
+				120
+			],
+			[
+				-1092,
+				122
+			],
+			[
+				-1092,
+				126
+			],
+			[
+				-1091,
+				127
+			],
+			[
+				-1090,
+				130
+			],
+			[
+				-1089,
+				127
+			],
+			[
+				-1079,
+				127
+			],
+			[
+				-1077,
+				127
+			],
+			[
+				-1076,
+				130
+			],
+			[
+				-1075,
+				130
+			],
+			[
+				-1074,
+				122
+			],
+			[
+				-1075,
+				119
+			],
+			[
+				-1076,
+				118
+			],
+			[
+				-1077,
+				117
+			],
+			[
+				-1082,
+				117
+			],
+			[
+				-1082,
+				115
+			],
+			[
+				-1083,
+				116
+			],
+			[
+				-1084,
+				118
+			],
+			[
+				-1088,
+				117
+			],
+			[
+				-1089,
+				117
+			]
+		]
+	},
+	"center": {
+		"226-257": [
+			-1080,
+			122
+		]
+	}
+}
