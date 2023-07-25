@@ -1,0 +1,40 @@
+{
+	"id": -1,
+	"name": "Kirby-Kuromi",
+	"description": "An art made by a Bolivian Streamer and his community since this is his most recognizable emoticon",
+	"links": {
+		"website": [
+			"https://www.twitch.tv/nana_sky_"
+		]
+	},
+	"path": {
+		"191-251": [
+			[
+				-1095,
+				430
+			],
+			[
+				-1095,
+				440
+			],
+			[
+				-1083,
+				440
+			],
+			[
+				-1083,
+				430
+			],
+			[
+				-1088,
+				430
+			]
+		]
+	},
+	"center": {
+		"191-251": [
+			-1089,
+			435
+		]
+	}
+}
