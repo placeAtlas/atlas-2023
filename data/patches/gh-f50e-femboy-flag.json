@@ -1,0 +1,43 @@
+{
+	"id": -1,
+	"name": "Femboy flag",
+	"description": "Unofficial flag of femboys",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/File:Femboy_flag.svg#filelinks"
+		],
+		"subreddit": [
+			"femboy"
+		]
+	},
+	"path": {
+		"214-224": [
+			[
+				-269,
+				908
+			],
+			[
+				-269,
+				914
+			],
+			[
+				-259,
+				914
+			],
+			[
+				-259,
+				908
+			],
+			[
+				-269,
+				908
+			]
+		]
+	},
+	"center": {
+		"214-224": [
+			-264,
+			911
+		]
+	}
+}
