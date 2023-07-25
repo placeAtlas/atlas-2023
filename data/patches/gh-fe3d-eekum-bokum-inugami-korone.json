@@ -1,0 +1,42 @@
+{
+	"id": -1,
+	"name": "Eekum Bokum (Inugami Korone)",
+	"description": "Eekum Bokum is a meme showing Inugami Korone (left) responding cutely to the \"Eekum bokum\" phrase spoken by the skull (right). \"Eekum Bokum\" is stated when a character picks up a Mumbo token (skull) in the 1998 video game Banjo-Kazooie. \n\nOn August 25th, 2020, Hololive Vtuber Inugame Korone played the game during a live stream and was amused by the sound clip, repeating it whenever it played during the game. Three days later, an animation youtube, \"2ManySnacks\", posted a three-second video of Korone and the mumbo coin repeating the \"Eekum bokum\" phrase. The video quickly became viral, garnering over 3 million views in about 3 weeks, which spawned multiple memes and edits.",
+	"links": {
+		"website": [
+			"https://knowyourmeme.com/memes/eekum-bokum"
+		],
+		"subreddit": [
+			"hololive"
+		],
+		"discord": [
+			"vtubersplace"
+		]
+	},
+	"path": {
+		"213": [
+			[
+				-262,
+				-823
+			],
+			[
+				-191,
+				-823
+			],
+			[
+				-190,
+				-775
+			],
+			[
+				-262,
+				-775
+			]
+		]
+	},
+	"center": {
+		"213": [
+			-226,
+			-799
+		]
+	}
+}
