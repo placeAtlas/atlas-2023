@@ -1,0 +1,125 @@
+{
+	"id": -1,
+	"name": "Bowl of Petunias",
+	"description": "In The Hitchhiker's Guide to the Galaxy, a bowl of petunias is improbably summoned many kilometers above the planet Magrathea along with a sperm whale. They both subsequently fall to their deaths.\n\n",
+	"links": {
+		"subreddit": [
+			"douglasadams",
+			"42born2code"
+		]
+	},
+	"path": {
+		"254": [
+			[
+				-874,
+				-1
+			],
+			[
+				-875,
+				-1
+			],
+			[
+				-875,
+				-2
+			],
+			[
+				-876,
+				-1
+			],
+			[
+				-875,
+				-1
+			],
+			[
+				-875,
+				1
+			],
+			[
+				-874,
+				1
+			],
+			[
+				-874,
+				2
+			],
+			[
+				-874,
+				3
+			],
+			[
+				-875,
+				3
+			],
+			[
+				-874,
+				3
+			],
+			[
+				-874,
+				4
+			],
+			[
+				-873,
+				4
+			],
+			[
+				-873,
+				3
+			],
+			[
+				-872,
+				3
+			],
+			[
+				-873,
+				3
+			],
+			[
+				-873,
+				2
+			],
+			[
+				-873,
+				1
+			],
+			[
+				-872,
+				1
+			],
+			[
+				-872,
+				0
+			],
+			[
+				-871,
+				0
+			],
+			[
+				-872,
+				0
+			],
+			[
+				-872,
+				-1
+			],
+			[
+				-872,
+				0
+			],
+			[
+				-873,
+				0
+			],
+			[
+				-874,
+				0
+			]
+		]
+	},
+	"center": {
+		"254": [
+			-873,
+			1
+		]
+	}
+}
