@@ -1,0 +1,41 @@
+{
+	"id": -1,
+	"name": "Flag of Venezuela",
+	"description": "Venezuela is a country on the north side of South America.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Venezuela",
+			"https://en.wikipedia.org/wiki/Flag_of_Venezuela"
+		],
+		"subreddit": [
+			"placevenezuela",
+			"vzla"
+		]
+	},
+	"path": {
+		"254": [
+			[
+				-475,
+				-872
+			],
+			[
+				-395,
+				-872
+			],
+			[
+				-395,
+				-866
+			],
+			[
+				-475,
+				-866
+			]
+		]
+	},
+	"center": {
+		"254": [
+			-435,
+			-869
+		]
+	}
+}
