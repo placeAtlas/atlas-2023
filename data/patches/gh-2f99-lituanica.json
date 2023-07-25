@@ -1,0 +1,44 @@
+{
+	"id": -1,
+	"name": "Lituanica",
+	"description": "Lituanica was a Bellanca CH-300 Pacemaker airplane flown from the United States across the Atlantic Ocean by Lithuanian pilots Steponas Darius and Stasys Girėnas in 1933. Pixel art was done by streamers LTURepublic viewers.",
+	"links": {},
+	"path": {
+		"237-254": [
+			[
+				-80,
+				-16
+			],
+			[
+				-106,
+				-15
+			],
+			[
+				-118,
+				-13
+			],
+			[
+				-115,
+				1
+			],
+			[
+				-89,
+				6
+			],
+			[
+				-80,
+				0
+			],
+			[
+				-78,
+				-7
+			]
+		]
+	},
+	"center": {
+		"237-254": [
+			-91,
+			-5
+		]
+	}
+}
