@@ -1,0 +1,43 @@
+{
+	"id": -1,
+	"name": "Ecuawol.xyz Banner",
+	"description": "A banner of the Ecuawol.xyz Minecraft Server.",
+	"links": {
+		"website": [
+			"https://ecuawol.xyz/"
+		],
+		"discord": [
+			"ecuawol"
+		]
+	},
+	"path": {
+		"217-256": [
+			[
+				-1331,
+				745
+			],
+			[
+				-1488,
+				746
+			],
+			[
+				-1488,
+				751
+			],
+			[
+				-1331,
+				751
+			],
+			[
+				-1331,
+				745
+			]
+		]
+	},
+	"center": {
+		"217-256": [
+			-1335,
+			748
+		]
+	}
+}
