@@ -1,0 +1,62 @@
+{
+	"id": -1,
+	"name": "drednot.io",
+	"description": "A free multiplayer ship construction and combat game. Build a flying battleship with your friends and conquer the skies! Also known as Deep Space Airships.",
+	"links": {
+		"website": [
+			"https://drednot.io/"
+		],
+		"subreddit": [
+			"drednot"
+		],
+		"discord": [
+			"dhFDzv4pDw"
+		]
+	},
+	"path": {
+		"244-256": [
+			[
+				180,
+				993
+			],
+			[
+				180,
+				998
+			],
+			[
+				232,
+				998
+			],
+			[
+				232,
+				991
+			],
+			[
+				186,
+				991
+			],
+			[
+				186,
+				992
+			],
+			[
+				183,
+				992
+			],
+			[
+				183,
+				993
+			],
+			[
+				180,
+				993
+			]
+		]
+	},
+	"center": {
+		"244-256": [
+			206,
+			995
+		]
+	}
+}
