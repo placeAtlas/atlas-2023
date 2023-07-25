@@ -1,0 +1,43 @@
+{
+	"id": 166,
+	"name": "Flag of Peru",
+	"description": "Peru is a country on the west coast of South America.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Peru",
+			"https://en.wikipedia.org/wiki/Flag_of_Peru"
+		],
+		"subreddit": [
+			"PERU"
+		],
+		"discord": [
+			"rperu"
+		]
+	},
+	"path": {
+		"24-242": [
+			[
+				-191,
+				-26
+			],
+			[
+				-191,
+				72
+			],
+			[
+				-142,
+				72
+			],
+			[
+				-142,
+				-26
+			]
+		]
+	},
+	"center": {
+		"24-242": [
+			-166,
+			23
+		]
+	}
+}

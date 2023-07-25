@@ -1,0 +1,36 @@
+{
+	"id": 1240,
+	"name": "Hoppou Foundation Poi!",
+	"description": "A small VRChat community dedicated to players using Northern Princess (Hoppou) from Kantai Collection as their main avatar",
+	"links": {
+		"discord": [
+			"hoppoufoundation"
+		]
+	},
+	"path": {
+		"152-256": [
+			[
+				-89,
+				406
+			],
+			[
+				-41,
+				406
+			],
+			[
+				-41,
+				401
+			],
+			[
+				-89,
+				401
+			]
+		]
+	},
+	"center": {
+		"152-256": [
+			-65,
+			404
+		]
+	}
+}
