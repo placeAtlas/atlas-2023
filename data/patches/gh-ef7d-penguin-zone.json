@@ -1,0 +1,39 @@
+{
+	"id": 1616,
+	"name": "Penguin Zone",
+	"description": "Penguin Zone is a Club Penguin Private Server.\n\nA Club Penguin Private Server is a Club Penguin Server hosted by the community due to the unfortunate closing of Club Penguin in March 2017.",
+	"links": {
+		"website": [
+			"https://penguinzone.ca/"
+		],
+		"discord": [
+			"Q6CvqephtT"
+		]
+	},
+	"path": {
+		"183-208": [
+			[
+				74,
+				-584
+			],
+			[
+				74,
+				-557
+			],
+			[
+				100,
+				-557
+			],
+			[
+				100,
+				-584
+			]
+		]
+	},
+	"center": {
+		"183-208": [
+			87,
+			-570
+		]
+	}
+}
