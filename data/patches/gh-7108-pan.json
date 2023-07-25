@@ -1,0 +1,42 @@
+{
+	"id": 2892,
+	"name": "Pan",
+	"description": "Frying pan representing Pan's (streamer's) community.",
+	"links": {
+		"website": [
+			"https://www.twitch.tv/pan05_"
+		],
+		"subreddit": [
+			"pan05"
+		],
+		"discord": [
+			"aqUSXGWx5q"
+		]
+	},
+	"path": {
+		"250-255": [
+			[
+				-1483,
+				-29
+			],
+			[
+				-1483,
+				-48
+			],
+			[
+				-1500,
+				-48
+			],
+			[
+				-1500,
+				-29
+			]
+		]
+	},
+	"center": {
+		"250-255": [
+			-1491,
+			-38
+		]
+	}
+}
