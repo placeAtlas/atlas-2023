@@ -1,0 +1,72 @@
+{
+	"id": -1,
+	"name": "\"AERG-Dis-Prism\" Alliance",
+	"description": "\"AERG-Dis-Prism\" was an alliance formed by the Octoprism, AERGXUOS, and Disprisk communities.\n\nBefore establishing the alliance, they invaded eachother throughout Days 3 and 4, until Octoprism member SailorCorgi and AERGXUOS member StraightOuttaTilted came to reasoning.\n\nAfter some time, \"United Gacha Alliance\" and r/Switzerland established official alliances with Octoprism, making \"AERG-Dis-Prism\" protected for a long time coming until the end, reaching the final canvas.",
+	"links": {
+		"subreddit": [
+			"OctoprismOfficial"
+		]
+	},
+	"path": {
+		"154-177": [
+			[
+				-590,
+				229
+			],
+			[
+				-590,
+				248
+			],
+			[
+				-610,
+				248
+			],
+			[
+				-610,
+				237
+			],
+			[
+				-611,
+				236
+			],
+			[
+				-610,
+				235
+			],
+			[
+				-611,
+				234
+			],
+			[
+				-611,
+				233
+			],
+			[
+				-612,
+				232
+			],
+			[
+				-611,
+				231
+			],
+			[
+				-610,
+				230
+			],
+			[
+				-609,
+				229
+			],
+			[
+				-590,
+				229
+			]
+		]
+	},
+	"center": {
+		"154-177": [
+			-600,
+			238
+		]
+	}
+}
