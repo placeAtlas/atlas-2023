@@ -1,0 +1,40 @@
+{
+	"id": -1,
+	"name": "Vermont",
+	"description": "The outline of the state of Vermont.",
+	"links": {
+		"website": [
+			"https://www.vermont.gov/"
+		],
+		"subreddit": [
+			"vermont"
+		]
+	},
+	"path": {
+		"195-254": [
+			[
+				-770,
+				-999
+			],
+			[
+				-770,
+				-984
+			],
+			[
+				-758,
+				-984
+			],
+			[
+				-758,
+				-999
+			]
+		]
+	},
+	"center": {
+		"195-254": [
+			-764,
+			-991
+		]
+	},
+  "_author": "gh:Encode42"
+}
