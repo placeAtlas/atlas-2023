@@ -1,0 +1,50 @@
+{
+	"id": 1732,
+	"name": "Escape From Tarkov \"Killa's Helmet\" and CHK-logo",
+	"description": "Escape From Tarkov is a realistic extraction MMORPG shooter created by BattleState Games based in Russia. The helmet depicted is of a boss within the game named \"Killa\"\n\nThe CHK stands for cheeki_scav a german EFT-Streamer who built the Helmet, in cooperation with the Moondye7 Community",
+	"links": {
+		"website": [
+			"https://www.escapefromtarkov.com",
+			"https://www.twitch.tv/cheeki_scav",
+			"https://twitter.com/cheeki_scav/status/1683173469259722753?s=20",
+			"https://www.twitch.tv/moondye7"
+		],
+		"subreddit": [
+			"EscapefromTarkov"
+		],
+		"discord": [
+			"escapefromtarkovofficial",
+			"cheeki"
+		]
+	},
+	"path": {
+		"40-215": [
+			[
+				385,
+				-368
+			],
+			[
+				397,
+				-368
+			],
+			[
+				397,
+				-352
+			],
+			[
+				385,
+				-352
+			],
+			[
+				385,
+				-367
+			]
+		]
+	},
+	"center": {
+		"40-215": [
+			391,
+			-360
+		]
+	}
+}
