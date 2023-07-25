@@ -1,0 +1,67 @@
+{
+	"id": -1,
+	"name": "MINI PENIS POW(ER)",
+	"description": "The logos of 12 schools in the Big 10, an athletic conference consisting of American universities. Was originally supposed to say \"MINI PENIS POWER\", however the last two letters were covered up.",
+	"links": {
+		"website": [
+			"https://bigten.org"
+		],
+		"subreddit": [
+			"CFB",
+			"VirginiaTech",
+			"OSU"
+		],
+    "discord": [
+			"vt",
+			"UBJQRyvf",
+			"b3M5mZBre5",
+      "qAD9YX7"
+		]
+	},
+	"path": {
+		"188-215": [
+			[
+				-1160,
+				-325
+			],
+			[
+				-1110,
+				-325
+			],
+			[
+				-1111,
+				-320
+			],
+			[
+				-1106,
+				-312
+			],
+			[
+				-1096,
+				-312
+			],
+			[
+				-1096,
+				-297
+			],
+			[
+				-1121,
+				-297
+			],
+			[
+				-1121,
+				-277
+			],
+			[
+				-1154,
+				-279
+			]
+		]
+	},
+	"center": {
+		"188-215": [
+			-1138,
+			-306
+		]
+	}
+}
