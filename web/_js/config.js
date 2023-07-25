@@ -316,7 +316,6 @@ const variationsConfig = {
 window.variationsConfig = variationsConfig
 
 const lastPeriod = variationsConfig.default.versions.length - 1
-variationsConfig.default.default = lastPeriod
 variationsConfig.default.drawablePeriods[1] = lastPeriod
 variationsConfig.default.drawableRegions[6][0][1] = lastPeriod
 
@@ -325,6 +324,7 @@ window.defaultVariation = defaultVariation
 
 let defaultPeriod = variationsConfig[defaultVariation].default
 window.defaultPeriod = defaultPeriod
+console.log(window.defaultPeriod);
 
 const useNumericalId = true
 window.useNumericalId = useNumericalId
