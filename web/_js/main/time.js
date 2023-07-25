@@ -274,7 +274,7 @@ function formatPeriod(targetStart, targetEnd, targetVariation) {
 	variationString = variationsConfig[targetVariation].code
 	if (targetStart > targetEnd) [targetStart, targetEnd] = [targetEnd, targetStart]
 	if (targetStart === targetEnd) {
-		if (targetStart === variationsConfig[targetVariation].default && targetVariation !== defaultVariation) {
+		if (targetVariation === defaultVariation && targetStart === variationsConfig[defaultVariation].default) {
 			periodString = ""
 		}
 		else periodString = targetStart
@@ -282,6 +282,7 @@ function formatPeriod(targetStart, targetEnd, targetVariation) {
 	else periodString = targetStart + "-" + targetEnd
 	if (periodString && variationString) return variationsConfig[targetVariation].code + ":" + periodString
 	if (variationString) return variationString
+
 	return periodString
 }
 
