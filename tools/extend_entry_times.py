@@ -4,7 +4,7 @@ import os
 import tqdm
 
 pre_extend_times = []
-post_extend_time = 241
+post_extend_time = 242
 
 if len(pre_extend_times) == 0:
 	pre_extend_times.append(post_extend_time - 1)
@@ -31,6 +31,11 @@ def per_line_entries(entries: list, file: TextIOWrapper):
 
 def extend_time_key(items):
 	for key, value in list(items.items()):
+		if key == '':
+			del items[key]
+			items[f'{pre_extend_times[0]}-{post_extend_time}'] = value
+			continue
+
 		times = key.split(', ')
 		for time in times:
 			if '-' in time:
