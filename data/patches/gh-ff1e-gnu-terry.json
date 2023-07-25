@@ -1,0 +1,36 @@
+{
+	"id": 2644,
+	"name": "GNU Terry",
+	"description": "GNU is a code used by a communication system (called \"Clacks\") in the books and means that the message will be transmitted forever. The people on the Clacks honor their deceased by sending their names with this code around their system. Because so stated in the book: \"A man is not dead while his name is still spoken.\" Thus, \"GNU Terry\" means the name of the author (which is deceased) should be forever transmitted.\n\nThe image also depicts a recurring Discworld character, the Death of Rats (aka the Grim Squeaker), a skeletal rat wearing a dark robe and carrying a tiny scythe.",
+	"links": {
+		"subreddit": [
+			"discworld"
+		]
+	},
+	"path": {
+		"180-242": [
+			[
+				-1131,
+				339
+			],
+			[
+				-1112,
+				339
+			],
+			[
+				-1112,
+				365
+			],
+			[
+				-1131,
+				365
+			]
+		]
+	},
+	"center": {
+		"180-242": [
+			-1121,
+			352
+		]
+	}
+}
