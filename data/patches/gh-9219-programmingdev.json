@@ -1,0 +1,51 @@
+{
+	"id": -1,
+	"name": "programming.dev",
+	"description": "programming.dev is a reddit alternative focused around topics relating to programmers",
+	"links": {
+		"website": [
+			"https://programming.dev"
+		],
+		"discord": [
+			"kwyxvYEYt4"
+		]
+	},
+	"path": {
+		"254": [
+			[
+				51,
+				-10
+			],
+			[
+				51,
+				-4
+			],
+			[
+				54,
+				-4
+			],
+			[
+				60,
+				-5
+			],
+			[
+				61,
+				-7
+			],
+			[
+				61,
+				-10
+			],
+			[
+				51,
+				-10
+			]
+		]
+	},
+	"center": {
+		"254": [
+			54,
+			-7
+		]
+	}
+}
