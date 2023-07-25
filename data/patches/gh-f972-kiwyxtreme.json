@@ -1,0 +1,73 @@
+{
+	"id": -1,
+	"name": "KiwyXtreme",
+	"description": "Kiwi drawn for German Twitch Streamer KiwyXtreme",
+	"links": {
+		"website": [
+			"https://www.twitch.tv/kiwyxtreme",
+			"https://www.instagram.com/kiwyxtreme/?hl=de",
+			"https://www.youtube.com/c/KiwyXtremeGaming"
+		],
+		"discord": [
+			"Mb5eevq"
+		]
+	},
+	"path": {
+		"193-217": [
+			[
+				-637,
+				647
+			],
+			[
+				-637,
+				657
+			],
+			[
+				-633,
+				657
+			],
+			[
+				-633,
+				654
+			],
+			[
+				-624,
+				654
+			],
+			[
+				-624,
+				653
+			],
+			[
+				-625,
+				653
+			],
+			[
+				-625,
+				650
+			],
+			[
+				-624,
+				650
+			],
+			[
+				-624,
+				648
+			],
+			[
+				-623,
+				648
+			],
+			[
+				-623,
+				647
+			]
+		]
+	},
+	"center": {
+		"193-217": [
+			-631,
+			650
+		]
+	}
+}
