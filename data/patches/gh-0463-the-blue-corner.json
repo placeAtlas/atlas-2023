@@ -1,0 +1,39 @@
+{
+	"id": -1,
+	"name": "The Blue Corner",
+	"description": "The blue corner formed very early in 2017's canvas, being one of the very first recognizable features, and one of the only ones to make it to the end.\n\nSince then the corner has appeared in all r/place events. ",
+	"links": {
+		"subreddit": [
+			"TheBlueCorner"
+		],
+		"discord": [
+			"NFTG2MSj"
+		]
+	},
+	"path": {
+		"72-143": [
+			[
+				942,
+				442
+			],
+			[
+				999,
+				442
+			],
+			[
+				999,
+				499
+			],
+			[
+				942,
+				499
+			]
+		]
+	},
+	"center": {
+		"72-143": [
+			971,
+			471
+		]
+	}
+}
