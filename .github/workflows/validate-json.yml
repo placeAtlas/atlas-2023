@@ -11,6 +11,8 @@ on:
 jobs:
   validate:
     name: Validate
+    permissions:
+      contents: read
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
