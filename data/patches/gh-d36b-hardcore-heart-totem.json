@@ -1,0 +1,92 @@
+{
+	"id": -1,
+	"name": "Hardcore Heart Totem",
+	"description": "A Minecraft Hardcore Heart with the colors of a Totem from the game, this Pixel art was created by the Hacherrr community in collaboration with the Pikachu community below in commemoration of the private Minecraft Bedrock server that Hacherrr made.",
+	"links": {},
+	"path": {
+		"167-254": [
+			[
+				-11,
+				870
+			],
+			[
+				-12,
+				870
+			],
+			[
+				-13,
+				870
+			],
+			[
+				-14,
+				871
+			],
+			[
+				-15,
+				872
+			],
+			[
+				-15,
+				873
+			],
+			[
+				-15,
+				874
+			],
+			[
+				-14,
+				875
+			],
+			[
+				-13,
+				876
+			],
+			[
+				-12,
+				877
+			],
+			[
+				-11,
+				878
+			],
+			[
+				-10,
+				877
+			],
+			[
+				-9,
+				876
+			],
+			[
+				-8,
+				875
+			],
+			[
+				-7,
+				874
+			],
+			[
+				-7,
+				873
+			],
+			[
+				-7,
+				872
+			],
+			[
+				-8,
+				871
+			],
+			[
+				-9,
+				870
+			]
+		]
+	},
+	"center": {
+		"167-254": [
+			-11,
+			873
+		]
+	}
+}
