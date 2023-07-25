@@ -47,7 +47,8 @@ const variationsConfig = {
 			[[86, 114], [-1000, -500, 999, 499]],
 			[[115, 152], [-1000, -1000, 999, 499]],
 			[[153, 168], [-1000, -1000, 999, 999]],
-			[[169, undefined], [-1500, -1000, 999, 999]],
+			[[169, 201], [-1500, -1000, 999, 999]],
+			[[202, undefined], [-1500, -1000, 1499, 999]],
 		],
 		// expansions: [],
 		versions: [
@@ -249,6 +250,29 @@ const variationsConfig = {
 			{ "timestamp": 1690209002, "url": ["./_img/canvas/main/1690209002.png"] },
 			{ "timestamp": 1690210843, "url": ["./_img/canvas/main/1690210843.png"] },
 			{ "timestamp": 1690212625, "url": ["./_img/canvas/main/1690212625.png"] },
+			{ "timestamp": 1690214404, "url": ["./_img/canvas/main/1690214404.png"] },
+			{ "timestamp": 1690216249, "url": ["./_img/canvas/main/1690216249.png"] },
+			{ "timestamp": 1690218028, "url": ["./_img/canvas/main/1690218028.png"] },
+			{ "timestamp": 1690219804, "url": ["./_img/canvas/main/1690219804.png"] },
+			{ "timestamp": 1690221610, "url": ["./_img/canvas/main/1690221610.png"] },
+			{ "timestamp": 1690223452, "url": ["./_img/canvas/main/1690223452.png"] },
+			{ "timestamp": 1690225253, "url": ["./_img/canvas/main/1690225253.png"] },
+			{ "timestamp": 1690227039, "url": ["./_img/canvas/main/1690227039.png"] },
+			{ "timestamp": 1690228827, "url": ["./_img/canvas/main/1690228827.png"] },
+			{ "timestamp": 1690230606, "url": ["./_img/canvas/main/1690230606.png"] },
+			{ "timestamp": 1690232446, "url": ["./_img/canvas/main/1690232446.png"] },
+			{ "timestamp": 1690234231, "url": ["./_img/canvas/main/1690234231.png"] },
+			{ "timestamp": 1690236013, "url": ["./_img/canvas/main/1690236013.png"] },
+			{ "timestamp": 1690237853, "url": ["./_img/canvas/main/1690237853.png"] },
+			{ "timestamp": 1690239631, "url": ["./_img/canvas/main/1690239631.png"] },
+			{ "timestamp": 1690241410, "url": ["./_img/canvas/main/1690241410.png"] },
+			{ "timestamp": 1690243251, "url": ["./_img/canvas/main/1690243251.png"] },
+			{ "timestamp": 1690245031, "url": ["./_img/canvas/main/1690245031.png"] },
+			{ "timestamp": 1690246809, "url": ["./_img/canvas/main/1690246809.png"] },
+			{ "timestamp": 1690248650, "url": ["./_img/canvas/main/1690248650.png"] },
+			{ "timestamp": 1690250429, "url": ["./_img/canvas/main/1690250429.png"] },
+			{ "timestamp": 1690252208, "url": ["./_img/canvas/main/1690252208.png"] },
+			{ "timestamp": 1690254051, "url": ["./_img/canvas/main/1690254051.png"] },
 		],
 		icon: '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 192 192" aria-hidden="true"><polygon points="154 0 154 38 39 38 39 192 0 192 0 0"/><polygon points="192 38 192 192 77 192 77 153 154 153 154 38"/><rect x="77" y="77" width="38" height="38"/></svg>'
 	},
@@ -258,7 +282,7 @@ window.variationsConfig = variationsConfig
 const lastPeriod = variationsConfig.default.versions.length - 1
 variationsConfig.default.default = lastPeriod
 variationsConfig.default.drawablePeriods[1] = lastPeriod
-variationsConfig.default.drawableRegions[5][0][1] = lastPeriod
+variationsConfig.default.drawableRegions[6][0][1] = lastPeriod
 
 let defaultVariation = 'default'
 window.defaultVariation = defaultVariation

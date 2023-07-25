@@ -1,0 +1,64 @@
+{
+	"id": 2344,
+  "_author": "gh:TimKral5",
+	"name": "Toothless",
+	"description": "Toothless is a dragon from the 'How To Train your Dragon'-Franchise. He is a Night Fury and he seems to be the only one left of his kind. He together with Hiccup are two of the main characters from the movies and the series.",
+	"links": {
+		"website": [
+			"https://howtotrainyourdragon.fandom.com/"
+		],
+		"subreddit": [
+			"httyd"
+		]
+	},
+	"path": {
+		"170-219": [
+			[
+				-56,
+				855
+			],
+			[
+				-56,
+				891
+			],
+			[
+				-49,
+				899
+			],
+			[
+				-49,
+				905
+			],
+			[
+				-42,
+				912
+			],
+			[
+				-27,
+				912
+			],
+			[
+				-22,
+				905
+			],
+			[
+				-22,
+				899
+			],
+			[
+				-17,
+				894
+			],
+			[
+				-16,
+				856
+			]
+		]
+	},
+	"center": {
+		"170-219": [
+			-36,
+			879
+		]
+	}
+}

@@ -564,10 +564,7 @@ async function render() {
 
 }
 
-function updateHovering(e, tapped) {
-
-	if (dragging || (fixed && !tapped)) return
-
+function updateCoordsDisplay(e) {
 	const pos = [
 		(e.clientX - (container.clientWidth / 2 - innerContainer.clientWidth / 2 + zoomOrigin[0] + container.offsetLeft)) / zoom + canvasOffset.x,
 		(e.clientY - (container.clientHeight / 2 - innerContainer.clientHeight / 2 + zoomOrigin[1] + container.offsetTop)) / zoom + canvasOffset.y
@@ -580,6 +577,14 @@ function updateHovering(e, tapped) {
 	} else {
 		coordsEl.textContent = Math.floor(pos[0]) + ", " + Math.floor(pos[1])
 	}
+
+	return pos
+}
+
+function updateHovering(e, tapped) {
+
+	if (dragging || (fixed && !tapped)) return
+	const pos = updateCoordsDisplay(e)
 
 	if (!(pos[0] <= canvasSize.x + canvasOffset.x + 200 && pos[0] >= canvasOffset.x - 200 && pos[1] <= canvasSize.y + canvasOffset.y + 200 && pos[1] >= canvasOffset.x - 200)) return
 	
@@ -750,17 +755,7 @@ function initExplore() {
 
 	function updateHovering(e, tapped) {
 		if (dragging || (fixed && !tapped)) return
-		const pos = [
-			(e.clientX - (container.clientWidth / 2 - innerContainer.clientWidth / 2 + zoomOrigin[0] + container.offsetLeft)) / zoom + canvasOffset.x,
-			(e.clientY - (container.clientHeight / 2 - innerContainer.clientHeight / 2 + zoomOrigin[1] + container.offsetTop)) / zoom + canvasOffset.y
-			]
-		const coordsEl = document.getElementById("coords_p")
-		// Displays coordinates as zero instead of NaN
-		if (isNaN(pos[0])) {
-			coordsEl.textContent = "0, 0"
-		} else {
-			coordsEl.textContent = Math.floor(pos[0]) + ", " + Math.floor(pos[1])
-		}
+		updateCoordsDisplay(e)
 	}
 
 	renderBackground(atlas)
