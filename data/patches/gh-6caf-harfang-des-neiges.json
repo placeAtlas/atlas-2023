@@ -1,0 +1,95 @@
+{
+	"id": -1,
+	"name": "Harfang des neiges",
+	"description": "The snowy owl, also known as the polar owl, the white owl and the Arctic owl, is a large, white owl of the true owl family.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Snowy_owl"
+		],
+		"subreddit": [
+			"Quebec"
+		]
+	},
+	"path": {
+		"178-187": [
+			[
+				794,
+				364
+			],
+			[
+				799,
+				364
+			],
+			[
+				803,
+				368
+			],
+			[
+				803,
+				371
+			],
+			[
+				802,
+				373
+			],
+			[
+				805,
+				378
+			],
+			[
+				806,
+				380
+			],
+			[
+				803,
+				383
+			],
+			[
+				801,
+				386
+			],
+			[
+				802,
+				387
+			],
+			[
+				800,
+				388
+			],
+			[
+				800,
+				391
+			],
+			[
+				799,
+				395
+			],
+			[
+				798,
+				394
+			],
+			[
+				799,
+				391
+			],
+			[
+				793,
+				389
+			],
+			[
+				793,
+				369
+			],
+			[
+				794,
+				364
+			]
+		]
+	},
+	"center": {
+		"178-187": [
+			799,
+			379
+		]
+	}
+}
