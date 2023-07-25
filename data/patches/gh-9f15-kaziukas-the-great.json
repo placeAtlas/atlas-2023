@@ -1,0 +1,52 @@
+{
+	"id": -1,
+	"name": "Kaziukas the Great",
+	"description": "This is a memorial to remind people of the sacrifice taken by Kaziukas the Great in the making of his first selfie",
+	"links": {},
+	"path": {
+		"214": [
+			[
+				-1277,
+				-368
+			],
+			[
+				-1277,
+				-298
+			],
+			[
+				-1235,
+				-298
+			],
+			[
+				-1235,
+				-299
+			],
+			[
+				-1207,
+				-299
+			],
+			[
+				-1207,
+				-325
+			],
+			[
+				-1189,
+				-325
+			],
+			[
+				-1189,
+				-368
+			],
+			[
+				-1277,
+				-368
+			]
+		]
+	},
+	"center": {
+		"214": [
+			-1241,
+			-333
+		]
+	}
+}
