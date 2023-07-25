@@ -1,0 +1,92 @@
+{
+	"id": -1,
+	"name": "Milena",
+	"description": "Milena is a beautiful little girl who lives on Rua do Limão, the capitol of Bairro do Limoeiro. From the Sustenido family, owners of a veterinary clinic that takes care of the gang's mascots, such as Bidu, Monicão, Floquinho, Mingau, and Radar.",
+	"links": {
+		"website": [
+			"https://monica.fandom.com/pt-br/wiki/Milena"
+		]
+	},
+	"path": {
+		"254": [
+			[
+				193,
+				548
+			],
+			[
+				194,
+				547
+			],
+			[
+				195,
+				546
+			],
+			[
+				198,
+				546
+			],
+			[
+				198,
+				547
+			],
+			[
+				201,
+				547
+			],
+			[
+				201,
+				548
+			],
+			[
+				202,
+				548
+			],
+			[
+				202,
+				554
+			],
+			[
+				201,
+				554
+			],
+			[
+				201,
+				559
+			],
+			[
+				193,
+				559
+			],
+			[
+				193,
+				557
+			],
+			[
+				192,
+				557
+			],
+			[
+				192,
+				555
+			],
+			[
+				193,
+				555
+			],
+			[
+				192,
+				555
+			],
+			[
+				192,
+				548
+			]
+		]
+	},
+	"center": {
+		"254": [
+			197,
+			552
+		]
+	}
+}
