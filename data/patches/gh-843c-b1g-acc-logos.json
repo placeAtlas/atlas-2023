@@ -1,0 +1,53 @@
+{
+	"id": -1,
+	"name": "B1G & ACC Logos",
+	"description": "The logos of the Big 10 and Atlantic Coast Conference (ACC), two collegiate athletic conferences in the United States. Organized by hundreds of students attending universities in both conferences.",
+	"links": {
+		"website": [
+			"https://bigten.org",
+			"https://theacc.com"
+		],
+		"subreddit": [
+			"VirginiaTech",
+			"OSU",
+			"FSB",
+			"IndianaUniversity",
+			"UMD",
+			"MichiganWolverines",
+			"UVA"
+		],
+		"discord": [
+			"UBJQRyvf",
+			"b3M5mZBre5",
+			"vt",
+			"KF7FGdS",
+			"cm3urfy"
+		]
+	},
+	"path": {
+		"154-216": [
+			[
+				636,
+				-676
+			],
+			[
+				659,
+				-676
+			],
+			[
+				659,
+				-653
+			],
+			[
+				636,
+				-653
+			]
+		]
+	},
+	"center": {
+		"154-216": [
+			648,
+			-664
+		]
+	}
+}
