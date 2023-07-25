@@ -1,0 +1,36 @@
+{
+	"id": -1,
+	"name": "SUS",
+	"description": "O Sistema Único de Saúde (SUS) é um dos maiores e mais complexos sistemas de saúde pública do mundo, abrangendo desde o simples atendimento para avaliação da pressão arterial, por meio da Atenção Primária, até o transplante de órgãos, garantindo acesso integral, universal e gratuito para toda a população do país.",
+	"links": {
+		"website": [
+			"https://conectesus-paciente.saude.gov.br/"
+		]
+	},
+	"path": {
+		"254": [
+			[
+				173,
+				500
+			],
+			[
+				173,
+				494
+			],
+			[
+				160,
+				494
+			],
+			[
+				160,
+				500
+			]
+		]
+	},
+	"center": {
+		"254": [
+			167,
+			497
+		]
+	}
+}
