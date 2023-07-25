@@ -1,0 +1,74 @@
+{
+	"id": -1,
+	"name": "Windows 96 logo",
+	"description": "Windows 96 is a website recreating the Windows 9x experience in the browser.",
+	"links": {
+		"website": [
+			"https://windows96.net"
+		],
+		"subreddit": [
+			"Windows_96"
+		],
+		"discord": [
+			"windows-96-619868741395546117"
+		]
+	},
+	"path": {
+		"211": [
+			[
+				447,
+				981
+			],
+			[
+				451,
+				981
+			],
+			[
+				456,
+				977
+			],
+			[
+				462,
+				980
+			],
+			[
+				462,
+				989
+			],
+			[
+				460,
+				991
+			],
+			[
+				457,
+				990
+			],
+			[
+				451,
+				991
+			],
+			[
+				451,
+				989
+			],
+			[
+				447,
+				989
+			],
+			[
+				445,
+				986
+			],
+			[
+				445,
+				980
+			]
+		]
+	},
+	"center": {
+		"211": [
+			456,
+			984
+		]
+	}
+}
