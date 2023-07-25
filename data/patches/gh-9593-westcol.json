@@ -1,0 +1,50 @@
+{
+	"id": 1392,
+	"name": "WESTCOL",
+	"description": "THE NUMBER 1 STREAMER IN COLOMBIA WITH AN ABYSMAL DIFFERENCE...",
+	"links": {
+		"website": [
+			"https://kick.com/westcol"
+		],
+		"subreddit": [
+			"westcol"
+		],
+		"discord": [
+			"westcol"
+		]
+	},
+	"path": {
+		"214": [
+			[
+				-1000,
+				639
+			],
+			[
+				-999,
+				755
+			],
+			[
+				-886,
+				640
+			],
+			[
+				-884,
+				758
+			],
+			[
+				-998,
+				755
+			],
+			[
+				-886,
+				640
+			]
+		]
+	},
+	"center": {
+		"214": [
+			-919,
+			723
+		]
+	}
+}
