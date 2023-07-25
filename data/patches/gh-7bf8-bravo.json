@@ -1,0 +1,62 @@
+{
+	"id": 1061,
+	"name": "Bravo",
+	"description": "Bravo is the mascot of Taipei, Taiwan. Bravo's species is a Formosan black bear, an endemic subspecies of Asiatic black bear.",
+	"links": {
+		"website": [
+			"https://bravo.travel.taipei/en"
+		],
+		"subreddit": [
+			"placeTW"
+		],
+		"discord": [
+			"8xSQKCHSnT"
+		]
+	},
+	"path": {
+		"46-214": [
+			[
+				-76,
+				423
+			],
+			[
+				-76,
+				427
+			],
+			[
+				-75,
+				427
+			],
+			[
+				-75,
+				440
+			],
+			[
+				-74,
+				440
+			],
+			[
+				-67,
+				433
+			],
+			[
+				-67,
+				427
+			],
+			[
+				-66,
+				427
+			],
+			[
+				-66,
+				423
+			]
+		]
+	},
+	"center": {
+		"46-214": [
+			-71,
+			428
+		]
+	}
+}
