@@ -716,7 +716,7 @@ function updateViewFromHash() {
 
 function setZoomByPath(path) {
 
-	let boundingBox = [canvasSize.x, 0, canvasSize.y, 0]
+	let boundingBox = [canvasSize.x + canvasOffset.x, canvasOffset.x, canvasSize.y + canvasOffset.y, canvasOffset.y]
 	path?.forEach(([x, y]) => {
 		boundingBox[0] = Math.min(boundingBox[0], x)
 		boundingBox[1] = Math.max(boundingBox[1], x)
