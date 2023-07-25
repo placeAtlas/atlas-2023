@@ -23,7 +23,7 @@ if (window.devicePixelRatio) {
 }
 
 const maxZoom = 128
-const minZoom = 0.1
+const minZoom = 0.125
 
 let zoomOrigin = [0, 0]
 let scaleZoomOrigin = [0, 0]
