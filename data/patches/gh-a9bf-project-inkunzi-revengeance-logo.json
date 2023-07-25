@@ -1,0 +1,71 @@
+{
+	"id": -1,
+	"name": "Project Inkunzi: Revengeance logo",
+	"description": "A discord community created by YouTuber \"CalmDownLevelUp\" in 2017. It's a collaborative roleplaying game focused on worldbuilding, warfare and diplomacy where players both create the world and play on it. It gained thousands of players in 2020 following videos released by CalmDownLevelUp about the game. The game is currently on it's second iteration, thus the roman Ⅱ numeral.",
+	"links": {
+		"website": [
+			"https://www.youtube.com/@CalmDownLevelUpyoutubechannel"
+		],
+		"discord": [
+			"5VUanMZV"
+		]
+	},
+	"path": {
+		"254": [
+			[
+				-1199,
+				374
+			],
+			[
+				-1188,
+				374
+			],
+			[
+				-1188,
+				376
+			],
+			[
+				-1187,
+				376
+			],
+			[
+				-1187,
+				378
+			],
+			[
+				-1186,
+				378
+			],
+			[
+				-1186,
+				382
+			],
+			[
+				-1187,
+				382
+			],
+			[
+				-1187,
+				384
+			],
+			[
+				-1188,
+				384
+			],
+			[
+				-1188,
+				387
+			],
+			[
+				-1199,
+				387
+			]
+		]
+	},
+	"center": {
+		"254": [
+			-1193,
+			380
+		]
+	}
+}
