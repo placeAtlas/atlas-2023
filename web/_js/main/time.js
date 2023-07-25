@@ -265,7 +265,7 @@ function parsePeriod(periodString) {
 	}
 }
 
-function formatPeriod(targetStart, targetEnd, targetVariation) {
+function formatPeriod(targetStart, targetEnd, targetVariation, forUrl = false) {
 	targetStart ??= currentPeriod
 	targetEnd ??= currentPeriod
 	targetVariation ??= currentVariation
@@ -274,7 +274,7 @@ function formatPeriod(targetStart, targetEnd, targetVariation) {
 	variationString = variationsConfig[targetVariation].code
 	if (targetStart > targetEnd) [targetStart, targetEnd] = [targetEnd, targetStart]
 	if (targetStart === targetEnd) {
-		if (targetVariation === defaultVariation && targetStart === variationsConfig[defaultVariation].default) {
+		if (forUrl && targetVariation === defaultVariation && targetStart === variationsConfig[defaultVariation].default) {
 			periodString = ""
 		}
 		else periodString = targetStart
@@ -307,7 +307,7 @@ function formatHash(targetEntry, targetPeriodStart, targetPeriodEnd, targetVaria
 	if (targetZoom) targetZoom = targetZoom.toFixed(3).replace(/\.?0+$/, '')
 
 	const result = [targetEntry]
-	const targetPeriod = formatPeriod(targetPeriodStart, targetPeriodEnd, targetVariation)
+	const targetPeriod = formatPeriod(targetPeriodStart, targetPeriodEnd, targetVariation, true)
 	result.push(targetPeriod, targetX, targetY, targetZoom)
 	if (!result.some(el => el || el === 0)) return ''
 	return '#' + result.join('/').replace(/\/+$/, '')
