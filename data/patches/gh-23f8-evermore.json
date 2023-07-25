@@ -1,0 +1,42 @@
+{
+	"id": 1987,
+	"name": "Evermore",
+	"description": "Evermore is the ninth studio album by American singer-songwriter Taylor Swift.  This art was created in collaboration between r/taylorswift and r/swiftierplace",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Evermore_(Taylor_Swift_album)"
+		],
+		"subreddit": [
+			"swiftierplace"
+		],
+		"discord": [
+			"nHJRXk2DcA"
+		]
+	},
+	"path": {
+		"207-256": [
+			[
+				1301,
+				-635
+			],
+			[
+				1228,
+				-635
+			],
+			[
+				1228,
+				-622
+			],
+			[
+				1301,
+				-622
+			]
+		]
+	},
+	"center": {
+		"207-256": [
+			1265,
+			-628
+		]
+	}
+}
