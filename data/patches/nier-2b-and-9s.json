@@ -1,0 +1,51 @@
+{
+	"id": -1,
+	"name": "2B and 9S",
+	"description": "2B and 9S characters from the game NieR: Automata",
+	"links": {
+		"subreddit": [
+			"nier"
+		],
+		"discord": [
+			"ZFFmVeYsDK"
+		]
+	},
+	"path": {
+		"255": [
+			[
+				-1396,
+				30
+			],
+			[
+				-1380,
+				30
+			],
+			[
+				-1378,
+				40
+			],
+			[
+				-1388,
+				46
+			],
+			[
+				-1400,
+				41
+			],
+			[
+				-1399,
+				34
+			],
+			[
+				-1396,
+				30
+			]
+		]
+	},
+	"center": {
+		"255": [
+			-1389,
+			38
+		]
+	}
+}
