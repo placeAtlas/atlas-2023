@@ -1,0 +1,43 @@
+{
+	"id": 457,
+	"name": "Flag of Israel",
+	"description": "Israel, officially the State of Israel, is a country in the Middle East. The basic design of Israel's flag recalls the Tallit, the Jewish prayer shawl, which is white with black or blue stripes. The symbol in the center represents the Star of David, a Jewish symbol dating from late medieval Prague, Czech Republic, which was adopted by the First Zionist Congress in 1897.\n\nLater in the event this was turned into the flag of Palestine by Twitch streamer vodkafunky1.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Israel",
+			"https://en.wikipedia.org/wiki/Flag_of_Israel"
+		],
+		"subreddit": [
+			"Israel"
+		],
+		"discord": [
+			"israel"
+		]
+	},
+	"path": {
+		"52-211": [
+			[
+				339,
+				-194
+			],
+			[
+				339,
+				-176
+			],
+			[
+				379,
+				-176
+			],
+			[
+				379,
+				-194
+			]
+		]
+	},
+	"center": {
+		"52-211": [
+			359,
+			-185
+		]
+	}
+}
