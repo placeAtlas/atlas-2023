@@ -152,6 +152,7 @@ function clearObjectsList() {
 	fixed = false
 	render()
 	objectEditNav.remove()
+	updateHash(false)
 	document.title = pageTitle
 }
 

@@ -66,6 +66,12 @@ function setView(targetX, targetY, targetZoom = zoom) {
 
 }
 
+function updateHash(...args) {
+	const newLocation = new URL(window.location)
+	newLocation.hash = formatHash(...args)
+	if (location.hash !== newLocation.hash) history.replaceState({}, "", newLocation)
+}
+
 let atlas = null
 window.atlas = atlas
 let atlasAll = null
@@ -475,12 +481,6 @@ async function init() {
 	function mouseup(x, y) {
 		dragging = false
 		updateHash()
-	}
-
-	function updateHash() {
-		const newLocation = new URL(window.location)
-		newLocation.hash = formatHash()
-		if (location.hash !== newLocation.hash) history.replaceState({}, "", newLocation)
 	}
 
 	function touchend(e) {
