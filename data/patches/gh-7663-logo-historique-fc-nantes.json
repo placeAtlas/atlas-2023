@@ -1,0 +1,42 @@
+{
+	"id": 1367,
+	"name": "Logo historique FC Nantes",
+	"description": "",
+	"links": {
+		"website": [
+			"https://www.fcnantes.com/"
+		],
+		"subreddit": [
+			"FCNantes"
+		],
+		"discord": [
+			"peuples-jaune-vert-1007938714871275602"
+		]
+	},
+	"path": {
+		"205-254": [
+			[
+				-367,
+				616
+			],
+			[
+				-338,
+				616
+			],
+			[
+				-336,
+				652
+			],
+			[
+				-367,
+				652
+			]
+		]
+	},
+	"center": {
+		"205-254": [
+			-352,
+			637
+		]
+	}
+}
