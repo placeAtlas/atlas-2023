@@ -1,0 +1,116 @@
+{
+	"id": -1,
+	"name": "November 2015 Paris attacks",
+	"description": "This is a tribute to the series of coordinated terrorist attacks (6 in total) by Islamic extremists took place on Friday, 13 November 2015 in Paris, France, and the city's northern suburb, Saint-Denis.\n\nOne of the group carried out a mass shooting and took hostages at an Eagles of Death Metal concert attended by 1,500 people in the Bataclan theater (the specific one shown on the canvas).\nIn total (counting all the attacks that happened on that day), there were 130 people dead, including 90 at the Bataclan theater. Another 416 people were injured with almost 100 critically.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/November_2015_Paris_attacks"
+		],
+		"subreddit": [
+			"placefr",
+			"france"
+		]
+	},
+	"path": {
+		"192-213": [
+			[
+				795,
+				-793
+			],
+			[
+				796,
+				-738
+			],
+			[
+				769,
+				-737
+			],
+			[
+				769,
+				-731
+			],
+			[
+				777,
+				-730
+			],
+			[
+				778,
+				-720
+			],
+			[
+				765,
+				-719
+			],
+			[
+				765,
+				-710
+			],
+			[
+				799,
+				-710
+			],
+			[
+				799,
+				-703
+			],
+			[
+				780,
+				-702
+			],
+			[
+				781,
+				-691
+			],
+			[
+				838,
+				-691
+			],
+			[
+				837,
+				-702
+			],
+			[
+				811,
+				-703
+			],
+			[
+				810,
+				-744
+			],
+			[
+				808,
+				-747
+			],
+			[
+				808,
+				-749
+			],
+			[
+				810,
+				-750
+			],
+			[
+				810,
+				-757
+			],
+			[
+				815,
+				-759
+			],
+			[
+				813,
+				-791
+			],
+			[
+				805,
+				-793
+			]
+		]
+	},
+	"center": {
+		"192-213": [
+			792,
+			-724
+		]
+	}
+}
