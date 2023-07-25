@@ -1,0 +1,71 @@
+{
+	"id": -1,
+	"name": "Python",
+	"description": "A tiny logo of the python programming language",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Python_(programming_language)"
+		],
+		"subreddit": [
+			"python"
+		]
+	},
+	"path": {
+		"254": [
+			[
+				270,
+				-161
+			],
+			[
+				269,
+				-161
+			],
+			[
+				269,
+				-160
+			],
+			[
+				268,
+				-160
+			],
+			[
+				268,
+				-159
+			],
+			[
+				269,
+				-159
+			],
+			[
+				269,
+				-158
+			],
+			[
+				270,
+				-158
+			],
+			[
+				270,
+				-159
+			],
+			[
+				271,
+				-159
+			],
+			[
+				271,
+				-160
+			],
+			[
+				270,
+				-160
+			]
+		]
+	},
+	"center": {
+		"254": [
+			270,
+			-159
+		]
+	}
+}
