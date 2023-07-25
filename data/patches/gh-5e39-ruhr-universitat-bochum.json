@@ -1,5 +1,6 @@
 {
 	"id": -1,
+	"_author": "Atomdonat", // Links to https://www.reddit.com/user/Atomdonat
 	"name": "Ruhr Universität Bochum",
 	"description": "Located in the heart of Europe in the dynamic metropolitan region of the Ruhrgebiet, RUB with its 21 faculties is home to 42,600 students from over 130 countries",
 	"links": {
@@ -14,12 +15,12 @@
 	"path": {
 		"242": [
 			[
-				-145,
+				-146,
 				-76
 			],
 			[
 				-145,
-				-56
+				-57
 			],
 			[
 				-127,
