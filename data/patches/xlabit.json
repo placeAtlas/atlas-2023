@@ -1,0 +1,39 @@
+{
+	"id": -1,
+	"name": "Xlabit",
+	"description": "Small logo of Xlabit Vietnam.",
+	"links": {
+		"website": [
+			"https://xlabit.com"
+		],
+		"subreddit": [
+			"VietNam"
+		]
+	},
+	"path": {
+		"214": [
+			[
+				1086,
+				437
+			],
+			[
+				1086,
+				444
+			],
+			[
+				1076,
+				444
+			],
+			[
+				1076,
+				437
+			]
+		]
+	},
+	"center": {
+		"214": [
+			1081,
+			441
+		]
+	}
+}
