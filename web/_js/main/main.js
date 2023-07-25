@@ -54,6 +54,9 @@ function applyView() {
 
 function setView(x, y, zoomN = zoom) {
 	
+	if (isNaN(x)) x = 0
+	if (isNaN(y)) y = 0
+
 	zoom = zoomN
 	scaleZoomOrigin = [
 		canvasCenter.x - x, 
@@ -102,7 +105,7 @@ async function init() {
 	atlasAll = updateAtlasAll(await atlasResp.json())
 
 	const hash = window.location.hash.substring(1)
-	const [, period] = hash.split('/')
+	const [, period, hashX, hashY, hashZoom] = hash.split('/')
 
 	if (period) {
 		const [, targetPeriod, targetVariation] = parsePeriod(period)
@@ -113,8 +116,11 @@ async function init() {
 
 	//console.log(document.documentElement.clientWidth, document.documentElement.clientHeight)
 
-	zoomOrigin = [0, 0]
-	applyView()
+	setView(
+		isNaN(hashX) ? 0 : Number(hashX), 
+		isNaN(hashY) ? 0 : Number(hashY), 
+		isNaN(hashZoom) ? 1 : Number(hashZoom)
+	)
 
 	let initialPinchDistance = 0
 	let initialPinchZoom = 0
@@ -306,6 +312,7 @@ async function init() {
 
 		zoom = Math.max(minZoom, Math.min(maxZoom, zoom))
 		applyZoom(x, y, zoom)
+		updateHash()
 	}, { passive: true })
 
 	/*function setDesiredZoom(x, y, target){
@@ -467,6 +474,13 @@ async function init() {
 
 	function mouseup(x, y) {
 		dragging = false
+		updateHash()
+	}
+
+	function updateHash() {
+		const newLocation = new URL(window.location)
+		newLocation.hash = formatHash()
+		if (location.hash !== newLocation.hash) history.replaceState({}, "", newLocation)
 	}
 
 	function touchend(e) {

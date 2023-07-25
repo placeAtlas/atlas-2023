@@ -285,16 +285,34 @@ function formatPeriod(start, end, variation) {
 	return periodString
 }
 
-function formatHash(id, start, end, variation) {
-	start ??= currentPeriod
-	end ??= currentPeriod
-	variation ??= currentVariation
+function setReferenceVal(reference, newValue) {
+	if (reference === false || reference === "") return null
+	else return reference ?? newValue
+}
+
+function formatHash(entryId, periodStart, periodEnd, variation, targetX, targetY, targetZoom) {
+	let hashData = window.location.hash.substring(1).split('/')
+
+	console.log(entryId, periodStart, periodEnd, variation, targetX, targetY, targetZoom)
+
+	entryId = setReferenceVal(entryId, hashData[0])
+	periodStart = setReferenceVal(periodStart, currentPeriod)
+	periodEnd = setReferenceVal(periodEnd, currentPeriod)
+	variation = setReferenceVal(variation, currentVariation)
+	targetX = setReferenceVal(targetX, -scaleZoomOrigin[0])
+	targetY = setReferenceVal(targetY, -scaleZoomOrigin[1])
+	targetZoom = setReferenceVal(targetZoom, zoom)
 	
-	const result = [id]
-	const targetPeriod = formatPeriod(start, end, variation)
-	if (targetPeriod && targetPeriod !== defaultPeriod) result.push(targetPeriod)
+	if (targetX) targetX = Math.round(targetX)
+	if (targetY) targetY = Math.round(targetY)
+	if (targetZoom) targetZoom = targetZoom.toFixed(3)
+
+	const result = [entryId]
+	const targetPeriod = formatPeriod(periodStart, periodEnd, variation)
+	result.push(targetPeriod, targetX, targetY, targetZoom)
 	if (!result.some(el => el || el === 0)) return ''
-	return '#' + result.join('/')
+	console.log(entryId, periodStart, periodEnd, variation, targetX, targetY, targetZoom, result.join('/'))
+	return '#' + result.join('/').replace(/\/+$/, '')
 }
 
 function downloadCanvas() {
