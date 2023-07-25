@@ -1,0 +1,37 @@
+{
+	"id": -1,
+	"name": "Breast cancer awareness",
+	"description": "Breast cancer awareness is an effort to raise awareness and reduce the stigma of breast cancer through education about screening, symptoms, and treatment. Supporters hope that greater knowledge will lead to earlier detection of breast cancer, which is associated with higher long-term survival rates, and that money raised for breast cancer will produce a reliable, permanent cure.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Breast_cancer_awareness",
+			"https://en.wikipedia.org/wiki/Breast_cancer"
+		]
+	},
+	"path": {
+		"219-233": [
+			[
+				1377,
+				-957
+			],
+			[
+				1377,
+				-926
+			],
+			[
+				1401,
+				-926
+			],
+			[
+				1401,
+				-957
+			]
+		]
+	},
+	"center": {
+		"219-233": [
+			1389,
+			-941
+		]
+	}
+}
