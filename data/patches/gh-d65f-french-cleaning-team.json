@@ -1,0 +1,95 @@
+{
+	"id": 2829,
+	"name": "French Cleaning Team",
+	"description": "Mr Clean (Monsieur Propre in French) is the symbol of the French Cleaning Team, a group dedicated to safeguarding the first flag and its diverse artworks from any potential attacks.\n\nMr. Clean is a fictional character, recurring hero of a series of cleaning products from the company Procter & Gamble.",
+	"links": {
+		"subreddit": [
+			"PlaceFr"
+		],
+		"discord": [
+			"5TZeFKxY"
+		]
+	},
+	"path": {
+		"248-255": [
+			[
+				-401,
+				122
+			],
+			[
+				-400,
+				132
+			],
+			[
+				-398,
+				138
+			],
+			[
+				-369,
+				130
+			],
+			[
+				-369,
+				117
+			],
+			[
+				-375,
+				114
+			],
+			[
+				-379,
+				114
+			],
+			[
+				-379,
+				106
+			],
+			[
+				-377,
+				103
+			],
+			[
+				-378,
+				97
+			],
+			[
+				-382,
+				92
+			],
+			[
+				-390,
+				92
+			],
+			[
+				-393,
+				97
+			],
+			[
+				-394,
+				102
+			],
+			[
+				-392,
+				108
+			],
+			[
+				-393,
+				114
+			],
+			[
+				-398,
+				117
+			],
+			[
+				-400,
+				119
+			]
+		]
+	},
+	"center": {
+		"248-255": [
+			-386,
+			123
+		]
+	}
+}
