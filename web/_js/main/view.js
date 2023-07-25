@@ -35,7 +35,6 @@ const searchInput = document.getElementById("searchList")
 const sortInput = document.getElementById("sort")
 
 const entriesList = document.getElementById("entriesList")
-
 let entriesListShown = false
 
 const drawButton = document.getElementById("drawLink")
@@ -48,22 +47,18 @@ let atlasDisplay
 
 const entriesLimit = 50
 let entriesOffset = 0
+
 const moreEntriesButton = document.createElement("button")
 moreEntriesButton.innerHTML = "Show " + entriesLimit + " more"
 moreEntriesButton.type = "button"
 moreEntriesButton.className = "btn btn-primary d-block mb-2 mx-auto"
-
 moreEntriesButton.id = "moreEntriesButton"
-moreEntriesButton.addEventListener('click', () => {
-	buildObjectsList(null, null)
-	renderBackground(atlas)
-	render()
-})
+let showMoreEntries = () => {}
 
 const moreEntriesObserver = new IntersectionObserver(entries => {
 	for (const entry of entries) {
 		if (!entry.isIntersecting) continue
-		moreEntriesButton.click()
+		showMoreEntries()
 		break
 	}
 })
@@ -307,11 +302,7 @@ function renderBackground(atlas) {
 	}
 }
 
-function buildObjectsList(filter = "", sort = defaultSort) {
-
-	if (entriesList.contains(moreEntriesButton)) {
-		entriesList.removeChild(moreEntriesButton)
-	}
+function buildObjectsList(filter, sort) {
 
 	atlasDisplay = atlas.slice()
 
@@ -382,60 +373,72 @@ function buildObjectsList(filter = "", sort = defaultSort) {
 		atlasDisplay.sort(sortFunction)
 	}
 
-	for (let i = entriesOffset; i < entriesOffset + entriesLimit; i++) {
+	moreEntriesButton.removeEventListener('click', showMoreEntries)
+	showMoreEntries = () => {
 
-		if (i >= atlasDisplay.length) break
+		if (entriesList.contains(moreEntriesButton)) {
+			entriesList.removeChild(moreEntriesButton)
+		}	
 
-		const element = createInfoBlock(atlasDisplay[i])
-		const entry = atlasDisplay[i]
+		for (let i = entriesOffset; i < entriesOffset + entriesLimit; i++) {
 
-		element.addEventListener("mouseenter", function () {
-			if (fixed || dragging) return
-			objectsContainer.replaceChildren()
-
-			previousScaleZoomOrigin ??= [...scaleZoomOrigin]
-			previousZoom ??= zoom
-			setView(entry.center[0], entry.center[1], setZoomByPath(entry.path))
-
-			hovered = [entry]
-			render()
-			hovered[0].element = this
-			updateLines()
-
-		})
-
-		element.addEventListener("click", e => {
-			toggleFixed(e)
-			if (!fixed) return
-			previousScaleZoomOrigin ??= [...scaleZoomOrigin]
-			previousZoom ??= zoom
-			applyView()
-		})
-
-		element.addEventListener("mouseleave", () => {
-			if (fixed || dragging) return
-
-			scaleZoomOrigin = [...previousScaleZoomOrigin]
-			zoom = previousZoom
-			previousScaleZoomOrigin = undefined
-			previousZoom = undefined
-			applyView()
-
-			hovered = []
-			updateLines()
-			render()
-		})
-
-		entriesList.appendChild(element)
-
+			if (i >= atlasDisplay.length) break
+	
+			const element = createInfoBlock(atlasDisplay[i])
+			const entry = atlasDisplay[i]
+	
+			element.addEventListener("mouseenter", function () {
+				if (fixed || dragging) return
+				objectsContainer.replaceChildren()
+	
+				previousScaleZoomOrigin ??= [...scaleZoomOrigin]
+				previousZoom ??= zoom
+				setView(entry.center[0], entry.center[1], setZoomByPath(entry.path))
+	
+				hovered = [entry]
+				render()
+				hovered[0].element = this
+				updateLines()
+	
+			})
+	
+			element.addEventListener("click", e => {
+				toggleFixed(e)
+				if (!fixed) return
+				previousScaleZoomOrigin ??= [...scaleZoomOrigin]
+				previousZoom ??= zoom
+				applyView()
+			})
+	
+			element.addEventListener("mouseleave", () => {
+				if (fixed || dragging) return
+	
+				scaleZoomOrigin = [...previousScaleZoomOrigin]
+				zoom = previousZoom
+				previousScaleZoomOrigin = undefined
+				previousZoom = undefined
+				applyView()
+	
+				hovered = []
+				updateLines()
+				render()
+			})
+	
+			entriesList.appendChild(element)
+	
+		}
+	
+		entriesOffset += entriesLimit
+	
+		if (atlasDisplay.length > entriesOffset) {
+			moreEntriesButton.innerHTML = "Show " + Math.min(entriesLimit, atlasDisplay.length - entriesOffset) + " more"
+			entriesList.appendChild(moreEntriesButton)
+		}
+	
 	}
+	moreEntriesButton.addEventListener('click', showMoreEntries)
+	showMoreEntries()
 
-	entriesOffset += entriesLimit
-
-	if (atlasDisplay.length > entriesOffset) {
-		moreEntriesButton.innerHTML = "Show " + Math.min(entriesLimit, atlasDisplay.length - entriesOffset) + " more"
-		entriesList.appendChild(moreEntriesButton)
-	}
 }
 
 function shuffle() {
@@ -453,8 +456,8 @@ function resetEntriesList() {
 	entriesList.replaceChildren()
 	entriesList.appendChild(moreEntriesButton)
 
-	let sort = sortInput.value || defaultSort
-	let search = searchInput?.value.toLowerCase()
+	const sort = sortInput.value || defaultSort
+	const search = searchInput?.value.toLowerCase()
 
 	buildObjectsList(search, sort)
 }
