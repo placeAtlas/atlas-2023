@@ -265,22 +265,22 @@ function parsePeriod(periodString) {
 	}
 }
 
-function formatPeriod(start, end, variation) {
-	start ??= currentPeriod
-	end ??= currentPeriod
-	variation ??= currentVariation
+function formatPeriod(targetStart, targetEnd, targetVariation) {
+	targetStart ??= currentPeriod
+	targetEnd ??= currentPeriod
+	targetVariation ??= currentVariation
 
 	let periodString, variationString
-	variationString = variationsConfig[variation].code
-	if (start > end) [start, end] = [end, start]
-	if (start === end) {
-		if (start === variationsConfig[variation].default && variation !== defaultVariation) {
+	variationString = variationsConfig[targetVariation].code
+	if (targetStart > targetEnd) [targetStart, targetEnd] = [targetEnd, targetStart]
+	if (targetStart === targetEnd) {
+		if (targetStart === variationsConfig[targetVariation].default && targetVariation !== defaultVariation) {
 			periodString = ""
 		}
-		else periodString = start
+		else periodString = targetStart
 	}
-	else periodString = start + "-" + end
-	if (periodString && variationString) return variationsConfig[variation].code + ":" + periodString
+	else periodString = targetStart + "-" + targetEnd
+	if (periodString && variationString) return variationsConfig[targetVariation].code + ":" + periodString
 	if (variationString) return variationString
 	return periodString
 }
@@ -290,15 +290,13 @@ function setReferenceVal(reference, newValue) {
 	else return reference ?? newValue
 }
 
-function formatHash(entryId, periodStart, periodEnd, variation, targetX, targetY, targetZoom) {
+function formatHash(targetEntry, targetPeriodStart, targetPeriodEnd, targetVariation, targetX, targetY, targetZoom) {
 	let hashData = window.location.hash.substring(1).split('/')
 
-	console.log(entryId, periodStart, periodEnd, variation, targetX, targetY, targetZoom)
-
-	entryId = setReferenceVal(entryId, hashData[0])
-	periodStart = setReferenceVal(periodStart, currentPeriod)
-	periodEnd = setReferenceVal(periodEnd, currentPeriod)
-	variation = setReferenceVal(variation, currentVariation)
+	targetEntry = setReferenceVal(targetEntry, hashData[0])
+	targetPeriodStart = setReferenceVal(targetPeriodStart, currentPeriod)
+	targetPeriodEnd = setReferenceVal(targetPeriodEnd, currentPeriod)
+	targetVariation = setReferenceVal(targetVariation, currentVariation)
 	targetX = setReferenceVal(targetX, -scaleZoomOrigin[0])
 	targetY = setReferenceVal(targetY, -scaleZoomOrigin[1])
 	targetZoom = setReferenceVal(targetZoom, zoom)
@@ -307,11 +305,10 @@ function formatHash(entryId, periodStart, periodEnd, variation, targetX, targetY
 	if (targetY) targetY = Math.round(targetY)
 	if (targetZoom) targetZoom = targetZoom.toFixed(3)
 
-	const result = [entryId]
-	const targetPeriod = formatPeriod(periodStart, periodEnd, variation)
+	const result = [targetEntry]
+	const targetPeriod = formatPeriod(targetPeriodStart, targetPeriodEnd, targetVariation)
 	result.push(targetPeriod, targetX, targetY, targetZoom)
 	if (!result.some(el => el || el === 0)) return ''
-	console.log(entryId, periodStart, periodEnd, variation, targetX, targetY, targetZoom, result.join('/'))
 	return '#' + result.join('/').replace(/\/+$/, '')
 }
 

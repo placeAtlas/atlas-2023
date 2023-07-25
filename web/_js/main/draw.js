@@ -802,7 +802,7 @@ function initDraw() {
 	initPeriodGroups()
 
 	const hash = window.location.hash.substring(1)
-	const [, period, hashX, hashY, hashZoom] = hash.split('/')
+	const [,, hashX, hashY, hashZoom] = hash.split('/')
 
 	setView(
 		isNaN(hashX) ? center[0] : Number(hashX), 

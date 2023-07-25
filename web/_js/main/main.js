@@ -52,15 +52,15 @@ function applyView() {
 
 }
 
-function setView(x, y, zoomN = zoom) {
+function setView(targetX, targetY, targetZoom = zoom) {
 	
-	if (isNaN(x)) x = 0
-	if (isNaN(y)) y = 0
+	if (isNaN(targetX)) targetX = 0
+	if (isNaN(targetY)) targetY = 0
 
-	zoom = zoomN
+	zoom = targetZoom
 	scaleZoomOrigin = [
-		canvasCenter.x - x, 
-		canvasCenter.y - y
+		canvasCenter.x - targetX, 
+		canvasCenter.y - targetY
 	]
 	applyView()
 
@@ -105,10 +105,10 @@ async function init() {
 	atlasAll = updateAtlasAll(await atlasResp.json())
 
 	const hash = window.location.hash.substring(1)
-	const [, period, hashX, hashY, hashZoom] = hash.split('/')
+	const [, hashPeriod, hashX, hashY, hashZoom] = hash.split('/')
 
-	if (period) {
-		const [, targetPeriod, targetVariation] = parsePeriod(period)
+	if (hashPeriod) {
+		const [, targetPeriod, targetVariation] = parsePeriod(hashPeriod)
 		await updateTime(targetPeriod, targetVariation, true)
 	} else {
 		await updateTime(currentPeriod, currentVariation, true)

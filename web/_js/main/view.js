@@ -638,36 +638,44 @@ function updateHovering(e, tapped) {
 	render()
 }
 
-window.addEventListener("hashchange", highlightEntryFromUrl)
+window.addEventListener("hashchange", updateViewFromHash)
 
-function highlightEntryFromUrl() {
+function updateViewFromHash() {
 
 	const hash = window.location.hash.substring(1); //Remove hash prefix
-	let [id, period, hashX, hashY, hashZoom] = hash.split('/')
+	let [hashEntryId, hashPeriod, hashX, hashY, hashZoom] = hash.split('/')
 
 	// Handle zzz and 0.. prefix
-	let newId = id.replace(/^zzz([a-z0-9]{8,})$/g, "$1").replace(/^0+/, '')
-	if (id !== newId) {
-		id = newId
+	let newId = hashEntryId.replace(/^zzz([a-z0-9]{8,})$/g, "$1").replace(/^0+/, '')
+	if (hashEntryId !== newId) {
+		hashEntryId = newId
 		const newLocation = new URL(window.location)
-		newLocation.hash = '#' + [newId, period, hashX, hashY, hashZoom].join('/')
+		newLocation.hash = '#' + [newId, hashPeriod, hashX, hashY, hashZoom].join('/')
 		history.replaceState({}, "", newLocation)
 	}
 
 	let targetPeriod, targetVariation
 
-	if (period) {
-		[targetPeriod, , targetVariation] = parsePeriod(period)
+	if (hashPeriod) {
+		[targetPeriod, , targetVariation] = parsePeriod(hashPeriod)
 	} else {
 		targetPeriod = defaultPeriod
 		targetVariation = defaultVariation
 	}
 	updateTime(targetPeriod, targetVariation, true)
 
-	if (!id) return
+	setView(
+		isNaN(hashX) ? scaleZoomOrigin[0] : Number(hashX), 
+		isNaN(hashY) ? scaleZoomOrigin[1] : Number(hashY), 
+		isNaN(hashZoom) ? zoom : Number(hashZoom)
+	)
+
+	if (!hashEntryId) return
+
+	// Highlight entry from hash
 
 	const entries = atlas.filter(e => {
-		return e.id.toString() === id
+		return e.id.toString() === hashEntryId
 	})
 
 	if (entries.length !== 1) return 
@@ -677,7 +685,7 @@ function highlightEntryFromUrl() {
 	document.title = entry.name + " on " + pageTitle
 
 	if ((!entry.diff || entry.diff !== "delete")) {
-		objectEditNav.href = "./?mode=draw&id=" + id
+		objectEditNav.href = "./?mode=draw&id=" + hashEntryId
 		objectEditNav.title = "Edit " + entry.name
 		if (!objectEditNav.isConnected) {
 			showListButton.parentElement.appendChild(objectEditNav)
@@ -691,7 +699,6 @@ function highlightEntryFromUrl() {
 	objectsContainer.appendChild(infoElement)
 
 	renderBackground(atlas)
-	applyView()
 	setView(
 		isNaN(hashX) ? entry.center[0] : Number(hashX), 
 		isNaN(hashY) ? entry.center[1] : Number(hashY), 
@@ -743,7 +750,7 @@ function initView() {
 	/*if (window.location.hash.substring(3)){
 		zoom = 4
 		applyView()
-		highlightEntryFromUrl()
+		updateViewFromHash()
 	}*/
 
 	applyView()
@@ -822,7 +829,7 @@ function initViewGlobal() {
 	})
 
 	if (window.location.hash) { // both "/" and just "/#" will be an empty hash string
-		highlightEntryFromUrl()
+		updateViewFromHash()
 	}
 
 	document.addEventListener('timeupdate', event => {
