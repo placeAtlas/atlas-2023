@@ -31,6 +31,11 @@ def per_line_entries(entries: list, file: TextIOWrapper):
 
 def extend_time_key(items):
 	for key, value in list(items.items()):
+		if key == '':
+			del items[key]
+			items['227-241'] = value
+			continue
+
 		times = key.split(', ')
 		for time in times:
 			if '-' in time:
