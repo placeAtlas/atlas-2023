@@ -1,0 +1,77 @@
+{
+	"id": -1,
+	"name": "KuryKat",
+	"description": "A small artwork that I made for myself with the help of some friends ❤",
+	"links": {
+		"website": [
+			"https://kurykat.dev/",
+			"https://github.com/KuryKat",
+			"https://twitter.com/KuryKat"
+		],
+		"discord": [
+			"264NBxYHAW"
+		]
+	},
+	"path": {
+		"255": [
+			[
+				632,
+				667
+			],
+			[
+				654,
+				645
+			],
+			[
+				639,
+				621
+			],
+			[
+				621,
+				643
+			],
+			[
+				627,
+				657
+			],
+			[
+				627,
+				657
+			],
+			[
+				628,
+				658
+			],
+			[
+				632,
+				668
+			],
+			[
+				632,
+				667
+			],
+			[
+				632,
+				668
+			],
+			[
+				632,
+				668
+			],
+			[
+				632,
+				667
+			],
+			[
+				638,
+				661
+			]
+		]
+	},
+	"center": {
+		"255": [
+			637,
+			644
+		]
+	}
+}
