@@ -1,0 +1,32 @@
+{
+	"id": -1,
+	"name": "Tako of the Void",
+	"description": "what is your wisdom? \n\nA Takodachi just chilling on its natural habitat. Until it was consumed by the power of the Void.",
+	"links": {},
+	"path": {
+		"139-153": [
+			[
+				-237,
+				-834
+			],
+			[
+				-237,
+				-824
+			],
+			[
+				-225,
+				-823
+			],
+			[
+				-226,
+				-834
+			]
+		]
+	},
+	"center": {
+		"139-153": [
+			-231,
+			-829
+		]
+	}
+}
