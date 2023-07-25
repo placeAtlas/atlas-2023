@@ -577,12 +577,14 @@ function updateCoordsDisplay(e) {
 	} else {
 		coordsEl.textContent = Math.floor(pos[0]) + ", " + Math.floor(pos[1])
 	}
+
+	return pos
 }
 
 function updateHovering(e, tapped) {
 
 	if (dragging || (fixed && !tapped)) return
-	updateCoordsDisplay(e)
+	const pos = updateCoordsDisplay(e)
 
 	if (!(pos[0] <= canvasSize.x + canvasOffset.x + 200 && pos[0] >= canvasOffset.x - 200 && pos[1] <= canvasSize.y + canvasOffset.y + 200 && pos[1] >= canvasOffset.x - 200)) return
 	
