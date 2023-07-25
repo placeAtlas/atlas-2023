@@ -1,0 +1,36 @@
+{
+	"id": 2144,
+	"name": "1 Karate Dojo Norden",
+	"description": "The Pixelart is an abbreviation for the first karate dojo north. Which was founded in 1976 by Sensai Jürgen Grade. We train traditional Schotokan Karate. \n~Hanno,Kai~",
+	"links": {
+		"website": [
+			"https://1kdn.de"
+		]
+	},
+	"path": {
+		"195-207": [
+			[
+				-938,
+				-831
+			],
+			[
+				-918,
+				-831
+			],
+			[
+				-918,
+				-818
+			],
+			[
+				-938,
+				-818
+			]
+		]
+	},
+	"center": {
+		"195-207": [
+			-928,
+			-824
+		]
+	}
+}
