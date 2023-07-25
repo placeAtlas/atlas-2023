@@ -3,7 +3,7 @@ import json
 import os
 import tqdm
 
-pre_extend_times = []
+pre_extend_times = [226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240]
 post_extend_time = 241
 
 if len(pre_extend_times) == 0:
