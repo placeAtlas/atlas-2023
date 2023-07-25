@@ -1,0 +1,51 @@
+{
+	"id": -1,
+	"name": "Flag of Bolivia",
+	"description": "Bolivia is a country in central South America.",
+	"links": {
+		"subreddit": [
+			"BOLIVIA"
+		],
+		"discord": [
+			"3MHhGGbmm2"
+		]
+	},
+	"path": {
+		"254": [
+			[
+				105,
+				738
+			],
+			[
+				105,
+				738
+			],
+			[
+				105,
+				738
+			],
+			[
+				105,
+				738
+			],
+			[
+				105,
+				788
+			],
+			[
+				299,
+				788
+			],
+			[
+				301,
+				738
+			]
+		]
+	},
+	"center": {
+		"254": [
+			203,
+			763
+		]
+	}
+}
