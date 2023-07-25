@@ -1,0 +1,44 @@
+{
+	"id": -1,
+	"name": "Barbie Logo",
+	"description": "Tribute of the Barbie logo in honor of the new Barbie movie and a shared love for Barbie",
+	"links": {
+		"subreddit": [
+			"Barbie"
+		]
+	},
+	"path": {
+		"254": [
+			[
+				-1396,
+				561
+			],
+			[
+				-1396,
+				547
+			],
+			[
+				-1383,
+				546
+			],
+			[
+				-1383,
+				563
+			],
+			[
+				-1397,
+				562
+			],
+			[
+				-1396,
+				547
+			]
+		]
+	},
+	"center": {
+		"254": [
+			-1389,
+			556
+		]
+	}
+}
