@@ -1,0 +1,50 @@
+{
+	"id": -1,
+	"name": "PermadeaZ",
+	"description": "PermadeaZ is a twitch series hosted by the Spanish streamer Silithur. The series is played by several famous streamers in the game Project Zomboid. The particularity is that players have only one live, so if they die, they are out. ",
+	"links": {
+		"website": [
+			"https://www.twitch.tv/silithur",
+			"https://www.youtube.com/watch?v=BHmTdKNe5s8",
+			"https://twitter.com/Silithur"
+		]
+	},
+	"path": {
+		"5-254": [
+			[
+				116,
+				-96
+			],
+			[
+				200,
+				-96
+			],
+			[
+				200,
+				-78
+			],
+			[
+				116,
+				-78
+			],
+			[
+				116,
+				-78
+			],
+			[
+				116,
+				-93
+			],
+			[
+				116,
+				-95
+			]
+		]
+	},
+	"center": {
+		"5-254": [
+			158,
+			-87
+		]
+	}
+}
