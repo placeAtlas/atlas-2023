@@ -3,8 +3,8 @@ import json
 import os
 import tqdm
 
-pre_extend_times = [226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240]
-post_extend_time = 241
+pre_extend_times = []
+post_extend_time = 242
 
 if len(pre_extend_times) == 0:
 	pre_extend_times.append(post_extend_time - 1)
@@ -33,7 +33,7 @@ def extend_time_key(items):
 	for key, value in list(items.items()):
 		if key == '':
 			del items[key]
-			items['227-241'] = value
+			items[f'{pre_extend_times[0]}-{post_extend_time}'] = value
 			continue
 
 		times = key.split(', ')
