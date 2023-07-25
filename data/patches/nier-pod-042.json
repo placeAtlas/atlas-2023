@@ -1,0 +1,91 @@
+{
+	"id": -1,
+	"name": "Pod-042",
+	"description": "Pod-042 is a tactical support unit that helps YoRHa soldiers in NieR:Automata. They can use various long range attacks to aid in completion of the mission.",
+	"links": {
+		"subreddit": [
+			"nier"
+		],
+		"discord": [
+			"ZFFmVeYsDK"
+		]
+	},
+	"path": {
+		"214-256": [
+			[
+				-255,
+				831
+			],
+			[
+				-252,
+				831
+			],
+			[
+				-252,
+				835
+			],
+			[
+				-251,
+				835
+			],
+			[
+				-251,
+				843
+			],
+			[
+				-250,
+				843
+			],
+			[
+				-250,
+				845
+			],
+			[
+				-249,
+				845
+			],
+			[
+				-246,
+				848
+			],
+			[
+				-246,
+				850
+			],
+			[
+				-256,
+				850
+			],
+			[
+				-263,
+				847
+			],
+			[
+				-263,
+				843
+			],
+			[
+				-259,
+				843
+			],
+			[
+				-259,
+				835
+			],
+			[
+				-255,
+				835
+			],
+			[
+				-255,
+				831
+			]
+		]
+	},
+	"center": {
+		"214-256": [
+			-255,
+			846
+		]
+	}
+}
