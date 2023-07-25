@@ -1,0 +1,40 @@
+{
+	"id": -1,
+	"name": "Breast cancer ribbon",
+	"description": "Symbolizing hope and strength, this artwork, made by r/place_the_wave,  features the breast cancer ribbon, a gentle yet powerful reminder of solidarity and resilience in the face of adversity. A touching tribute to survivors and fighters, it embodies the unwavering spirit in the fight against breast cancer.",
+	"links": {
+		"subreddit": [
+			"place_the_wave",
+			"place_wave"
+		],
+		"discord": [
+			"wxVbQDKTE3"
+		]
+	},
+	"path": {
+		"": [
+			[
+				1377,
+				-957
+			],
+			[
+				1377,
+				-926
+			],
+			[
+				1401,
+				-926
+			],
+			[
+				1401,
+				-957
+			]
+		]
+	},
+	"center": {
+		"": [
+			1389,
+			-941
+		]
+	}
+}
