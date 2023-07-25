@@ -304,7 +304,7 @@ function formatHash(targetEntry, targetPeriodStart, targetPeriodEnd, targetVaria
 	
 	if (targetX) targetX = Math.round(targetX)
 	if (targetY) targetY = Math.round(targetY)
-	if (targetZoom) targetZoom = targetZoom.toFixed(3)
+	if (targetZoom) targetZoom = targetZoom.toFixed(3).replace(/\.?0+$/, '')
 
 	const result = [targetEntry]
 	const targetPeriod = formatPeriod(targetPeriodStart, targetPeriodEnd, targetVariation)
