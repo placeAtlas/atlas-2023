@@ -1,0 +1,70 @@
+{
+	"id": -1,
+	"name": "Spontaneous Crosses",
+	"description": "Spontaneous cross next to the big Rubius demon, that waxed and waned (and burnt and got inverted!) but made it through to the final greyscaling.",
+	"links": {},
+	"path": {
+		"92-143": [
+			[
+				646,
+				86
+			],
+			[
+				647,
+				28
+			],
+			[
+				704,
+				26
+			],
+			[
+				705,
+				90
+			],
+			[
+				646,
+				90
+			],
+			[
+				646,
+				90
+			]
+		],
+		"147-258": [
+			[
+				664,
+				129
+			],
+			[
+				665,
+				83
+			],
+			[
+				718,
+				89
+			],
+			[
+				710,
+				110
+			],
+			[
+				714,
+				132
+			],
+			[
+				691,
+				136
+			]
+		]
+	},
+	"center": {
+		"92-143": [
+			676,
+			58
+		],
+		"147-258": [
+			687,
+			110
+		]
+	}
+}
