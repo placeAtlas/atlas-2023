@@ -30,6 +30,7 @@ svg.icon {
 body[data-mode] {
 	overflow: hidden;
 	background-color: #111;
+	touch-action: none;
 }
 
 #wrapper {
@@ -82,7 +83,6 @@ body[data-mode]:not([data-mode="draw"]) #drawNavButtons, [data-mode="draw"] #def
 	width: calc(100% - 400px);
 	height: 100%;
 	margin-left: 400px;
-	touch-action: manipulation;
 	overflow: hidden;
 }
 
