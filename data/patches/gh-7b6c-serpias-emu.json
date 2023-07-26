@@ -1,0 +1,43 @@
+{
+	"id": -1,
+	"name": "Serpias emu",
+	"description": "El Streamer de nombre Serpias hizo una Emu Otori de pelo blanco y negro.",
+	"links": {
+		"website": [
+			"https://www.twitch.tv/serpias/"
+		],
+		"subreddit": [
+			"Serpias"
+		]
+	},
+	"path": {
+		"19-90": [
+			[
+				153,
+				103
+			],
+			[
+				153,
+				102
+			],
+			[
+				153,
+				129
+			],
+			[
+				172,
+				129
+			],
+			[
+				172,
+				102
+			]
+		]
+	},
+	"center": {
+		"19-90": [
+			163,
+			116
+		]
+	}
+}
