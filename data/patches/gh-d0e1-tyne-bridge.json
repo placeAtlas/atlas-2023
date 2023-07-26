@@ -1,0 +1,52 @@
+{
+	"id": -1,
+	"name": "Tyne Bridge",
+	"description": "The Tyne Bridge is a through arch bridge over the River Tyne in North East England, linking Newcastle upon Tyne and Gateshead. The bridge was designed by the engineering firm Mott, Hay and Anderson, who later designed the Forth Road Bridge, and was built by Dorman Long and Co. of Middlesbrough. The bridge was officially opened on 10 October 1928 by King George V and has since become a defining symbol of Tyneside. It is ranked as the tenth tallest structure in Newcastle.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Tyne_Bridge"
+		]
+	},
+	"path": {
+		"218-256": [
+			[
+				-307,
+				-278
+			],
+			[
+				-319,
+				-278
+			],
+			[
+				-319,
+				-282
+			],
+			[
+				-313,
+				-282
+			],
+			[
+				-310,
+				-278
+			],
+			[
+				-308,
+				-278
+			],
+			[
+				-308,
+				-281
+			],
+			[
+				-307,
+				-281
+			]
+		]
+	},
+	"center": {
+		"218-256": [
+			-317,
+			-280
+		]
+	}
+}
