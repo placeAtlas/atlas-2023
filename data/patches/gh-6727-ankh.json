@@ -1,0 +1,86 @@
+{
+	"id": -1,
+	"name": "Ankh.",
+	"description": "The ankh, also known as \"key of life\", represents the word \"life\" in ancient Egyptian hieroglyphics.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Ankh"
+		],
+		"subreddit": [
+			"Egypt"
+		],
+		"discord": [
+			"Qc7arrjupq"
+		]
+	},
+	"path": {
+		"162-256": [
+			[
+				-781,
+				328
+			],
+			[
+				-788,
+				328
+			],
+			[
+				-788,
+				334
+			],
+			[
+				-787,
+				334
+			],
+			[
+				-786,
+				335
+			],
+			[
+				-789,
+				335
+			],
+			[
+				-789,
+				338
+			],
+			[
+				-786,
+				338
+			],
+			[
+				-786,
+				344
+			],
+			[
+				-783,
+				344
+			],
+			[
+				-783,
+				338
+			],
+			[
+				-780,
+				338
+			],
+			[
+				-780,
+				335
+			],
+			[
+				-783,
+				335
+			],
+			[
+				-781,
+				333
+			]
+		]
+	},
+	"center": {
+		"162-256": [
+			-785,
+			332
+		]
+	}
+}
