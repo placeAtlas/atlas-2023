@@ -1,0 +1,68 @@
+{
+	"id": 645,
+	"name": "Hololive",
+	"description": "Hololive Production is a virtual YouTuber (VTuber) agency owned by Japanese tech entertainment company Cover Corporation. In addition to acting as a multi-channel network, Hololive Production also handles merchandising especially in music production and concert organization. The brand gained popularity as a talent agency for popular VTubers, managing 75 talents as of January 2023. Among them are the most subscribed active VTubers in Japan (Houshou Marine), Southeast Asia (Kobo Kanaeru), and North America (Gawr Gura). The star-like logo on the right depicts Holostars, the male-only branch, while \"Hololive\" represents the female-only unit.\n\nOriginally, the VTubers Place community was located next to the Turkish flag on the initial canvas size at the start of r/place. However, they were forced to move by the constraint of space and threats of expansions by Turkey and threats of collateral damage when streamers raided the Turkish flag.\nIn the initial location, the Turkish flag also cut off 4 vertical lines of the Hololive logo on the left side after Turkey expanded their flag. The original Hololive logo survived for several days even after it was officially abandoned for the final location, being constantly maintained by a combination of Hololive fans and surrounding communities unaware of the relocation of Hololive, before eventually being destroyed once it became clear it was not being maintained anymore.",
+	"links": {
+		"website": [
+			"https://en.hololive.tv/",
+			"https://en.wikipedia.org/wiki/Hololive_Production"
+		],
+		"subreddit": [
+			"Hololive"
+		],
+		"discord": [
+			"vtubersplace",
+			"holofans"
+		]
+	},
+	"path": {
+		"87-258": [
+			[
+				-667,
+				-360
+			],
+			[
+				-670,
+				-357
+			],
+			[
+				-670,
+				-315
+			],
+			[
+				-666,
+				-312
+			],
+			[
+				-665,
+				-312
+			],
+			[
+				-636,
+				-327
+			],
+			[
+				-575,
+				-327
+			],
+			[
+				-575,
+				-343
+			],
+			[
+				-631,
+				-343
+			],
+			[
+				-665,
+				-360
+			]
+		]
+	},
+	"center": {
+		"87-258": [
+			-654,
+			-336
+		]
+	}
+}
