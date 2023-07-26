@@ -1,0 +1,50 @@
+{
+	"id": 1474,
+	"name": "Destiny.gg",
+	"description": "Destiny.gg is the site of the streamer Destiny",
+	"links": {
+		"website": [
+			"https://www.destiny.gg/"
+		],
+		"subreddit": [
+			"Destiny"
+		],
+		"discord": [
+			"ywvWYsyw"
+		]
+	},
+	"path": {
+		"202-256": [
+			[
+				-813,
+				972
+			],
+			[
+				-815,
+				974
+			],
+			[
+				-816,
+				999
+			],
+			[
+				-744,
+				999
+			],
+			[
+				-743,
+				974
+			],
+			[
+				-746,
+				972
+			]
+		]
+	},
+	"center": {
+		"202-256": [
+			-779,
+			986
+		]
+	}
+}
