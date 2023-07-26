@@ -1,0 +1,41 @@
+{
+	"id": -1,
+	"name": "Kienlabadao's Logo",
+	"description": "This is Kienlabadao's original logo, which was made a long time ago and is still being used nowadays. This was built all by himself, without any support. It survived for 9 hours and 30 minutes while being attacked (even got turned into an among us character at some point) before eventually destroyed.",
+	"links": {
+		"website": [
+			"https://www.youtube.com/@itzkienlabadao4237",
+			"https://www.reddit.com/user/Kienlabadao/"
+		]
+	},
+	"path": {
+		"212-231": [
+			[
+				-118,
+				701
+			],
+			[
+				-112,
+				701
+			],
+			[
+				-112,
+				706
+			],
+			[
+				-118,
+				706
+			],
+			[
+				-118,
+				701
+			]
+		]
+	},
+	"center": {
+		"212-231": [
+			-115,
+			704
+		]
+	}
+}
