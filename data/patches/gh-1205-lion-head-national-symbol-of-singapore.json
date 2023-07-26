@@ -1,0 +1,109 @@
+{
+	"id": -1,
+	"name": "Lion Head - National Symbol of Singapore",
+	"description": "The lion head symbol, designed by Michael Lee, was published in 1986 by the government of Singapore. It symbolises courage, excellence and strength.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Lion_head_symbol_of_Singapore",
+			"https://www.nhb.gov.sg/what-we-do/our-work/community-engagement/education/resources/national-symbols/the-lion-head-symbol"
+		]
+	},
+	"path": {
+		"254": [
+			[
+				331,
+				-25
+			],
+			[
+				331,
+				-25
+			],
+			[
+				331,
+				-23
+			],
+			[
+				328,
+				-23
+			],
+			[
+				328,
+				-20
+			],
+			[
+				329,
+				-20
+			],
+			[
+				329,
+				-18
+			],
+			[
+				330,
+				-18
+			],
+			[
+				330,
+				-15
+			],
+			[
+				331,
+				-15
+			],
+			[
+				331,
+				-13
+			],
+			[
+				341,
+				-13
+			],
+			[
+				341,
+				-15
+			],
+			[
+				342,
+				-15
+			],
+			[
+				342,
+				-22
+			],
+			[
+				342,
+				-23
+			],
+			[
+				341,
+				-23
+			],
+			[
+				341,
+				-24
+			],
+			[
+				339,
+				-24
+			],
+			[
+				339,
+				-25
+			],
+			[
+				331,
+				-25
+			],
+			[
+				331,
+				-25
+			]
+		]
+	},
+	"center": {
+		"254": [
+			336,
+			-19
+		]
+	}
+}
