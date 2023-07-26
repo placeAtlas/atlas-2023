@@ -1,0 +1,96 @@
+{
+	"id": -1,
+	"name": "Spider-Man 2099",
+	"description": "Is a fictional superhero character appearing in American comic books published by Marvel Comics. His true identity is Miguel O'Hara, an Irish-Mexican geneticist living in Nueva York (a renamed New York City) in the year 2099",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Spider-Man_2099"
+		]
+	},
+	"path": {
+		"166-246": [
+			[
+				-232,
+				104
+			],
+			[
+				-238,
+				105
+			],
+			[
+				-239,
+				112
+			],
+			[
+				-245,
+				115
+			],
+			[
+				-244,
+				120
+			],
+			[
+				-240,
+				119
+			],
+			[
+				-244,
+				124
+			],
+			[
+				-242,
+				126
+			],
+			[
+				-238,
+				126
+			],
+			[
+				-235,
+				122
+			],
+			[
+				-232,
+				126
+			],
+			[
+				-225,
+				126
+			],
+			[
+				-229,
+				120
+			],
+			[
+				-226,
+				119
+			],
+			[
+				-225,
+				114
+			],
+			[
+				-228,
+				112
+			],
+			[
+				-229,
+				112
+			],
+			[
+				-229,
+				105
+			],
+			[
+				-235,
+				104
+			]
+		]
+	},
+	"center": {
+		"166-246": [
+			-234,
+			116
+		]
+	}
+}
