@@ -1,0 +1,120 @@
+{
+	"id": -1,
+	"name": "Carro de bomberos",
+	"description": "Bomberos de Chile corresponde a la institución que agrupa a los Cuerpos de bomberos del país,​ formados íntegramente por voluntarios.​\n\nLos bomberos en Chile celebran su aniversario el 30 de junio,​ en conmemoración a la fundación la primera institución del tipo en Chile, el Cuerpo de Bomberos de Valparaíso, en 1851.",
+	"links": {
+		"website": [
+			"https://www.bomberos.cl/"
+		]
+	},
+	"path": {
+		"254": [
+			[
+				-1320,
+				-774
+			],
+			[
+				-1320,
+				-788
+			],
+			[
+				-1324,
+				-789
+			],
+			[
+				-1325,
+				-794
+			],
+			[
+				-1327,
+				-794
+			],
+			[
+				-1327,
+				-792
+			],
+			[
+				-1343,
+				-792
+			],
+			[
+				-1343,
+				-789
+			],
+			[
+				-1358,
+				-789
+			],
+			[
+				-1362,
+				-787
+			],
+			[
+				-1365,
+				-786
+			],
+			[
+				-1365,
+				-783
+			],
+			[
+				-1366,
+				-773
+			],
+			[
+				-1359,
+				-773
+			],
+			[
+				-1357,
+				-770
+			],
+			[
+				-1354,
+				-770
+			],
+			[
+				-1352,
+				-772
+			],
+			[
+				-1352,
+				-773
+			],
+			[
+				-1336,
+				-773
+			],
+			[
+				-1334,
+				-770
+			],
+			[
+				-1331,
+				-770
+			],
+			[
+				-1328,
+				-773
+			],
+			[
+				-1324,
+				-773
+			],
+			[
+				-1324,
+				-774
+			],
+			[
+				-1320,
+				-774
+			]
+		]
+	},
+	"center": {
+		"254": [
+			-1332,
+			-782
+		]
+	}
+}
