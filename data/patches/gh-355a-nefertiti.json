@@ -1,0 +1,134 @@
+{
+	"id": -1,
+	"name": "Nefertiti.",
+	"description": "Nefertiti was the Great Royal Wife of Akhenaten, the 18th Dynasty pharaoh of Egypt. She was one of the most powerful and influential women in Egyptian history. Nefertiti is best known for her beauty, and her image has become one of the most iconic symbols of Ancient Egypt She was born around 1370 BCE.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Nefertiti"
+		],
+		"subreddit": [
+			"Egypt"
+		],
+		"discord": [
+			"Qc7arrjupq"
+		]
+	},
+	"path": {
+		"207-256": [
+			[
+				-879,
+				358
+			],
+			[
+				-875,
+				353
+			],
+			[
+				-875,
+				350
+			],
+			[
+				-876,
+				349
+			],
+			[
+				-876,
+				348
+			],
+			[
+				-883,
+				341
+			],
+			[
+				-883,
+				339
+			],
+			[
+				-884,
+				339
+			],
+			[
+				-887,
+				336
+			],
+			[
+				-887,
+				331
+			],
+			[
+				-880,
+				324
+			],
+			[
+				-879,
+				324
+			],
+			[
+				-878,
+				323
+			],
+			[
+				-871,
+				323
+			],
+			[
+				-867,
+				327
+			],
+			[
+				-867,
+				328
+			],
+			[
+				-865,
+				330
+			],
+			[
+				-865,
+				331
+			],
+			[
+				-864,
+				332
+			],
+			[
+				-864,
+				336
+			],
+			[
+				-863,
+				337
+			],
+			[
+				-863,
+				345
+			],
+			[
+				-866,
+				348
+			],
+			[
+				-866,
+				353
+			],
+			[
+				-867,
+				354
+			],
+			[
+				-867,
+				357
+			],
+			[
+				-864,
+				358
+			]
+		]
+	},
+	"center": {
+		"207-256": [
+			-874,
+			335
+		]
+	}
+}

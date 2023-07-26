@@ -1,0 +1,106 @@
+{
+	"id": 1817,
+	"name": "Flag of Lebanon",
+	"description": "The Republic of Lebanon (Arabic: لبنان) is a small country (10,452km² in area) located in the Middle East region. Its capital is Beirut. It has a long coastline on the eastern shore of the Mediterranean Sea, sharing a long land border with its much larger neighbour Syria to the north and east, and a much shorter (and conflict-ridden) border with Israel to the south.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Lebanon",
+			"https://en.wikipedia.org/wiki/Flag_of_Lebanon"
+		],
+		"subreddit": [
+			"lebanon"
+		]
+	},
+	"path": {
+		"191-203": [
+			[
+				-1200,
+				-214
+			],
+			[
+				-1200,
+				-191
+			],
+			[
+				-1155,
+				-191
+			],
+			[
+				-1155,
+				-214
+			]
+		],
+		"204-219": [
+			[
+				-1200,
+				-214
+			],
+			[
+				-1200,
+				-191
+			],
+			[
+				-1150,
+				-191
+			],
+			[
+				-1150,
+				-215
+			]
+		],
+		"220-229": [
+			[
+				-1200,
+				-214
+			],
+			[
+				-1200,
+				-189
+			],
+			[
+				-1141,
+				-190
+			],
+			[
+				-1141,
+				-214
+			]
+		],
+		"230-255": [
+			[
+				-1200,
+				-214
+			],
+			[
+				-1200,
+				-189
+			],
+			[
+				-1140,
+				-190
+			],
+			[
+				-1140,
+				-214
+			]
+		]
+	},
+	"center": {
+		"191-203": [
+			-1177,
+			-202
+		],
+		"204-219": [
+			-1175,
+			-203
+		],
+		"220-229": [
+			-1176,
+			-202
+		],
+		"230-255": [
+			-1176,
+			-202
+		]
+	}
+}

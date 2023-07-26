@@ -1,0 +1,99 @@
+{
+	"id": -1,
+	"name": "Nova, Emi, Fallo and magma ",
+	"description": "Is a JustNovaLive streamer of twitch as well as streamer Emikukis, streamer Fallo and TheMagmaboi",
+	"links": {
+		"website": [
+			"https://www.twitch.tv/justnovalive",
+			"https://www.twitch.tv/emikukis",
+			"https://www.twitch.tv/fallosinemision",
+			"https://www.twitch.tv/themagmaboi"
+		]
+	},
+	"path": {
+		"252": [
+			[
+				-404,
+				-815
+			],
+			[
+				-404,
+				-808
+			],
+			[
+				-386,
+				-808
+			],
+			[
+				-386,
+				-815
+			],
+			[
+				-379,
+				-815
+			],
+			[
+				-379,
+				-808
+			],
+			[
+				-386,
+				-808
+			],
+			[
+				-386,
+				-815
+			],
+			[
+				-404,
+				-815
+			],
+			[
+				-404,
+				-808
+			],
+			[
+				-387,
+				-808
+			],
+			[
+				-387,
+				-808
+			],
+			[
+				-387,
+				-808
+			],
+			[
+				-379,
+				-808
+			],
+			[
+				-379,
+				-798
+			],
+			[
+				-386,
+				-798
+			],
+			[
+				-387,
+				-798
+			],
+			[
+				-387,
+				-808
+			],
+			[
+				-387,
+				-808
+			]
+		]
+	},
+	"center": {
+		"252": [
+			-383,
+			-804
+		]
+	}
+}

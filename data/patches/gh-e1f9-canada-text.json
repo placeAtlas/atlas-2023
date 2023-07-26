@@ -1,0 +1,43 @@
+{
+	"id": -1,
+	"name": "Canada Text",
+	"description": "Text saying the country name Canada. Was often griefed to say things such as Banada, Ganada, and Canaoa.",
+	"links": {
+		"subreddit": [
+			"placecanada"
+		],
+		"discord": [
+			"placecanada"
+		]
+	},
+	"path": {
+		"128-256": [
+			[
+				109,
+				186
+			],
+			[
+				109,
+				189
+			],
+			[
+				136,
+				189
+			],
+			[
+				136,
+				186
+			],
+			[
+				109,
+				186
+			]
+		]
+	},
+	"center": {
+		"128-256": [
+			123,
+			188
+		]
+	}
+}

@@ -1,0 +1,43 @@
+{
+	"id": -1,
+	"name": "Stardew Valley Blue Discus",
+	"description": "A beautiful fish that can be found on ginger island",
+	"links": {
+		"website": [
+			"https://stardewvalley.net"
+		],
+		"subreddit": [
+			"StardewValley"
+		]
+	},
+	"path": {
+		"254": [
+			[
+				-328,
+				764
+			],
+			[
+				-309,
+				764
+			],
+			[
+				-309,
+				780
+			],
+			[
+				-328,
+				780
+			],
+			[
+				-328,
+				764
+			]
+		]
+	},
+	"center": {
+		"254": [
+			-318,
+			772
+		]
+	}
+}

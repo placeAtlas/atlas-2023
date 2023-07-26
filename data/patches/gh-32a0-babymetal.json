@@ -1,0 +1,43 @@
+{
+	"id": 366,
+	"name": "Babymetal",
+	"description": "BABYMETAL is a Japanese metal band. This art pictures band members MOAMETAL, SU-METAL, and MOMOMETAL.\n\nOnce you've heard it, you'll never unhear it. BABYMETAL is a band that you'll either love or hate. Amuse producer Key Kobayashi delved into the unknown and fused idol (J-pop) and metal, creating a sub-group of Sakura Gakuin: BABYMETAL! Having blossomed in Japan, they exploded into the Western world after their first album release in February 2014. Going on to tour the world within just four years of their creation, they have taken the metal scene by storm.",
+	"links": {
+		"website": [
+			"https://www.babymetal.com/en/",
+			"https://en.wikipedia.org/wiki/Babymetal"
+		],
+		"subreddit": [
+			"BABYMETAL"
+		],
+		"discord": [
+			"babymetal"
+		]
+	},
+	"path": {
+		"60-78, 92-151, 157-184": [
+			[
+				-141,
+				62
+			],
+			[
+				-79,
+				62
+			],
+			[
+				-79,
+				84
+			],
+			[
+				-142,
+				84
+			]
+		]
+	},
+	"center": {
+		"60-78, 92-151, 157-184": [
+			-110,
+			73
+		]
+	}
+}
