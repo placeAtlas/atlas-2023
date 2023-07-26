@@ -1,0 +1,125 @@
+{
+    	"id": 25,
+    	"name": "Flag of Germany",
+    	"description": "Germany is a country in Central Europe. The flag's connection to the southern flag community is unofficial, as it was made by the hivemind. With the approval of the Suedflaggen Community, numerous German universities and colleges have adopted the right Suedflagge. Previously, the hivemind had persistently included the phrase \"FUCK SPEZ\" until it was removed by the German educational institutions.",
+    	"links": {
+    		"website": [
+    			"https://en.wikipedia.org/wiki/Germany",
+    			"https://en.wikipedia.org/wiki/Flag_of_Germany"
+    		],
+    		"subreddit": [
+    			"placesuedflagge",
+    			"tumunich",
+    			"KaIT",
+    			"hs_karlsruhe",
+    			"tuhh",
+    			"HTWK_Leipzig",
+    			"RuhrUniBochum",
+    			"rwth",
+    			"tudortmund"
+    		],
+    		"discord": [
+    			"nTDtPfwGNS"
+    		]
+    	},
+    	"path": {
+    		"1-5": [
+    			[
+    				-501,
+    				-81
+    			],
+    			[
+    				-501,
+    				-56
+    			],
+    			[
+    				500,
+    				-64
+    			],
+    			[
+    				500,
+    				-78
+    			]
+    		],
+    		"6-25": [
+    			[
+    				-368,
+    				-80
+    			],
+    			[
+    				-368,
+    				-55
+    			],
+    			[
+    				500,
+    				-57
+    			],
+    			[
+    				500,
+    				-80
+    			]
+    		],
+    		"26-50": [
+    			[
+    				-368,
+    				-80
+    			],
+    			[
+    				-368,
+    				-55
+    			],
+    			[
+    				-134,
+    				-55
+    			],
+    			[
+    				-134,
+    				-59
+    			],
+    			[
+    				92,
+    				-58
+    			],
+    			[
+    				93,
+    				-80
+    			]
+    		],
+    		"51-258": [
+    			[
+    				-334,
+    				-80
+    			],
+    			[
+    				-334,
+    				-57
+    			],
+    			[
+    				91,
+    				-57
+    			],
+    			[
+    				91,
+    				-80
+    			]
+    		]
+    	},
+    	"center": {
+    		"1-5": [
+    			-488,
+    			-68
+    		],
+    		"6-25": [
+    			-355,
+    			-67
+    		],
+    		"26-50": [
+    			-155,
+    			-67
+    		],
+    		"51-258": [
+    			-121,
+    			-68
+    		]
+    	}
+    }
