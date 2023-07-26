@@ -1,0 +1,120 @@
+{
+	"id": 3233,
+	"name": "Simón Bolívar",
+	"description": "Simón José Antonio de la Santísima Trinidad Bolívar Palacios Ponte y Blanco (24 July 1783 – 17 December 1830) was a Venezuelan military and political leader who led what are currently the countries of Colombia, Venezuela, Ecuador, Peru, Panama and Bolivia to independence from the Spanish Empire.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Simón_Bolívar"
+		],
+		"subreddit": [
+			"vzla",
+			"placevenezuela"
+		]
+	},
+	"path": {
+		"169-255": [
+			[
+				-901,
+				321
+			],
+			[
+				-901,
+				303
+			],
+			[
+				-903,
+				303
+			],
+			[
+				-903,
+				291
+			],
+			[
+				-900,
+				290
+			],
+			[
+				-900,
+				288
+			],
+			[
+				-900,
+				281
+			],
+			[
+				-897,
+				278
+			],
+			[
+				-895,
+				278
+			],
+			[
+				-893,
+				280
+			],
+			[
+				-893,
+				286
+			],
+			[
+				-892,
+				286
+			],
+			[
+				-894,
+				287
+			],
+			[
+				-894,
+				290
+			],
+			[
+				-891,
+				291
+			],
+			[
+				-891,
+				293
+			],
+			[
+				-891,
+				297
+			],
+			[
+				-890,
+				303
+			],
+			[
+				-877,
+				316
+			],
+			[
+				-879,
+				316
+			],
+			[
+				-892,
+				303
+			],
+			[
+				-893,
+				303
+			],
+			[
+				-895,
+				321
+			],
+			[
+				-897,
+				320
+			]
+		]
+	},
+	"center": {
+		"169-255": [
+			-897,
+			296
+		]
+	}
+}
