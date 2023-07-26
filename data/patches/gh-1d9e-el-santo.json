@@ -1,0 +1,80 @@
+{
+	"id": 2451,
+	"name": "El Santo",
+	"description": "Rodolfo Guzmán Huerta known professionally as El Santo or in English The Saint, Mexican masked professional wrestler, actor and folk hero. He is one of the most famous and iconic Mexican wrestlers.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/El_Santo"
+		]
+	},
+	"path": {
+		"223-258": [
+			[
+				106,
+				-849
+			],
+			[
+				98,
+				-849
+			],
+			[
+				98,
+				-848
+			],
+			[
+				97,
+				-847
+			],
+			[
+				96,
+				-846
+			],
+			[
+				95,
+				-845
+			],
+			[
+				94,
+				-844
+			],
+			[
+				94,
+				-835
+			],
+			[
+				95,
+				-835
+			],
+			[
+				95,
+				-833
+			],
+			[
+				98,
+				-829
+			],
+			[
+				107,
+				-829
+			],
+			[
+				109,
+				-835
+			],
+			[
+				110,
+				-836
+			],
+			[
+				110,
+				-845
+			]
+		]
+	},
+	"center": {
+		"223-258": [
+			102,
+			-839
+		]
+	}
+}
