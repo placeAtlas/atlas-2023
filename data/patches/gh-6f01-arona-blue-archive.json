@@ -1,0 +1,67 @@
+{
+	"id": 1622,
+	"name": "Arona (blue archive)",
+	"description": "Arona (アロナ, Arona), stylized as A.R.O.N.A, is a non-playable character in Blue Archive that resides in the mysterious Shittim Chest. She accompanies Sensei throughout their adventure in Kivotos as a guide.\n\nShe is the main mascot of Blue Archive, appearing as the figurehead on its website and social media. In addition to providing information and updates to Sensei, she also runs a series of videos called Arona Channel.",
+	"links": {
+		"website": [
+			"https://bluearchive.fandom.com/wiki/Arona"
+		],
+		"subreddit": [
+			"bluearchive"
+		]
+	},
+	"path": {
+		"180-242": [
+			[
+				-871,
+				788
+			],
+			[
+				-842,
+				788
+			],
+			[
+				-841,
+				787
+			],
+			[
+				-841,
+				788
+			],
+			[
+				-840,
+				788
+			],
+			[
+				-840,
+				817
+			],
+			[
+				-871,
+				817
+			],
+			[
+				-839,
+				818
+			],
+			[
+				-872,
+				817
+			],
+			[
+				-841,
+				816
+			],
+			[
+				-871,
+				818
+			]
+		]
+	},
+	"center": {
+		"180-242": [
+			-856,
+			802
+		]
+	}
+}
