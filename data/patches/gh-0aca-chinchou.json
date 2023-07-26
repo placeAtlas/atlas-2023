@@ -1,0 +1,74 @@
+{
+	"id": -1,
+	"name": "Chinchou",
+	"description": "Chinchou is a Pokémon from the second generation of Pokémon games, with its appearance is based on an angler fish. ",
+	"links": {
+		"website": [
+			"http://pokemon.com/"
+		],
+		"subreddit": [
+			"pokemon"
+		],
+		"discord": [
+			"pokemon"
+		]
+	},
+	"path": {
+		"216-254": [
+			[
+				-658,
+				-951
+			],
+			[
+				-652,
+				-947
+			],
+			[
+				-648,
+				-944
+			],
+			[
+				-646,
+				-946
+			],
+			[
+				-643,
+				-947
+			],
+			[
+				-643,
+				-950
+			],
+			[
+				-644,
+				-954
+			],
+			[
+				-646,
+				-960
+			],
+			[
+				-656,
+				-962
+			],
+			[
+				-661,
+				-957
+			],
+			[
+				-663,
+				-952
+			],
+			[
+				-661,
+				-949
+			]
+		]
+	},
+	"center": {
+		"216-254": [
+			-651,
+			-954
+		]
+	}
+}
