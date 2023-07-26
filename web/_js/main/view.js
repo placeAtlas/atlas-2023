@@ -170,7 +170,6 @@ function toggleFixed(e, tapped) {
 }
 
 window.addEventListener("resize", updateLines)
-window.addEventListener("mousemove", updateLines)
 window.addEventListener("dblClick", updateLines)
 window.addEventListener("wheel", updateLines)
 
@@ -179,7 +178,6 @@ objectsContainer.addEventListener("scroll", () => {
 })
 
 window.addEventListener("resize", () => {
-
 	applyView()
 	render()
 	updateLines()
@@ -187,7 +185,10 @@ window.addEventListener("resize", () => {
 })
 
 function updateLines() {
-
+	if (hovered.length === 0) {
+		linesContext.clearRect(0, 0, linesCanvas.width, linesCanvas.height)
+		return
+	}
 	// Line border
 	linesCanvas.width = linesCanvas.clientWidth
 	linesCanvas.height = linesCanvas.clientHeight
@@ -583,10 +584,14 @@ function updateHovering(e, tapped) {
 
 	if (!(pos[0] <= canvasSize.x + canvasOffset.x + 200 && pos[0] >= canvasOffset.x - 200 && pos[1] <= canvasSize.y + canvasOffset.y + 200 && pos[1] >= canvasOffset.x - 200)) return
 	
-	const newHovered = []
+	let newHovered = []
 	for (const entry of atlasDisplay) {
 		if (pointIsInPolygon(pos, entry.path)) newHovered.push(entry)
 	}
+
+	newHovered = newHovered.sort(function (a, b) {
+		return calcPolygonArea(a.path) - calcPolygonArea(b.path)
+	})
 
 	let changed = false
 
@@ -603,9 +608,7 @@ function updateHovering(e, tapped) {
 
 	if (!changed) return
 
-	hovered = newHovered.sort(function (a, b) {
-		return calcPolygonArea(a.path) - calcPolygonArea(b.path)
-	})
+	hovered = newHovered
 
 	objectsContainer.replaceChildren()
 
@@ -630,6 +633,7 @@ function updateHovering(e, tapped) {
 		objectsListOverflowNotice.classList.add("d-none")
 		entriesList.classList.remove("disableHover")
 	}
+	updateLines()
 	render()
 }
 

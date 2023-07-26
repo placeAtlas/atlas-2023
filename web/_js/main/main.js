@@ -371,7 +371,6 @@ async function init() {
 	}
 
 	window.addEventListener("mousemove", e => {
-		updateLines()
 		mousemove(e.clientX, e.clientY)
 		if (dragging) {
 			e.preventDefault()
@@ -464,7 +463,7 @@ async function init() {
 	})
 	window.addEventListener("touchend", touchend)
 
-	function mouseup(x, y) {
+	function mouseup() {
 		if (dragging) {
 			dragging = false
 		}
