@@ -1,0 +1,60 @@
+{
+	"id": -1,
+  "_author": "MineWarz",
+	"name": "Narrator Nexus",
+	"description": "The Narrator Nexus is a faction that arose during Reddit's 2019 April Fool's event r/sequence.\nBack then, they were known as the Sequence Narrators, and they were responsible for most of the collective storylines in the later arcs.\nSince then, many Narrators have stuck around, and they have become one of the closest allies of the April Knights.\nUnfortunately, the community has all but subsided by now, and most active members have moved to the April Knights, who also greatly helped in constructing this little artwork.",
+	"links": {
+		"subreddit": [
+			"NarraNexus"
+		],
+		"discord": [
+			"AqVwgBH"
+		]
+	},
+	"path": {
+		"120-254": [
+			[
+				273,
+				265
+			],
+			[
+				273,
+				268
+			],
+			[
+				274,
+				268
+			],
+			[
+				274,
+				270
+			],
+			[
+				277,
+				270
+			],
+			[
+				277,
+				267
+			],
+			[
+				276,
+				267
+			],
+			[
+				276,
+				265
+			],
+			[
+				273,
+				265
+			]
+		]
+	},
+	"center": {
+		"120-254": [
+			276,
+			269
+		]
+	}
+}
