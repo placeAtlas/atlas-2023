@@ -1,0 +1,104 @@
+{
+	"id": -1,
+	"name": "Quetzalcoatl",
+	"description": "Quetzalcoatl is a deity in Aztec culture and literature. Among the Aztecs, he was related to wind, Venus, Sun, merchants, arts, crafts, knowledge, and learning. He was also the patron god of the Aztec priesthood.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Quetzalcoatl"
+		]
+	},
+	"path": {
+		"135-259": [
+			[
+				-205,
+				27
+			],
+			[
+				-213,
+				28
+			],
+			[
+				-215,
+				32
+			],
+			[
+				-217,
+				40
+			],
+			[
+				-215,
+				44
+			],
+			[
+				-214,
+				46
+			],
+			[
+				-217,
+				50
+			],
+			[
+				-216,
+				57
+			],
+			[
+				-218,
+				62
+			],
+			[
+				-213,
+				60
+			],
+			[
+				-211,
+				56
+			],
+			[
+				-209,
+				56
+			],
+			[
+				-202,
+				50
+			],
+			[
+				-199,
+				49
+			],
+			[
+				-198,
+				48
+			],
+			[
+				-194,
+				50
+			],
+			[
+				-194,
+				53
+			],
+			[
+				-195,
+				55
+			],
+			[
+				-191,
+				61
+			],
+			[
+				-191,
+				34
+			],
+			[
+				-198,
+				27
+			]
+		]
+	},
+	"center": {
+		"135-259": [
+			-205,
+			39
+		]
+	}
+}
