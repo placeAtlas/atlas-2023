@@ -1,0 +1,63 @@
+{
+	"id": -1,
+  "_author": "gh:Account-95555",
+	"name": "Ibishu Pigeon",
+	"description": "An Ibishu Pigeon from the vehicle simulation game BeamNG.drive. The windshield contains the BeamNG logo and an outline of an 'A', serving as a tribute to a deceased BeamNG player named Auggie. It is also holding an orange heart, after an alliance with the pixel art beside it.",
+	"links": {
+		"website": [
+			"https://www.beamng.com/game/"
+		],
+		"subreddit": [
+			"BeamNG"
+		],
+		"discord": [
+			"YKcSWAy"
+		]
+	},
+	"path": {
+		"172-258": [
+			[
+				-1069,
+				-5
+			],
+			[
+				-1073,
+				-1
+			],
+			[
+				-1073,
+				8
+			],
+			[
+				-1069,
+				12
+			],
+			[
+				-1060,
+				12
+			],
+			[
+				-1056,
+				8
+			],
+			[
+				-1056,
+				-1
+			],
+			[
+				-1060,
+				-5
+			],
+			[
+				-1069,
+				-5
+			]
+		]
+	},
+	"center": {
+		"172-258": [
+			-1064,
+			4
+		]
+	}
+}
