@@ -1,0 +1,43 @@
+{
+	"id": -1,
+	"name": "Yukon Territorial Flag",
+	"description": "Yukon is the smallest and westernmost of Canada's three territories. Yukon was split from the North-West Territories in 1898 as the Yukon Territory. The flag is a green white and blue tricolor with the coat of arms of Yukon at the centre above a wreath of fireweed, the territorial flower.",
+	"links": {
+		"subreddit": [
+			"placecanada"
+		],
+		"discord": [
+			"placecanada"
+		]
+	},
+	"path": {
+		"132-256": [
+			[
+				97,
+				193
+			],
+			[
+				97,
+				195
+			],
+			[
+				101,
+				195
+			],
+			[
+				101,
+				193
+			],
+			[
+				97,
+				193
+			]
+		]
+	},
+	"center": {
+		"132-256": [
+			99,
+			194
+		]
+	}
+}
