@@ -1,0 +1,48 @@
+{
+	"id": -1,
+	"name": "Gege Circle",
+	"description": "Gege Circle is a diverse circle by Wang Ge's sister, established with July 2018, the creative content mainly consists of paintings, novels and other works, the concept of the circle is to create more happiness for everyone, and hope to discover and change the world with people.",
+	"links": {
+		"subreddit": [
+			"gege_circle"
+		]
+	},
+	"path": {
+		"254": [
+			[
+				-730,
+				235
+			],
+			[
+				-725,
+				235
+			],
+			[
+				-722,
+				244
+			],
+			[
+				-730,
+				244
+			],
+			[
+				-730,
+				245
+			],
+			[
+				-722,
+				245
+			],
+			[
+				-730,
+				244
+			]
+		]
+	},
+	"center": {
+		"254": [
+			-727,
+			240
+		]
+	}
+}
