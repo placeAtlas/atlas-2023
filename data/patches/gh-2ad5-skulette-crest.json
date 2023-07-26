@@ -1,0 +1,48 @@
+{
+	"id": 2724,
+	"name": "Skulette crest",
+	"description": "the skullette is a spooktacular symbol from mattel's doll/ show line monster high. She appears in the logo.",
+	"links": {
+		"subreddit": [
+			"MonsterHigh"
+		]
+	},
+	"path": {
+		"178-256": [
+			[
+				-1376,
+				538
+			],
+			[
+				-1360,
+				538
+			],
+			[
+				-1353,
+				544
+			],
+			[
+				-1353,
+				563
+			],
+			[
+				-1368,
+				578
+			],
+			[
+				-1383,
+				563
+			],
+			[
+				-1383,
+				543
+			]
+		]
+	},
+	"center": {
+		"178-256": [
+			-1368,
+			553
+		]
+	}
+}

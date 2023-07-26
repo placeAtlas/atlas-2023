@@ -1,0 +1,42 @@
+{
+	"id": -1,
+	"name": "New Kids",
+	"description": "The main caracters of New Kids, a popular Dutch comedy tv show about a group of anti-social youths. The New Kids Turbo movie is one of the most visited movies in The Netherlands.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/New_Kids"
+		],
+		"subreddit": [
+			"PlaceNL"
+		],
+		"discord": [
+			"PlaceNL"
+		]
+	},
+	"path": {
+		"244-254": [
+			[
+				-622,
+				-501
+			],
+			[
+				-622,
+				-514
+			],
+			[
+				-584,
+				-514
+			],
+			[
+				-584,
+				-501
+			]
+		]
+	},
+	"center": {
+		"244-254": [
+			-603,
+			-507
+		]
+	}
+}
