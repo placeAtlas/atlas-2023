@@ -1,0 +1,35 @@
+{
+	"id": -1,
+	"name": "Canadian Pride Flag",
+	"description": "A small version of a pride flag constructed under the Canada text.",
+	"links": {
+		"subreddit": [
+			"placecanada"
+		],
+		"discord": [
+			"placecanada"
+		]
+	},
+	"path": {
+		"134-256": [
+			[
+				109,
+				191
+			],
+			[
+				120,
+				191
+			],
+			[
+				114,
+				191
+			]
+		]
+	},
+	"center": {
+		"134-256": [
+			109,
+			191
+		]
+	}
+}
