@@ -1,0 +1,39 @@
+{
+	"id": -1,
+	"name": "Serpias Otori ",
+	"description": "El streamer serpias hizo una segunda version de la antigua emu que hizo, el cual apodo Serpias Otori",
+	"links": {
+		"website": [
+			"https://www.twitch.tv/serpias/"
+		],
+		"subreddit": [
+			"Serpias"
+		]
+	},
+	"path": {
+		"119-150": [
+			[
+				286,
+				-676
+			],
+			[
+				286,
+				-639
+			],
+			[
+				305,
+				-640
+			],
+			[
+				305,
+				-676
+			]
+		]
+	},
+	"center": {
+		"119-150": [
+			296,
+			-657
+		]
+	}
+}
