@@ -1,0 +1,72 @@
+{
+	"id": 3237,
+	"name": "Marcelo Martins Moreno",
+	"description": "Ganó un título con el Flamengo, uno con Cruzeiro y cuatro con el Shakhtar Donetsk. Además, fue máximo goleador de la Copa Libertadores de 2008. Es considerado uno de los mejores jugadores de la historia de Bolivia y ha marcado 30 goles en 98 cotejos.",
+	"links": {
+		"website": [
+			"https://www.instagram.com/marcelo_moreno/"
+		]
+	},
+	"path": {
+		"250-256": [
+			[
+				202,
+				-39
+			],
+			[
+				208,
+				-46
+			],
+			[
+				212,
+				-45
+			],
+			[
+				217,
+				-44
+			],
+			[
+				219,
+				-46
+			],
+			[
+				223,
+				-45
+			],
+			[
+				226,
+				-40
+			],
+			[
+				224,
+				-37
+			],
+			[
+				220,
+				-40
+			],
+			[
+				220,
+				-26
+			],
+			[
+				209,
+				-26
+			],
+			[
+				209,
+				-40
+			],
+			[
+				204,
+				-36
+			]
+		]
+	},
+	"center": {
+		"250-256": [
+			215,
+			-38
+		]
+	}
+}
