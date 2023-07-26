@@ -1,0 +1,42 @@
+{
+	"id": 3461,
+	"name": "Placebur's computer",
+	"description": "A computer that represent Wilbur soot's (a British streamer) \"Starting soon screen\" That includes that computer.",
+	"links": {
+		"website": [
+			"https://lemmy.world/c/wilbursoot"
+		],
+		"subreddit": [
+			"wilbursoot"
+		],
+		"discord": [
+			"d4UAmUKh"
+		]
+	},
+	"path": {
+		"106-257": [
+			[
+				645,
+				438
+			],
+			[
+				645,
+				464
+			],
+			[
+				673,
+				464
+			],
+			[
+				673,
+				438
+			]
+		]
+	},
+	"center": {
+		"106-257": [
+			659,
+			451
+		]
+	}
+}
