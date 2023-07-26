@@ -1,0 +1,45 @@
+{
+	"id": 638,
+	"name": "Flag of Malaysia",
+	"description": "Malaysia is a country in Southeast Asia. With a population of over 33 million, it consists of the peninsular West Malaysia, and East Malaysia which is part of the island of Borneo. \n\nFrom center top, clockwise: A jet-powered Perodua Myvi, a ubiquitous locally-manufactured car; the bunga-raya (Hibiscus rosa-sinensis), the national flower; a serving of nasi lemak on a banana leaf, a national dish; the Spez Babi tag (lit. Spez is a swine), and a Durian fruit, cut open for consumption.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Malaysia"
+		],
+		"subreddit": [
+			"placeMY",
+			"malaysia",
+			"malaysians",
+			"Bolehland"
+		],
+		"discord": [
+			"hG9XJpDRPw"
+		]
+	},
+	"path": {
+		"91-258": [
+			[
+				-694,
+				23
+			],
+			[
+				-759,
+				23
+			],
+			[
+				-759,
+				-6
+			],
+			[
+				-694,
+				-6
+			]
+		]
+	},
+	"center": {
+		"91-258": [
+			-726,
+			9
+		]
+	}
+}
