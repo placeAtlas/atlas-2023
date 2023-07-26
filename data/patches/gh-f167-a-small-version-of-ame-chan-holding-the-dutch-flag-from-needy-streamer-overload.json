@@ -1,0 +1,56 @@
+{
+	"id": -1,
+	"name": "A small version of Ame-Chan holding the dutch flag from Needy Streamer Overload",
+	"description": "Needy Streamer Overload is a 2022 denpa-themed adventure visual novel created by Japanese developer Xemono and published by WSS Playground for macOS, Microsoft Windows, and Nintendo Switch. The player takes on the role of a manager for a female livestreamer, making decisions for her so that she can achieve her goal of reaching one million followers within a month. The game was initially titled Needy Girl Overdose, but this was changed in November 2021 in preparation for the western release. The game kept its original title in Japan.",
+	"links": {},
+	"path": {
+		"233-254": [
+			[
+				-1498,
+				-549
+			],
+			[
+				-1481,
+				-549
+			],
+			[
+				-1480,
+				-529
+			],
+			[
+				-1499,
+				-528
+			],
+			[
+				-1499,
+				-549
+			],
+			[
+				-1498,
+				-549
+			],
+			[
+				-1499,
+				-549
+			],
+			[
+				-1481,
+				-549
+			],
+			[
+				-1480,
+				-529
+			],
+			[
+				-1499,
+				-528
+			]
+		]
+	},
+	"center": {
+		"233-254": [
+			-1489,
+			-529
+		]
+	}
+}
