@@ -1,0 +1,51 @@
+{
+	"id": 1635,
+	"name": "Kazakhstan",
+	"description": "Kazakhstan, a Central Asian country and former Soviet republic, extends from the Caspian Sea in the west to the Altai Mountains at its eastern border with China and Russia.",
+	"links": {
+		"website": [
+			"https://wikipedia.com"
+		],
+		"subreddit": [
+			"kazakhstan"
+		]
+	},
+	"path": {
+		"162-256": [
+			[
+				-871,
+				881
+			],
+			[
+				-871,
+				914
+			],
+			[
+				-840,
+				914
+			],
+			[
+				-840,
+				885
+			],
+			[
+				-845,
+				885
+			],
+			[
+				-847,
+				883
+			],
+			[
+				-847,
+				881
+			]
+		]
+	},
+	"center": {
+		"162-256": [
+			-855,
+			898
+		]
+	}
+}
