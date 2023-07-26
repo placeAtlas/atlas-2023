@@ -1,0 +1,36 @@
+{
+	"id": 4173,
+	"name": "Mini Cirno and Daiyousei",
+	"description": "Mini pixel art of the fairies Cirno (Chiruno) and Daiyousei from the Touhou Project. This specific art style is the same as the mini Cirno from the 2022 place art that gained a small cult following during the even.",
+	"links": {
+		"subreddit": [
+			"touhou"
+		]
+	},
+	"path": {
+		"86-256": [
+			[
+				151,
+				139
+			],
+			[
+				151,
+				147
+			],
+			[
+				167,
+				147
+			],
+			[
+				167,
+				139
+			]
+		]
+	},
+	"center": {
+		"86-256": [
+			159,
+			143
+		]
+	}
+}
