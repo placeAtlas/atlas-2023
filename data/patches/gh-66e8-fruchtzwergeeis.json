@@ -1,0 +1,83 @@
+{
+	"id": -1,
+	"name": "Fruchtzwergeeis",
+	"description": "\"Fruchtzwerge\", a very popular german joghurt for children, is used in many families to make ice cream in the summer. For this purpose, reusable popsicle sticks or spoons are inserted directly into the yogurt packs. The entire package is put in the freezer.\n\nThe design was created by r/placeDE.",
+	"links": {
+		"website": [
+			"https://www.fruchtzwerge.de/Selbstmach-Eis.html"
+		],
+		"subreddit": [
+			"placeDE"
+		]
+	},
+	"path": {
+		"202-254": [
+			[
+				-699,
+				-571
+			],
+			[
+				-697,
+				-559
+			],
+			[
+				-695,
+				-549
+			],
+			[
+				-655,
+				-550
+			],
+			[
+				-657,
+				-573
+			],
+			[
+				-662,
+				-578
+			],
+			[
+				-662,
+				-585
+			],
+			[
+				-678,
+				-586
+			],
+			[
+				-689,
+				-583
+			],
+			[
+				-699,
+				-570
+			],
+			[
+				-699,
+				-569
+			],
+			[
+				-698,
+				-569
+			],
+			[
+				-698,
+				-569
+			],
+			[
+				-699,
+				-572
+			],
+			[
+				-699,
+				-572
+			]
+		]
+	},
+	"center": {
+		"202-254": [
+			-677,
+			-567
+		]
+	}
+}
