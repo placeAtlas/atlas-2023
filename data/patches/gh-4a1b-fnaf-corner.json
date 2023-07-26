@@ -1,0 +1,96 @@
+{
+	"id": 2456,
+	"name": "FNAF Corner",
+	"description": "A tribute to Five Nights at Freddy's by GG Games and r/fightnightsatfreddys. It features many iconic images from throughout the franchise, from various animatronics, to two lore-important scenes within the games.",
+	"links": {
+		"website": [
+			"https://www.youtube.com/@GGGames._"
+		],
+		"subreddit": [
+			"fivenightsatfreddys"
+		],
+		"discord": [
+			"freddit"
+		]
+	},
+	"path": {
+		"223-236": [
+			[
+				-773,
+				714
+			],
+			[
+				-773,
+				743
+			],
+			[
+				-871,
+				743
+			],
+			[
+				-871,
+				786
+			],
+			[
+				-839,
+				785
+			],
+			[
+				-839,
+				792
+			],
+			[
+				-721,
+				793
+			],
+			[
+				-721,
+				714
+			]
+		],
+		"237-241": [
+			[
+				-871,
+				743
+			],
+			[
+				-871,
+				786
+			],
+			[
+				-839,
+				786
+			],
+			[
+				-839,
+				793
+			],
+			[
+				-721,
+				793
+			],
+			[
+				-721,
+				784
+			],
+			[
+				-773,
+				784
+			],
+			[
+				-774,
+				743
+			]
+		]
+	},
+	"center": {
+		"223-236": [
+			-751,
+			763
+		],
+		"237-241": [
+			-814,
+			768
+		]
+	}
+}
