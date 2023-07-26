@@ -1,0 +1,40 @@
+{
+	"id": -1,
+	"name": "Krobus",
+	"description": "A shadow person who lives in the sewers of Stardew Valley.",
+	"links": {
+		"subreddit": [
+			"StardewValley"
+		]
+	},
+	"path": {
+		"254": [
+			[
+				1235,
+				317
+			],
+			[
+				1235,
+				302
+			],
+			[
+				1218,
+				302
+			],
+			[
+				1218,
+				317
+			],
+			[
+				1235,
+				317
+			]
+		]
+	},
+	"center": {
+		"254": [
+			1227,
+			310
+		]
+	}
+}
