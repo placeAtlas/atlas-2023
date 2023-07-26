@@ -1,0 +1,36 @@
+{
+	"id": -1,
+	"name": "Egypt Text.",
+	"description": "The text \"Egypt\" is a simple yet powerful symbol of the country's rich history and culture. It is a reminder of the ancient Egyptians, who built some of the most impressive monuments in the world, and of the modern Egyptians, who continue to preserve and celebrate their heritage.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Egypt"
+		]
+	},
+	"path": {
+		"194-256": [
+			[
+				-922,
+				327
+			],
+			[
+				-922,
+				323
+			],
+			[
+				-893,
+				323
+			],
+			[
+				-893,
+				327
+			]
+		]
+	},
+	"center": {
+		"194-256": [
+			-907,
+			325
+		]
+	}
+}
