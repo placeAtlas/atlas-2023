@@ -1,0 +1,59 @@
+{
+	"id": -1,
+	"name": "Hatsune Miku",
+	"description": "Hatsune Miku (Japanese: 初音ミク), officially code-named CV01, is a Vocaloid software voicebank developed by Crypton Future Media. Miku's personification, a 16-year-old girl with long, turquoise twintails, has been marketed as a virtual idol and has performed at live virtual concerts onstage as an animated projection.",
+	"links": {
+		"subreddit": [
+			"hatsune"
+		],
+		"discord": [
+			"hatsune"
+		]
+	},
+	"path": {
+		"225-254": [
+			[
+				-1089,
+				131
+			],
+			[
+				-1089,
+				127
+			],
+			[
+				-1077,
+				127
+			],
+			[
+				-1077,
+				131
+			],
+			[
+				-1071,
+				131
+			],
+			[
+				-1075,
+				116
+			],
+			[
+				-1091,
+				116
+			],
+			[
+				-1093,
+				124
+			],
+			[
+				-1092,
+				126
+			]
+		]
+	},
+	"center": {
+		"225-254": [
+			-1082,
+			121
+		]
+	}
+}
