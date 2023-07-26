@@ -1,0 +1,43 @@
+{
+	"id": 2046,
+	"name": "Skin de AntonioMCtv",
+	"description": "AntonioMCtv o también conocido como ClipsColorados666 es un creador de contenido dedicado a subir clips de twitch. También es conocido por haber creado la serie PendejoLandSMP y sus multiples videos de reacciones a canciones  ",
+	"links": {
+		"website": [
+			"https://www.youtube.com/channel/UCTVMu5lHZayqalhqHGklVwQ/",
+			"https://sites.google.com/view/antoniomctv/inicio"
+		],
+		"subreddit": [
+			"antoniomccomunity"
+		],
+		"discord": [
+			"KPRGDtAdFx"
+		]
+	},
+	"path": {
+		"254": [
+			[
+				1495,
+				391
+			],
+			[
+				1498,
+				391
+			],
+			[
+				1498,
+				394
+			],
+			[
+				1495,
+				394
+			]
+		]
+	},
+	"center": {
+		"254": [
+			1497,
+			393
+		]
+	}
+}
