@@ -1,0 +1,54 @@
+{
+	"id": -1,
+	"name": "Forever's Community",
+	"description": "Forever is a streamer and YouTuber known for playing the game Minecraft. He is known for his YouTube series Humanly Impossible, where he performs superhuman feats like breaking an entire mountain in Minecraft.\n\nThe art represents its community, featuring two emotes of his Twitch channel (forevi1Amor & forevi1Nelsamor) with his name in the middle (4ever). ",
+	"links": {
+		"website": [
+			"https://www.twitch.tv/forever"
+		],
+		"subreddit": [
+			"foreverplayer"
+		],
+		"discord": [
+			"forever"
+		]
+	},
+	"path": {
+		"254": [
+			[
+				7,
+				389
+			],
+			[
+				7,
+				389
+			],
+			[
+				-39,
+				375
+			],
+			[
+				30,
+				376
+			],
+			[
+				30,
+				400
+			],
+			[
+				-39,
+				399
+			],
+			[
+				-39,
+				375
+			]
+		]
+	},
+	"center": {
+		"254": [
+			19,
+			388
+		]
+	}
+}
