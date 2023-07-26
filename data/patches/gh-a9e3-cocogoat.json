@@ -1,0 +1,44 @@
+{
+	"id": -1,
+	"name": "Cocogoat",
+	"description": "The Cocogoat, a meme animal which represents Ganyu, a playable character in Genshin Impact.",
+	"links": {
+		"subreddit": [
+			"Genshin_Impact"
+		]
+	},
+	"path": {
+		"201-256": [
+			[
+				-44,
+				356
+			],
+			[
+				-40,
+				356
+			],
+			[
+				-40,
+				363
+			],
+			[
+				-43,
+				363
+			],
+			[
+				-43,
+				360
+			],
+			[
+				-44,
+				360
+			]
+		]
+	},
+	"center": {
+		"201-256": [
+			-42,
+			358
+		]
+	}
+}
