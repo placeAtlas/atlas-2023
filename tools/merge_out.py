@@ -46,6 +46,14 @@ base_image_path = os.path.join('web', '_img', 'canvas', 'place30')
 filenames = os.listdir(patches_dir)
 filenames.append(permanent_patch_file)
 
+controversial_entries = set([
+	696, # lturepublic
+	1730, 2044, # Atatürk
+	2587, # Falklands War memorial
+	2955, # Lola
+])
+edited_controversial_entries = set()
+
 for filename in filenames:
 	is_permanent_file = filename == permanent_patch_file
 	if is_permanent_file:
@@ -105,6 +113,8 @@ for filename in filenames:
 					index = atlas_ids[entry['id']]
 					print(f"{filename}: Edited {atlas_data[index]['id']}.")
 					atlas_data[index] = entry
+					if entry['id'] in controversial_entries:
+						edited_controversial_entries.add(entry['id'])
 				else:
 					print(f"{filename}: Added {entry['id']}.")
 					atlas_data.append(entry)
@@ -127,3 +137,6 @@ with open('web/all-authors.txt', 'w', encoding='utf-8') as authors_file:
 	authors_file.write("\n".join(authors) + "\n")
 
 print('All done.')
+
+if len(edited_controversial_entries) > 0:
+	print(f'Controversial entries edited: {edited_controversial_entries}. Inspect these manually for inappropriate content.')
