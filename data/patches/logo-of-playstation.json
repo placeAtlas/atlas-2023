@@ -1,0 +1,72 @@
+{
+	"id": -1,
+	"name": "Logo of Playstation",
+	"description": "The Logo of PlayStation was created in 1994 by Manabu Sakamoto. The logo has been used by PlayStation ever since but has fallen out of favor",
+	"links": {
+		"subreddit": [
+			"playstation"
+		]
+	},
+	"path": {
+		"254": [
+			[
+				-1295,
+				42
+			],
+			[
+				-1305,
+				46
+			],
+			[
+				-1305,
+				50
+			],
+			[
+				-1294,
+				52
+			],
+			[
+				-1288,
+				53
+			],
+			[
+				-1288,
+				55
+			],
+			[
+				-1275,
+				49
+			],
+			[
+				-1275,
+				44
+			],
+			[
+				-1280,
+				42
+			],
+			[
+				-1281,
+				35
+			],
+			[
+				-1287,
+				34
+			],
+			[
+				-1292,
+				35
+			],
+			[
+				-1294,
+				40
+			]
+		]
+	},
+	"center": {
+		"254": [
+			-1288,
+			45
+		]
+	}
+}
