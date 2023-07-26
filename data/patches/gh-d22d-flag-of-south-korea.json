@@ -1,0 +1,65 @@
+{
+	"id": -1,
+	"name": "Flag of South Korea",
+	"description": "South Korea is a country in East Asia. Its flag is known as the Taegeukgi.\n\nThis flag was involved in the Perrababy-Greggs war at its final moment, resisting a large, rouge Swedish streamer called Perrababy who insisted on expanding over the flag as well as the Greggs logo built by r/UKOnPlace who the South Korea formed a strong alliance with. The flag was later moved to the main UK flag.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/South_Korea",
+			"https://en.wikipedia.org/wiki/Flag_of_South_Korea",
+			"https://en.wikipedia.org/wiki/Greggs"
+		],
+		"subreddit": [
+			"Korea_Place",
+			"UKOnPlace"
+		]
+	},
+	"path": {
+		"152-164": [
+			[
+				-801,
+				447
+			],
+			[
+				-781,
+				447
+			],
+			[
+				-781,
+				464
+			],
+			[
+				-801,
+				464
+			]
+		],
+		"165-201": [
+			[
+				-801,
+				447
+			],
+			[
+				-801,
+				464
+			],
+			[
+				-780,
+				464
+			],
+			[
+				-780,
+				447
+			]
+		]
+	},
+	"center": {
+		"152-164": [
+			-791,
+			456
+		],
+		"165-201": [
+			-790,
+			456
+		]
+	},
+	"_author": "gh:HaneulCheong"
+}
