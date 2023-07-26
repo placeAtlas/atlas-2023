@@ -1,0 +1,198 @@
+{
+	"id": 3025,
+	"name": "Flag of Honduras",
+	"description": "Honduras is a country in Central America.\n\nAfter its construction, this flag withstood an incursion by a Peruvian streamer and remained intact until the whiteout. They used to be allies with a rogue Swedish streamer called Perrababy during the Perrababy-Greggs war. The teddy bear above the flag was created in honor of a suicide victim.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Honduras",
+			"https://en.wikipedia.org/wiki/Flag_of_Honduras",
+			"https://www.twitch.tv/frankz7x"
+		],
+		"subreddit": [
+			"placehn"
+		],
+		"discord": [
+			"SEYkHM77"
+		]
+	},
+	"path": {
+		"155": [
+			[
+				-851,
+				447
+			],
+			[
+				-841,
+				447
+			],
+			[
+				-841,
+				455
+			],
+			[
+				-851,
+				455
+			]
+		],
+		"156": [
+			[
+				-862,
+				446
+			],
+			[
+				-862,
+				457
+			],
+			[
+				-843,
+				457
+			],
+			[
+				-840,
+				454
+			],
+			[
+				-840,
+				453
+			],
+			[
+				-839,
+				452
+			],
+			[
+				-837,
+				452
+			],
+			[
+				-836,
+				453
+			],
+			[
+				-836,
+				454
+			],
+			[
+				-834,
+				456
+			],
+			[
+				-834,
+				446
+			]
+		],
+		"157": [
+			[
+				-862,
+				435
+			],
+			[
+				-862,
+				457
+			],
+			[
+				-826,
+				457
+			],
+			[
+				-826,
+				435
+			]
+		],
+		"158-214": [
+			[
+				-862,
+				430
+			],
+			[
+				-862,
+				457
+			],
+			[
+				-821,
+				457
+			],
+			[
+				-821,
+				456
+			],
+			[
+				-801,
+				456
+			],
+			[
+				-801,
+				430
+			]
+		],
+		"215-217": [
+			[
+				-862,
+				430
+			],
+			[
+				-862,
+				457
+			],
+			[
+				-780,
+				457
+			],
+			[
+				-780,
+				429
+			],
+			[
+				-800,
+				429
+			],
+			[
+				-800,
+				430
+			]
+		],
+		"218-259": [
+			[
+				-862,
+				430
+			],
+			[
+				-862,
+				457
+			],
+			[
+				-791,
+				457
+			],
+			[
+				-791,
+				430
+			]
+		]
+	},
+	"center": {
+		"155": [
+			-846,
+			451
+		],
+		"156": [
+			-848,
+			452
+		],
+		"157": [
+			-844,
+			446
+		],
+		"158-214": [
+			-831,
+			444
+		],
+		"215-217": [
+			-796,
+			443
+		],
+		"218-259": [
+			-826,
+			444
+		]
+	}
+}
