@@ -1,0 +1,92 @@
+{
+	"id": 710,
+	"name": "Augustiner Bier (Beer)",
+	"description": "A bottle Augustiner Lagerbier Hell. Augustiner Bräu is one of the biggest breweries in germany. Augustiner beer is normally found within the Greater Munich area, even though the company does not advertise, in the last few years it has become popular outside of Munich, for example in Berlin.\n\nThe Bottle was transformed from an apple juice to a bottle of beer.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Augustiner-Br%c3%a4u"
+		],
+		"subreddit": [
+			"placeDe",
+			"ich_iel",
+			"de"
+		],
+		"discord": [
+			"placede"
+		]
+	},
+	"path": {
+		"99-258": [
+			[
+				-169,
+				-445
+			],
+			[
+				-161,
+				-445
+			],
+			[
+				-161,
+				-442
+			],
+			[
+				-162,
+				-441
+			],
+			[
+				-162,
+				-438
+			],
+			[
+				-158,
+				-430
+			],
+			[
+				-155,
+				-419
+			],
+			[
+				-161,
+				-417
+			],
+			[
+				-161,
+				-393
+			],
+			[
+				-171,
+				-393
+			],
+			[
+				-173,
+				-395
+			],
+			[
+				-173,
+				-427
+			],
+			[
+				-169,
+				-435
+			],
+			[
+				-168,
+				-438
+			],
+			[
+				-168,
+				-441
+			],
+			[
+				-169,
+				-442
+			]
+		]
+	},
+	"center": {
+		"99-258": [
+			-165,
+			-424
+		]
+	}
+}
