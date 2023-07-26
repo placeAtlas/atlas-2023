@@ -1,0 +1,49 @@
+{
+	"id": -1,
+	"name": "Flat Eric, from Mr. Oizo's \"Flat Beat\" music video",
+	"description": "Quentin Dupieux (French pronunciation: ​[kɑ̃tɛ̃ dypjø], born 14 April 1974), also known by his musical stage name Mr. Oizo (French: [wazo]), is a French filmmaker, electronic musician, and DJ.\n\nDupieux released \"Flat Beat\" in January 1999, a track consisting mainly of a repeated bass loop and a drum sample from \"Put Your Love in My Tender Care\" by The Fatback Band.\nFlat Beat became a hit throughout Europe in 1999, becoming the best-known Mr. Oizo release.\n\nThe track was featured in a series of Levi's jeans TV commercials, which featured a yellow puppet named Flat Eric nodding his head to the rhythm while riding in an old, beat-up Chevelle. Flat Eric was also featured in the song's music video. The Flat Beat EP has sold over three million copies. The song reached number 1 in the UK.\n",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Quentin_Dupieux",
+			"https://en.wikipedia.org/wiki/Flat_Eric"
+		]
+	},
+	"path": {
+		"103-257": [
+			[
+				-500,
+				67
+			],
+			[
+				-493,
+				67
+			],
+			[
+				-488,
+				73
+			],
+			[
+				-487,
+				78
+			],
+			[
+				-484,
+				81
+			],
+			[
+				-479,
+				87
+			],
+			[
+				-500,
+				87
+			]
+		]
+	},
+	"center": {
+		"103-257": [
+			-493,
+			80
+		]
+	}
+}
