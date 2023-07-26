@@ -1,0 +1,71 @@
+{
+	"id": 2447,
+	"name": "Polandball",
+	"description": "The Main Standing Character of the Subreddit r/Polandball\n\nA subreddit of Wiggly mouse-drawn comics where balls represent different countries. They poke fun at national stereotypes and the \"international drama\" of their diplomatic relations. Polandball combines history, geography, Engrish, and an inferiority complex.\n\nA small circle representing a voltorb, made with one of the pokeballs that was previously in that space.",
+	"links": {
+		"subreddit": [
+			"polandball"
+		],
+		"discord": [
+			"2hwab34"
+		]
+	},
+	"path": {
+		"189-258": [
+			[
+				-1423,
+				422
+			],
+			[
+				-1419,
+				422
+			],
+			[
+				-1419,
+				423
+			],
+			[
+				-1418,
+				423
+			],
+			[
+				-1418,
+				427
+			],
+			[
+				-1419,
+				427
+			],
+			[
+				-1419,
+				428
+			],
+			[
+				-1423,
+				428
+			],
+			[
+				-1423,
+				427
+			],
+			[
+				-1424,
+				427
+			],
+			[
+				-1424,
+				423
+			],
+			[
+				-1423,
+				423
+			]
+		]
+	},
+	"center": {
+		"189-258": [
+			-1421,
+			425
+		]
+	}
+}
