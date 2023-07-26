@@ -1,0 +1,36 @@
+{
+	"id": -1,
+	"name": "Logo of Hwa Chong Institution",
+	"description": "Hwa Chong Institution (HCI) is an independent secondary educational institution in Singapore. The Institution is the culmination of the watershed merger in 2005 between the former Chinese High School (TCHS) founded by Mr Tan Kah Kee in 1919 to cater to the needs of primary school leavers of the Chinese community in the region, and Hwa Chong Junior College (HCJC), which was set up in 1974 as the first government-aided junior college offering pre-university education in Singapore.\n\nThe school logo is a highly stylised flaming torch that symbolises not only a burning passion for knowledge and drive for excellence, but also a deep respect for progress and tradition. The logo is rendered in the school colour, red, in keeping with Chinese notions of symbolism, depicting life, vitality and strength. It takes its inspiration from the Chinese character ‘华’ (meaning ‘Chinese’), which represents the school’s name and origin (华中). The logo also reflects a passion for the school’s rich cultural heritage, and its mission of nurturing bicultural leaders for Singapore.",
+	"links": {
+		"website": [
+			"https://www.hci.edu.sg/"
+		]
+	},
+	"path": {
+		"247-248": [
+			[
+				1488,
+				712
+			],
+			[
+				1499,
+				712
+			],
+			[
+				1499,
+				723
+			],
+			[
+				1488,
+				723
+			]
+		]
+	},
+	"center": {
+		"247-248": [
+			1494,
+			718
+		]
+	}
+}
