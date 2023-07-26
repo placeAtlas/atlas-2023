@@ -1,0 +1,46 @@
+{
+	"id": -1,
+	"name": "Flag of Belgium",
+	"description": "Belgium is a country in Western Europe.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Belgium",
+			"https://en.wikipedia.org/wiki/Flag_of_Belgium"
+		],
+		"subreddit": [
+			"laboulangeriemc",
+			"belgium",
+			"rplacebe"
+		]
+	},
+	"path": {
+		"215-256": [
+			[
+				-548,
+				123
+			],
+			[
+				-544,
+				123
+			],
+			[
+				-544,
+				119
+			],
+			[
+				-548,
+				119
+			],
+			[
+				-548,
+				123
+			]
+		]
+	},
+	"center": {
+		"215-256": [
+			-546,
+			121
+		]
+	}
+}
