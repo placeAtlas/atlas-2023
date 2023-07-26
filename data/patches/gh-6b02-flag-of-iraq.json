@@ -1,0 +1,72 @@
+{
+	"id": -1,
+	"name": "Flag of Iraq",
+	"description": "Iraq is a country in the Middle East. It includes: A palm tree, Ishtar Gate, The flags motto \"God is the greatest\" written in Arabic, and Al-Shaheed Monument.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Iraq",
+			"https://en.wikipedia.org/wiki/Flag_of_Iraq"
+		],
+		"subreddit": [
+			"iraq"
+		]
+	},
+	"path": {
+		"254": [
+			[
+				18,
+				-708
+			],
+			[
+				18,
+				-694
+			],
+			[
+				-14,
+				-694
+			],
+			[
+				-15,
+				-708
+			],
+			[
+				-15,
+				-709
+			],
+			[
+				2,
+				-709
+			],
+			[
+				1,
+				-709
+			],
+			[
+				-15,
+				-709
+			],
+			[
+				-15,
+				-750
+			],
+			[
+				1,
+				-751
+			],
+			[
+				2,
+				-709
+			],
+			[
+				18,
+				-709
+			]
+		]
+	},
+	"center": {
+		"254": [
+			-6,
+			-718
+		]
+	}
+}
