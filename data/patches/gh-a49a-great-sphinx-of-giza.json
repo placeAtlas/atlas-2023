@@ -1,0 +1,86 @@
+{
+	"id": -1,
+	"name": "Great Sphinx of Giza",
+	"description": "The Great Sphinx of Giza, commonly referred to as the Sphinx, is a limestone statue of a reclining sphinx, a mythical creature with the head of a human, and the body of a lion. The Sphinx is the oldest known monumental sculpture in Egypt and one of the most recognisable statues in the world.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Great_Sphinx_of_Giza"
+		],
+		"subreddit": [
+			"Egypt"
+		],
+		"discord": [
+			"Qc7arrjupq"
+		]
+	},
+	"path": {
+		"167-257": [
+			[
+				-814,
+				344
+			],
+			[
+				-815,
+				342
+			],
+			[
+				-817,
+				342
+			],
+			[
+				-817,
+				341
+			],
+			[
+				-818,
+				339
+			],
+			[
+				-817,
+				339
+			],
+			[
+				-817,
+				337
+			],
+			[
+				-816,
+				336
+			],
+			[
+				-816,
+				333
+			],
+			[
+				-817,
+				332
+			],
+			[
+				-817,
+				331
+			],
+			[
+				-823,
+				331
+			],
+			[
+				-829,
+				337
+			],
+			[
+				-832,
+				337
+			],
+			[
+				-825,
+				344
+			]
+		]
+	},
+	"center": {
+		"167-257": [
+			-823,
+			338
+		]
+	}
+}
