@@ -1,0 +1,151 @@
+{
+	"id": 462,
+	"name": "University of Michigan",
+	"description": "A depiction of the logo (M) and slogan (Go Blue) of the University of Michigan in Ann Arbor, MI, United States. 45-23 depicts Michigan's victorious fall 2022 football score against rival Ohio State University.\n\nThe r/MichiganWolverines community stands in solidarity with Black Company, r/Save3rdPartyApps.",
+	"links": {
+		"website": [
+			"https://umich.edu/",
+			"https://en.wikipedia.org/wiki/University_of_Michigan"
+		],
+		"subreddit": [
+			"uofm",
+			"MichiganWolverines"
+		]
+	},
+	"path": {
+		"8": [
+			[
+				-271,
+				359
+			],
+			[
+				-235,
+				359
+			],
+			[
+				-235,
+				322
+			],
+			[
+				-271,
+				322
+			]
+		],
+		"55-56": [
+			[
+				674,
+				-368
+			],
+			[
+				674,
+				-327
+			],
+			[
+				710,
+				-327
+			],
+			[
+				710,
+				-368
+			]
+		],
+		"4-7": [
+			[
+				-271,
+				315
+			],
+			[
+				-271,
+				359
+			],
+			[
+				-236,
+				359
+			],
+			[
+				-236,
+				315
+			]
+		],
+		"9-11": [
+			[
+				-262,
+				359
+			],
+			[
+				-235,
+				359
+			],
+			[
+				-235,
+				323
+			],
+			[
+				-262,
+				323
+			]
+		],
+		"57-74": [
+			[
+				674,
+				-368
+			],
+			[
+				674,
+				-348
+			],
+			[
+				710,
+				-348
+			],
+			[
+				710,
+				-368
+			]
+		],
+		"75-258": [
+			[
+				674,
+				-368
+			],
+			[
+				674,
+				-326
+			],
+			[
+				710,
+				-326
+			],
+			[
+				710,
+				-368
+			]
+		]
+	},
+	"center": {
+		"8": [
+			-253,
+			341
+		],
+		"55-56": [
+			692,
+			-347
+		],
+		"4-7": [
+			-253,
+			337
+		],
+		"9-11": [
+			-248,
+			341
+		],
+		"57-74": [
+			692,
+			-358
+		],
+		"75-258": [
+			692,
+			-347
+		]
+	}
+}
