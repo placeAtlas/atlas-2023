@@ -1,0 +1,50 @@
+{
+	"id": 2984,
+	"name": "La Boulangerie MC",
+	"description": "World Building french Minecraft server.\n\nServeur Minecraft de Roleplay Géopolitique.",
+	"links": {
+		"website": [
+			"https://laboulangerie.net/"
+		],
+		"subreddit": [
+			"laboulangeriemc"
+		],
+		"discord": [
+			"vV2q2sBym5"
+		]
+	},
+	"path": {
+		"111-257": [
+			[
+				-574,
+				107
+			],
+			[
+				-544,
+				107
+			],
+			[
+				-544,
+				123
+			],
+			[
+				-571,
+				123
+			],
+			[
+				-571,
+				114
+			],
+			[
+				-574,
+				114
+			]
+		]
+	},
+	"center": {
+		"111-257": [
+			-559,
+			115
+		]
+	}
+}
