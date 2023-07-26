@@ -1,0 +1,112 @@
+{
+	"id": -1,
+	"name": "Giant Grapu",
+	"description": "Grapu is the mascot of Green Lattice. This version in Grapu in particular is giant and yelling. This was made after streamer Spreen helped expand the area of green lattice.\n\nA heart is included in to show the community's love for the character.",
+	"links": {
+		"subreddit": [
+			"greenlattice"
+		]
+	},
+	"path": {
+		"254": [
+			[
+				1047,
+				-794
+			],
+			[
+				1046,
+				-804
+			],
+			[
+				1069,
+				-820
+			],
+			[
+				1082,
+				-819
+			],
+			[
+				1100,
+				-803
+			],
+			[
+				1099,
+				-777
+			],
+			[
+				1091,
+				-767
+			],
+			[
+				1101,
+				-767
+			],
+			[
+				1101,
+				-762
+			],
+			[
+				1088,
+				-762
+			],
+			[
+				1085,
+				-765
+			],
+			[
+				1083,
+				-765
+			],
+			[
+				1082,
+				-761
+			],
+			[
+				1067,
+				-762
+			],
+			[
+				1061,
+				-764
+			],
+			[
+				1056,
+				-765
+			],
+			[
+				1055,
+				-771
+			],
+			[
+				1051,
+				-772
+			],
+			[
+				1051,
+				-777
+			],
+			[
+				1057,
+				-780
+			],
+			[
+				1049,
+				-780
+			],
+			[
+				1048,
+				-784
+			],
+			[
+				1046,
+				-786
+			]
+		]
+	},
+	"center": {
+		"254": [
+			1076,
+			-793
+		]
+	}
+}
