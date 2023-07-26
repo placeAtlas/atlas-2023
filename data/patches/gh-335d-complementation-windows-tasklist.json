@@ -1,0 +1,81 @@
+{
+	"id": -1,
+	"name": "Complementation Windows Tasklist",
+	"description": "The list of \"minimize\", \"open windows\", \"close\" and \"mouse pointer\" was added by r/placeDE in collaboration with r/placeNL to complement the Windows Vista tasklist on the bottom of the canvas.\n\nThe design was first created when placeNL held the top right corner of the canvas. It then was adapted when placeDE held the top right corner after the final extension of the canvas.",
+	"links": {
+		"subreddit": [
+			"placeDE",
+			"placeNL"
+		]
+	},
+	"path": {
+		"213-252": [
+			[
+				1444,
+				-1000
+			],
+			[
+				1443,
+				-982
+			],
+			[
+				1443,
+				-980
+			],
+			[
+				1422,
+				-980
+			],
+			[
+				1413,
+				-970
+			],
+			[
+				1415,
+				-968
+			],
+			[
+				1415,
+				-962
+			],
+			[
+				1418,
+				-962
+			],
+			[
+				1423,
+				-968
+			],
+			[
+				1426,
+				-967
+			],
+			[
+				1427,
+				-979
+			],
+			[
+				1446,
+				-980
+			],
+			[
+				1498,
+				-982
+			],
+			[
+				1498,
+				-1000
+			],
+			[
+				1444,
+				-1000
+			]
+		]
+	},
+	"center": {
+		"213-252": [
+			1456,
+			-990
+		]
+	}
+}
