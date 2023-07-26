@@ -47,6 +47,7 @@ filenames = os.listdir(patches_dir)
 filenames.append(permanent_patch_file)
 
 controversial_entries = set([
+	696, # lturepublic
 	1730, 2044, # Atatürk
 	2587, # Falklands War memorial
 	2955, # Lola
