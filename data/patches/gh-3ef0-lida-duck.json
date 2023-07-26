@@ -1,0 +1,37 @@
+{
+	"id": -1,
+	"name": "Lida duck",
+	"description": "This is art by Russian EDM and happy hardcore artist Lida, created by subscribers of Russian streamer dkincc. The art show us a duck, the cover of one of Lida's albums.",
+	"links": {
+		"website": [
+			"https://www.twitch.tv/dkincc",
+			"https://www.twitch.tv/lida_stream"
+		]
+	},
+	"path": {
+		"254": [
+			[
+				-749,
+				177
+			],
+			[
+				-774,
+				177
+			],
+			[
+				-773,
+				153
+			],
+			[
+				-751,
+				154
+			]
+		]
+	},
+	"center": {
+		"254": [
+			-762,
+			165
+		]
+	}
+}
