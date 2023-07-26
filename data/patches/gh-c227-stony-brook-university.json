@@ -1,0 +1,40 @@
+{
+	"id": -1,
+	"name": "Stony Brook University",
+	"description": "The Stony Brook University logo, alongside the abbreviation \"SBU.\"",
+	"links": {
+		"subreddit": [
+			"SBU"
+		]
+	},
+	"path": {
+		"254": [
+			[
+				1499,
+				344
+			],
+			[
+				1485,
+				344
+			],
+			[
+				1485,
+				365
+			],
+			[
+				1499,
+				365
+			],
+			[
+				1499,
+				344
+			]
+		]
+	},
+	"center": {
+		"254": [
+			1492,
+			355
+		]
+	}
+}
