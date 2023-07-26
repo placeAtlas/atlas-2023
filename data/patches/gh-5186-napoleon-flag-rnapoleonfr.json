@@ -1,0 +1,42 @@
+{
+	"id": 2023,
+	"name": "Napoleon flag r/NapoléonFR",
+	"description": "Created by an independent far right French community, this flag aims to highlight one of the most controversial historical figures of the history of France : Napoleon.",
+	"links": {
+		"website": [
+			"https://fr.wikipedia.org/wiki/Napol%C3%A9on_Ier"
+		],
+		"subreddit": [
+			"NapoleonFR"
+		],
+		"discord": [
+			"74XMa2Xc"
+		]
+	},
+	"path": {
+		"209-258": [
+			[
+				-367,
+				462
+			],
+			[
+				-306,
+				462
+			],
+			[
+				-306,
+				587
+			],
+			[
+				-367,
+				587
+			]
+		]
+	},
+	"center": {
+		"209-258": [
+			-336,
+			525
+		]
+	}
+}
