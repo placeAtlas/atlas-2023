@@ -1,0 +1,63 @@
+{
+	"id": 1077,
+	"name": "Flag of France",
+	"description": "France is a country in Western Europe.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/France",
+			"https://en.wikipedia.org/wiki/Flag_of_France"
+		],
+		"subreddit": [
+			"placeFR",
+			"france"
+		]
+	},
+	"path": {
+		"134-151": [
+			[
+				-798,
+				321
+			],
+			[
+				-770,
+				321
+			],
+			[
+				-770,
+				344
+			],
+			[
+				-798,
+				344
+			]
+		],
+		"154-155": [
+			[
+				-796,
+				344
+			],
+			[
+				-796,
+				327
+			],
+			[
+				-771,
+				327
+			],
+			[
+				-771,
+				344
+			]
+		]
+	},
+	"center": {
+		"134-151": [
+			-784,
+			333
+		],
+		"154-155": [
+			-783,
+			336
+		]
+	}
+}
