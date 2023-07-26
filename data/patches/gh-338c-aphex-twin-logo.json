@@ -1,0 +1,39 @@
+{
+	"id": 2657,
+	"name": "Aphex Twin Logo",
+	"description": "Aphex Twin also known as Richard David James or AFX is an Irish-born British musician, composer and DJ. He is known for his idiosyncratic work in electronic styles such as techno, ambient, and jungle. is considered a so-called one of the most influential and important artists in contemporary electronic music. 7\\",
+	"links": {
+		"website": [
+			"https://aphextwin.warp.net"
+		],
+		"subreddit": [
+			"aphextwin"
+		]
+	},
+	"path": {
+		"210-234": [
+			[
+				-591,
+				815
+			],
+			[
+				-572,
+				815
+			],
+			[
+				-572,
+				831
+			],
+			[
+				-591,
+				831
+			]
+		]
+	},
+	"center": {
+		"210-234": [
+			-581,
+			823
+		]
+	}
+}
