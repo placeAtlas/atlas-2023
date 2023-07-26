@@ -1,0 +1,54 @@
+{
+	"id": 2231,
+	"name": "RED",
+	"description": "Red (Taylor's Version) is the second re-recorded album by American singer-songwriter Taylor Swift.",
+	"links": {
+		"website": [
+			"https://www.taylorswift.com/"
+		],
+		"subreddit": [
+			"TaylorSwift"
+		],
+		"discord": [
+			"swifties"
+		]
+	},
+	"path": {
+		"214-258": [
+			[
+				1301,
+				-611
+			],
+			[
+				1301,
+				-622
+			],
+			[
+				1283,
+				-611
+			],
+			[
+				1283,
+				-622
+			],
+			[
+				1301,
+				-622
+			],
+			[
+				1283,
+				-611
+			],
+			[
+				1301,
+				-611
+			]
+		]
+	},
+	"center": {
+		"214-258": [
+			1297,
+			-615
+		]
+	}
+}
