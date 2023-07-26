@@ -1,0 +1,43 @@
+{
+	"id": -1,
+	"name": "Mayor's Shorts",
+	"description": "Mayor Lewis' missing purple shorts! Found in Marnie's room and now... the void?",
+	"links": {
+		"website": [
+			"https://www.stardewvalley.net/"
+		],
+		"subreddit": [
+			"StardewValley"
+		]
+	},
+	"path": {
+		"254": [
+			[
+				1275,
+				199
+			],
+			[
+				1275,
+				182
+			],
+			[
+				1257,
+				182
+			],
+			[
+				1257,
+				199
+			],
+			[
+				1275,
+				199
+			]
+		]
+	},
+	"center": {
+		"254": [
+			1266,
+			191
+		]
+	}
+}
