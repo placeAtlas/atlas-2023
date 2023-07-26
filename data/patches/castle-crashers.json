@@ -1,0 +1,36 @@
+{
+	"id": -1,
+	"name": "Castle Crashers",
+	"description": "Castle Crashers is a hack-and-slash video game originally released in 2008. The game revolves around 4 knights on a journey to rescue four princesses who have been captured by a dark wizard. \n\nThis artwork features the 4 knights from top to bottom (Green Knight, Yellow Knight, Blue Knight, & Red Knight.)",
+	"links": {
+		"subreddit": [
+			"castlecrashers"
+		]
+	},
+	"path": {
+		"254": [
+			[
+				-1031,
+				-321
+			],
+			[
+				-1031,
+				-281
+			],
+			[
+				-1024,
+				-281
+			],
+			[
+				-1024,
+				-321
+			]
+		]
+	},
+	"center": {
+		"254": [
+			-1027,
+			-301
+		]
+	}
+}
