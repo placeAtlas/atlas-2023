@@ -35,6 +35,10 @@ def extend_time_key(items):
 			del items[key]
 			items[f'{pre_extend_times[0]}-{post_extend_time}'] = value
 			continue
+		elif key == '254' or key == '254-258':
+			del items[key]
+			items[f'250-258'] = value
+			continue
 
 		times = key.split(', ')
 		for time in times:
