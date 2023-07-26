@@ -1,0 +1,90 @@
+{
+	"id": 1688,
+	"name": "CellA",
+	"description": "CellA is a Cellbit's emote in Twitch. It was made because Cellbit thought r/place was ending and he wanted to show gratitude to the community.",
+	"links": {
+		"website": [
+			"https://www.twitch.tv/cellbit"
+		],
+		"subreddit": [
+			"cellbits"
+		],
+		"discord": [
+			"cellbit"
+		]
+	},
+	"path": {
+		"170-189": [
+			[
+				741,
+				403
+			],
+			[
+				763,
+				403
+			],
+			[
+				763,
+				405
+			],
+			[
+				793,
+				405
+			],
+			[
+				793,
+				360
+			],
+			[
+				792,
+				360
+			],
+			[
+				792,
+				356
+			],
+			[
+				783,
+				347
+			],
+			[
+				760,
+				347
+			],
+			[
+				756,
+				348
+			],
+			[
+				750,
+				355
+			],
+			[
+				747,
+				362
+			],
+			[
+				747,
+				374
+			],
+			[
+				745,
+				374
+			],
+			[
+				743,
+				376
+			],
+			[
+				741,
+				379
+			]
+		]
+	},
+	"center": {
+		"170-189": [
+			770,
+			380
+		]
+	}
+}
