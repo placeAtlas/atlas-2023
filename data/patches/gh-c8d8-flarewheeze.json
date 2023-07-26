@@ -1,0 +1,43 @@
+{
+	"id": -1,
+	"name": "FlareWheeze",
+	"description": "FlareWheeze is an emote from the fan Discord server of VTuber agency Hololive. The emote features Shiranui Flare (不知火フレア), a member of the 3rd generation Hololive's Japan branch well-known for her wheezing laugh.\n\nThis FlareWheeze was one of the very last things the VTubers Place Discord server was able to build, during the very last moments of the r/place's time. To build it they had to overrun another build by KIT, a public research university in Karlsruhe, Germany. The KIT guys tried on several occasions to expand into VTuber territory, but that was was always ended swiftly. Eventually the KIT guys announced definitive plans to expand, upon which the VTuber Place community acted by going to their ally PlaceDE and asking for help, because as it turned out, the KIT guys were also allied.\nAfter long diplomatic discussions, the PlaceDE faction decided to officially permit the VTubers Place community to overrun the KIT guys.\nBefore they did this, the VTuber community first tried to help relocating, but this proved difficult due to bad relations and communication issues. \nEventually the build was overrun by the VTubers and FlareWheeze was built.\n\nThe KIT guys were relocated in the end, they can be found somewhere on the German flag now. They do have a home.\n",
+	"links": {
+		"subreddit": [
+			"Hololive"
+		],
+		"discord": [
+			"vtubersplace"
+		]
+	},
+	"path": {
+		"249-255": [
+			[
+				-558,
+				-368
+			],
+			[
+				-537,
+				-368
+			],
+			[
+				-537,
+				-345
+			],
+			[
+				-558,
+				-345
+			],
+			[
+				-558,
+				-368
+			]
+		]
+	},
+	"center": {
+		"249-255": [
+			-547,
+			-356
+		]
+	}
+}
