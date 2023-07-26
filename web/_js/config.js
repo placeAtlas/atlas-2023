@@ -327,7 +327,6 @@ window.defaultVariation = defaultVariation
 
 let defaultPeriod = variationsConfig[defaultVariation].default
 window.defaultPeriod = defaultPeriod
-console.log(window.defaultPeriod);
 
 const useNumericalId = true
 window.useNumericalId = useNumericalId

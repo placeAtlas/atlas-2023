@@ -32,6 +32,9 @@ let currentPeriod = defaultPeriod
 window.currentVariation = currentVariation
 window.currentPeriod = currentPeriod
 
+let atlasDisplay = {}
+window.atlasDisplay = atlasDisplay
+
 // SETUP
 if (variationsConfig[currentVariation].versions.length === 1) bottomBar.classList.add('no-time-slider')
 
@@ -163,8 +166,6 @@ async function updateTime(newPeriod = currentPeriod, newVariation = currentVaria
 
 	await updateBackground(newPeriod, newVariation)
 
-	atlas = generateAtlasForPeriod(newPeriod, newVariation)
-
 	dispatchTimeUpdateEvent(newPeriod, newVariation, atlas)
 	delete document.body.dataset.canvasLoading
 	tooltip.dataset.forceVisible = ""
@@ -175,24 +176,30 @@ async function updateTime(newPeriod = currentPeriod, newVariation = currentVaria
 
 }
 
-function generateAtlasForPeriod(newPeriod = currentPeriod, newVariation = currentVariation) {
+function generateAtlasDisplay(prevAtlas, prevAtlasOrder, newPeriod = currentPeriod, newVariation = currentVariation) {
+	
+	const newAtlas = {}
+	const newAtlasOrderDisplayed = []
+	const newAtlasOrderNotDisplayed = []
 
-	const atlas = []
-	for (const entry of atlasAll) {
+	for (const id of prevAtlasOrder) {
+
+		newAtlasOrderNotDisplayed.push(id)
+		const entry = prevAtlas[id]
+
 		let chosenIndex
 
 		const validPeriods2 = Object.keys(entry.path)
 
-		for (const i in validPeriods2) {
+		periodCheck: for (const i in validPeriods2) {
 			const validPeriods = validPeriods2[i].split(', ')
 			for (const j in validPeriods) {
 				const [start, end, variation] = parsePeriod(validPeriods[j])
 				if (isOnPeriod(start, end, variation, newPeriod, newVariation)) {
 					chosenIndex = i
-					break
+					break periodCheck
 				}
 			}
-			if (chosenIndex !== undefined) break
 		}
 
 		if (chosenIndex === undefined) continue
@@ -201,14 +208,18 @@ function generateAtlasForPeriod(newPeriod = currentPeriod, newVariation = curren
 
 		if (pathChosen === undefined) continue
 
-		atlas.push({
+		newAtlas[id] = {
 			...entry,
 			path: pathChosen,
 			center: centerChosen,
-		})
+		}
+
+		newAtlasOrderNotDisplayed.pop()
+		newAtlasOrderDisplayed.push(id)
+
 	}
 
-	return atlas
+	return [newAtlas, [...newAtlasOrderDisplayed, ...newAtlasOrderNotDisplayed]]
 
 }
 
@@ -321,4 +332,44 @@ function downloadCanvas() {
 	document.body.appendChild(linkEl)
 	linkEl.click()
 	document.body.removeChild(linkEl)
+}
+
+function getNearestPeriod(entry, targetPeriod, targetVariation) {
+	
+	const entryPathPeriods = Object.keys(entry.path)
+	
+	let nearestScore, nearestPeriod, nearestVariation
+
+	function updateNearest(newScore, newPeriod, newVariation) {
+		if (newScore >= nearestScore) return
+		nearestScore = newScore
+		nearestPeriod = newPeriod
+		nearestVariation = newVariation
+	}
+
+	checkEntryPathPeriod: for (const entryPathPeriod of entryPathPeriods) {
+		const pathPeriods = entryPathPeriod.split(', ')
+
+		for (const j in pathPeriods) {
+			const [pathStart, pathEnd, pathVariation] = parsePeriod(pathPeriods[j])
+			if (isOnPeriod(pathStart, pathEnd, pathVariation, targetPeriod, targetVariation)) {
+				updateNearest(0, targetPeriod, targetVariation)
+			} else {
+				if (pathVariation !== targetVariation) {
+					updateNearest(Infinity, pathStart, pathVariation)
+					break checkEntryPathPeriod
+				} else {
+					if (Math.abs(pathStart - targetPeriod) < Math.abs(pathEnd - targetPeriod)) {
+						updateNearest(Math.abs(pathStart - targetPeriod), pathStart, pathVariation)
+					} else {
+						updateNearest(Math.abs(pathEnd - targetPeriod), pathStart, pathVariation)
+					}
+				}
+			}
+		}
+
+	}
+
+	return [ nearestPeriod, nearestVariation ]
+
 }

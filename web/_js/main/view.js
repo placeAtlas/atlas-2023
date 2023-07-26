@@ -43,7 +43,11 @@ objectEditNav.className = "btn btn-outline-primary"
 objectEditNav.id = "objectEditNav"
 objectEditNav.textContent = "Edit"
 
-let atlasDisplay
+let atlas = null
+window.atlas = atlas
+
+let atlasOrder = []
+window.atlasOrder = atlasOrder
 
 const entriesLimit = 50
 let entriesOffset = 0
@@ -72,11 +76,11 @@ let lastPos = [0, 0]
 let fixed = false; // Fix hovered items in place, so that clicking on links is possible
 
 searchInput.addEventListener("input", function () {
-	resetEntriesList()
+	updateAtlas()
 })
 
 sortInput.addEventListener("input", function () {
-	resetEntriesList()
+	updateAtlas()
 })
 
 offcanvasDraw.addEventListener('show.bs.offcanvas', () => {
@@ -112,7 +116,7 @@ offcanvasList.addEventListener('shown.bs.offcanvas', e => {
 	wrapper.classList.remove('listTransitioning')
 	updateHovering(e)
 	applyView()
-	render()
+	renderHighlight()
 	updateLines()
 })
 
@@ -127,7 +131,7 @@ offcanvasList.addEventListener('hidden.bs.offcanvas', e => {
 	wrapper.classList.remove('listTransitioning')
 	updateHovering(e)
 	applyView()
-	render()
+	renderHighlight()
 	updateLines()
 })
 
@@ -145,7 +149,7 @@ function clearObjectsList() {
 	objectsContainer.replaceChildren()
 	updateLines()
 	fixed = false
-	render()
+	renderHighlight()
 	objectEditNav.remove()
 	updateHash(false)
 	document.title = pageTitle
@@ -159,7 +163,7 @@ function toggleFixed(e, tapped) {
 	fixed = !fixed
 	if (!fixed) {
 		updateHovering(e, tapped)
-		render()
+		renderHighlight()
 	}
 	entriesList.classList.add("disableHover")
 	objectsListOverflowNotice.classList.add("d-none")
@@ -177,7 +181,7 @@ objectsContainer.addEventListener("scroll", () => {
 window.addEventListener("resize", () => {
 
 	applyView()
-	render()
+	renderHighlight()
 	updateLines()
 
 })
@@ -260,9 +264,9 @@ function renderBackground(atlas) {
 	backgroundContext.fillStyle = "rgba(0, 0, 0, 0.6)"
 	backgroundContext.fillRect(0, 0, backgroundCanvas.width, backgroundCanvas.height)
 
-	for (let i = 0; i < atlas.length; i++) {
+	for (const entry of Object.values(atlas)) {
 
-		const path = atlas[i].path
+		const path = entry.path
 
 		backgroundContext.beginPath()
 
@@ -279,7 +283,7 @@ function renderBackground(atlas) {
 		backgroundContext.closePath()
 
 		let bgStrokeStyle
-		switch (atlas[i].diff) {
+		switch (entry.diff) {
 			case "add":
 				bgStrokeStyle = "rgba(0, 255, 0, 1)"
 				backgroundContext.lineWidth = 2
@@ -299,45 +303,39 @@ function renderBackground(atlas) {
 		backgroundContext.strokeStyle = bgStrokeStyle
 		backgroundContext.stroke()
 		backgroundContext.lineWidth = 1
+
+
 	}
+
 }
 
-function buildObjectsList(filter, sort) {
+function filterAtlas(prevAtlas) {
 
-	atlasDisplay = atlas.slice()
+	const sort = sortInput.value || defaultSort
+	const search = searchInput?.value.toLowerCase()
+	let newAtlas = Object.assign({}, prevAtlas)
+	let newAtlasOrder = []
 
-	if (filter) {
-		atlasDisplay = atlas.filter(entry => {
-			return (
-				entry.name.toLowerCase().includes(filter.toLowerCase())
-				|| entry.description?.toLowerCase().includes(filter.toLowerCase())
-				|| Object.values(entry.links).flat().some(str => str.toLowerCase().includes(filter))
-				|| entry.id.toString() === filter
-			)
-		})
-		document.getElementById("atlasSize").innerHTML = "Found " + atlasDisplay.length + " entries."
-	} else {
-		document.getElementById("atlasSize").innerHTML = "The Atlas contains " + atlasDisplay.length + " entries."
+	document.getElementById("atlasSize").innerHTML = ""
+	
+	if (search) {
+		for (const [id, entry] of Object.entries(prevAtlas)) {
+			if (!(
+				entry.name.toLowerCase().includes(search.toLowerCase()) ||
+				entry.description?.toLowerCase().includes(search.toLowerCase()) ||
+				Object.values(entry.links).flat().some(str => str.toLowerCase().includes(search)) ||
+				id.toString() === search
+			)) delete newAtlas[id]
+		}
 	}
-
-	renderBackground(atlasDisplay)
-	render()
-
-	sort ||= defaultSort
-	document.getElementById("sort").value = sort
-
-	//console.log(sort)
+	
+	// document.getElementById("sort").value = sort
 
 	let sortFunction
 
-	//console.log(sort)
-
 	switch (sort) {
 		case "shuffle":
-			sortFunction = null
-			if (entriesOffset === 0) {
-				shuffle()
-			}
+			sortFunction = () => Math.random() - 0.5
 			break
 		case "alphaAsc":
 			sortFunction = (a, b) => a.name.toLowerCase().localeCompare(b.name.toLowerCase())
@@ -369,9 +367,35 @@ function buildObjectsList(filter, sort) {
 			break
 	}
 
+	newAtlasOrder = Object.keys(newAtlas)
 	if (sortFunction) {
-		atlasDisplay.sort(sortFunction)
+		newAtlasOrder = newAtlasOrder.sort((a, b) => sortFunction(prevAtlas[a], prevAtlas[b]))
 	}
+
+	// console.log(newAtlas, newAtlasOrder)
+
+	return [newAtlas, newAtlasOrder]
+
+}
+
+function updateAtlas() {
+	;[atlas, atlasOrder] = filterAtlas(atlasAll)
+	;[atlasDisplay, atlasOrder] = generateAtlasDisplay(atlas, atlasOrder, currentPeriod, currentVariation)
+	const atlasSizeEl = document.getElementById("atlasSize")
+	if (Object.keys(atlas).length === Object.keys(atlasAll).length) {	
+		atlasSizeEl.innerHTML = Object.keys(atlasAll).length + " entries in total."
+	} else {
+		atlasSizeEl.innerHTML = "Found " + Object.keys(atlas).length + " entries."
+	}
+	atlasSizeEl.innerHTML += " Displaying " + Object.keys(atlasDisplay).length + " entries."
+	resetEntriesList()
+	renderBackground(atlasDisplay)
+	renderHighlight(atlasDisplay)
+}
+
+function buildObjectsList() {
+
+	let i = 0
 
 	moreEntriesButton.removeEventListener('click', showMoreEntries)
 	showMoreEntries = () => {
@@ -380,58 +404,67 @@ function buildObjectsList(filter, sort) {
 			entriesList.removeChild(moreEntriesButton)
 		}	
 
-		for (let i = entriesOffset; i < entriesOffset + entriesLimit; i++) {
+		let entriesLeft = entriesLimit
+		let element
 
-			if (i >= atlasDisplay.length) break
+		while (entriesLeft > 0 && atlasOrder.length > i) {
+
+			if (atlasDisplay[atlasOrder[i]]) {
+				// console.log(i, entriesLeft)
 	
-			const element = createInfoBlock(atlasDisplay[i])
-			const entry = atlasDisplay[i]
-	
-			element.addEventListener("mouseenter", function () {
-				if (fixed || dragging) return
-				objectsContainer.replaceChildren()
-	
-				previousScaleZoomOrigin ??= [...scaleZoomOrigin]
-				previousZoom ??= zoom
-				setView(entry.center[0], entry.center[1], setZoomByPath(entry.path))
-	
-				hovered = [entry]
-				render()
-				hovered[0].element = this
-				updateLines()
-	
-			})
-	
-			element.addEventListener("click", e => {
-				toggleFixed(e)
-				if (!fixed) return
-				previousScaleZoomOrigin ??= [...scaleZoomOrigin]
-				previousZoom ??= zoom
-				applyView()
-			})
-	
-			element.addEventListener("mouseleave", () => {
-				if (fixed || dragging) return
-	
-				scaleZoomOrigin = [...previousScaleZoomOrigin]
-				zoom = previousZoom
-				previousScaleZoomOrigin = undefined
-				previousZoom = undefined
-				applyView()
-	
-				hovered = []
-				updateLines()
-				render()
-			})
+				const entry = atlasDisplay[atlasOrder[i]]
+				element = createInfoBlock(entry)
+		
+				element.addEventListener("mouseenter", function () {
+					if (fixed || dragging) return
+					objectsContainer.replaceChildren()
+		
+					previousScaleZoomOrigin ??= [...scaleZoomOrigin]
+					previousZoom ??= zoom
+					setView(entry.center[0], entry.center[1], setZoomByPath(entry.path))
+		
+					hovered = [entry]
+					renderHighlight()
+					hovered[0].element = this
+					updateLines()
+		
+				})
+		
+				element.addEventListener("click", e => {
+					fixed = true
+					if (!fixed) return
+					previousScaleZoomOrigin ??= [...scaleZoomOrigin]
+					previousZoom ??= zoom
+					applyView()
+				})
+		
+				element.addEventListener("mouseleave", () => {
+					if (fixed || dragging) return
+		
+					scaleZoomOrigin = [...previousScaleZoomOrigin]
+					zoom = previousZoom
+					previousScaleZoomOrigin = undefined
+					previousZoom = undefined
+					applyView()
+		
+					hovered = []
+					updateLines()
+					renderHighlight()
+				})	
+			} else {
+				const entry = atlas[atlasOrder[i]]
+				element = createInfoBlock(entry, 2)
+			}
+
+			i += 1
+			entriesLeft -= 1
 	
 			entriesList.appendChild(element)
 	
 		}
 	
-		entriesOffset += entriesLimit
-	
-		if (atlasDisplay.length > entriesOffset) {
-			moreEntriesButton.innerHTML = "Show " + Math.min(entriesLimit, atlasDisplay.length - entriesOffset) + " more"
+		if (atlasOrder.length > i) {
+			moreEntriesButton.innerHTML = "Show " + Math.min(entriesLimit, atlasOrder.length - i) + " more"
 			entriesList.appendChild(moreEntriesButton)
 		}
 	
@@ -451,18 +484,15 @@ function shuffle() {
 	}
 }
 
-function resetEntriesList() {
+async function resetEntriesList() {
 	entriesOffset = 0
 	entriesList.replaceChildren()
 	entriesList.appendChild(moreEntriesButton)
 
-	const sort = sortInput.value || defaultSort
-	const search = searchInput?.value.toLowerCase()
-
-	buildObjectsList(search, sort)
+	buildObjectsList()
 }
 
-async function render() {
+async function renderHighlight() {
 
 	highlightContext.clearRect(0, 0, highlightCanvas.width, highlightCanvas.height)
 
@@ -478,9 +508,7 @@ async function render() {
 		container.style.cursor = "default"
 	}
 
-
 	for (let i = 0; i < hovered.length; i++) {
-
 
 		const path = hovered[i].path
 
@@ -507,27 +535,27 @@ async function render() {
 	highlightContext.globalCompositeOperation = "source-out"
 	highlightContext.drawImage(backgroundCanvas, 0, 0)
 
-	if (hovered.length === 1 && hovered[0].path.length && hovered[0].overrideImage) {
-		const undisputableHovered = hovered[0]
-		// Find the left-topmost point of all the paths
-		const entryPosition = getPositionOfEntry(undisputableHovered)
-		if (entryPosition) {
-			const [startX, startY] = entryPosition
-			const overrideImage = new Image()
-			const loadingPromise = new Promise((res, rej) => {
-				overrideImage.onerror = rej
-				overrideImage.onload = res
-			})
-			overrideImage.src = "imageOverrides/" + undisputableHovered.overrideImage
-			try {
-				await loadingPromise
-				highlightContext.globalCompositeOperation = "source-over"
-				highlightContext.drawImage(overrideImage, startX, startY)
-			} catch (ex) {
-				console.error("Cannot override image.", ex)
-			}
-		}
-	}
+	// if (hovered.length === 1 && hovered[0].path.length && hovered[0].overrideImage) {
+	// 	const undisputableHovered = hovered[0]
+	// 	// Find the left-topmost point of all the paths
+	// 	const entryPosition = getPositionOfEntry(undisputableHovered)
+	// 	if (entryPosition) {
+	// 		const [startX, startY] = entryPosition
+	// 		const overrideImage = new Image()
+	// 		const loadingPromise = new Promise((res, rej) => {
+	// 			overrideImage.onerror = rej
+	// 			overrideImage.onload = res
+	// 		})
+	// 		overrideImage.src = "imageOverrides/" + undisputableHovered.overrideImage
+	// 		try {
+	// 			await loadingPromise
+	// 			highlightContext.globalCompositeOperation = "source-over"
+	// 			highlightContext.drawImage(overrideImage, startX, startY)
+	// 		} catch (ex) {
+	// 			console.error("Cannot override image.", ex)
+	// 		}
+	// 	}
+	// }
 
 	for (let i = 0; i < hovered.length; i++) {
 
@@ -593,7 +621,7 @@ function updateHovering(e, tapped) {
 	if (!(pos[0] <= canvasSize.x + canvasOffset.x + 200 && pos[0] >= canvasOffset.x - 200 && pos[1] <= canvasSize.y + canvasOffset.y + 200 && pos[1] >= canvasOffset.x - 200)) return
 	
 	const newHovered = []
-	for (const entry of atlasDisplay) {
+	for (const entry of Object.values(atlasDisplay)) {
 		if (pointIsInPolygon(pos, entry.path)) newHovered.push(entry)
 	}
 
@@ -639,7 +667,7 @@ function updateHovering(e, tapped) {
 		objectsListOverflowNotice.classList.add("d-none")
 		entriesList.classList.remove("disableHover")
 	}
-	render()
+	renderHighlight()
 }
 
 window.addEventListener("hashchange", updateViewFromHash)
@@ -678,14 +706,10 @@ function updateViewFromHash() {
 
 	// Highlight entry from hash
 
-	const entries = atlas.filter(e => {
-		return e.id.toString() === hashEntryId
-	})
-
-	if (entries.length !== 1) return 
+	const entry = atlasDisplay[hashEntryId]
+	console.log(entry)
+	if (!entry) return 
 		
-	const entry = entries[0]
-
 	document.title = entry.name + " on " + pageTitle
 
 	if ((!entry.diff || entry.diff !== "delete")) {
@@ -713,7 +737,7 @@ function updateViewFromHash() {
 	entriesList.classList.add("disableHover")
 
 	hovered = [entry]
-	render()
+	renderHighlight()
 	hovered[0].element = infoElement
 	updateLines()
 }
@@ -741,13 +765,10 @@ function setZoomByPath(path) {
 
 function initView() {
 
-	buildObjectsList(null, null)
-	renderBackground(atlas)
-	render()
-	
+	updateAtlas()
+
 	document.addEventListener('timeupdate', () => {
-		atlasDisplay = atlas.slice()
-		resetEntriesList()
+		updateAtlas()
 	})
 
 	// parse linked atlas entry id from link hash
@@ -758,22 +779,20 @@ function initView() {
 	}*/
 
 	applyView()
-	render()
 	updateLines()
 
 }
 
 function initExplore() {
-
 	window.updateHovering = updateHovering
-	window.render = () => { }
+	window.renderHighlight = () => { }
 
 	function updateHovering(e, tapped) {
 		if (dragging || (fixed && !tapped)) return
 		updateCoordsDisplay(e)
 	}
 
-	renderBackground(atlas)
+	renderBackground({})
 
 	applyView()
 

@@ -31,7 +31,10 @@ function createInfoListItem(name, value) {
 	return entryInfoListElement
 }
 
-function createInfoBlock(entry, isPreview) {
+// mode 0 = normal
+// mode 1 = preview
+// mode 2 = entry list but none on atlas
+function createInfoBlock(entry, mode = 0) {
 	const element = document.createElement("div")
 	element.className = "card mb-2 overflow-hidden shadow"
 
@@ -40,12 +43,23 @@ function createInfoBlock(entry, isPreview) {
 
 	const linkElement = document.createElement("a")
 	linkElement.className = "text-decoration-none d-flex justify-content-between text-body"
-	if (isPreview) linkElement.href = "#"
-	else {
-		linkElement.href = formatHash(entry.id, null, null, null, false, false, false)
+	if (mode === 1) linkElement.href = "#"
+	else if (mode === 2) {
+		const [nearestPeriod, nearestVariation] = getNearestPeriod(entry, currentPeriod, currentVariation)
+		const hash = formatHash(entry.id, nearestPeriod, nearestPeriod, nearestVariation, false, false, false)
+		linkElement.href = hash
 		linkElement.addEventListener('click', e => {
 			e.preventDefault()
-			location.hash = formatHash(entry.id, null, null, null, false, false, false)
+			location.hash = hash
+			window.dispatchEvent(new HashChangeEvent("hashchange"))
+		})
+
+	} else {
+		const hash = formatHash(entry.id, null, null, null, false, false, false)
+		linkElement.href = hash
+		linkElement.addEventListener('click', e => {
+			e.preventDefault()
+			location.hash = hash
 			window.dispatchEvent(new HashChangeEvent("hashchange"))
 		})
 	}
@@ -92,7 +106,7 @@ function createInfoBlock(entry, isPreview) {
 	}
 
 	// Entry data submitted to preview does not include center or path
-	if (!isPreview) {
+	if (mode === 0) {
 		const [x, y] = entry?.center
 		listElement.appendChild(createInfoListItem("Position: ", `${Math.floor(x)}, ${Math.floor(y)}`))
 
@@ -170,7 +184,7 @@ function createInfoBlock(entry, isPreview) {
 	element.appendChild(idElementContainer)
 
 	// Adds edit button only if element is not deleted
-	if (!isPreview && (!entry.diff || entry.diff !== "delete")) {
+	if (mode === 0 && (!entry.diff || entry.diff !== "delete")) {
 		const editElement = document.createElement("a")
 		editElement.innerHTML = '<i class="bi bi-pencil-fill" aria-hidden="true"></i> Edit'
 		editElement.className = "btn btn-sm btn-outline-primary"
