@@ -10,7 +10,7 @@ To contribute to the map, we require a certain format for artwork region and lab
 
 To add a new entry, go to [the drawing mode](https://2023.place-atlas.stefanocoding.me?mode=draw) and draw a shape/polygon around the region you'd like to describe. You can use the <kbd>Undo</kbd>, <kbd>Redo</kbd>, and <kbd>Reset</kbd> buttons to help you creating a good polygon. Make sure that the lines you're drawing don't form a [self-intersecting polygon](https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Complex_polygon.svg/288px-Complex_polygon.svg.png).
 
-By default, the drawing mode will hide areas of the canvas that already have entries. If you want to submit an entry within another entry, deselect "Highlight Empty" to display the full canvas.
+If you want to see which areas of the canvas do not have entries yet, select "Highlight Empty" to hide areas that already have entries.
 
 Multiple periods can be added to represent the changing state of the artwork on different times. You can set the start and end period, as well as chosing the appropriate canvas variations. You can also copy the polygon from one period to the other, duplicating a period to be edited later, as well as deleting a period (if there is more than one). An alert is also shown if there are errors that needed attention.
 
