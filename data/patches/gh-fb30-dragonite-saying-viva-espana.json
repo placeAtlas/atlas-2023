@@ -1,0 +1,40 @@
+{
+	"id": -1,
+	"name": "Dragonite saying Viva España",
+	"description": "Is a Dragonite saying Viva España",
+	"links": {
+		"website": [
+			"https://es.wikipedia.org/wiki/Espa%C3%B1a"
+		],
+		"subreddit": [
+			"es",
+			"Pokemon"
+		]
+	},
+	"path": {
+		"119-254": [
+			[
+				850,
+				-1000
+			],
+			[
+				850,
+				-864
+			],
+			[
+				999,
+				-864
+			],
+			[
+				1000,
+				-1000
+			]
+		]
+	},
+	"center": {
+		"119-254": [
+			925,
+			-932
+		]
+	}
+}
