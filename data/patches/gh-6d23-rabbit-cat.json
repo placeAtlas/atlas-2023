@@ -1,0 +1,58 @@
+{
+	"id": 2757,
+	"name": "Rabbit cat",
+	"description": "Conterstine is a Mexican streamer with 1.2M followers.\nThe image is Conterstine's profile picture on Twitch. It has been since his channel's creation.\nHis community prevented him from switching his profile picture.\nIt represents a cat with bunny ears.",
+	"links": {
+		"website": [
+			"https://www.twitch.tv/conterstine"
+		]
+	},
+	"path": {
+		"118-123": [
+			[
+				204,
+				-675
+			],
+			[
+				285,
+				-675
+			],
+			[
+				285,
+				-594
+			],
+			[
+				204,
+				-594
+			]
+		],
+		"124-256": [
+			[
+				204,
+				-675
+			],
+			[
+				285,
+				-675
+			],
+			[
+				285,
+				-591
+			],
+			[
+				204,
+				-591
+			]
+		]
+	},
+	"center": {
+		"118-123": [
+			245,
+			-634
+		],
+		"124-256": [
+			245,
+			-633
+		]
+	}
+}
