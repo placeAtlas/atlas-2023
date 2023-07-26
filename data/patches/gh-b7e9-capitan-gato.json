@@ -1,0 +1,80 @@
+{
+	"id": 2864,
+	"name": "Capitan gato",
+	"description": "Youtuber/Streamer Peruano muy querido por toda la comunidad Latinoamericana con muy sentido del humor y videos con muy buena edicion (no como los de JustNova)\n\nHa participado en muchos eventos de Minecraft y demas, el nos recuerda también que debemos lavarnos el poto <3\n\n-English:\nPeruvian Youtuber/Streamer very loved by all the Latin American community with a great sense of humor and videos with very good editing (not like JustNova's)\n\nHe has participated in many Minecraft events and others, he also reminds us that we should wash our butts <3\n\nSome french people protected this cat until the end, they tried to make the beanie have a french flag insted of a colored one. TheSwitcher was the french leader of the french group that protected him.",
+	"links": {
+		"website": [
+			"https://www.youtube.com/@CapitanGato/featured",
+			"https://twitter.com/CapitanGatoYT",
+			"https://www.twitch.tv/capitangatoo"
+		]
+	},
+	"path": {
+		"168-259": [
+			[
+				-435,
+				-865
+			],
+			[
+				-432,
+				-853
+			],
+			[
+				-431,
+				-842
+			],
+			[
+				-431,
+				-816
+			],
+			[
+				-390,
+				-816
+			],
+			[
+				-391,
+				-825
+			],
+			[
+				-398,
+				-837
+			],
+			[
+				-397,
+				-854
+			],
+			[
+				-396,
+				-864
+			]
+		],
+		"129-167": [
+			[
+				-435,
+				-865
+			],
+			[
+				-435,
+				-816
+			],
+			[
+				-389,
+				-816
+			],
+			[
+				-390,
+				-865
+			]
+		]
+	},
+	"center": {
+		"168-259": [
+			-414,
+			-847
+		],
+		"129-167": [
+			-412,
+			-840
+		]
+	}
+}
