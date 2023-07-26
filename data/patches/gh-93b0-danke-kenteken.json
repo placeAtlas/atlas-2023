@@ -1,0 +1,40 @@
+{
+	"id": 847,
+	"name": "Danke Kenteken",
+	"description": "This is a Dutch license plate to prove the cooperation between Germany and the Netherlands and to thank them for protecting our area",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_the_Netherlands"
+		],
+		"subreddit": [
+			"PlaceNL",
+			"placeDE"
+		]
+	},
+	"path": {
+		"64-256": [
+			[
+				606,
+				-462
+			],
+			[
+				606,
+				-452
+			],
+			[
+				649,
+				-452
+			],
+			[
+				649,
+				-462
+			]
+		]
+	},
+	"center": {
+		"64-256": [
+			628,
+			-457
+		]
+	}
+}
