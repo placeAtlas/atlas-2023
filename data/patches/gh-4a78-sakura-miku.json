@@ -1,0 +1,42 @@
+{
+	"id": 2404,
+	"name": "Sakura Miku",
+	"description": "Sakura Miku is the name of a Hatsune Miku Japanese Vocaloid module. Sakura Miku is a pink-themed alternate hue for Hatsune Miku, designed to symbolize the start of spring. The official Sakura Miku appeared in 2011. At the 2011 Hatsune Miku concert, a small Sakura Miku of about 3.5cm was given away. The \"Project DIVA\" series includes Sakura Miku as an alternate character module for Hatsune Miku.",
+	"links": {
+		"website": [
+			"https://project-diva.fandom.com/wiki/Sakura_Miku"
+		],
+		"subreddit": [
+			"hatsune"
+		],
+		"discord": [
+			"hatsune"
+		]
+	},
+	"path": {
+		"207-256": [
+			[
+				1317,
+				332
+			],
+			[
+				1317,
+				365
+			],
+			[
+				1348,
+				365
+			],
+			[
+				1348,
+				332
+			]
+		]
+	},
+	"center": {
+		"207-256": [
+			1333,
+			349
+		]
+	}
+}
