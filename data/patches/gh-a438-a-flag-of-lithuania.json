@@ -1,0 +1,61 @@
+{
+	"id": 3398,
+	"name": "A flag of Lithuania",
+	"description": "The yellow stripe represents the nation's prosperity as well as the light of the sun. The green band stands for liberty, hope, and the nation's many forests. The red band represents the courage and blood of the people who have died for Lithuania. The artwork was made by RajonoKunigas community.",
+	"links": {
+		"website": [
+			"https://rajonokunigas.lt/"
+		],
+		"discord": [
+			"baznycia"
+		]
+	},
+	"path": {
+		"244-246": [
+			[
+				-191,
+				-27
+			],
+			[
+				-191,
+				85
+			],
+			[
+				-78,
+				86
+			],
+			[
+				-80,
+				-27
+			]
+		],
+		"247-254": [
+			[
+				-269,
+				-27
+			],
+			[
+				-80,
+				-26
+			],
+			[
+				-79,
+				85
+			],
+			[
+				-269,
+				86
+			]
+		]
+	},
+	"center": {
+		"244-246": [
+			-135,
+			29
+		],
+		"247-254": [
+			-212,
+			30
+		]
+	}
+}
