@@ -1,0 +1,55 @@
+{
+	"id": -1,
+	"name": "ESC heart with Swedish flag",
+	"description": "A heart with a shape used widely within Eurovision Song Contest, an annual European music competition. The Swedish flag is a reference to Sweden's victory in the 2023 edition of contest.",
+	"links": {
+		"website": [
+			"https://eurovision.tv/"
+		],
+		"subreddit": [
+			"eurovision"
+		]
+	},
+	"path": {
+		"175-254": [
+			[
+				-276,
+				674
+			],
+			[
+				-268,
+				664
+			],
+			[
+				-269,
+				659
+			],
+			[
+				-272,
+				656
+			],
+			[
+				-274,
+				656
+			],
+			[
+				-276,
+				659
+			],
+			[
+				-282,
+				658
+			],
+			[
+				-284,
+				666
+			]
+		]
+	},
+	"center": {
+		"175-254": [
+			-277,
+			665
+		]
+	}
+}
