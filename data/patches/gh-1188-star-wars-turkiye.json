@@ -1,0 +1,36 @@
+{
+	"id": -1,
+	"name": "Star Wars Türkiye",
+	"description": "A small artwork created by a dedicated Turkish fanbase of Star Wars. On the initial canvas at the star of r/place, they were also located under the Hololive logo next to the big Turkish flag. They allied with the VTubers Place community to secure them a spot, and once the VTubers Place community moved after the Turkish and Azerbaijani aggression they decided to come along and got another place secured. Together, they made it to the final canvas.",
+	"links": {
+		"discord": [
+			"vtubersplace"
+		]
+	},
+	"path": {
+		"254": [
+			[
+				-623,
+				-327
+			],
+			[
+				-623,
+				-315
+			],
+			[
+				-607,
+				-315
+			],
+			[
+				-606,
+				-327
+			]
+		]
+	},
+	"center": {
+		"254": [
+			-614,
+			-321
+		]
+	}
+}

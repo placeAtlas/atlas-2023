@@ -1,0 +1,40 @@
+{
+	"id": -1,
+	"name": "HaxeFlixel",
+	"description": "HaxeFlixel is an open source 2D game library written in the Haxe Language and powered by OpenFL.\n\nMost noticeable by Friday Night Funkin'",
+	"links": {
+		"website": [
+			"https://haxeflixel.com/"
+		]
+	},
+	"path": {
+		"210-257": [
+			[
+				-393,
+				-830
+			],
+			[
+				-391,
+				-830
+			],
+			[
+				-391,
+				-828
+			],
+			[
+				-393,
+				-828
+			],
+			[
+				-393,
+				-830
+			]
+		]
+	},
+	"center": {
+		"210-257": [
+			-392,
+			-829
+		]
+	}
+}

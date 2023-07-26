@@ -1,0 +1,40 @@
+{
+	"id": -1,
+	"name": "Ferb",
+	"description": "This is art by Russian streamer dkincc, created by his subscribers! The art show us a Ferb, the hero of the animated series \"Phineas and Ferb\". This is one of the most favorite animated series dkincc, so Ferb is redrawn under it.",
+	"links": {
+		"website": [
+			"https://www.twitch.tv/dkincc"
+		]
+	},
+	"path": {
+		"254": [
+			[
+				-1171,
+				194
+			],
+			[
+				-1171,
+				273
+			],
+			[
+				-1147,
+				275
+			],
+			[
+				-1139,
+				191
+			],
+			[
+				-1165,
+				192
+			]
+		]
+	},
+	"center": {
+		"254": [
+			-1156,
+			207
+		]
+	}
+}

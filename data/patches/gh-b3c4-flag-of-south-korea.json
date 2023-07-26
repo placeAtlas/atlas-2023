@@ -1,0 +1,44 @@
+{
+	"id": 2653,
+	"name": "Flag of South Korea",
+	"description": "South Korea is a country in East Asia. Its flag is known as the Taegeukgi.\n\nAfter r/Korea_Place fought together with r/UKOnPlace against an attack on the previous Korean flag and the Greggs logo by a rouge Swedish streamer called Perrababy, this flag was given a place on the Union Jack, held by Paddington Bear. It served as the final home of r/Korea_Place.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/South_Korea",
+			"https://en.wikipedia.org/wiki/Flag_of_South_Korea"
+		],
+		"subreddit": [
+			"Korea_Place"
+		],
+		"discord": [
+			"NDGSVQasUK"
+		]
+	},
+	"path": {
+		"209-259": [
+			[
+				1012,
+				781
+			],
+			[
+				1035,
+				781
+			],
+			[
+				1035,
+				797
+			],
+			[
+				1012,
+				797
+			]
+		]
+	},
+	"center": {
+		"209-259": [
+			1024,
+			789
+		]
+	},
+	"_author": "gh:HaneulCheong"
+}

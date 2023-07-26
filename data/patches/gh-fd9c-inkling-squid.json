@@ -1,0 +1,109 @@
+{
+	"id": 1044,
+	"name": "Inkling Squid",
+	"description": "Inkling Squid is the squid form of the Inklings, the main playable race in the game series Splatoon.",
+	"links": {
+		"website": [
+			"https://splatoonwiki.org/wiki/Inkling"
+		],
+		"subreddit": [
+			"Splatoon_Place",
+			"placeFR",
+			"SplatoonFrance"
+		]
+	},
+	"path": {
+		"119-258": [
+			[
+				969,
+				-195
+			],
+			[
+				969,
+				-192
+			],
+			[
+				970,
+				-192
+			],
+			[
+				970,
+				-174
+			],
+			[
+				969,
+				-174
+			],
+			[
+				969,
+				-170
+			],
+			[
+				973,
+				-170
+			],
+			[
+				973,
+				-171
+			],
+			[
+				990,
+				-171
+			],
+			[
+				990,
+				-170
+			],
+			[
+				994,
+				-170
+			],
+			[
+				994,
+				-174
+			],
+			[
+				993,
+				-174
+			],
+			[
+				993,
+				-191
+			],
+			[
+				994,
+				-191
+			],
+			[
+				994,
+				-193
+			],
+			[
+				992,
+				-195
+			],
+			[
+				990,
+				-195
+			],
+			[
+				990,
+				-194
+			],
+			[
+				972,
+				-194
+			],
+			[
+				972,
+				-195
+			]
+		]
+	},
+	"center": {
+		"119-258": [
+			982,
+			-182
+		]
+	}
+}

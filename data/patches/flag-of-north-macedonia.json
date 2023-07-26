@@ -1,0 +1,40 @@
+{
+	"id": -1,
+	"name": "Flag of North Macedonia",
+	"description": "North Macedonia (Officially the Republic of North Macedonia) is a country located in southeastern Europe.\n\nThis artwork depicts its flag which was adopted in 1995.",
+	"links": {
+		"subreddit": [
+			"mkd"
+		]
+	},
+	"path": {
+		"254": [
+			[
+				-1480,
+				139
+			],
+			[
+				-1480,
+				154
+			],
+			[
+				-1460,
+				154
+			],
+			[
+				-1460,
+				139
+			],
+			[
+				-1460,
+				139
+			]
+		]
+	},
+	"center": {
+		"254": [
+			-1470,
+			147
+		]
+	}
+}

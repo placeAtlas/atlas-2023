@@ -1,0 +1,36 @@
+{
+	"id": -1,
+	"name": "Le Havre AC",
+	"description": "Le Havre Athletic Club, commonly known simply as Le Havre, is a French professional association football club based in Le Havre, Normandy. The football club was founded in 1894 as a section of the sports club of the same name, founded in 1884. Le Havre plays in Ligue 1, the first tier of French football, after securing promotion from Ligue 2 as winners of the 2022–23 season, and plays its home matches at the Stade Océane.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Le_Havre_AC"
+		]
+	},
+	"path": {
+		"208-257": [
+			[
+				905,
+				-837
+			],
+			[
+				905,
+				-802
+			],
+			[
+				933,
+				-802
+			],
+			[
+				933,
+				-837
+			]
+		]
+	},
+	"center": {
+		"208-257": [
+			919,
+			-819
+		]
+	}
+}

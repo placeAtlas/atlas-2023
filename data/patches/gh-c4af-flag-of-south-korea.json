@@ -1,0 +1,114 @@
+{
+	"id": -1,
+	"name": "Flag of South Korea (Nordic Refugee)",
+	"description": "South Korea is a country in East Asia. Its flag is known as the Taegeukgi.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Flag_of_South_Korea"
+		],
+		"subreddit": [
+			"Korea_Place",
+			"Sweden",
+			"nordics",
+			"place_nordicunion"
+		],
+		"discord": [
+			"NDGSVQasUK"
+		]
+	},
+	"path": {
+		"215-234": [
+			[
+				48,
+				-222
+			],
+			[
+				48,
+				-235
+			],
+			[
+				50,
+				-237
+			],
+			[
+				57,
+				-237
+			],
+			[
+				59,
+				-235
+			],
+			[
+				60,
+				-235
+			],
+			[
+				61,
+				-234
+			],
+			[
+				67,
+				-234
+			],
+			[
+				67,
+				-233
+			],
+			[
+				66,
+				-233
+			],
+			[
+				65,
+				-232
+			],
+			[
+				65,
+				-231
+			],
+			[
+				62,
+				-228
+			],
+			[
+				62,
+				-227
+			],
+			[
+				61,
+				-226
+			],
+			[
+				61,
+				-225
+			],
+			[
+				60,
+				-224
+			],
+			[
+				53,
+				-224
+			],
+			[
+				52,
+				-223
+			],
+			[
+				51,
+				-223
+			],
+			[
+				50,
+				-222
+			]
+		]
+	},
+	"center": {
+		"215-234": [
+			55,
+			-230
+		]
+	},
+	"_author": "gh:HaneulCheong"
+}

@@ -1,0 +1,39 @@
+{
+	"id": 2467,
+	"name": "\"The Bite of '87?!\"",
+	"description": "A much more graphic depiction of the popular and commonly misattributed scene known \"Bite of '87\" that can be seen after completing Five Nights at Freddy's 4.  \n\n...This is actually not the Bite of 87', but instead the Bite of '83.",
+	"links": {
+		"subreddit": [
+			"fivenightsatfreddys"
+		],
+		"discord": [
+			"freddit"
+		]
+	},
+	"path": {
+		"170-237": [
+			[
+				-783,
+				744
+			],
+			[
+				-744,
+				744
+			],
+			[
+				-744,
+				774
+			],
+			[
+				-783,
+				774
+			]
+		]
+	},
+	"center": {
+		"170-237": [
+			-763,
+			759
+		]
+	}
+}

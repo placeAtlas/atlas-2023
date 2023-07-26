@@ -1,0 +1,75 @@
+{
+	"id": -1,
+	"name": "Nyan Cat watching a sunflower",
+	"description": "Nyan Cat is a meme first published in 2009. On the canvas, it was created during the german nighttime. However, on the final day the PlaceDE community decided to adopt the cat in their artwork.",
+	"links": {
+		"website": [
+			"https://de.wikipedia.org/wiki/Nyan_Cat"
+		],
+		"subreddit": [
+			"placeDE"
+		]
+	},
+	"path": {
+		"219-256": [
+			[
+				1144,
+				-416
+			],
+			[
+				1143,
+				-399
+			],
+			[
+				1141,
+				-393
+			],
+			[
+				1112,
+				-391
+			],
+			[
+				1076,
+				-392
+			],
+			[
+				1076,
+				-400
+			],
+			[
+				1073,
+				-404
+			],
+			[
+				1070,
+				-408
+			],
+			[
+				1069,
+				-419
+			],
+			[
+				1079,
+				-424
+			],
+			[
+				1090,
+				-419
+			],
+			[
+				1095,
+				-412
+			],
+			[
+				1094,
+				-410
+			]
+		]
+	},
+	"center": {
+		"219-256": [
+			1083,
+			-410
+		]
+	}
+}
