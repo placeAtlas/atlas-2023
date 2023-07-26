@@ -1,0 +1,98 @@
+{
+	"id": -1,
+	"name": "Mudkip",
+	"description": "Mudkip is a Pokémon who first appeared in the third generation of Pokémon Games.  Mudkip is a small, quadrupedal amphibious Pokémon that resembles mudskipper fishes and axolotls.",
+	"links": {
+		"website": [
+			"http://pokemon.com/"
+		],
+		"subreddit": [
+			"pokemon"
+		],
+		"discord": [
+			"pokemon"
+		]
+	},
+	"path": {
+		"254": [
+			[
+				-1247,
+				337
+			],
+			[
+				-1247,
+				339
+			],
+			[
+				-1244,
+				340
+			],
+			[
+				-1240,
+				341
+			],
+			[
+				-1239,
+				339
+			],
+			[
+				-1236,
+				341
+			],
+			[
+				-1234,
+				337
+			],
+			[
+				-1232,
+				335
+			],
+			[
+				-1231,
+				333
+			],
+			[
+				-1232,
+				330
+			],
+			[
+				-1236,
+				327
+			],
+			[
+				-1237,
+				324
+			],
+			[
+				-1240,
+				323
+			],
+			[
+				-1242,
+				327
+			],
+			[
+				-1244,
+				330
+			],
+			[
+				-1248,
+				327
+			],
+			[
+				-1250,
+				328
+			],
+			[
+				-1250,
+				334
+			]
+		]
+	},
+	"center": {
+		"254": [
+			-1238,
+			333
+		]
+	}
+}
