@@ -1,0 +1,42 @@
+{
+	"id": 3056,
+	"name": "WarriorCats",
+	"description": "Warriors is a series of novels based on the adventures and drama of multiple Clans of feral cats. The series is primarily set in fictional forests. Published by HarperCollins, the series is written by authors Kate Cary and Cherith Baldry, as well as others, under the collective pseudonym Erin Hunter.",
+	"links": {
+		"website": [
+			"https://warriorcats.com/"
+		],
+		"subreddit": [
+			"WarriorCats"
+		],
+		"discord": [
+			"warriorcats"
+		]
+	},
+	"path": {
+		"249-256": [
+			[
+				-897,
+				685
+			],
+			[
+				-897,
+				697
+			],
+			[
+				-886,
+				697
+			],
+			[
+				-886,
+				685
+			]
+		]
+	},
+	"center": {
+		"249-256": [
+			-891,
+			691
+		]
+	}
+}
