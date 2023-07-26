@@ -1,0 +1,121 @@
+{
+	"id": 1012,
+	"name": "Bernd das Brothanos",
+	"description": "A combination of German puppet character Bernd das Brot (from German TV channel KI.KA) and the supervillain Thanos from the Marvel Cinematic Universe.\n\nGermany takes over everything. With a snap, he pulls a German flag through everything that bothers him and helps the smaller countries and groups.\n\nHe even survived against around 100k people(xQc)",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Bernd_das_Brot",
+			"https://en.wikipedia.org/wiki/Thanos"
+		]
+	},
+	"path": {
+		"126-255": [
+			[
+				-734,
+				-986
+			],
+			[
+				-718,
+				-992
+			],
+			[
+				-712,
+				-989
+			],
+			[
+				-708,
+				-975
+			],
+			[
+				-704,
+				-969
+			],
+			[
+				-696,
+				-974
+			],
+			[
+				-691,
+				-976
+			],
+			[
+				-686,
+				-974
+			],
+			[
+				-678,
+				-968
+			],
+			[
+				-677,
+				-962
+			],
+			[
+				-669,
+				-956
+			],
+			[
+				-668,
+				-947
+			],
+			[
+				-659,
+				-939
+			],
+			[
+				-659,
+				-927
+			],
+			[
+				-665,
+				-918
+			],
+			[
+				-674,
+				-920
+			],
+			[
+				-683,
+				-929
+			],
+			[
+				-684,
+				-912
+			],
+			[
+				-754,
+				-911
+			],
+			[
+				-749,
+				-918
+			],
+			[
+				-748,
+				-927
+			],
+			[
+				-748,
+				-936
+			],
+			[
+				-751,
+				-942
+			],
+			[
+				-742,
+				-955
+			],
+			[
+				-730,
+				-964
+			]
+		]
+	},
+	"center": {
+		"126-255": [
+			-712,
+			-941
+		]
+	}
+}
