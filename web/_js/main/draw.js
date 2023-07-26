@@ -69,7 +69,7 @@ const periodClipboard = {
 const drawBackButton = document.createElement("a")
 drawBackButton.className = "btn btn-outline-primary"
 drawBackButton.id = "drawBackButton"
-drawBackButton.textContent = "Exit Draw Mode"
+drawBackButton.textContent = "Exit Drawing"
 
 const baseInputAddon = document.createElement("span")
 baseInputAddon.className = "input-group-text"
@@ -106,7 +106,8 @@ function initDraw() {
 	showListButton.insertAdjacentHTML("afterend", '<button class="btn btn-outline-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDraw" aria-controls="offcanvasDraw">Menu</button>')
 	showListButton.parentElement.appendChild(drawBackButton)
 	showListButton.remove()
-
+	drawButton.remove()
+	
 	// Opens draw menu
 	wrapper.classList.remove('listHidden')
 	bsOffcanvasDraw.show()

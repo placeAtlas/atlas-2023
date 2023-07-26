@@ -54,7 +54,7 @@ function createInfoBlock(entry, isPreview) {
 	linkNameElement.textContent = entry.name
 	headerElement.appendChild(linkElement)
 	linkElement.appendChild(linkNameElement)
-	linkElement.insertAdjacentHTML("beforeend", '<i class="bi bi-link-45deg align-self-center link-primary" aria-hidden="true"></i>')
+	linkElement.insertAdjacentHTML("beforeend", '<i class="bi bi-link-45deg align-self-center link-primary" aria-hidden="true" title="Copy direct link"></i>')
 	element.appendChild(headerElement)
 
 	const bodyElement = document.createElement("div")
@@ -172,7 +172,7 @@ function createInfoBlock(entry, isPreview) {
 	// Adds edit button only if element is not deleted
 	if (!isPreview && (!entry.diff || entry.diff !== "delete")) {
 		const editElement = document.createElement("a")
-		editElement.textContent = "Edit"
+		editElement.innerHTML = '<i class="bi bi-pencil-fill" aria-hidden="true"></i> Edit'
 		editElement.className = "btn btn-sm btn-outline-primary"
 		editElement.href = "./?mode=draw&id=" + entry.id + formatHash(false)
 		editElement.title = "Edit " + entry.name
