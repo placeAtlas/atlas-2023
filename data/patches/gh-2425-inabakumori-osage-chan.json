@@ -1,0 +1,40 @@
+{
+	"id": 3179,
+	"name": "Inabakumori Osage-chan",
+	"description": "Inabakumori and Nukunuku Nigirmeshi's Osage-chan with Ado's rose, Tuyu's umbrella, Nira from Zutomayo and Kawai Sou-kun from \"nothings working out\" by Meiyo in the corner, and symbols for Eve and Yorushika.",
+	"links": {
+		"subreddit": [
+			"inabakumori"
+		],
+		"discord": [
+			"inabakumori",
+			"VTtb8rAMqp"
+		]
+	},
+	"path": {
+		"217-256": [
+			[
+				841,
+				-124
+			],
+			[
+				841,
+				-72
+			],
+			[
+				884,
+				-72
+			],
+			[
+				884,
+				-124
+			]
+		]
+	},
+	"center": {
+		"217-256": [
+			863,
+			-98
+		]
+	}
+}
