@@ -1,0 +1,42 @@
+{
+	"id": 3384,
+	"name": "University of Michigan Wolverine and Friends",
+	"description": "Sailor Wolverine Logo for the University of Michigan surrounded by Minecraft characters, r/community and twitch.tv/johan_speak's bread. The r/MichiganWolverines community stands in solidarity with Black Company, r/Save3rdPartyApps.",
+	"links": {
+		"subreddit": [
+			"MichiganWolverines",
+			"community",
+			"minecraft"
+		]
+	},
+	"path": {
+		"250-258": [
+			[
+				-559,
+				696
+			],
+			[
+				-560,
+				744
+			],
+			[
+				-501,
+				744
+			],
+			[
+				-501,
+				695
+			],
+			[
+				-558,
+				696
+			]
+		]
+	},
+	"center": {
+		"250-258": [
+			-530,
+			720
+		]
+	}
+}
