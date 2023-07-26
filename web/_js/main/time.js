@@ -265,36 +265,52 @@ function parsePeriod(periodString) {
 	}
 }
 
-function formatPeriod(start, end, variation) {
-	start ??= currentPeriod
-	end ??= currentPeriod
-	variation ??= currentVariation
+function formatPeriod(targetStart, targetEnd, targetVariation, forUrl = false) {
+	targetStart ??= currentPeriod
+	targetEnd ??= currentPeriod
+	targetVariation ??= currentVariation
 
 	let periodString, variationString
-	variationString = variationsConfig[variation].code
-	if (start > end) [start, end] = [end, start]
-	if (start === end) {
-		if (start === variationsConfig[variation].default && variation !== defaultVariation) {
+	variationString = variationsConfig[targetVariation].code
+	if (targetStart > targetEnd) [targetStart, targetEnd] = [targetEnd, targetStart]
+	if (targetStart === targetEnd) {
+		if (forUrl && targetVariation === defaultVariation && targetStart === variationsConfig[defaultVariation].default) {
 			periodString = ""
 		}
-		else periodString = start
+		else periodString = targetStart
 	}
-	else periodString = start + "-" + end
-	if (periodString && variationString) return variationsConfig[variation].code + ":" + periodString
+	else periodString = targetStart + "-" + targetEnd
+	if (periodString && variationString) return variationsConfig[targetVariation].code + ":" + periodString
 	if (variationString) return variationString
+
 	return periodString
 }
 
-function formatHash(id, start, end, variation) {
-	start ??= currentPeriod
-	end ??= currentPeriod
-	variation ??= currentVariation
+function setReferenceVal(reference, newValue) {
+	if (reference === false || reference === "") return null
+	else return reference ?? newValue
+}
+
+function formatHash(targetEntry, targetPeriodStart, targetPeriodEnd, targetVariation, targetX, targetY, targetZoom) {
+	let hashData = window.location.hash.substring(1).split('/')
+
+	targetEntry = setReferenceVal(targetEntry, hashData[0])
+	targetPeriodStart = setReferenceVal(targetPeriodStart, currentPeriod)
+	targetPeriodEnd = setReferenceVal(targetPeriodEnd, currentPeriod)
+	targetVariation = setReferenceVal(targetVariation, currentVariation)
+	targetX = setReferenceVal(targetX, -scaleZoomOrigin[0])
+	targetY = setReferenceVal(targetY, -scaleZoomOrigin[1])
+	targetZoom = setReferenceVal(targetZoom, zoom)
 	
-	const result = [id]
-	const targetPeriod = formatPeriod(start, end, variation)
-	if (targetPeriod && targetPeriod !== defaultPeriod) result.push(targetPeriod)
+	if (targetX) targetX = Math.round(targetX)
+	if (targetY) targetY = Math.round(targetY)
+	if (targetZoom) targetZoom = targetZoom.toFixed(3).replace(/\.?0+$/, '')
+
+	const result = [targetEntry]
+	const targetPeriod = formatPeriod(targetPeriodStart, targetPeriodEnd, targetVariation, true)
+	result.push(targetPeriod, targetX, targetY, targetZoom)
 	if (!result.some(el => el || el === 0)) return ''
-	return '#' + result.join('/')
+	return '#' + result.join('/').replace(/\/+$/, '')
 }
 
 function downloadCanvas() {

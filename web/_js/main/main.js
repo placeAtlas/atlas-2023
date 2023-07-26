@@ -23,7 +23,7 @@ if (window.devicePixelRatio) {
 }
 
 const maxZoom = 128
-const minZoom = 0.1
+const minZoom = 0.125
 
 let zoomOrigin = [0, 0]
 let scaleZoomOrigin = [0, 0]
@@ -52,15 +52,24 @@ function applyView() {
 
 }
 
-function setView(x, y, zoomN = zoom) {
+function setView(targetX, targetY, targetZoom = zoom) {
 	
-	zoom = zoomN
+	if (isNaN(targetX)) targetX = 0
+	if (isNaN(targetY)) targetY = 0
+
+	zoom = targetZoom
 	scaleZoomOrigin = [
-		canvasCenter.x - x, 
-		canvasCenter.y - y
+		canvasCenter.x - targetX,
+		canvasCenter.y - targetY
 	]
 	applyView()
 
+}
+
+function updateHash(...args) {
+	const newLocation = new URL(window.location)
+	newLocation.hash = formatHash(...args)
+	if (location.hash !== newLocation.hash) history.replaceState({}, "", newLocation)
 }
 
 let atlas = null
@@ -102,10 +111,10 @@ async function init() {
 	atlasAll = updateAtlasAll(await atlasResp.json())
 
 	const hash = window.location.hash.substring(1)
-	const [, period] = hash.split('/')
+	const [, hashPeriod, hashX, hashY, hashZoom] = hash.split('/')
 
-	if (period) {
-		const [, targetPeriod, targetVariation] = parsePeriod(period)
+	if (hashPeriod) {
+		const [, targetPeriod, targetVariation] = parsePeriod(hashPeriod)
 		await updateTime(targetPeriod, targetVariation, true)
 	} else {
 		await updateTime(currentPeriod, currentVariation, true)
@@ -113,8 +122,11 @@ async function init() {
 
 	//console.log(document.documentElement.clientWidth, document.documentElement.clientHeight)
 
-	zoomOrigin = [0, 0]
-	applyView()
+	setView(
+		isNaN(hashX) ? 0 : Number(hashX),
+		isNaN(hashY) ? 0 : Number(hashY),
+		isNaN(hashZoom) ? 1 : Number(hashZoom)
+	)
 
 	let initialPinchDistance = 0
 	let initialPinchZoom = 0
@@ -306,6 +318,7 @@ async function init() {
 
 		zoom = Math.max(minZoom, Math.min(maxZoom, zoom))
 		applyZoom(x, y, zoom)
+		updateHash()
 	}, { passive: true })
 
 	/*function setDesiredZoom(x, y, target){
@@ -362,8 +375,8 @@ async function init() {
 			]
 
 			mousedown(
-				(e.touches[0].clientX + e.touches[1].clientX) / 2,
-				(e.touches[0].clientY + e.touches[1].clientY) / 2
+				(e.touches[0].clientX + e.touches[1].clientX) / 2 - container.offsetLeft,
+				(e.touches[0].clientY + e.touches[1].clientY) / 2 - container.offsetTop
 			)
 
 		}
@@ -376,6 +389,7 @@ async function init() {
 			e.preventDefault()
 		}
 	})
+
 	window.addEventListener("touchmove", e => {
 
 		if (e.touches.length === 2 || e.scale > 1) {
@@ -464,17 +478,15 @@ async function init() {
 	window.addEventListener("touchend", touchend)
 
 	function mouseup() {
-		if (dragging) {
-			dragging = false
-		}
+		dragging = false
+		updateHash()
 	}
 
 	function touchend(e) {
-
 		if (e.touches.length === 0) {
-
 			mouseup()
 			setTimeout(() => updateLines(), 0)
+			dragging = false
 
 		} else if (e.touches.length === 1) {
 			initialPinchZoom = zoom

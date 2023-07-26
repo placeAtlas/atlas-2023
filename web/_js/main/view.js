@@ -35,7 +35,6 @@ const searchInput = document.getElementById("searchList")
 const sortInput = document.getElementById("sort")
 
 const entriesList = document.getElementById("entriesList")
-
 let entriesListShown = false
 
 const drawButton = document.getElementById("drawLink")
@@ -48,22 +47,18 @@ let atlasDisplay
 
 const entriesLimit = 50
 let entriesOffset = 0
+
 const moreEntriesButton = document.createElement("button")
 moreEntriesButton.innerHTML = "Show " + entriesLimit + " more"
 moreEntriesButton.type = "button"
 moreEntriesButton.className = "btn btn-primary d-block mb-2 mx-auto"
-
 moreEntriesButton.id = "moreEntriesButton"
-moreEntriesButton.addEventListener('click', () => {
-	buildObjectsList(null, null)
-	renderBackground(atlas)
-	render()
-})
+let showMoreEntries = () => {}
 
 const moreEntriesObserver = new IntersectionObserver(entries => {
 	for (const entry of entries) {
 		if (!entry.isIntersecting) continue
-		moreEntriesButton.click()
+		showMoreEntries()
 		break
 	}
 })
@@ -152,6 +147,7 @@ function clearObjectsList() {
 	fixed = false
 	render()
 	objectEditNav.remove()
+	updateHash(false)
 	document.title = pageTitle
 }
 
@@ -307,11 +303,7 @@ function renderBackground(atlas) {
 	}
 }
 
-function buildObjectsList(filter = "", sort = defaultSort) {
-
-	if (entriesList.contains(moreEntriesButton)) {
-		entriesList.removeChild(moreEntriesButton)
-	}
+function buildObjectsList(filter, sort) {
 
 	atlasDisplay = atlas.slice()
 
@@ -321,7 +313,7 @@ function buildObjectsList(filter = "", sort = defaultSort) {
 				entry.name.toLowerCase().includes(filter.toLowerCase())
 				|| entry.description?.toLowerCase().includes(filter.toLowerCase())
 				|| Object.values(entry.links).flat().some(str => str.toLowerCase().includes(filter))
-				|| entry.id === filter
+				|| entry.id.toString() === filter
 			)
 		})
 		document.getElementById("atlasSize").innerHTML = "Found " + atlasDisplay.length + " entries."
@@ -382,60 +374,72 @@ function buildObjectsList(filter = "", sort = defaultSort) {
 		atlasDisplay.sort(sortFunction)
 	}
 
-	for (let i = entriesOffset; i < entriesOffset + entriesLimit; i++) {
+	moreEntriesButton.removeEventListener('click', showMoreEntries)
+	showMoreEntries = () => {
 
-		if (i >= atlasDisplay.length) break
+		if (entriesList.contains(moreEntriesButton)) {
+			entriesList.removeChild(moreEntriesButton)
+		}	
 
-		const element = createInfoBlock(atlasDisplay[i])
-		const entry = atlasDisplay[i]
+		for (let i = entriesOffset; i < entriesOffset + entriesLimit; i++) {
 
-		element.addEventListener("mouseenter", function () {
-			if (fixed || dragging) return
-			objectsContainer.replaceChildren()
-
-			previousScaleZoomOrigin ??= [...scaleZoomOrigin]
-			previousZoom ??= zoom
-			setView(entry.center[0], entry.center[1], setZoomByPath(entry.path))
-
-			hovered = [entry]
-			render()
-			hovered[0].element = this
-			updateLines()
-
-		})
-
-		element.addEventListener("click", e => {
-			toggleFixed(e)
-			if (!fixed) return
-			previousScaleZoomOrigin ??= [...scaleZoomOrigin]
-			previousZoom ??= zoom
-			applyView()
-		})
-
-		element.addEventListener("mouseleave", () => {
-			if (fixed || dragging) return
-
-			scaleZoomOrigin = [...previousScaleZoomOrigin]
-			zoom = previousZoom
-			previousScaleZoomOrigin = undefined
-			previousZoom = undefined
-			applyView()
-
-			hovered = []
-			updateLines()
-			render()
-		})
-
-		entriesList.appendChild(element)
-
+			if (i >= atlasDisplay.length) break
+	
+			const element = createInfoBlock(atlasDisplay[i])
+			const entry = atlasDisplay[i]
+	
+			element.addEventListener("mouseenter", function () {
+				if (fixed || dragging) return
+				objectsContainer.replaceChildren()
+	
+				previousScaleZoomOrigin ??= [...scaleZoomOrigin]
+				previousZoom ??= zoom
+				setView(entry.center[0], entry.center[1], setZoomByPath(entry.path))
+	
+				hovered = [entry]
+				render()
+				hovered[0].element = this
+				updateLines()
+	
+			})
+	
+			element.addEventListener("click", e => {
+				toggleFixed(e)
+				if (!fixed) return
+				previousScaleZoomOrigin ??= [...scaleZoomOrigin]
+				previousZoom ??= zoom
+				applyView()
+			})
+	
+			element.addEventListener("mouseleave", () => {
+				if (fixed || dragging) return
+	
+				scaleZoomOrigin = [...previousScaleZoomOrigin]
+				zoom = previousZoom
+				previousScaleZoomOrigin = undefined
+				previousZoom = undefined
+				applyView()
+	
+				hovered = []
+				updateLines()
+				render()
+			})
+	
+			entriesList.appendChild(element)
+	
+		}
+	
+		entriesOffset += entriesLimit
+	
+		if (atlasDisplay.length > entriesOffset) {
+			moreEntriesButton.innerHTML = "Show " + Math.min(entriesLimit, atlasDisplay.length - entriesOffset) + " more"
+			entriesList.appendChild(moreEntriesButton)
+		}
+	
 	}
+	moreEntriesButton.addEventListener('click', showMoreEntries)
+	showMoreEntries()
 
-	entriesOffset += entriesLimit
-
-	if (atlasDisplay.length > entriesOffset) {
-		moreEntriesButton.innerHTML = "Show " + Math.min(entriesLimit, atlasDisplay.length - entriesOffset) + " more"
-		entriesList.appendChild(moreEntriesButton)
-	}
 }
 
 function shuffle() {
@@ -453,8 +457,8 @@ function resetEntriesList() {
 	entriesList.replaceChildren()
 	entriesList.appendChild(moreEntriesButton)
 
-	let sort = sortInput.value || defaultSort
-	let search = searchInput?.value.toLowerCase()
+	const sort = sortInput.value || defaultSort
+	const search = searchInput?.value.toLowerCase()
 
 	buildObjectsList(search, sort)
 }
@@ -565,10 +569,7 @@ async function render() {
 
 }
 
-function updateHovering(e, tapped) {
-
-	if (dragging || (fixed && !tapped)) return
-
+function updateCoordsDisplay(e) {
 	const pos = [
 		(e.clientX - (container.clientWidth / 2 - innerContainer.clientWidth / 2 + zoomOrigin[0] + container.offsetLeft)) / zoom + canvasOffset.x,
 		(e.clientY - (container.clientHeight / 2 - innerContainer.clientHeight / 2 + zoomOrigin[1] + container.offsetTop)) / zoom + canvasOffset.y
@@ -581,6 +582,14 @@ function updateHovering(e, tapped) {
 	} else {
 		coordsEl.textContent = Math.floor(pos[0]) + ", " + Math.floor(pos[1])
 	}
+
+	return pos
+}
+
+function updateHovering(e, tapped) {
+
+	if (dragging || (fixed && !tapped)) return
+	const pos = updateCoordsDisplay(e)
 
 	if (!(pos[0] <= canvasSize.x + canvasOffset.x + 200 && pos[0] >= canvasOffset.x - 200 && pos[1] <= canvasSize.y + canvasOffset.y + 200 && pos[1] >= canvasOffset.x - 200)) return
 	
@@ -637,36 +646,44 @@ function updateHovering(e, tapped) {
 	render()
 }
 
-window.addEventListener("hashchange", highlightEntryFromUrl)
+window.addEventListener("hashchange", updateViewFromHash)
 
-function highlightEntryFromUrl() {
+function updateViewFromHash() {
 
 	const hash = window.location.hash.substring(1); //Remove hash prefix
-	let [id, period] = hash.split('/')
+	let [hashEntryId, hashPeriod, hashX, hashY, hashZoom] = hash.split('/')
 
 	// Handle zzz and 0.. prefix
-	let newId = id.replace(/^zzz([a-z0-9]{8,})$/g, "$1").replace(/^0+/, '')
-	if (id !== newId) {
-		id = newId
+	let newId = hashEntryId.replace(/^zzz([a-z0-9]{8,})$/g, "$1").replace(/^0+/, '')
+	if (hashEntryId !== newId) {
+		hashEntryId = newId
 		const newLocation = new URL(window.location)
-		newLocation.hash = '#' + [newId, period].join('/')
+		newLocation.hash = '#' + [newId, hashPeriod, hashX, hashY, hashZoom].join('/')
 		history.replaceState({}, "", newLocation)
 	}
 
 	let targetPeriod, targetVariation
 
-	if (period) {
-		[targetPeriod, , targetVariation] = parsePeriod(period)
+	if (hashPeriod) {
+		[targetPeriod, , targetVariation] = parsePeriod(hashPeriod)
 	} else {
 		targetPeriod = defaultPeriod
 		targetVariation = defaultVariation
 	}
 	updateTime(targetPeriod, targetVariation, true)
 
-	if (!id) return
+	setView(
+		isNaN(hashX) ? scaleZoomOrigin[0] : Number(hashX), 
+		isNaN(hashY) ? scaleZoomOrigin[1] : Number(hashY), 
+		isNaN(hashZoom) ? zoom : Number(hashZoom)
+	)
+
+	if (!hashEntryId) return
+
+	// Highlight entry from hash
 
 	const entries = atlas.filter(e => {
-		return e.id.toString() === id
+		return e.id.toString() === hashEntryId
 	})
 
 	if (entries.length !== 1) return 
@@ -676,7 +693,7 @@ function highlightEntryFromUrl() {
 	document.title = entry.name + " on " + pageTitle
 
 	if ((!entry.diff || entry.diff !== "delete")) {
-		objectEditNav.href = "./?mode=draw&id=" + id
+		objectEditNav.href = "./?mode=draw&id=" + hashEntryId
 		objectEditNav.title = "Edit " + entry.name
 		if (!objectEditNav.isConnected) {
 			showListButton.parentElement.appendChild(objectEditNav)
@@ -690,8 +707,11 @@ function highlightEntryFromUrl() {
 	objectsContainer.appendChild(infoElement)
 
 	renderBackground(atlas)
-	applyView()
-	setView(entry.center[0], entry.center[1], setZoomByPath(entry.path))
+	setView(
+		isNaN(hashX) ? entry.center[0] : Number(hashX), 
+		isNaN(hashY) ? entry.center[1] : Number(hashY), 
+		isNaN(hashZoom) ? setZoomByPath(entry.path) : Number(hashZoom)
+	)
 
 	closeObjectsListButton.classList.remove("d-none")
 	entriesList.classList.add("disableHover")
@@ -704,7 +724,7 @@ function highlightEntryFromUrl() {
 
 function setZoomByPath(path) {
 
-	let boundingBox = [canvasSize.x, 0, canvasSize.y, 0]
+	let boundingBox = [canvasSize.x + canvasOffset.x, canvasOffset.x, canvasSize.y + canvasOffset.y, canvasOffset.y]
 	path?.forEach(([x, y]) => {
 		boundingBox[0] = Math.min(boundingBox[0], x)
 		boundingBox[1] = Math.max(boundingBox[1], x)
@@ -738,7 +758,7 @@ function initView() {
 	/*if (window.location.hash.substring(3)){
 		zoom = 4
 		applyView()
-		highlightEntryFromUrl()
+		updateViewFromHash()
 	}*/
 
 	applyView()
@@ -754,17 +774,7 @@ function initExplore() {
 
 	function updateHovering(e, tapped) {
 		if (dragging || (fixed && !tapped)) return
-		const pos = [
-			(e.clientX - (container.clientWidth / 2 - innerContainer.clientWidth / 2 + zoomOrigin[0] + container.offsetLeft)) / zoom + canvasOffset.x,
-			(e.clientY - (container.clientHeight / 2 - innerContainer.clientHeight / 2 + zoomOrigin[1] + container.offsetTop)) / zoom + canvasOffset.y
-			]
-		const coordsEl = document.getElementById("coords_p")
-		// Displays coordinates as zero instead of NaN
-		if (isNaN(pos[0])) {
-			coordsEl.textContent = "0, 0"
-		} else {
-			coordsEl.textContent = Math.floor(pos[0]) + ", " + Math.floor(pos[1])
-		}
+		updateCoordsDisplay(e)
 	}
 
 	renderBackground(atlas)
@@ -785,10 +795,7 @@ function initGlobal() {
 	})
 
 	document.addEventListener('timeupdate', event => {
-		let hashData = window.location.hash.substring(1).split('/')
-		const newLocation = new URL(window.location)
-		newLocation.hash = formatHash(hashData[0], event.detail.period, event.detail.period, event.detail.variation)
-		if (location.hash !== newLocation.hash) history.replaceState({}, "", newLocation)
+		updateHash()
 	})
 }
 
@@ -818,26 +825,22 @@ function initViewGlobal() {
 	container.addEventListener("touchend", e => {
 		e.preventDefault()
 
-		//console.log(e)
-		//console.log(e.changedTouches[0].clientX)
 		if (e.changedTouches.length !== 1) return
 
 		e = e.changedTouches[0]
-		//console.log(lastPos[0] - e.clientX)
 
-		if (Math.abs(lastPos[0] - e.clientX) + Math.abs(lastPos[1] - e.clientY) > 4)
+		if (Math.sqrt(Math.pow(lastPos[0] - e.clientX, 2) + Math.pow(lastPos[1] - e.clientY, 2)) < 10)
+			setTimeout(() => updateHovering(e, true), 0)
 
-		//console.log("Foo!!")
 		dragging = false
 		fixed = false
-		setTimeout(() => updateHovering(e, true), 0)
 	})
 
 	if (window.location.hash) { // both "/" and just "/#" will be an empty hash string
-		highlightEntryFromUrl()
+		updateViewFromHash()
 	}
 
 	document.addEventListener('timeupdate', event => {
-		drawButton.href = "./?mode=draw" + formatHash(undefined, event.detail.period, event.detail.period, event.detail.variation)
+		drawButton.href = "./?mode=draw" + formatHash(null, event.detail.period, event.detail.period, event.detail.variation)
 	})
 }

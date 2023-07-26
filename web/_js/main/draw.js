@@ -550,19 +550,7 @@ function initDraw() {
 
 	function updateHovering(e, tapped) {
 		if (dragging || (fixed && !tapped)) return
-		const pos = [
-			(e.clientX - (container.clientWidth / 2 - innerContainer.clientWidth / 2 + zoomOrigin[0] + container.offsetLeft)) / zoom,
-			(e.clientY - (container.clientHeight / 2 - innerContainer.clientHeight / 2 + zoomOrigin[1] + container.offsetTop)) / zoom
-		]
-
-		const coordsEl = document.getElementById("coords_p")
-
-		// Displays coordinates as zero instead of NaN
-		if (isNaN(pos[0])) {
-			coordsEl.textContent = "0, 0"
-		} else {
-			coordsEl.textContent = Math.floor(pos[0]) + ", " + Math.floor(pos[1])
-		}
+		updateCoordsDisplay(e)
 	}
 
 	const getEntry = id => {
@@ -813,10 +801,15 @@ function initDraw() {
 
 	initPeriodGroups()
 
-	zoom = 4
+	const hash = window.location.hash.substring(1)
+	const [,, hashX, hashY, hashZoom] = hash.split('/')
 
-	setView(center[0], center[1])
-
+	setView(
+		isNaN(hashX) ? center[0] : Number(hashX), 
+		isNaN(hashY) ? center[1] : Number(hashY), 
+		isNaN(hashZoom) ? 4 : Number(hashZoom)
+	)
+	
 	document.addEventListener('timeupdate', () => {
 		renderBackground(atlas)
 		updatePeriodGroups()
@@ -827,7 +820,7 @@ function initDraw() {
 		initPeriodGroups()
 	})
 
-	drawBackButton.href = "./" + formatHash(entry?.id, currentPeriod, currentPeriod, currentVariation)
+	drawBackButton.href = "./" + formatHash(entry?.id)
 
 	document.addEventListener('timeupdate', event => {
 		drawBackButton.href = "./" + formatHash(entry?.id, event.detail.period, event.detail.period, event.detail.variation)
