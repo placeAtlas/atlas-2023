@@ -1,0 +1,84 @@
+{
+	"id": -1,
+	"name": "Blue and green tortoises",
+	"description": "The tortoises first started appearing when the canvas expanded for the penultimate time. The german community from r/placeDE, helding the flag behind the tortoises, first decided to keep them. The tortoises were replaced by one of the last artworks of the r/placeDE community, the \"Geschwister Scholl\". However, some tortoises on the very left of the flag made it to the final canvas.",
+	"links": {
+		"subreddit": [
+			"placeDE"
+		]
+	},
+	"path": {
+		"173-249": [
+			[
+				-1009,
+				-391
+			],
+			[
+				-1009,
+				-399
+			],
+			[
+				-1041,
+				-398
+			],
+			[
+				-1041,
+				-390
+			],
+			[
+				-1007,
+				-392
+			],
+			[
+				-1007,
+				-393
+			],
+			[
+				-969,
+				-391
+			],
+			[
+				-971,
+				-401
+			],
+			[
+				-1010,
+				-399
+			],
+			[
+				-1092,
+				-397
+			],
+			[
+				-1092,
+				-390
+			],
+			[
+				-1024,
+				-390
+			],
+			[
+				-1027,
+				-428
+			],
+			[
+				-1019,
+				-429
+			],
+			[
+				-1018,
+				-399
+			],
+			[
+				-1046,
+				-397
+			]
+		]
+	},
+	"center": {
+		"173-249": [
+			-976,
+			-396
+		]
+	}
+}
