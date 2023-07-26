@@ -1,0 +1,44 @@
+{
+	"id": 1219,
+	"name": "Catan (Board Game)",
+	"description": "Catan, previously known as The Settlers of Catan or simply Settlers, is a multiplayer board game designed by Klaus Teuber. It was first published in 1995 in Germany by Franckh-Kosmos Verlag (Kosmos) as Die Siedler von Catan. Players take on the roles of settlers, each attempting to build and develop holdings while trading and acquiring resources. Players gain victory points as their settlements grow and the first to reach a set number of victory points, typically 10, wins. The game and its many expansions are also published by Catan Studio, Filosofia, GP, Inc., 999 Games, Κάισσα (Káissa), and Devir. Upon its release, The Settlers of Catan became one of the first Eurogames to achieve popularity outside Europe. As of 2020, more than 32 million copies in 40 languages had been sold.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Catan"
+		]
+	},
+	"path": {
+		"151-256": [
+			[
+				247,
+				-941
+			],
+			[
+				247,
+				-992
+			],
+			[
+				253,
+				-997
+			],
+			[
+				303,
+				-997
+			],
+			[
+				303,
+				-946
+			],
+			[
+				298,
+				-941
+			]
+		]
+	},
+	"center": {
+		"151-256": [
+			275,
+			-969
+		]
+	}
+}
