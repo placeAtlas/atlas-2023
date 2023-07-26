@@ -1,0 +1,39 @@
+{
+	"id": 2561,
+	"name": "The Scream",
+	"description": "The Scream is a composition created by Norwegian artist Edvard Munch in 1893. The Norwegian name of the piece is Skrik (Shriek), and the German title under which it was first exhibited \"Der Schrei der Natur\" (The Scream of Nature). The agonized face in the painting has become one of the most iconic images of art, seen as symbolizing the anxiety of the human condition.\n\nCreated by /r/placeDE",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/The_Scream"
+		],
+		"subreddit": [
+			"placeDE"
+		]
+	},
+	"path": {
+		"231-256": [
+			[
+				-661,
+				642
+			],
+			[
+				-572,
+				642
+			],
+			[
+				-572,
+				740
+			],
+			[
+				-660,
+				740
+			]
+		]
+	},
+	"center": {
+		"231-256": [
+			-616,
+			691
+		]
+	}
+}
