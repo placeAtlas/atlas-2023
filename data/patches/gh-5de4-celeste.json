@@ -1,0 +1,90 @@
+{
+	"id": -1,
+  "_author":"No-Tree1538",
+  "_author":"gh:Orangenal-name",
+	"name": "Celeste",
+	"description": "Celeste is a 2018 platform game developed and published by indie studio Maddy Makes Games. The player controls Madeline, a young trans woman with anxiety and depression who aims to climb Celeste Mountain.",
+	"links": {
+		"website": [
+			"https://www.celestegame.com"
+		],
+		"subreddit": [
+			"celestegame"
+		],
+		"discord": [
+			"celeste"
+		]
+	},
+	"path": {
+		"232-254": [
+			[
+				-112,
+				-793
+			],
+			[
+				-65,
+				-793
+			],
+			[
+				-65,
+				-784
+			],
+			[
+				-70,
+				-784
+			],
+			[
+				-70,
+				-745
+			],
+			[
+				-101,
+				-745
+			],
+			[
+				-101,
+				-776
+			],
+			[
+				-112,
+				-775
+			]
+		],
+		"202-224": [
+			[
+				-112,
+				-792
+			],
+			[
+				-65,
+				-792
+			],
+			[
+				-65,
+				-785
+			],
+			[
+				-89,
+				-785
+			],
+			[
+				-89,
+				-781
+			],
+			[
+				-113,
+				-781
+			]
+		]
+	},
+	"center": {
+		"232-254": [
+			-86,
+			-772
+		],
+		"202-224": [
+			-96,
+			-786
+		]
+	}
+}
