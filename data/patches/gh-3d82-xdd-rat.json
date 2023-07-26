@@ -1,0 +1,42 @@
+{
+	"id": -1,
+	"name": "xdd rat",
+	"description": "an improvised pixel representation of the commonly used xdd emote in his twitch chat from 7tv",
+	"links": {
+		"website": [
+			"https://clips.twitch.tv/GenerousEagerGoatPartyTime-YbrUQYlscZfCKKbv"
+		],
+		"subreddit": [
+			"PedroPeepos"
+		],
+		"discord": [
+			"caedrel"
+		]
+	},
+	"path": {
+		"2-11": [
+			[
+				186,
+				416
+			],
+			[
+				186,
+				448
+			],
+			[
+				242,
+				448
+			],
+			[
+				242,
+				416
+			]
+		]
+	},
+	"center": {
+		"2-11": [
+			214,
+			432
+		]
+	}
+}
