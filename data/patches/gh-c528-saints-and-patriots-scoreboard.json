@@ -1,0 +1,37 @@
+{
+	"id": 4241,
+	"name": "Saints and Patriots Scoreboard",
+	"description": "Joint efforts of the Saints and Patriots to make a scoreboard of the falcons choking and logos of each team.",
+	"links": {
+		"subreddit": [
+			"saints",
+			"patriots"
+		]
+	},
+	"path": {
+		"166-257": [
+			[
+				-531,
+				957
+			],
+			[
+				-531,
+				965
+			],
+			[
+				-510,
+				965
+			],
+			[
+				-510,
+				957
+			]
+		]
+	},
+	"center": {
+		"166-257": [
+			-520,
+			961
+		]
+	}
+}
