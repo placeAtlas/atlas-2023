@@ -1,0 +1,42 @@
+{
+	"id": -1,
+	"name": "Let op! Geld lenen kost geld",
+	"description": "“Let op! Geld lenen kost geld” (English: \"Beware! Borrowing money costs money\") is the slogan that in the Netherlands must be mandatorily used in all advertisements for credit. This slogan aims to make consumers aware of the cost and warn them of the possible risks of borrowing money.",
+	"links": {
+		"website": [
+			"https://www.denederlandsekredietmaatschappij.nl/geld-lenen-kost-geld/"
+		],
+		"subreddit": [
+			"PlaceNL"
+		],
+		"discord": [
+			"placenl"
+		]
+	},
+	"path": {
+		"231-256": [
+			[
+				-1197,
+				-502
+			],
+			[
+				-1147,
+				-502
+			],
+			[
+				-1147,
+				-491
+			],
+			[
+				-1197,
+				-491
+			]
+		]
+	},
+	"center": {
+		"231-256": [
+			-1172,
+			-496
+		]
+	}
+}
