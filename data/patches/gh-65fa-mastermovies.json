@@ -1,0 +1,42 @@
+{
+	"id": -1,
+	"name": "Mastermovies",
+	"description": "Mastermovies is the stage name of a former duo consisting of Paul Huig and Merijn Scholte Albers. They are mainly known for the so-called fundubs in which they dubbed films and television series, often humorous texts unrelated to the original film or series. They left a profound impact on the humor and in-jokes of a specific generation, as their videos are very quotable.",
+	"links": {
+		"website": [
+			"https://www.youtube.com/@mastermovies"
+		],
+		"subreddit": [
+			"PlaceNL"
+		],
+		"discord": [
+			"placenl"
+		]
+	},
+	"path": {
+		"215-256": [
+			[
+				-1370,
+				-481
+			],
+			[
+				-1370,
+				-450
+			],
+			[
+				-1338,
+				-450
+			],
+			[
+				-1339,
+				-481
+			]
+		]
+	},
+	"center": {
+		"215-256": [
+			-1354,
+			-465
+		]
+	}
+}
