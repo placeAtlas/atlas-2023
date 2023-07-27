@@ -1,0 +1,99 @@
+{
+	"id": 1999,
+	"name": "Blackjack",
+	"description": "The main character of Fallout Equestria Project Horizons.Pixel art designed by GeoDash897.",
+	"links": {
+		"website": [
+			"https://falloutequestria.fandom.com/wiki/Blackjack_(Project_Horizons)"
+		],
+		"subreddit": [
+			"falloutequestria"
+		]
+	},
+	"path": {
+		"207-256": [
+			[
+				664,
+				833
+			],
+			[
+				655,
+				833
+			],
+			[
+				654,
+				829
+			],
+			[
+				652,
+				828
+			],
+			[
+				646,
+				828
+			],
+			[
+				647,
+				824
+			],
+			[
+				652,
+				820
+			],
+			[
+				654,
+				816
+			],
+			[
+				655,
+				813
+			],
+			[
+				655,
+				808
+			],
+			[
+				662,
+				803
+			],
+			[
+				669,
+				802
+			],
+			[
+				673,
+				809
+			],
+			[
+				667,
+				818
+			],
+			[
+				666,
+				821
+			],
+			[
+				672,
+				821
+			],
+			[
+				671,
+				829
+			],
+			[
+				667,
+				829
+			],
+			[
+				667,
+				833
+			]
+		]
+	},
+	"center": {
+		"207-256": [
+			659,
+			823
+		]
+	}
+}
