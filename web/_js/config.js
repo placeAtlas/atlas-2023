@@ -39,7 +39,7 @@ const variationsConfig = {
 	default: {
 		name: "r/place",
 		code: "",
-		default: 254,
+		default: 250,
 		drawablePeriods: [1, undefined],
 		drawableRegions: [
 			[[1, 54], [-500, -500, 499, 499]],
