@@ -1,0 +1,43 @@
+{
+	"id": -1,
+	"name": "r/osuplace Vista button",
+	"description": "r/osuplace button on the vista taskbar",
+	"links": {
+		"website": [
+			"https://www.osu.place/"
+		],
+		"subreddit": [
+			"osuplace"
+		]
+	},
+	"path": {
+		"250": [
+			[
+				-1098,
+				995
+			],
+			[
+				-1007,
+				996
+			],
+			[
+				-1008,
+				973
+			],
+			[
+				-1097,
+				972
+			],
+			[
+				-1097,
+				972
+			]
+		]
+	},
+	"center": {
+		"250": [
+			-1052,
+			984
+		]
+	}
+}
