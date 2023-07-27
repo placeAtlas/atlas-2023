@@ -1,0 +1,84 @@
+{
+	"id": 681,
+	"name": "DDNet",
+	"description": "DDraceNetwork (DDNet) is an actively maintained version of DDRace, a mod of the game Teeworlds with a unique cooperative gameplay.",
+	"links": {
+		"website": [
+			"https://ddnet.org/",
+			"https://store.steampowered.com/app/412220/DDraceNetwork/"
+		],
+		"subreddit": [
+			"ddnet"
+		]
+	},
+	"path": {
+		"89-256": [
+			[
+				-575,
+				-190
+			],
+			[
+				-575,
+				-172
+			],
+			[
+				-501,
+				-172
+			],
+			[
+				-501,
+				-190
+			]
+		],
+		"55-67": [
+			[
+				202,
+				-97
+			],
+			[
+				202,
+				-78
+			],
+			[
+				276,
+				-78
+			],
+			[
+				276,
+				-97
+			]
+		],
+		"47-54": [
+			[
+				202,
+				-97
+			],
+			[
+				253,
+				-97
+			],
+			[
+				253,
+				-78
+			],
+			[
+				202,
+				-78
+			]
+		]
+	},
+	"center": {
+		"89-256": [
+			-538,
+			-181
+		],
+		"55-67": [
+			239,
+			-87
+		],
+		"47-54": [
+			228,
+			-87
+		]
+	}
+}
