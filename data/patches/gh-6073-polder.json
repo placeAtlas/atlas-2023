@@ -1,0 +1,66 @@
+{
+	"id": -1,
+	"name": "Polder",
+	"description": "The Netherlands is famous for empoldering, a method of reclaiming land from the sea or from inland lakes, and a way to control floods. Empoldering involves the use of a polder, a piece of land in a low-lying area that has been reclaimed from a body of water by building dikes and drainage canals.",
+	"links": {
+		"website": [
+			"https://simple.wikipedia.org/wiki/Polder"
+		],
+		"subreddit": [
+			"PlaceNL"
+		],
+		"discord": [
+			"placenl"
+		]
+	},
+	"path": {
+		"14-255": [
+			[
+				80,
+				-461
+			],
+			[
+				86,
+				-452
+			],
+			[
+				92,
+				-452
+			],
+			[
+				96,
+				-455
+			],
+			[
+				293,
+				-456
+			],
+			[
+				295,
+				-466
+			],
+			[
+				302,
+				-450
+			],
+			[
+				68,
+				-450
+			],
+			[
+				74,
+				-462
+			],
+			[
+				77,
+				-462
+			]
+		]
+	},
+	"center": {
+		"14-255": [
+			77,
+			-456
+		]
+	}
+}
