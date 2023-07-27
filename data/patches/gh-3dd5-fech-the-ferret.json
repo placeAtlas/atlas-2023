@@ -1,0 +1,126 @@
+{
+	"id": 4866,
+	"name": "Fech the Ferret",
+	"description": "Titular character of the 3D platformer \"Fech the Ferret\" being developed by aucritas and led by RaoulWB.\n\nThis was the third attempt to have Fech in r/place in 2023 Subsequently another was made in fear of being wiped again but both survived to the end.",
+	"links": {
+		"website": [
+			"http://playfe.ch/"
+		],
+		"subreddit": [
+			"fech"
+		],
+		"discord": [
+			"9QKKx6X"
+		]
+	},
+	"path": {
+		"196-208": [
+			[
+				-772,
+				-989
+			],
+			[
+				-772,
+				-999
+			],
+			[
+				-776,
+				-999
+			],
+			[
+				-776,
+				-998
+			],
+			[
+				-785,
+				-998
+			],
+			[
+				-785,
+				-989
+			]
+		],
+		"209-232": [
+			[
+				-778,
+				-989
+			],
+			[
+				-772,
+				-989
+			],
+			[
+				-772,
+				-999
+			],
+			[
+				-776,
+				-999
+			],
+			[
+				-776,
+				-993
+			],
+			[
+				-777,
+				-993
+			],
+			[
+				-777,
+				-991
+			],
+			[
+				-778,
+				-991
+			]
+		],
+		"233-256": [
+			[
+				-776,
+				-1000
+			],
+			[
+				-776,
+				-988
+			],
+			[
+				-770,
+				-988
+			],
+			[
+				-770,
+				-994
+			],
+			[
+				-771,
+				-994
+			],
+			[
+				-772,
+				-995
+			],
+			[
+				-772,
+				-1000
+			],
+			[
+				-774,
+				-1000
+			]
+		]
+	},
+	"center": {
+		"196-208": [
+			-780,
+			-994
+		],
+		"209-232": [
+			-774,
+			-991
+		],
+		"233-256": [
+			-773,
+			-991
+		]
+	}
+}
