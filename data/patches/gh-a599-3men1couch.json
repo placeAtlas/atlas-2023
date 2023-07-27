@@ -1,0 +1,55 @@
+{
+	"id": -1,
+	"name": "3men1couch",
+	"description": "small german community of the twitch streamer 3men1couch managed to defend this drawing for several hours. quality over quantity <3",
+	"links": {
+		"website": [
+			"https://www.twitch.tv/3men1couch"
+		],
+		"discord": [
+			"RKg4wWG"
+		]
+	},
+	"path": {
+		"87-106": [
+			[
+				-599,
+				-255
+			],
+			[
+				-599,
+				-255
+			],
+			[
+				-599,
+				-255
+			],
+			[
+				-579,
+				-255
+			],
+			[
+				-579,
+				-255
+			],
+			[
+				-579,
+				-247
+			],
+			[
+				-599,
+				-247
+			],
+			[
+				-599,
+				-255
+			]
+		]
+	},
+	"center": {
+		"87-106": [
+			-589,
+			-251
+		]
+	}
+}
