@@ -1,0 +1,64 @@
+{
+	"id": -1,
+	"name": "Al-Aqsa Mosque",
+	"description": "A congregational mosque in the Old City of Jerusalem under Israeli occupation. The mosque has served as a center and important symbol of protest against Israeli occupation.",
+	"links": {
+		"subreddit": [
+			"palestine"
+		]
+	},
+	"path": {
+		"204-255": [
+			[
+				46,
+				-807
+			],
+			[
+				46,
+				-812
+			],
+			[
+				41,
+				-812
+			],
+			[
+				40,
+				-815
+			],
+			[
+				36,
+				-817
+			],
+			[
+				32,
+				-816
+			],
+			[
+				30,
+				-813
+			],
+			[
+				30,
+				-812
+			],
+			[
+				25,
+				-812
+			],
+			[
+				25,
+				-806
+			],
+			[
+				46,
+				-806
+			]
+		]
+	},
+	"center": {
+		"204-255": [
+			36,
+			-811
+		]
+	}
+}
