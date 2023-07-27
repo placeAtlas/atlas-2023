@@ -39,8 +39,8 @@ const variationsConfig = {
 	default: {
 		name: "r/place",
 		code: "",
-		default: 254,
-		drawablePeriods: [1, undefined],
+		default: 250,
+		drawablePeriods: [1, 256],
 		drawableRegions: [
 			[[1, 54], [-500, -500, 499, 499]],
 			[[55, 85], [-500, -500, 999, 499]],
@@ -319,7 +319,7 @@ const variationsConfig = {
 window.variationsConfig = variationsConfig
 
 const lastPeriod = variationsConfig.default.versions.length - 1
-variationsConfig.default.drawablePeriods[1] = lastPeriod
+// variationsConfig.default.drawablePeriods[1] = lastPeriod
 variationsConfig.default.drawableRegions[6][0][1] = lastPeriod
 
 let defaultVariation = 'default'
