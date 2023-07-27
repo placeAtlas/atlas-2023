@@ -1,0 +1,36 @@
+{
+	"id": -1,
+	"name": "GetOnMyLvL",
+	"description": "GetOnMyLvL is the personal brand of German youtuber and streamer MontanaBlack88. He is quite old already, in Germany we call this a \"Rentner\" but he is still one of the most famous German streamers.",
+	"links": {
+		"website": [
+			"https://www.twitch.tv/montanablack88"
+		]
+	},
+	"path": {
+		"18-19": [
+			[
+				340,
+				-121
+			],
+			[
+				387,
+				-120
+			],
+			[
+				386,
+				-72
+			],
+			[
+				340,
+				-72
+			]
+		]
+	},
+	"center": {
+		"18-19": [
+			363,
+			-96
+		]
+	}
+}
