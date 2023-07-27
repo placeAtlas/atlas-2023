@@ -1,0 +1,48 @@
+{
+	"id": -1,
+	"name": "Existence SMP & nBrand",
+	"description": "Existence SMP is an online Minecraft community established March 20th, 2016.\n\nnBrand is a player group on Community Server 2, the community's flagship server as of July 2023.\n\nThe colors on the top represent past and current servers of Existence SMP, and the nB below resembles the nBrand logo.",
+	"links": {
+		"website": [
+			"https://existencesmp.com",
+			"https://nbrand.net"
+		],
+		"discord": [
+			"0149hOv271sOMiFJq"
+		]
+	},
+	"path": {
+		"226-257": [
+			[
+				383,
+				361
+			],
+			[
+				383,
+				350
+			],
+			[
+				373,
+				350
+			],
+			[
+				373,
+				352
+			],
+			[
+				371,
+				352
+			],
+			[
+				371,
+				361
+			]
+		]
+	},
+	"center": {
+		"226-257": [
+			377,
+			356
+		]
+	}
+}
