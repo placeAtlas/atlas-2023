@@ -1,0 +1,83 @@
+{
+	"id": -1,
+	"name": "\"Autopech\": Car breakdown",
+	"description": "A typical dutch summer holiday trip (car and caravan) experiencing a breakdown and stopping at a yellow road-side emergency phones ('praatpaal') to call for help. The yellow emergency phones were removed in july of 2017 due to the abundance of mobile phones",
+	"links": {
+		"website": [
+			"https://nl.wikipedia.org/wiki/Praatpaal"
+		],
+		"subreddit": [
+			"placenl"
+		]
+	},
+	"path": {
+		"250": [
+			[
+				-738,
+				-468
+			],
+			[
+				-754,
+				-468
+			],
+			[
+				-759,
+				-464
+			],
+			[
+				-758,
+				-455
+			],
+			[
+				-764,
+				-455
+			],
+			[
+				-765,
+				-459
+			],
+			[
+				-773,
+				-465
+			],
+			[
+				-782,
+				-465
+			],
+			[
+				-786,
+				-461
+			],
+			[
+				-792,
+				-467
+			],
+			[
+				-804,
+				-458
+			],
+			[
+				-804,
+				-451
+			],
+			[
+				-735,
+				-451
+			],
+			[
+				-735,
+				-465
+			],
+			[
+				-738,
+				-468
+			]
+		]
+	},
+	"center": {
+		"250": [
+			-744,
+			-459
+		]
+	}
+}
