@@ -1,0 +1,139 @@
+{
+	"id": -1,
+	"name": "Nighttime Lighthouse",
+	"description": "A little landscape art of a lighthouse at night, with a Breton flag. This was the second area held by Bretons of r/Bretagne and PlaceBZH.\nIt was destroyed by the nearby Void, and moved next to the Kanagawa wave. A taller lighthouse was initially planned, but couldn't be built.\nThe first location features an ermine, usual Breton heraldic symbol. ",
+	"links": {
+		"subreddit": [
+			"Bretagne"
+		],
+		"discord": [
+			"8EGb5u9JZF"
+		]
+	},
+	"path": {
+		"203-217": [
+			[
+				1038,
+				306
+			],
+			[
+				1078,
+				306
+			],
+			[
+				1078,
+				331
+			],
+			[
+				1038,
+				331
+			]
+		],
+		"230-242": [
+			[
+				1001,
+				-16
+			],
+			[
+				1027,
+				-16
+			],
+			[
+				1027,
+				-9
+			],
+			[
+				1036,
+				-9
+			],
+			[
+				1036,
+				-12
+			],
+			[
+				1037,
+				-12
+			],
+			[
+				1037,
+				-3
+			],
+			[
+				1033,
+				-1
+			],
+			[
+				1032,
+				1
+			],
+			[
+				1024,
+				9
+			],
+			[
+				1001,
+				9
+			]
+		],
+		"243-256": [
+			[
+				1001,
+				-16
+			],
+			[
+				1027,
+				-16
+			],
+			[
+				1027,
+				-9
+			],
+			[
+				1036,
+				-9
+			],
+			[
+				1036,
+				-11
+			],
+			[
+				1037,
+				-11
+			],
+			[
+				1038,
+				-3
+			],
+			[
+				1032,
+				0
+			],
+			[
+				1024,
+				8
+			],
+			[
+				1018,
+				18
+			],
+			[
+				1001,
+				18
+			]
+		]
+	},
+	"center": {
+		"203-217": [
+			1058,
+			319
+		],
+		"230-242": [
+			1014,
+			-3
+		],
+		"243-256": [
+			1015,
+			-2
+		]
+	}
+}
