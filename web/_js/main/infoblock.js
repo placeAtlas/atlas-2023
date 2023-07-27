@@ -49,11 +49,6 @@ function createInfoBlock(entry, mode = 0) {
 		const [nearestPeriod, nearestVariation, nearestKey] = getNearestPeriod(entry, currentPeriod, currentVariation)
 		const hash = formatHash(entry.id, nearestPeriod, nearestPeriod, nearestVariation, false, false, false)
 		linkElement.href = hash
-		linkElement.addEventListener('click', e => {
-			e.preventDefault()
-			location.hash = hash
-			// window.dispatchEvent(new HashChangeEvent("hashchange"))
-		})
 	
 	} else {
 		const hash = formatHash(entry.id, null, null, null, false, false, false)

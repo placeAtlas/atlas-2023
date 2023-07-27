@@ -455,6 +455,7 @@ function buildObjectsList() {
 				element = createInfoBlock(entry, 2)
 
 				element.addEventListener("click", async e => {
+					e.preventDefault()
 					const [nearestPeriod, nearestVariation] = getNearestPeriod(entry, currentPeriod, currentVariation)
 
 					await updateTime(nearestPeriod, nearestVariation, true)
@@ -465,13 +466,9 @@ function buildObjectsList() {
 					fixed = true
 					previousScaleZoomOrigin = undefined
 					previousZoom = undefined
-					
-					renderHighlight()
-					window.dispatchEvent(new HashChangeEvent("hashchange"))
 
-					setView(entry.center[0], entry.center[1], calculateZoomFromPath(entry.path))
-					updateLines()
-
+					const hash = formatHash(entry.id, nearestPeriod, nearestPeriod, nearestVariation, entry.center[0], entry.center[1], calculateZoomFromPath(entry.path))
+					location.hash = hash
 				})
 			}
 
@@ -669,7 +666,7 @@ function updateHovering(e, tapped) {
 
 window.addEventListener("hashchange", updateViewFromHash)
 
-function updateViewFromHash() {
+async function updateViewFromHash() {
 
 	const hash = window.location.hash.substring(1); //Remove hash prefix
 	let [hashEntryId, hashPeriod, hashX, hashY, hashZoom] = hash.split('/')
@@ -691,7 +688,7 @@ function updateViewFromHash() {
 		targetPeriod = defaultPeriod
 		targetVariation = defaultVariation
 	}
-	updateTime(targetPeriod, targetVariation, true)
+	await updateTime(targetPeriod, targetVariation)
 
 	setView(
 		isNaN(hashX) ? scaleZoomOrigin[0] : Number(hashX), 
@@ -722,7 +719,6 @@ function updateViewFromHash() {
 	objectsContainer.replaceChildren()
 	objectsContainer.appendChild(infoElement)
 
-	renderBackground(atlas)
 	setView(
 		isNaN(hashX) ? entry.center[0] : Number(hashX), 
 		isNaN(hashY) ? entry.center[1] : Number(hashY), 
@@ -733,7 +729,8 @@ function updateViewFromHash() {
 	entriesList.classList.add("disableHover")
 
 	hovered = [{...entry, element: infoElement}]
-	renderHighlight()
+	renderBackground(atlasDisplay)
+	renderHighlight(atlasDisplay)
 	updateLines()
 }
 
