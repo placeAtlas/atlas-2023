@@ -1,0 +1,94 @@
+{
+	"id": 2760,
+	"name": "Lance Reddick memorial and destiny art",
+	"description": "The main part of this image showcases the memorial made for Lance Reddick,which was defaced 2 times by streamer perrababy, as well as the art made by the Destiny community (not the streamer) community",
+	"links": {
+		"subreddit": [
+			"DestinyTheGame",
+			"destiny2",
+			"DestinyTechSupport",
+			"HorizonZeroDawn",
+			"destinylegacy",
+			"DestinySherpa",
+			"squeaksqueak"
+		]
+	},
+	"path": {
+		"164-256": [
+			[
+				-805,
+				481
+			],
+			[
+				-709,
+				481
+			],
+			[
+				-709,
+				519
+			],
+			[
+				-791,
+				520
+			],
+			[
+				-791,
+				500
+			],
+			[
+				-805,
+				500
+			]
+		],
+		"119-163": [
+			[
+				-805,
+				481
+			],
+			[
+				-805,
+				499
+			],
+			[
+				-709,
+				499
+			],
+			[
+				-709,
+				481
+			]
+		],
+		"114-118": [
+			[
+				-803,
+				481
+			],
+			[
+				-803,
+				499
+			],
+			[
+				-730,
+				499
+			],
+			[
+				-730,
+				481
+			]
+		]
+	},
+	"center": {
+		"164-256": [
+			-754,
+			500
+		],
+		"119-163": [
+			-757,
+			490
+		],
+		"114-118": [
+			-766,
+			490
+		]
+	}
+}

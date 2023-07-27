@@ -1,0 +1,44 @@
+{
+	"id": -1,
+	"name": "League of Legends Poro",
+	"description": "A small cute creature called \"Poro\" from the popular video game League of Legends made by a small, independent Community.",
+	"links": {
+		"discord": [
+			"RWsvg75fSa"
+		]
+	},
+	"path": {
+		"120": [
+			[
+				-848,
+				300
+			],
+			[
+				-848,
+				299
+			],
+			[
+				-839,
+				299
+			],
+			[
+				-839,
+				306
+			],
+			[
+				-848,
+				306
+			],
+			[
+				-848,
+				299
+			]
+		]
+	},
+	"center": {
+		"120": [
+			-843,
+			303
+		]
+	}
+}
