@@ -1,0 +1,91 @@
+{
+	"id": -1,
+	"name": "Poldermolen",
+	"description": "A polder mill or mill pumping station is a windmill that moves water from a lower level to a higher level, and used for empoldering. It is also referred to as a watermill, but that causes confusion with the type of water-powered mill. This type of mill is found mainly in the polder areas of central and western Netherlands.",
+	"links": {
+		"subreddit": [
+			"PlaceNL"
+		],
+		"discord": [
+			"placenl"
+		]
+	},
+	"path": {
+		"14-231": [
+			[
+				74,
+				-462
+			],
+			[
+				75,
+				-469
+			],
+			[
+				71,
+				-465
+			],
+			[
+				70,
+				-466
+			],
+			[
+				70,
+				-469
+			],
+			[
+				75,
+				-473
+			],
+			[
+				71,
+				-478
+			],
+			[
+				72,
+				-480
+			],
+			[
+				78,
+				-474
+			],
+			[
+				79,
+				-474
+			],
+			[
+				83,
+				-478
+			],
+			[
+				85,
+				-477
+			],
+			[
+				79,
+				-471
+			],
+			[
+				84,
+				-466
+			],
+			[
+				82,
+				-464
+			],
+			[
+				78,
+				-468
+			],
+			[
+				80,
+				-461
+			]
+		]
+	},
+	"center": {
+		"14-231": [
+			76,
+			-471
+		]
+	}
+}
