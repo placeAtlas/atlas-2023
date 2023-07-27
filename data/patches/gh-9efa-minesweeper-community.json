@@ -1,0 +1,50 @@
+{
+	"id": 1386,
+	"name": "Minesweeper Community",
+	"description": "Minesweeper gained considerable popularity internationally and in Germany, especially after its introduction on Windows to familiarize users with using the mouse. Minesweeper is iconic and a cultural asset for promoting the digital era and computer games.\nThat's why MinenMichel campaigned for a small minesweeper field to find its place on the German flag from r/placeDE.\nIf you are interested in Minesweeper, you can simply join our community on various platforms.",
+	"links": {
+		"website": [
+			"https://minesweeper.online/"
+		],
+		"subreddit": [
+			"Minesweeper"
+		],
+		"discord": [
+			"6Qz8zsquKA"
+		]
+	},
+	"path": {
+		"160-251": [
+			[
+				340,
+				-607
+			],
+			[
+				321,
+				-607
+			],
+			[
+				321,
+				-583
+			],
+			[
+				341,
+				-583
+			],
+			[
+				341,
+				-585
+			],
+			[
+				341,
+				-607
+			]
+		]
+	},
+	"center": {
+		"160-251": [
+			331,
+			-595
+		]
+	}
+}
