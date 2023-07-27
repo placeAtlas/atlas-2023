@@ -1,0 +1,36 @@
+{
+	"id": 1079,
+	"name": "Made in Abyss (Faputa)",
+	"description": "Made in Abyss is a manga created by Akihito Tsukushi where the story is about a giant pit in the middle of a island with tales and mysteries. \n\nThe displayed character saying \"sosu\" is called Faputa and is an acquaintance of one of the main characters \"Reg\". Faputa ends all phrases with sosu as a form of politeness.",
+	"links": {
+		"subreddit": [
+			"madeinabyss"
+		]
+	},
+	"path": {
+		"1-198": [
+			[
+				-221,
+				463
+			],
+			[
+				-205,
+				463
+			],
+			[
+				-205,
+				499
+			],
+			[
+				-221,
+				499
+			]
+		]
+	},
+	"center": {
+		"1-198": [
+			-213,
+			481
+		]
+	}
+}

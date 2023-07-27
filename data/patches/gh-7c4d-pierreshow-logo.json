@@ -1,0 +1,130 @@
+{
+	"id": 3100,
+	"name": "PierreShow logo",
+	"description": "Streamer logo for PierreShow, which was destroyed by Morocco and then Bolivia, and ultimately absorbed into Singapore's artwork.\n\n(message for Singapour and other allies who help us -> love u mates)",
+	"links": {
+		"website": [
+			"https://www.twitch.tv/pierreshow"
+		]
+	},
+	"path": {
+		"80-256": [
+			[
+				368,
+				-24
+			],
+			[
+				356,
+				-24
+			],
+			[
+				356,
+				-14
+			],
+			[
+				370,
+				-21
+			],
+			[
+				370,
+				-24
+			]
+		],
+		"2-6": [
+			[
+				383,
+				5
+			],
+			[
+				393,
+				5
+			],
+			[
+				393,
+				16
+			],
+			[
+				383,
+				16
+			],
+			[
+				383,
+				5
+			],
+			[
+				383,
+				5
+			]
+		],
+		"7-45": [
+			[
+				374,
+				6
+			],
+			[
+				374,
+				-4
+			],
+			[
+				390,
+				-4
+			],
+			[
+				390,
+				6
+			],
+			[
+				374,
+				6
+			],
+			[
+				374,
+				6
+			]
+		],
+		"47-77": [
+			[
+				362,
+				-48
+			],
+			[
+				362,
+				-36
+			],
+			[
+				380,
+				-36
+			],
+			[
+				380,
+				-48
+			],
+			[
+				362,
+				-48
+			],
+			[
+				362,
+				-48
+			]
+		]
+	},
+	"center": {
+		"80-256": [
+			360,
+			-20
+		],
+		"2-6": [
+			388,
+			11
+		],
+		"7-45": [
+			382,
+			1
+		],
+		"47-77": [
+			371,
+			-42
+		]
+	}
+}

@@ -1,0 +1,47 @@
+{
+	"id": -1,
+	"name": "Blasphemous",
+	"description": "Blasphemous is an indie metroidvania video game developed by the Spanish company The Game Kitchen.",
+	"links": {
+		"website": [
+			"https://thegamekitchen.com/blasphemous/"
+		],
+		"subreddit": [
+			"Blasphemous"
+		]
+	},
+	"path": {
+		"161-250": [
+			[
+				260,
+				-75
+			],
+			[
+				253,
+				-66
+			],
+			[
+				267,
+				-65
+			],
+			[
+				253,
+				-58
+			],
+			[
+				260,
+				-50
+			],
+			[
+				267,
+				-58
+			]
+		]
+	},
+	"center": {
+		"161-250": [
+			260,
+			-57
+		]
+	}
+}
