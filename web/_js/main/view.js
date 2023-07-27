@@ -685,7 +685,6 @@ function updateViewFromHash() {
 	// Highlight entry from hash
 
 	const entry = atlasDisplay[hashEntryId]
-	console.log(entry)
 	if (!entry) return 
 		
 	document.title = entry.name + " on " + pageTitle

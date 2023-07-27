@@ -162,8 +162,6 @@ async function init() {
 				}
 			}
 
-			console.log(mode.includes('only'))
-
 			if (mode.includes('only')) {
 				for (const key of Object.keys(atlasAll)) {
 					if (atlasAll[key].diff) continue 

@@ -386,8 +386,6 @@ function initDraw() {
 		}
 		githubPostButton.href = githubPostUrl
 
-		console.log(githubPostUrl)
-
 		exportModal.show()
 	}
 
