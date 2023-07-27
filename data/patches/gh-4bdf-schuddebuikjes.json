@@ -1,0 +1,76 @@
+{
+	"id": -1,
+	"name": "Schuddebuikjes",
+	"description": "A Dutch bread topping made from Speculaas, these tiny cookies can also be enjoyed as a snack",
+	"links": {
+		"website": [
+			"https://bolletje.nl/onze-producten/schuddebuikjes-speculaas"
+		]
+	},
+	"path": {
+		"250": [
+			[
+				1397,
+				-482
+			],
+			[
+				1397,
+				-510
+			],
+			[
+				1396,
+				-510
+			],
+			[
+				1396,
+				-519
+			],
+			[
+				1384,
+				-519
+			],
+			[
+				1384,
+				-510
+			],
+			[
+				1383,
+				-510
+			],
+			[
+				1383,
+				-501
+			],
+			[
+				1384,
+				-501
+			],
+			[
+				1384,
+				-495
+			],
+			[
+				1384,
+				-494
+			],
+			[
+				1385,
+				-494
+			],
+			[
+				1385,
+				-482
+			],
+			[
+				1397,
+				-482
+			]
+		]
+	},
+	"center": {
+		"250": [
+			1390,
+			-505
+		]
+	}
+}
