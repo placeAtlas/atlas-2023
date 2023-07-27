@@ -535,28 +535,6 @@ async function renderHighlight() {
 	highlightContext.globalCompositeOperation = "source-out"
 	highlightContext.drawImage(backgroundCanvas, 0, 0)
 
-	// if (hovered.length === 1 && hovered[0].path.length && hovered[0].overrideImage) {
-	// 	const undisputableHovered = hovered[0]
-	// 	// Find the left-topmost point of all the paths
-	// 	const entryPosition = getPositionOfEntry(undisputableHovered)
-	// 	if (entryPosition) {
-	// 		const [startX, startY] = entryPosition
-	// 		const overrideImage = new Image()
-	// 		const loadingPromise = new Promise((res, rej) => {
-	// 			overrideImage.onerror = rej
-	// 			overrideImage.onload = res
-	// 		})
-	// 		overrideImage.src = "imageOverrides/" + undisputableHovered.overrideImage
-	// 		try {
-	// 			await loadingPromise
-	// 			highlightContext.globalCompositeOperation = "source-over"
-	// 			highlightContext.drawImage(overrideImage, startX, startY)
-	// 		} catch (ex) {
-	// 			console.error("Cannot override image.", ex)
-	// 		}
-	// 	}
-	// }
-
 	for (let i = 0; i < hovered.length; i++) {
 
 		const path = hovered[i].path
