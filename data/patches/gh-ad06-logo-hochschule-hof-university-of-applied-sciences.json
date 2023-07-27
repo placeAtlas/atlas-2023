@@ -1,0 +1,59 @@
+{
+	"id": 2713,
+	"name": "Logo Hochschule Hof, University of Applied Sciences",
+	"description": "Is a german University of Applied Sciences in the North of Bavaria \n\nThanks to all the Universities Left to us, making this Possible <3",
+	"links": {
+		"website": [
+			"https://www.hof-university.com/",
+			"https://www.hof-university.de/"
+		]
+	},
+	"path": {
+		"242-252": [
+			[
+				-16,
+				-76
+			],
+			[
+				-10,
+				-76
+			],
+			[
+				-10,
+				-70
+			],
+			[
+				-16,
+				-70
+			]
+		],
+		"253-256": [
+			[
+				-18,
+				-65
+			],
+			[
+				-14,
+				-65
+			],
+			[
+				-14,
+				-61
+			],
+			[
+				-18,
+				-61
+			]
+		]
+	},
+	"center": {
+		"242-252": [
+			-13,
+			-73
+		],
+		"253-256": [
+			-16,
+			-63
+		]
+	}
+}
