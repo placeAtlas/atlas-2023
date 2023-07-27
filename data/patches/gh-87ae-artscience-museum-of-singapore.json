@@ -1,0 +1,81 @@
+{
+	"id": 4345,
+	"name": "ArtScience Museum of Singapore",
+	"description": "The lotus-flower shaped museum in Singapore, owned by the Marina Bay Sands resort, showcasing art, science, culture and technology.",
+	"links": {
+		"website": [
+			"https://www.marinabaysands.com/museum.html",
+			"https://commons.wikimedia.org/wiki/File:ArtScience_Museum_from_Esplanade.jpg"
+		],
+		"subreddit": [
+			"singapore",
+			"placeSG"
+		]
+	},
+	"path": {
+		"188-256": [
+			[
+				325,
+				-19
+			],
+			[
+				325,
+				-15
+			],
+			[
+				326,
+				-15
+			],
+			[
+				326,
+				-14
+			],
+			[
+				327,
+				-14
+			],
+			[
+				327,
+				-13
+			],
+			[
+				332,
+				-13
+			],
+			[
+				332,
+				-14
+			],
+			[
+				333,
+				-14
+			],
+			[
+				333,
+				-17
+			],
+			[
+				331,
+				-17
+			],
+			[
+				331,
+				-18
+			],
+			[
+				327,
+				-18
+			],
+			[
+				327,
+				-19
+			]
+		]
+	},
+	"center": {
+		"188-256": [
+			329,
+			-15
+		]
+	}
+}
