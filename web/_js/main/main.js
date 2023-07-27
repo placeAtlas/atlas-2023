@@ -59,7 +59,7 @@ function setView(targetX, targetY, targetZoom = zoom) {
 
 	zoom = targetZoom
 	scaleZoomOrigin = [
-		canvasCenter.x - targetX, 
+		canvasCenter.x - targetX,
 		canvasCenter.y - targetY
 	]
 	applyView()
@@ -123,8 +123,8 @@ async function init() {
 	//console.log(document.documentElement.clientWidth, document.documentElement.clientHeight)
 
 	setView(
-		isNaN(hashX) ? 0 : Number(hashX), 
-		isNaN(hashY) ? 0 : Number(hashY), 
+		isNaN(hashX) ? 0 : Number(hashX),
+		isNaN(hashY) ? 0 : Number(hashY),
 		isNaN(hashZoom) ? 1 : Number(hashZoom)
 	)
 
@@ -384,7 +384,6 @@ async function init() {
 	}
 
 	window.addEventListener("mousemove", e => {
-		// updateLines()
 		mousemove(e.clientX, e.clientY)
 		if (dragging) {
 			e.preventDefault()
@@ -478,7 +477,7 @@ async function init() {
 	})
 	window.addEventListener("touchend", touchend)
 
-	function mouseup(x, y) {
+	function mouseup() {
 		dragging = false
 		updateHash()
 	}
