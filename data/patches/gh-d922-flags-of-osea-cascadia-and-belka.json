@@ -1,0 +1,63 @@
+{
+	"id": 2427,
+	"name": "Flags of Osea, Cascadia and Belka",
+	"description": "Flags of fictional nations Osea (top), Cascadia (middel) and Belka (bottom), the top and bottom being from the Ace Combat universe, and the middel is from Project Wingman's universe.\n\nAltough r/acecombat is private in protest of the recent API changes. This didn't seem to stop r/Project_Wingman from making the Osean and Belkan flags anyways, with both games having overlapping fanbases",
+	"links": {
+		"website": [
+			"https://empirebuilder.fandom.com/wiki/The_Republic_of_Belka",
+			"https://en.wikipedia.org/wiki/Ace_Combat"
+		],
+		"subreddit": [
+			"Project_Wingman",
+			"acecombat"
+		]
+	},
+	"path": {
+		"224-256": [
+			[
+				-1024,
+				195
+			],
+			[
+				-1024,
+				220
+			],
+			[
+				-1012,
+				220
+			],
+			[
+				-1012,
+				195
+			]
+		],
+		"211-223": [
+			[
+				-1024,
+				195
+			],
+			[
+				-1024,
+				212
+			],
+			[
+				-1012,
+				212
+			],
+			[
+				-1012,
+				195
+			]
+		]
+	},
+	"center": {
+		"224-256": [
+			-1018,
+			208
+		],
+		"211-223": [
+			-1018,
+			204
+		]
+	}
+}
