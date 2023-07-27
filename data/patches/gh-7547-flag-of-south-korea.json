@@ -1,0 +1,135 @@
+{
+	"id": 180,
+	"name": "Flag of South Korea",
+	"description": "South Korea is a country in East Asia. Its national flag is known as Taegeukgi.\n\nThis was the second complete flag of r/Korea_Place this year. After prevailing over rogue individuals trying to convert it to a Japanese one, a few K-pop communities—including r/red_velvet and r/twice—subsequently relocated to its vicinity and established a loose Korea-themed coalition. The flag was eventually consumed by Cuba.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/South_Korea",
+			"https://en.wikipedia.org/wiki/Flag_of_South_Korea"
+		],
+		"subreddit": [
+			"Korea_Place",
+			"KPOPplace",
+			"red_velvet",
+			"twice"
+		],
+		"discord": [
+			"NDGSVQasUK"
+		]
+	},
+	"path": {
+		"25-32": [
+			[
+				100,
+				-26
+			],
+			[
+				100,
+				-19
+			],
+			[
+				109,
+				-19
+			],
+			[
+				109,
+				-26
+			]
+		],
+		"33-34": [
+			[
+				100,
+				-26
+			],
+			[
+				100,
+				-20
+			],
+			[
+				108,
+				-20
+			],
+			[
+				108,
+				-26
+			]
+		],
+		"35": [
+			[
+				100,
+				-26
+			],
+			[
+				100,
+				-16
+			],
+			[
+				108,
+				-16
+			],
+			[
+				108,
+				-26
+			]
+		],
+		"36-38": [
+			[
+				99,
+				-26
+			],
+			[
+				99,
+				-16
+			],
+			[
+				108,
+				-16
+			],
+			[
+				108,
+				-26
+			]
+		],
+		"39-60": [
+			[
+				97,
+				-26
+			],
+			[
+				97,
+				-16
+			],
+			[
+				110,
+				-16
+			],
+			[
+				110,
+				-26
+			]
+		]
+	},
+	"center": {
+		"25-32": [
+			105,
+			-22
+		],
+		"33-34": [
+			104,
+			-23
+		],
+		"35": [
+			104,
+			-21
+		],
+		"36-38": [
+			104,
+			-21
+		],
+		"39-60": [
+			104,
+			-21
+		]
+	},
+	"_author": "gh:HaneulCheong"
+}
