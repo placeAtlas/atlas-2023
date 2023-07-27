@@ -1,0 +1,45 @@
+{
+	"id": -1,
+	"name": "osu! start bar application",
+	"description": "Popular free to play rhythm game osu! represented as an application on the start bar. The main logo can be seen at 229, 216.",
+	"links": {
+		"website": [
+			"https://osu.ppy.sh/",
+			"https://en.wikipedia.org/wiki/Osu!"
+		],
+		"subreddit": [
+			"osugame",
+			"placestart"
+		]
+	},
+	"path": {
+		"186-256": [
+			[
+				-1097,
+				995
+			],
+			[
+				-1097,
+				974
+			],
+			[
+				-1096,
+				973
+			],
+			[
+				-1007,
+				973
+			],
+			[
+				-1007,
+				996
+			]
+		]
+	},
+	"center": {
+		"186-256": [
+			-1052,
+			984
+		]
+	}
+}
