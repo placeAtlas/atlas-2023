@@ -1,0 +1,63 @@
+{
+	"id": 1917,
+	"name": "Delta Cafés",
+	"description": "Delta Cafés is a Portuguese coffee company.",
+	"links": {
+		"website": [
+			"https://deltacafes.com"
+		],
+		"subreddit": [
+			"portugal"
+		],
+		"discord": [
+			"T7B4AettPQ",
+			"TugaPlace"
+		]
+	},
+	"path": {
+		"203-256": [
+			[
+				298,
+				352
+			],
+			[
+				300,
+				336
+			],
+			[
+				307,
+				336
+			],
+			[
+				310,
+				339
+			],
+			[
+				312,
+				345
+			],
+			[
+				309,
+				347
+			],
+			[
+				311,
+				350
+			],
+			[
+				309,
+				352
+			],
+			[
+				305,
+				352
+			]
+		]
+	},
+	"center": {
+		"203-256": [
+			305,
+			343
+		]
+	}
+}
