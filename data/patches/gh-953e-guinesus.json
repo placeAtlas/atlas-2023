@@ -1,0 +1,60 @@
+{
+	"id": -1,
+	"name": "Guinesus",
+	"description": "A amogus discuised as the harp on a Guiness pint glass",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Guinness"
+		]
+	},
+	"path": {
+		"109-255": [
+			[
+				284,
+				-94
+			],
+			[
+				283,
+				-93
+			],
+			[
+				283,
+				-83
+			],
+			[
+				284,
+				-83
+			],
+			[
+				284,
+				-76
+			],
+			[
+				292,
+				-76
+			],
+			[
+				292,
+				-83
+			],
+			[
+				293,
+				-83
+			],
+			[
+				293,
+				-93
+			],
+			[
+				292,
+				-94
+			]
+		]
+	},
+	"center": {
+		"109-255": [
+			288,
+			-89
+		]
+	}
+}
