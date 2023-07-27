@@ -18,7 +18,7 @@ function initOverlap() {
 	})
 
 	applyView()
-	updateLines()
+	renderLines()
 
 	if (window.location.hash) {
 		updateViewFromHash()

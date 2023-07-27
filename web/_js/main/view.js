@@ -117,7 +117,7 @@ offcanvasList.addEventListener('shown.bs.offcanvas', e => {
 	updateHovering(e)
 	applyView()
 	renderHighlight()
-	updateLines()
+	renderLines()
 })
 
 offcanvasList.addEventListener('hide.bs.offcanvas', () => {
@@ -132,7 +132,7 @@ offcanvasList.addEventListener('hidden.bs.offcanvas', e => {
 	updateHovering(e)
 	applyView()
 	renderHighlight()
-	updateLines()
+	renderLines()
 })
 
 closeObjectsListButton.addEventListener("click", clearObjectsList)
@@ -142,17 +142,17 @@ bottomBar.addEventListener("mouseover", () => {
 })
 
 function clearObjectsList() {
+	renderLines()
+	renderHighlight()
+	hovered = []
+	fixed = false
+	document.title = pageTitle
 	closeObjectsListButton.classList.add("d-none")
 	objectsListOverflowNotice.classList.add("d-none")
 	entriesList.classList.remove("disableHover")
-	hovered = []
 	objectsContainer.replaceChildren()
-	updateLines()
-	fixed = false
-	renderHighlight()
 	objectEditNav.remove()
 	updateHash(false)
-	document.title = pageTitle
 }
 
 function toggleFixed(e, tapped) {
@@ -169,24 +169,24 @@ function toggleFixed(e, tapped) {
 	objectsListOverflowNotice.classList.add("d-none")
 }
 
-window.addEventListener("resize", updateLines)
-window.addEventListener("mousemove", updateLines)
-window.addEventListener("dblClick", updateLines)
-window.addEventListener("wheel", updateLines)
+window.addEventListener("resize", renderLines)
+window.addEventListener("mousemove", renderLines)
+window.addEventListener("dblClick", renderLines)
+window.addEventListener("wheel", renderLines)
 
 objectsContainer.addEventListener("scroll", () => {
-	updateLines()
+	renderLines()
 })
 
 window.addEventListener("resize", () => {
 
 	applyView()
 	renderHighlight()
-	updateLines()
+	renderLines()
 
 })
 
-function updateLines() {
+async function renderLines() {
 
 	// Line border
 	linesCanvas.width = linesCanvas.clientWidth
@@ -426,7 +426,7 @@ function buildObjectsList() {
 					hovered = [entry]
 					renderHighlight()
 					hovered[0].element = this
-					updateLines()
+					renderLines()
 					
 				})
 		
@@ -447,7 +447,7 @@ function buildObjectsList() {
 					applyView()
 		
 					hovered = []
-					updateLines()
+					renderLines()
 					renderHighlight()
 				})	
 			} else {
@@ -731,7 +731,7 @@ async function updateViewFromHash() {
 	hovered = [{...entry, element: infoElement}]
 	renderBackground(atlasDisplay)
 	renderHighlight(atlasDisplay)
-	updateLines()
+	renderLines()
 }
 
 function calculateZoomFromPath(path) {
@@ -772,7 +772,7 @@ function initView() {
 	}*/
 
 	applyView()
-	updateLines()
+	renderLines()
 
 }
 

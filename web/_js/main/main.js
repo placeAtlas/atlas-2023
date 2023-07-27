@@ -236,7 +236,7 @@ async function init() {
 		zoom = 1
 		zoomOrigin = [0, 0]
 		scaleZoomOrigin = [0, 0]
-		updateLines()
+		renderLines()
 		applyView()
 	})
 
@@ -365,7 +365,7 @@ async function init() {
 	}
 
 	window.addEventListener("mousemove", e => {
-		// updateLines()
+		// renderLines()
 		mousemove(e.clientX, e.clientY)
 		if (dragging) {
 			e.preventDefault()
@@ -398,7 +398,7 @@ async function init() {
 		scaleZoomOrigin[0] += deltaX / zoom
 		scaleZoomOrigin[1] += deltaY / zoom
 
-		updateLines()
+		renderLines()
 		applyView()
 	}
 
@@ -441,7 +441,7 @@ async function init() {
 		zoomOrigin[1] = scaleZoomOrigin[1] * zoom
 
 		applyView()
-		updateLines()
+		renderLines()
 	}
 
 	window.addEventListener("mouseup", e => {
@@ -467,7 +467,7 @@ async function init() {
 	function touchend(e) {
 		if (e.touches.length === 0) {
 			mouseup()
-			setTimeout(() => updateLines(), 0)
+			renderLines()
 			dragging = false
 
 		} else if (e.touches.length === 1) {
