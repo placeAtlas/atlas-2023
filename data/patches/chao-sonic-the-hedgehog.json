@@ -1,0 +1,83 @@
+{
+	"id": -1,
+	"name": "Chao (Sonic The Hedgehog)",
+	"description": "Chao are a fictional species that appear in the Sonic the Hedgehog Franchise. First introduced in the 1998 video game Sonic Adventure they took the form of a digital pet that the player could interact with. In later games they have played parts in the series story and gameplay.\n\nThis artwork in particular shows pixel art of a neutral Chao. ",
+	"links": {
+		"subreddit": [
+			"sonicthehedgehog"
+		],
+		"discord": [
+			"sonicthehedgehog"
+		]
+	},
+	"path": {
+		"254": [
+			[
+				-1111,
+				389
+			],
+			[
+				-1102,
+				389
+			],
+			[
+				-1102,
+				383
+			],
+			[
+				-1103,
+				383
+			],
+			[
+				-1104,
+				383
+			],
+			[
+				-1104,
+				381
+			],
+			[
+				-1105,
+				381
+			],
+			[
+				-1105,
+				377
+			],
+			[
+				-1107,
+				377
+			],
+			[
+				-1108,
+				377
+			],
+			[
+				-1108,
+				381
+			],
+			[
+				-1109,
+				381
+			],
+			[
+				-1109,
+				382
+			],
+			[
+				-1110,
+				382
+			],
+			[
+				-1111,
+				382
+			]
+		]
+	},
+	"center": {
+		"254": [
+			-1107,
+			385
+		]
+	}
+}
