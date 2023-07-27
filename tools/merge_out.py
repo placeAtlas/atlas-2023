@@ -47,7 +47,7 @@ filenames = os.listdir(patches_dir)
 filenames.append(permanent_patch_file)
 
 controversial_entries = set([
-	46, # Portugal
+	46, 2085, 2106, # Portugal
 	330, 379, # Morocco
 	696, # lturepublic
 	850, # Azov Brigade
