@@ -1,0 +1,132 @@
+{
+	"id": 2781,
+	"name": "Goku Mondongo",
+	"description": "This artwork depicts the Spanish meme \"Goku Mondongo\" which features a bald version of Goku from the popular anime/manga series Dragon Ball, with the word Mondongo which is a Latin American slow-cooked soup.\nThe artwork has been created by the Spanish community of the streamer Silithur. It has been created to be sent to another streamer called Knekro who is usually trolled by sending him a lot of memes related to mondongo.",
+	"links": {
+		"website": [
+			"https://knowyourmeme.com/memes/goku-mondongo",
+			"https://www.twitch.tv/silithur"
+		],
+		"subreddit": [
+			"dbz"
+		]
+	},
+	"path": {
+		"157-256": [
+			[
+				55,
+				736
+			],
+			[
+				60,
+				726
+			],
+			[
+				60,
+				709
+			],
+			[
+				81,
+				690
+			],
+			[
+				88,
+				690
+			],
+			[
+				91,
+				687
+			],
+			[
+				87,
+				680
+			],
+			[
+				87,
+				672
+			],
+			[
+				90,
+				663
+			],
+			[
+				111,
+				662
+			],
+			[
+				117,
+				671
+			],
+			[
+				117,
+				674
+			],
+			[
+				119,
+				678
+			],
+			[
+				119,
+				687
+			],
+			[
+				117,
+				690
+			],
+			[
+				119,
+				692
+			],
+			[
+				128,
+				695
+			],
+			[
+				132,
+				701
+			],
+			[
+				135,
+				705
+			],
+			[
+				133,
+				708
+			],
+			[
+				132,
+				714
+			],
+			[
+				131,
+				718
+			],
+			[
+				131,
+				725
+			],
+			[
+				135,
+				726
+			],
+			[
+				136,
+				728
+			],
+			[
+				137,
+				736
+			],
+			[
+				55,
+				737
+			]
+		]
+	},
+	"center": {
+		"157-256": [
+			102,
+			711
+		]
+	}
+}

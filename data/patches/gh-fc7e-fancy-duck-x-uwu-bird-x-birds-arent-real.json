@@ -1,0 +1,72 @@
+{
+	"id": 3104,
+	"name": "Fancy Duck x UwU Bird x Birds Aren't Real",
+	"description": "A collaboration piece between indie french group Fancy Duck's signature top hat duck, Singapore's Koel Bird (also called \"UwU bird\") and r/birdsarentreal. Now kiss !",
+	"links": {
+		"subreddit": [
+			"birdsarentreal",
+			"placeSG",
+			"singapore"
+		]
+	},
+	"path": {
+		"96-178": [
+			[
+				344,
+				-18
+			],
+			[
+				344,
+				-26
+			],
+			[
+				350,
+				-26
+			],
+			[
+				349,
+				-18
+			],
+			[
+				344,
+				-18
+			],
+			[
+				344,
+				-18
+			]
+		],
+		"179-256": [
+			[
+				341,
+				-28
+			],
+			[
+				341,
+				-19
+			],
+			[
+				341,
+				-18
+			],
+			[
+				350,
+				-18
+			],
+			[
+				350,
+				-28
+			]
+		]
+	},
+	"center": {
+		"96-178": [
+			347,
+			-22
+		],
+		"179-256": [
+			346,
+			-23
+		]
+	}
+}

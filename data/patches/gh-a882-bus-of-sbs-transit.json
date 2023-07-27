@@ -1,0 +1,42 @@
+{
+	"id": 4335,
+	"name": "Bus of SBS Transit",
+	"description": "The signature red-white-purple bus of the largest public bus operator in Singapore.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/SBS_Transit",
+			"https://www.sbstransit.com.sg/",
+			"https://commons.wikimedia.org/wiki/File:B10M-Mk3.JPG"
+		],
+		"subreddit": [
+			"singapore",
+			"placeSG"
+		]
+	},
+	"path": {
+		"95-256": [
+			[
+				313,
+				-19
+			],
+			[
+				324,
+				-19
+			],
+			[
+				324,
+				-13
+			],
+			[
+				313,
+				-13
+			]
+		]
+	},
+	"center": {
+		"95-256": [
+			319,
+			-16
+		]
+	}
+}
