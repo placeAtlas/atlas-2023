@@ -1,0 +1,80 @@
+{
+	"id": 1279,
+	"name": "Amália Rodrigues and Fado",
+	"description": "Fado is a portuguese musical style, which originated in Lisbon. It is generally sang by one person, accompanied by a classic guitar. \nFeatured in the canvas, is Amália Rodrigues, the most decorated portuguese fado singer.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Fado"
+		]
+	},
+	"path": {
+		"61-256": [
+			[
+				367,
+				341
+			],
+			[
+				429,
+				341
+			],
+			[
+				453,
+				334
+			],
+			[
+				444,
+				327
+			],
+			[
+				439,
+				310
+			],
+			[
+				422,
+				294
+			],
+			[
+				402,
+				302
+			],
+			[
+				398,
+				321
+			],
+			[
+				402,
+				328
+			],
+			[
+				395,
+				327
+			],
+			[
+				388,
+				313
+			],
+			[
+				381,
+				311
+			],
+			[
+				384,
+				318
+			],
+			[
+				388,
+				325
+			],
+			[
+				381,
+				341
+			]
+		]
+	},
+	"center": {
+		"61-256": [
+			420,
+			320
+		]
+	}
+}
