@@ -1,0 +1,51 @@
+{
+	"id": 1641,
+	"name": "Book Of Embers",
+	"description": "Book of Embers (or BoE for short) is a discord server focused on roleplaying as nations and empires. it consists of around 30 members. The BoE sign was created by u/NeroPossiblyBi.",
+	"links": {
+		"subreddit": [
+			"bookofembers"
+		],
+		"discord": [
+			"wC5USxzxyj"
+		]
+	},
+	"path": {
+		"182-189": [
+			[
+				-1272,
+				-332
+			],
+			[
+				-1272,
+				-326
+			],
+			[
+				-1260,
+				-326
+			],
+			[
+				-1261,
+				-332
+			],
+			[
+				-1263,
+				-332
+			],
+			[
+				-1264,
+				-330
+			],
+			[
+				-1268,
+				-330
+			]
+		]
+	},
+	"center": {
+		"182-189": [
+			-1270,
+			-328
+		]
+	}
+}
