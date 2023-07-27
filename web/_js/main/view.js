@@ -646,7 +646,7 @@ function updateHovering(e, tapped) {
 		objectsListOverflowNotice.classList.add("d-none")
 		entriesList.classList.remove("disableHover")
 	}
-	updateLines()
+	renderLines()
 	renderHighlight()
 }
 
