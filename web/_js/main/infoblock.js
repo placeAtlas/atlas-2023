@@ -44,16 +44,17 @@ function createInfoBlock(entry, mode = 0) {
 	const linkElement = document.createElement("a")
 	linkElement.className = "text-decoration-none d-flex justify-content-between text-body"
 	if (mode === 1) linkElement.href = "#"
+	
 	else if (mode === 2) {
-		const [nearestPeriod, nearestVariation] = getNearestPeriod(entry, currentPeriod, currentVariation)
+		const [nearestPeriod, nearestVariation, nearestKey] = getNearestPeriod(entry, currentPeriod, currentVariation)
 		const hash = formatHash(entry.id, nearestPeriod, nearestPeriod, nearestVariation, false, false, false)
 		linkElement.href = hash
 		linkElement.addEventListener('click', e => {
 			e.preventDefault()
 			location.hash = hash
-			window.dispatchEvent(new HashChangeEvent("hashchange"))
+			// window.dispatchEvent(new HashChangeEvent("hashchange"))
 		})
-
+	
 	} else {
 		const hash = formatHash(entry.id, null, null, null, false, false, false)
 		linkElement.href = hash

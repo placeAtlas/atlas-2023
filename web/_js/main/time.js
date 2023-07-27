@@ -336,19 +336,20 @@ function downloadCanvas() {
 
 function getNearestPeriod(entry, targetPeriod, targetVariation) {
 	
-	const entryPathPeriods = Object.keys(entry.path)
+	const pathKeys = Object.keys(entry.path)
 	
-	let nearestScore, nearestPeriod, nearestVariation
+	let nearestScore, nearestPeriod, nearestVariation, nearestKey
 
-	function updateNearest(newScore, newPeriod, newVariation) {
+	function updateNearest(newScore, newPeriod, newVariation, newKey) {
 		if (newScore >= nearestScore) return
 		nearestScore = newScore
 		nearestPeriod = newPeriod
 		nearestVariation = newVariation
+		nearestKey = newKey
 	}
 
-	checkEntryPathPeriod: for (const entryPathPeriod of entryPathPeriods) {
-		const pathPeriods = entryPathPeriod.split(', ')
+	checkEntryPathPeriod: for (const pathKey of pathKeys) {
+		const pathPeriods = pathKey.split(', ')
 
 		for (const j in pathPeriods) {
 			const [pathStart, pathEnd, pathVariation] = parsePeriod(pathPeriods[j])
@@ -356,13 +357,13 @@ function getNearestPeriod(entry, targetPeriod, targetVariation) {
 				updateNearest(0, targetPeriod, targetVariation)
 			} else {
 				if (pathVariation !== targetVariation) {
-					updateNearest(Infinity, pathStart, pathVariation)
+					updateNearest(Infinity, pathStart, pathVariation, pathKey)
 					break checkEntryPathPeriod
 				} else {
 					if (Math.abs(pathStart - targetPeriod) < Math.abs(pathEnd - targetPeriod)) {
-						updateNearest(Math.abs(pathStart - targetPeriod), pathStart, pathVariation)
+						updateNearest(Math.abs(pathStart - targetPeriod), pathStart, pathVariation, pathKey)
 					} else {
-						updateNearest(Math.abs(pathEnd - targetPeriod), pathStart, pathVariation)
+						updateNearest(Math.abs(pathEnd - targetPeriod), pathStart, pathVariation, pathKey)
 					}
 				}
 			}
@@ -370,6 +371,6 @@ function getNearestPeriod(entry, targetPeriod, targetVariation) {
 
 	}
 
-	return [ nearestPeriod, nearestVariation ]
+	return [ nearestPeriod, nearestVariation, nearestKey ]
 
 }

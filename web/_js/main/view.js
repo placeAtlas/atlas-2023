@@ -412,7 +412,7 @@ function buildObjectsList() {
 			if (atlasDisplay[atlasOrder[i]]) {
 				// console.log(i, entriesLeft)
 	
-				const entry = atlasDisplay[atlasOrder[i]]
+				let entry = atlasDisplay[atlasOrder[i]]
 				element = createInfoBlock(entry)
 		
 				element.addEventListener("mouseenter", function () {
@@ -421,18 +421,17 @@ function buildObjectsList() {
 		
 					previousScaleZoomOrigin ??= [...scaleZoomOrigin]
 					previousZoom ??= zoom
-					setView(entry.center[0], entry.center[1], setZoomByPath(entry.path))
+					setView(entry.center[0], entry.center[1], calculateZoomFromPath(entry.path))
 		
 					hovered = [entry]
 					renderHighlight()
 					hovered[0].element = this
 					updateLines()
-		
+					
 				})
 		
 				element.addEventListener("click", e => {
 					fixed = true
-					if (!fixed) return
 					previousScaleZoomOrigin ??= [...scaleZoomOrigin]
 					previousZoom ??= zoom
 					applyView()
@@ -452,8 +451,28 @@ function buildObjectsList() {
 					renderHighlight()
 				})	
 			} else {
-				const entry = atlas[atlasOrder[i]]
+				let entry = atlas[atlasOrder[i]]
 				element = createInfoBlock(entry, 2)
+
+				element.addEventListener("click", async e => {
+					const [nearestPeriod, nearestVariation] = getNearestPeriod(entry, currentPeriod, currentVariation)
+
+					await updateTime(nearestPeriod, nearestVariation, true)
+
+					entry = atlasDisplay[entry.id]
+					element = createInfoBlock(entry)
+					hovered = [{ ...entry, element }]
+					fixed = true
+					previousScaleZoomOrigin = undefined
+					previousZoom = undefined
+					
+					renderHighlight()
+					window.dispatchEvent(new HashChangeEvent("hashchange"))
+
+					setView(entry.center[0], entry.center[1], calculateZoomFromPath(entry.path))
+					updateLines()
+
+				})
 			}
 
 			i += 1
@@ -707,20 +726,20 @@ function updateViewFromHash() {
 	setView(
 		isNaN(hashX) ? entry.center[0] : Number(hashX), 
 		isNaN(hashY) ? entry.center[1] : Number(hashY), 
-		isNaN(hashZoom) ? setZoomByPath(entry.path) : Number(hashZoom)
+		isNaN(hashZoom) ? calculateZoomFromPath(entry.path) : Number(hashZoom)
 	)
 
 	closeObjectsListButton.classList.remove("d-none")
 	entriesList.classList.add("disableHover")
 
-	hovered = [entry]
+	hovered = [{...entry, element: infoElement}]
 	renderHighlight()
-	hovered[0].element = infoElement
 	updateLines()
 }
 
-function setZoomByPath(path) {
+function calculateZoomFromPath(path) {
 
+	let zoom
 	let boundingBox = [canvasSize.x + canvasOffset.x, canvasOffset.x, canvasSize.y + canvasOffset.y, canvasOffset.y]
 	path?.forEach(([x, y]) => {
 		boundingBox[0] = Math.min(boundingBox[0], x)
