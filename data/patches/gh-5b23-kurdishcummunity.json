@@ -1,0 +1,36 @@
+{
+	"id": -1,
+	"name": "KurdishCummunity",
+	"description": "A small private group filled with 9 years old internet trolls.",
+	"links": {
+		"subreddit": [
+			"kurdishcummunity"
+		]
+	},
+	"path": {
+		"15-16": [
+			[
+				224,
+				402
+			],
+			[
+				241,
+				402
+			],
+			[
+				241,
+				411
+			],
+			[
+				224,
+				411
+			]
+		]
+	},
+	"center": {
+		"15-16": [
+			233,
+			407
+		]
+	}
+}
