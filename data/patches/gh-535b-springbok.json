@@ -1,0 +1,72 @@
+{
+	"id": -1,
+	"name": "Springbok",
+	"description": "The springbok is a medium-sized antelope found mainly in south and southwest Africa. The springbok is the national animal of South Africa and it was adopted as a nickname or mascot by several South African sports teams, most famously by the national rugby union team. This depiction of the springbok is endearingly named “Bokkie”.",
+	"links": {},
+	"path": {
+		"250": [
+			[
+				-1294,
+				-632
+			],
+			[
+				-1288,
+				-627
+			],
+			[
+				-1288,
+				-634
+			],
+			[
+				-1284,
+				-626
+			],
+			[
+				-1278,
+				-618
+			],
+			[
+				-1278,
+				-616
+			],
+			[
+				-1284,
+				-616
+			],
+			[
+				-1284,
+				-611
+			],
+			[
+				-1297,
+				-611
+			],
+			[
+				-1297,
+				-617
+			],
+			[
+				-1300,
+				-621
+			],
+			[
+				-1295,
+				-632
+			],
+			[
+				-1294,
+				-632
+			],
+			[
+				-1294,
+				-632
+			]
+		]
+	},
+	"center": {
+		"250": [
+			-1290,
+			-620
+		]
+	}
+}
