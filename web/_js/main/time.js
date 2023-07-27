@@ -73,7 +73,7 @@ const dispatchTimeUpdateEvent = (period = currentPeriod, variation = currentVari
 		detail: {
 			period: period,
 			variation: variation,
-			periodString: formatPeriod(period, period, variation),
+			periodString: formatPeriod(period, null, variation),
 			atlas: atlas
 		}
 	})
@@ -278,13 +278,13 @@ function parsePeriod(periodString) {
 
 function formatPeriod(targetStart, targetEnd, targetVariation, forUrl = false) {
 	targetStart ??= currentPeriod
-	targetEnd ??= currentPeriod
+	targetEnd ??= undefined
 	targetVariation ??= currentVariation
 
 	let periodString, variationString
 	variationString = variationsConfig[targetVariation].code
 	if (targetStart > targetEnd) [targetStart, targetEnd] = [targetEnd, targetStart]
-	if (targetStart === targetEnd) {
+	if (targetStart === targetEnd || (targetStart && !targetEnd)) {
 		if (forUrl && targetVariation === defaultVariation && targetStart === variationsConfig[defaultVariation].default) {
 			periodString = ""
 		}
@@ -302,12 +302,11 @@ function setReferenceVal(reference, newValue) {
 	else return reference ?? newValue
 }
 
-function formatHash(targetEntry, targetPeriodStart, targetPeriodEnd, targetVariation, targetX, targetY, targetZoom) {
+function formatHash(targetEntry, targetPeriod, targetVariation, targetX, targetY, targetZoom) {
 	let hashData = window.location.hash.substring(1).split('/')
 
 	targetEntry = setReferenceVal(targetEntry, hashData[0])
-	targetPeriodStart = setReferenceVal(targetPeriodStart, currentPeriod)
-	targetPeriodEnd = setReferenceVal(targetPeriodEnd, currentPeriod)
+	targetPeriod = setReferenceVal(targetPeriod, currentPeriod)
 	targetVariation = setReferenceVal(targetVariation, currentVariation)
 	targetX = setReferenceVal(targetX, -scaleZoomOrigin[0])
 	targetY = setReferenceVal(targetY, -scaleZoomOrigin[1])
@@ -318,8 +317,8 @@ function formatHash(targetEntry, targetPeriodStart, targetPeriodEnd, targetVaria
 	if (targetZoom) targetZoom = targetZoom.toFixed(3).replace(/\.?0+$/, '')
 
 	const result = [targetEntry]
-	const targetPeriod = formatPeriod(targetPeriodStart, targetPeriodEnd, targetVariation, true)
-	result.push(targetPeriod, targetX, targetY, targetZoom)
+	const targetPeriodFormat = formatPeriod(targetPeriod, null, targetVariation, true)
+	result.push(targetPeriodFormat, targetX, targetY, targetZoom)
 	if (!result.some(el => el || el === 0)) return ''
 	return '#' + result.join('/').replace(/\/+$/, '')
 }

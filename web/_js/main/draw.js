@@ -390,7 +390,7 @@ function initDraw() {
 	}
 
 	function preview() {
-		let infoElement = createInfoBlock(generateExportObject(), 1)
+		let infoElement = createInfoBlock(generateExportObject(), 2)
 		objectsContainer.replaceChildren()
 		objectsContainer.appendChild(infoElement)
 		closeObjectsListButton.classList.remove("d-none")
@@ -788,7 +788,7 @@ function initDraw() {
 
 	} else {
 		document.getElementById("offcanvasDrawLabel").textContent = "New Entry"
-		pathWithPeriods.push([formatPeriod(currentPeriod, currentPeriod, currentVariation), []])
+		pathWithPeriods.push([formatPeriod(currentPeriod, null, currentVariation), []])
 
 		// Builds multi-input list
 		addWebsiteFields("", 0, [0])
@@ -814,14 +814,14 @@ function initDraw() {
 	})
 
 	periodsAdd.addEventListener('click', () => {
-		pathWithPeriods.push([formatPeriod(currentPeriod, currentPeriod, currentVariation), []])
+		pathWithPeriods.push([formatPeriod(currentPeriod, null, currentVariation), []])
 		initPeriodGroups()
 	})
 
 	drawBackButton.href = "./" + formatHash(entry?.id)
 
 	document.addEventListener('timeupdate', event => {
-		drawBackButton.href = "./" + formatHash(entry?.id, event.detail.period, event.detail.period, event.detail.variation)
+		drawBackButton.href = "./" + formatHash(entry?.id, event.detail.period, event.detail.variation)
 	})
 
 }

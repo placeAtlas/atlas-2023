@@ -453,7 +453,7 @@ async function resetEntriesList() {
 				})	
 			} else {
 				let entry = atlas[atlasOrder[entriesOffset]]
-				element = createInfoBlock(entry, 2)
+				element = createInfoBlock(entry, 1)
 
 				element.addEventListener("click", async e => {
 					e.preventDefault()
@@ -468,7 +468,7 @@ async function resetEntriesList() {
 					previousScaleZoomOrigin = undefined
 					previousZoom = undefined
 
-					const hash = formatHash(entry.id, nearestPeriod, nearestPeriod, nearestVariation, entry.center[0], entry.center[1], calculateZoomFromPath(entry.path))
+					const hash = formatHash(entry.id, nearestPeriod, nearestVariation, entry.center[0], entry.center[1], calculateZoomFromPath(entry.path))
 					location.hash = hash
 				})
 			}
@@ -831,6 +831,6 @@ function initViewGlobal() {
 	}
 
 	document.addEventListener('timeupdate', event => {
-		drawButton.href = "./?mode=draw" + formatHash(null, event.detail.period, event.detail.period, event.detail.variation)
+		drawButton.href = "./?mode=draw" + formatHash(null, event.detail.period, event.detail.variation)
 	})
 }
