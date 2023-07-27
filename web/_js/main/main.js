@@ -105,8 +105,7 @@ async function init() {
 	// For Reviewing Reddit Changes
 	// const atlasRef = '../tools/temp-atlas.json'
 	const atlasAllUrl = params.get('atlas') || './atlas.json'
-	const atlasAllResp = await fetch(atlasAllUrl)
-	atlasAll = generateAtlasAll(await atlasAllResp.json())
+	atlasAll = generateAtlasAll(await (await fetch(atlasAllUrl)).json())
 	// console.log(atlas, atlasOrder)
 
 	const hash = window.location.hash.substring(1)
@@ -147,10 +146,8 @@ async function init() {
 		initExplore()
 	} else if (mode.startsWith("diff")) {
 		try {
-			const liveAtlasRef = params.get('liveatlas') || `https://${prodDomain}/atlas.json`
-			const liveAtlasResp = await fetch(liveAtlasRef)
-			let liveAtlasAll = await liveAtlasResp.json()
-			liveAtlasAll = generateAtlasAll(liveAtlasAll)
+			const liveAtlasUrl = params.get('liveatlas') || `https://${prodDomain}/atlas.json`
+			let liveAtlasAll = generateAtlasAll(await (await fetch(liveAtlasUrl)).json())
 
 			// Mark added/edited entries
 			for (const entry of Object.values(atlasAll)) {

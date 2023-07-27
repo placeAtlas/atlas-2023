@@ -158,7 +158,7 @@ function clearObjectsList() {
 function toggleFixed(e, tapped) {
 	if (!fixed && hovered.length === 0) {
 		entriesList.classList.remove("disableHover")
-		return 0
+		return
 	}
 	fixed = !fixed
 	if (!fixed) {
@@ -393,9 +393,10 @@ function updateAtlas() {
 	renderHighlight(atlasDisplay)
 }
 
-function buildObjectsList() {
-
-	let i = 0
+async function resetEntriesList() {
+	entriesOffset = 0
+	entriesList.replaceChildren()
+	entriesList.appendChild(moreEntriesButton)
 
 	moreEntriesButton.removeEventListener('click', showMoreEntries)
 	showMoreEntries = () => {
@@ -407,12 +408,12 @@ function buildObjectsList() {
 		let entriesLeft = entriesLimit
 		let element
 
-		while (entriesLeft > 0 && atlasOrder.length > i) {
+		while (entriesLeft > 0 && atlasOrder.length > entriesOffset) {
 
-			if (atlasDisplay[atlasOrder[i]]) {
+			if (atlasDisplay[atlasOrder[entriesOffset]]) {
 				// console.log(i, entriesLeft)
 	
-				let entry = atlasDisplay[atlasOrder[i]]
+				let entry = atlasDisplay[atlasOrder[entriesOffset]]
 				element = createInfoBlock(entry)
 		
 				element.addEventListener("mouseenter", function () {
@@ -451,7 +452,7 @@ function buildObjectsList() {
 					renderHighlight()
 				})	
 			} else {
-				let entry = atlas[atlasOrder[i]]
+				let entry = atlas[atlasOrder[entriesOffset]]
 				element = createInfoBlock(entry, 2)
 
 				element.addEventListener("click", async e => {
@@ -472,40 +473,21 @@ function buildObjectsList() {
 				})
 			}
 
-			i += 1
+			entriesOffset += 1
 			entriesLeft -= 1
 	
 			entriesList.appendChild(element)
 	
 		}
 	
-		if (atlasOrder.length > i) {
-			moreEntriesButton.innerHTML = "Show " + Math.min(entriesLimit, atlasOrder.length - i) + " more"
+		if (atlasOrder.length > entriesOffset) {
+			moreEntriesButton.innerHTML = "Show " + Math.min(entriesLimit, atlasOrder.length - entriesOffset) + " more"
 			entriesList.appendChild(moreEntriesButton)
 		}
 	
 	}
 	moreEntriesButton.addEventListener('click', showMoreEntries)
 	showMoreEntries()
-
-}
-
-function shuffle() {
-	//console.log("shuffled atlas")
-	for (let i = atlasDisplay.length - 1; i > 0; i--) {
-		const j = Math.floor(Math.random() * (i + 1))
-		const temp = atlasDisplay[i]
-		atlasDisplay[i] = atlasDisplay[j]
-		atlasDisplay[j] = temp
-	}
-}
-
-async function resetEntriesList() {
-	entriesOffset = 0
-	entriesList.replaceChildren()
-	entriesList.appendChild(moreEntriesButton)
-
-	buildObjectsList()
 }
 
 async function renderHighlight() {
