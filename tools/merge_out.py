@@ -52,6 +52,7 @@ controversial_entries = set([
 	1730, 2044, # Atatürk
 	2587, # Falklands War memorial
 	2955, # Lola
+	3126, # Foxhole
 ])
 edited_controversial_entries = set()
 
