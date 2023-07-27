@@ -188,7 +188,7 @@ function createInfoBlock(entry, mode = 0) {
 		const editElement = document.createElement("a")
 		editElement.innerHTML = '<i class="bi bi-pencil-fill" aria-hidden="true"></i> Edit'
 		editElement.className = "btn btn-sm btn-outline-primary"
-		editElement.href = "./?mode=draw&id=" + entry.id + formatHash(false)
+		editElement.href = "./?mode=draw&id=" + entry.id + formatHash(false, null, null, null, false, false, false)
 		editElement.title = "Edit " + entry.name
 		idElementContainer.appendChild(editElement)
 	}
