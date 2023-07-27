@@ -112,7 +112,7 @@ function initDraw() {
 	wrapper.classList.remove('listHidden')
 	bsOffcanvasDraw.show()
 
-	window.render = render
+	window.renderHighlight = renderHighlight
 	window.renderBackground = renderBackground
 	window.updateHovering = updateHovering
 
@@ -126,12 +126,12 @@ function initDraw() {
 
 	let highlightUncharted = highlightUnchartedEl.checked
 
-	renderBackground(atlas)
+	renderBackground(atlasDisplay)
 	applyView()
 
 	container.style.cursor = "crosshair"
 
-	render(path)
+	renderHighlight(path)
 
 	container.addEventListener("mousedown", e => {
 		lastPos = [
@@ -169,7 +169,7 @@ function initDraw() {
 			const coords = getCanvasCoords(e.clientX, e.clientY)
 
 			path.push(coords)
-			render(path)
+			renderHighlight(path)
 
 			undoHistory = []
 			redoButton.disabled = true
@@ -186,13 +186,13 @@ function initDraw() {
 	container.addEventListener("mousemove", e => {
 		if (!dragging && drawing && path.length > 0) {
 			const coords = getCanvasCoords(e.clientX, e.clientY)
-			render([...path, coords])
+			renderHighlight([...path, coords])
 		}
 	})
 
 	container.addEventListener("mouseout", function () {
 		if (!dragging && drawing && path.length > 0) {
-			render(path)
+			renderHighlight(path)
 		}
 	})
 
@@ -229,19 +229,19 @@ function initDraw() {
 	undoButton.addEventListener("click", e => {
 		undo()
 		const coords = getCanvasCoords(e.clientX, e.clientY)
-		render([...path, coords])
+		renderHighlight([...path, coords])
 	})
 
 	redoButton.addEventListener("click", e => {
 		redo()
 		const coords = getCanvasCoords(e.clientX, e.clientY)
-		render([...path, coords])
+		renderHighlight([...path, coords])
 	})
 
 	resetButton.addEventListener("click", e => {
 		reset()
 		const coords = getCanvasCoords(e.clientX, e.clientY)
-		render([...path, coords])
+		renderHighlight([...path, coords])
 	})
 
 	resetButton.addEventListener("blur", function () {
@@ -270,7 +270,7 @@ function initDraw() {
 
 	highlightUnchartedEl.addEventListener("click", function () {
 		highlightUncharted = this.checked
-		render(path)
+		renderHighlight(path)
 	})
 
 	function generateExportObject() {
@@ -386,13 +386,11 @@ function initDraw() {
 		}
 		githubPostButton.href = githubPostUrl
 
-		console.log(githubPostUrl)
-
 		exportModal.show()
 	}
 
 	function preview() {
-		let infoElement = createInfoBlock(generateExportObject(), true)
+		let infoElement = createInfoBlock(generateExportObject(), 2)
 		objectsContainer.replaceChildren()
 		objectsContainer.appendChild(infoElement)
 		closeObjectsListButton.classList.remove("d-none")
@@ -484,17 +482,17 @@ function initDraw() {
 		closeObjectsListButton.classList.add("d-none")
 	}
 
-	function renderBackground() {
+	function renderBackground(atlas) {
 
 		backgroundContext.clearRect(0, 0, highlightCanvas.width, highlightCanvas.height)
 
 		backgroundContext.fillStyle = "rgba(0, 0, 0, 1)"
-		//backgroundContext.fillRect(0, 0, canvas.width, canvas.height)
+		//backgroundContext.fillRect(0, 0, canvas.width, renderBackgroundcanvas.height)
 
-		for (let i = 0; i < atlas.length; i++) {
+		for (const entry of Object.values(atlas)) {
 
-			const path = atlas[i].path
-
+			const path = entry.path
+	
 			backgroundContext.beginPath()
 
 			if (path[0]) {
@@ -511,7 +509,7 @@ function initDraw() {
 		}
 	}
 
-	function render(path) {
+	function renderHighlight(path) {
 
 		if (!Array.isArray(path)) return
 
@@ -556,8 +554,7 @@ function initDraw() {
 
 	const getEntry = id => {
 		if (!id) return
-		const entries = atlasAll.filter(entry => entry.id.toString() === id.toString())
-		if (entries.length === 1) return entries[0]
+		return atlasAll[id]
 	}
 
 	function addFieldButton(inputButton, inputGroup, array, index, name) {
@@ -791,7 +788,7 @@ function initDraw() {
 
 	} else {
 		document.getElementById("offcanvasDrawLabel").textContent = "New Entry"
-		pathWithPeriods.push([formatPeriod(currentPeriod, currentPeriod, currentVariation), []])
+		pathWithPeriods.push([formatPeriod(currentPeriod, null, currentVariation), []])
 
 		// Builds multi-input list
 		addWebsiteFields("", 0, [0])
@@ -817,14 +814,14 @@ function initDraw() {
 	})
 
 	periodsAdd.addEventListener('click', () => {
-		pathWithPeriods.push([formatPeriod(currentPeriod, currentPeriod, currentVariation), []])
+		pathWithPeriods.push([formatPeriod(currentPeriod, null, currentVariation), []])
 		initPeriodGroups()
 	})
 
 	drawBackButton.href = "./" + formatHash(entry?.id)
 
 	document.addEventListener('timeupdate', event => {
-		drawBackButton.href = "./" + formatHash(entry?.id, event.detail.period, event.detail.period, event.detail.variation)
+		drawBackButton.href = "./" + formatHash(entry?.id, event.detail.period, event.detail.variation)
 	})
 
 }
@@ -1225,7 +1222,7 @@ function updatePeriodGroups() {
 function updatePath(newPath, newUndoHistory) {
 	path = newPath || path
 	if (path.length > 3) center = calculateCenter(path)
-	render(path)
+	renderHighlight(path)
 	undoButton.disabled = path.length === 0; // Maybe make it undo the cancel action in the future
 	undoHistory = newUndoHistory || []
 	redoButton.disabled = (!undoHistory.length)
