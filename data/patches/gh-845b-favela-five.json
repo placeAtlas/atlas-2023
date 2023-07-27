@@ -1,0 +1,43 @@
+{
+	"id": 423,
+	"name": "Favela Five",
+	"description": "This art was made by the Forever's community, in tribute to QSMP had received the brazilians into the server, to celebrate the friendship of the five brazilianss and Richarlyson.\n\nThis art features the Brazilian members of QSMP and Richarlyson (their agg son).",
+	"links": {
+		"website": [
+			"https://qsmp.fandom.com/wiki/Brazilian_Members",
+			"https://www.twitch.tv/forever"
+		],
+		"subreddit": [
+			"foreverplayer"
+		],
+		"discord": [
+			"forever"
+		]
+	},
+	"path": {
+		"25-256": [
+			[
+				31,
+				430
+			],
+			[
+				146,
+				431
+			],
+			[
+				147,
+				338
+			],
+			[
+				30,
+				338
+			]
+		]
+	},
+	"center": {
+		"25-256": [
+			89,
+			384
+		]
+	}
+}
