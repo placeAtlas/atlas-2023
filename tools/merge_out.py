@@ -51,11 +51,13 @@ controversial_entries = set([
 	330, 379, # Morocco
 	696, # lturepublic
 	850, # Azov Brigade
+	1240, # Hoppou
 	1730, 2044, # Atatürk
 	2587, # Falklands War memorial
 	2693, # Israel
 	2955, # Lola
 	3126, # Foxhole
+	4251, 4263, 4276, # Truscum flag
 ])
 edited_controversial_entries = set()
 
