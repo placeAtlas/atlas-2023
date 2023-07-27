@@ -149,16 +149,24 @@ async function init() {
 		try {
 			const liveAtlasRef = params.get('liveatlas') || `https://${prodDomain}/atlas.json`
 			const liveAtlasResp = await fetch(liveAtlasRef)
-			let liveAtlas = await liveAtlasResp.json()
-			liveAtlas = generateAtlasAll(liveAtlas)
+			let liveAtlasAll = await liveAtlasResp.json()
+			liveAtlasAll = generateAtlasAll(liveAtlasAll)
 
 			// Mark added/edited entries
 			for (const entry of Object.values(atlasAll)) {
-				if (!liveAtlas[entry.id]) {
+				if (!liveAtlasAll[entry.id]) {
 					entry.diff = "add"
 				} else {
-					if (JSON.stringify({ ...entry, _index: undefined }) === JSON.stringify({ ...liveAtlas[entry.id], _index: undefined })) continue
+					if (JSON.stringify({ ...entry, _index: undefined }) === JSON.stringify({ ...liveAtlasAll[entry.id], _index: undefined })) continue
 					entry.diff = "edit"
+				}
+			}
+
+			// Mark removed entries
+			for (const entry of Object.values(liveAtlasAll)) {
+				if (!atlasAll[entry.id]) {
+					entry.diff = "delete"
+					atlasAll[entry.id] = entry
 				}
 			}
 
