@@ -1,0 +1,126 @@
+{
+	"id": -1,
+	"name": "Gawr Gura",
+	"description": "A small depiction of HoloEN Vtuber Gawr Gura, part of Hololive \"Myth\".\n\nGawr Gura is the most popular Vtuber on YouTube after debuting in 2020 as part of the first HoloEN generation.",
+	"links": {
+		"website": [
+			"https://hololivepro.com/"
+		],
+		"subreddit": [
+			"Hololive"
+		],
+		"discord": [
+			"vtubersplace"
+		]
+	},
+	"path": {
+		"250": [
+			[
+				-636,
+				-324
+			],
+			[
+				-633,
+				-324
+			],
+			[
+				-632,
+				-323
+			],
+			[
+				-631,
+				-323
+			],
+			[
+				-631,
+				-321
+			],
+			[
+				-630,
+				-321
+			],
+			[
+				-629,
+				-320
+			],
+			[
+				-629,
+				-319
+			],
+			[
+				-631,
+				-319
+			],
+			[
+				-632,
+				-320
+			],
+			[
+				-633,
+				-320
+			],
+			[
+				-634,
+				-320
+			],
+			[
+				-634,
+				-319
+			],
+			[
+				-635,
+				-319
+			],
+			[
+				-634,
+				-314
+			],
+			[
+				-637,
+				-314
+			],
+			[
+				-638,
+				-315
+			],
+			[
+				-639,
+				-316
+			],
+			[
+				-640,
+				-317
+			],
+			[
+				-641,
+				-317
+			],
+			[
+				-641,
+				-320
+			],
+			[
+				-637,
+				-323
+			],
+			[
+				-637,
+				-323
+			],
+			[
+				-637,
+				-322
+			],
+			[
+				-638,
+				-323
+			]
+		]
+	},
+	"center": {
+		"250": [
+			-638,
+			-319
+		]
+	}
+}
