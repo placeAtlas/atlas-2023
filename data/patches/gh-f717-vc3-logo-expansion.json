@@ -1,0 +1,39 @@
+{
+	"id": 1991,
+	"name": "VC3 logo expansion",
+	"description": "VC3 is a community-driven platform passionately owned and managed by a group of users who hold diverse perspectives on r/placeDE's moderation team. The revolution is considered a ban-worthy topic in r/placede's server due to its controversial nature. Embracing a spirit of independence and a desire for constructive dialogue, this community welcomes users who have experienced difficulties in r/placeDE's discord server or VC3, fostering an inclusive environment for open discussions.\nWe also have an alliance with the German south flag.",
+	"links": {
+		"subreddit": [
+			"sprachkanal3"
+		],
+		"discord": [
+			"RRXccGRncM"
+		]
+	},
+	"path": {
+		"206": [
+			[
+				1362,
+				899
+			],
+			[
+				1362,
+				910
+			],
+			[
+				1391,
+				910
+			],
+			[
+				1391,
+				900
+			]
+		]
+	},
+	"center": {
+		"206": [
+			1368,
+			905
+		]
+	}
+}
