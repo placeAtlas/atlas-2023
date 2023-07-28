@@ -1,0 +1,72 @@
+{
+	"id": 3678,
+	"name": " Azerbaijan Democratic Republic",
+	"description": "The modern Republic of Azerbaijan proclaimed its independence on 30 August 1991, shortly before the dissolution of the Soviet Union in the same year.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Azerbaijan"
+		]
+	},
+	"path": {
+		"250-256": [
+			[
+				-112,
+				799
+			],
+			[
+				-129,
+				784
+			],
+			[
+				-128,
+				773
+			],
+			[
+				-130,
+				771
+			],
+			[
+				-130,
+				768
+			],
+			[
+				-132,
+				768
+			],
+			[
+				-132,
+				766
+			],
+			[
+				-112,
+				766
+			],
+			[
+				-112,
+				800
+			],
+			[
+				-111,
+				766
+			],
+			[
+				-132,
+				766
+			],
+			[
+				-129,
+				784
+			],
+			[
+				-112,
+				799
+			]
+		]
+	},
+	"center": {
+		"250-256": [
+			-129,
+			774
+		]
+	}
+}
