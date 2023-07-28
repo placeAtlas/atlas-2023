@@ -1,0 +1,140 @@
+{
+	"id": 383,
+	"name": "Russian anti-war flag",
+	"description": "This flag is a variant of the Russian national flag (without the red stripe) used by Russians protesting the Russian invasion of Ukraine.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/White-blue-white_flag"
+		],
+		"subreddit": [
+			"liberta",
+			"freedomofrussia",
+			"placefreerussia",
+			"tjournal_refugees"
+		]
+	},
+	"path": {
+		"41-59": [
+			[
+				84,
+				129
+			],
+			[
+				84,
+				138
+			],
+			[
+				121,
+				138
+			],
+			[
+				121,
+				139
+			],
+			[
+				227,
+				139
+			],
+			[
+				227,
+				129
+			]
+		],
+		"63-89": [
+			[
+				84,
+				129
+			],
+			[
+				84,
+				138
+			],
+			[
+				121,
+				138
+			],
+			[
+				121,
+				139
+			],
+			[
+				168,
+				139
+			],
+			[
+				168,
+				129
+			]
+		],
+		"60-62": [
+			[
+				84,
+				129
+			],
+			[
+				84,
+				138
+			],
+			[
+				121,
+				138
+			],
+			[
+				121,
+				139
+			],
+			[
+				200,
+				139
+			],
+			[
+				200,
+				129
+			]
+		],
+		"90-256": [
+			[
+				84,
+				129
+			],
+			[
+				84,
+				138
+			],
+			[
+				155,
+				138
+			],
+			[
+				155,
+				131
+			],
+			[
+				114,
+				131
+			],
+			[
+				114,
+				129
+			]
+		]
+	},
+	"center": {
+		"41-59": [
+			156,
+			134
+		],
+		"63-89": [
+			126,
+			134
+		],
+		"60-62": [
+			142,
+			134
+		],
+		"90-256": [
+			107,
+			134
+		]
+	}
+}
