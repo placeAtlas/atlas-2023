@@ -1,0 +1,36 @@
+{
+	"id": -1,
+	"name": "Rif is fun for Reddit",
+	"description": "Rif was a third party Reddit client app for Android, until it was shut down on June 23. It was created and maintained by u/talklittle.",
+	"links": {
+		"subreddit": [
+			"redditisfun"
+		]
+	},
+	"path": {
+		"250": [
+			[
+				-1251,
+				977
+			],
+			[
+				-1236,
+				977
+			],
+			[
+				-1236,
+				992
+			],
+			[
+				-1251,
+				992
+			]
+		]
+	},
+	"center": {
+		"250": [
+			-1243,
+			985
+		]
+	}
+}
