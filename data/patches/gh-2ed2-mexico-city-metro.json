@@ -1,0 +1,60 @@
+{
+	"id": 2363,
+	"name": "Mexico City Metro",
+	"description": "The Mexico City Metro is a rapid transit system that serves the metropolitan area of Mexico City, including some municipalities in the State of Mexico.",
+	"links": {
+		"website": [
+			"https://metro.cdmx.gob.mx/la-red/mapa-de-la-red"
+		]
+	},
+	"path": {
+		"122-256": [
+			[
+				-266,
+				162
+			],
+			[
+				-266,
+				165
+			],
+			[
+				-268,
+				168
+			],
+			[
+				-268,
+				172
+			],
+			[
+				-196,
+				171
+			],
+			[
+				-196,
+				168
+			],
+			[
+				-195,
+				167
+			],
+			[
+				-195,
+				165
+			],
+			[
+				-196,
+				165
+			],
+			[
+				-196,
+				162
+			]
+		]
+	},
+	"center": {
+		"122-256": [
+			-253,
+			167
+		]
+	}
+}
