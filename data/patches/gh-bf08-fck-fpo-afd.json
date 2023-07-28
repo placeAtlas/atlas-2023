@@ -1,0 +1,88 @@
+{
+	"id": 886,
+	"name": "FCK FPÖ + AFD",
+	"description": "The FPÖ (Freedom Party of Austria) is a right-wing populist party in Austria. It advocates for conservative and nationalist policies. Some members have been labeled as right-wing extremists due to controversial statements. The party is under observation to monitor any extremist tendencies.\n\nThe AfD (Alternative for Germany) is a German right-wing political party. It has been observed by Germany's domestic intelligence service as a suspected right-wing extremist party. Certain members have faced scrutiny and criticism, with some being legally referred to as fascists.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Freedom_Party_of_Austria"
+		]
+	},
+	"path": {
+		"105-255": [
+			[
+				604,
+				-313
+			],
+			[
+				604,
+				-292
+			],
+			[
+				644,
+				-292
+			],
+			[
+				644,
+				-302
+			],
+			[
+				622,
+				-302
+			],
+			[
+				622,
+				-313
+			]
+		],
+		"102-104": [
+			[
+				604,
+				-313
+			],
+			[
+				604,
+				-292
+			],
+			[
+				622,
+				-292
+			],
+			[
+				622,
+				-313
+			]
+		],
+		"100-101": [
+			[
+				610,
+				-302
+			],
+			[
+				610,
+				-294
+			],
+			[
+				641,
+				-294
+			],
+			[
+				641,
+				-302
+			]
+		]
+	},
+	"center": {
+		"105-255": [
+			613,
+			-301
+		],
+		"102-104": [
+			613,
+			-302
+		],
+		"100-101": [
+			626,
+			-298
+		]
+	}
+}

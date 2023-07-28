@@ -1,0 +1,36 @@
+{
+	"id": -1,
+	"name": "Forgotten Turtles Video Game Group",
+	"description": "Forgotten Turtles video game group. Logo designed by CheeseLiker.",
+	"links": {
+		"website": [
+			"https://docs.google.com/document/d/1xoguB84Sl2gXH9342HwxVUq-iqlTajzN49wikRrkZho/edit"
+		]
+	},
+	"path": {
+		"254": [
+			[
+				-186,
+				855
+			],
+			[
+				-186,
+				865
+			],
+			[
+				-176,
+				865
+			],
+			[
+				-176,
+				855
+			]
+		]
+	},
+	"center": {
+		"254": [
+			-181,
+			860
+		]
+	}
+}
