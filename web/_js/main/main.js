@@ -59,7 +59,7 @@ function setView(targetX, targetY, targetZoom = zoom) {
 
 	zoom = targetZoom
 	scaleZoomOrigin = [
-		canvasCenter.x - targetX, 
+		canvasCenter.x - targetX,
 		canvasCenter.y - targetY
 	]
 	applyView()
@@ -121,8 +121,8 @@ async function init() {
 	//console.log(document.documentElement.clientWidth, document.documentElement.clientHeight)
 
 	setView(
-		isNaN(hashX) ? 0 : Number(hashX), 
-		isNaN(hashY) ? 0 : Number(hashY), 
+		isNaN(hashX) ? 0 : Number(hashX),
+		isNaN(hashY) ? 0 : Number(hashY),
 		isNaN(hashZoom) ? 1 : Number(hashZoom)
 	)
 
@@ -169,7 +169,7 @@ async function init() {
 
 			if (mode.includes('only')) {
 				for (const key of Object.keys(atlasAll)) {
-					if (atlasAll[key].diff) continue 
+					if (atlasAll[key].diff) continue
 					delete atlasAll[key]
 				}
 			}
@@ -370,7 +370,6 @@ async function init() {
 	}
 
 	window.addEventListener("mousemove", e => {
-		// renderLines()
 		mousemove(e.clientX, e.clientY)
 		if (dragging) {
 			e.preventDefault()
@@ -464,7 +463,7 @@ async function init() {
 	})
 	window.addEventListener("touchend", touchend)
 
-	function mouseup(x, y) {
+	function mouseup() {
 		dragging = false
 		updateHash()
 	}
@@ -493,7 +492,7 @@ async function init() {
 }
 
 function generateAtlasAll(atlas = atlasAll) {
-	const newAtlas = {} 
+	const newAtlas = {}
 	for (const index in atlas) {
 		const entry = atlas[index]
 		entry._index = index

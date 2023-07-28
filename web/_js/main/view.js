@@ -170,7 +170,6 @@ function toggleFixed(e, tapped) {
 }
 
 window.addEventListener("resize", renderLines)
-window.addEventListener("mousemove", renderLines)
 window.addEventListener("dblClick", renderLines)
 window.addEventListener("wheel", renderLines)
 
@@ -179,7 +178,6 @@ objectsContainer.addEventListener("scroll", () => {
 })
 
 window.addEventListener("resize", () => {
-
 	applyView()
 	renderHighlight()
 	renderLines()
@@ -187,7 +185,10 @@ window.addEventListener("resize", () => {
 })
 
 async function renderLines() {
-
+	if (hovered.length === 0) {
+		linesContext.clearRect(0, 0, linesCanvas.width, linesCanvas.height)
+		return
+	}
 	// Line border
 	linesCanvas.width = linesCanvas.clientWidth
 	linesCanvas.height = linesCanvas.clientHeight
@@ -317,7 +318,7 @@ function filterAtlas(prevAtlas) {
 	let newAtlasOrder = []
 
 	document.getElementById("atlasSize").innerHTML = ""
-	
+
 	if (search) {
 		for (const [id, entry] of Object.entries(prevAtlas)) {
 			if (!(
@@ -328,7 +329,7 @@ function filterAtlas(prevAtlas) {
 			)) delete newAtlas[id]
 		}
 	}
-	
+
 	// document.getElementById("sort").value = sort
 
 	let sortFunction
@@ -382,7 +383,7 @@ function updateAtlas() {
 	;[atlas, atlasOrder] = filterAtlas(atlasAll)
 	;[atlasDisplay, atlasOrder] = generateAtlasDisplay(atlas, atlasOrder, currentPeriod, currentVariation)
 	const atlasSizeEl = document.getElementById("atlasSize")
-	if (Object.keys(atlas).length === Object.keys(atlasAll).length) {	
+	if (Object.keys(atlas).length === Object.keys(atlasAll).length) {
 		atlasSizeEl.innerHTML = Object.keys(atlasAll).length + " entries in total."
 	} else {
 		atlasSizeEl.innerHTML = "Found " + Object.keys(atlas).length + " entries."
@@ -415,42 +416,42 @@ async function resetEntriesList() {
 	
 				let entry = atlasDisplay[atlasOrder[entriesOffset]]
 				element = createInfoBlock(entry)
-		
+
 				element.addEventListener("mouseenter", function () {
 					if (fixed || dragging) return
 					objectsContainer.replaceChildren()
-		
+
 					previousScaleZoomOrigin ??= [...scaleZoomOrigin]
 					previousZoom ??= zoom
 					setView(entry.center[0], entry.center[1], calculateZoomFromPath(entry.path))
-		
+
 					hovered = [entry]
 					renderHighlight()
 					hovered[0].element = this
 					renderLines()
-					
+
 				})
-		
+
 				element.addEventListener("click", e => {
 					fixed = true
 					previousScaleZoomOrigin ??= [...scaleZoomOrigin]
 					previousZoom ??= zoom
 					applyView()
 				})
-		
+
 				element.addEventListener("mouseleave", () => {
 					if (fixed || dragging) return
-		
+
 					scaleZoomOrigin = [...previousScaleZoomOrigin]
 					zoom = previousZoom
 					previousScaleZoomOrigin = undefined
 					previousZoom = undefined
 					applyView()
-		
+
 					hovered = []
 					renderLines()
 					renderHighlight()
-				})	
+				})
 			} else {
 				let entry = atlas[atlasOrder[entriesOffset]]
 				element = createInfoBlock(entry, 1)
@@ -596,10 +597,14 @@ function updateHovering(e, tapped) {
 
 	if (!(pos[0] <= canvasSize.x + canvasOffset.x + 200 && pos[0] >= canvasOffset.x - 200 && pos[1] <= canvasSize.y + canvasOffset.y + 200 && pos[1] >= canvasOffset.x - 200)) return
 	
-	const newHovered = []
+	let newHovered = []
 	for (const entry of Object.values(atlasDisplay)) {
 		if (pointIsInPolygon(pos, entry.path)) newHovered.push(entry)
 	}
+
+	newHovered = newHovered.sort(function (a, b) {
+		return calcPolygonArea(a.path) - calcPolygonArea(b.path)
+	})
 
 	let changed = false
 
@@ -616,9 +621,7 @@ function updateHovering(e, tapped) {
 
 	if (!changed) return
 
-	hovered = newHovered.sort(function (a, b) {
-		return calcPolygonArea(a.path) - calcPolygonArea(b.path)
-	})
+	hovered = newHovered
 
 	objectsContainer.replaceChildren()
 
@@ -643,6 +646,7 @@ function updateHovering(e, tapped) {
 		objectsListOverflowNotice.classList.add("d-none")
 		entriesList.classList.remove("disableHover")
 	}
+	renderLines()
 	renderHighlight()
 }
 
@@ -683,8 +687,8 @@ async function updateViewFromHash() {
 	// Highlight entry from hash
 
 	const entry = atlasDisplay[hashEntryId]
-	if (!entry) return 
-		
+	if (!entry) return
+
 	document.title = entry.name + " on " + pageTitle
 
 	if ((!entry.diff || entry.diff !== "delete")) {
