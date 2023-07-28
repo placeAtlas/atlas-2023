@@ -1,0 +1,42 @@
+{
+	"id": 1392,
+	"name": "WESTCOL",
+	"description": "Streamer 1# Colombiano, popular por sus trasmisiones en Twitch y Kick, y su variacion de eventos creados e sus invitaciones de gente famosa a sus streams, como \"Arcangel\", \"Nicky Jam\", \"Blssd\", etc. Actualmente su nombre sale en el Alfa Romero de la F1, tiene un contracto vigente de Kick, rodandolo aproximadamente a los 1M de Dolares, asi haciendole ser el contracto mas grande actualmente para un streamer latino.",
+	"links": {
+		"website": [
+			"https://kick.com/westcol"
+		],
+		"subreddit": [
+			"WestCOL"
+		],
+		"discord": [
+			"WestCOL"
+		]
+	},
+	"path": {
+		"214-242": [
+			[
+				-1000,
+				639
+			],
+			[
+				-1000,
+				773
+			],
+			[
+				-883,
+				773
+			],
+			[
+				-883,
+				639
+			]
+		]
+	},
+	"center": {
+		"214-242": [
+			-941,
+			706
+		]
+	}
+}
