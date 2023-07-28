@@ -1,0 +1,36 @@
+{
+	"id": 2155,
+	"name": "AMINJ",
+	"description": "Master AMINJ\nJean François Champollion University\nALBI, FRANCE\n\nThe objective of this multidisciplinary master's degree is to train experts and project leaders in the conception of multimedia resources designed for teaching through apprenticeships, professional training, initial training (serious games, learning games, simulators, transmedia, MOOC …), as well as all sectors of gamification (advergame, newsgame, edugame...).  \nThis master's reflects the broad range of skills required in this new industry through its multidisciplinarity and its transverse topics : technological and computer sciences, human and social sciences, educational sciences, law and economics.\n\nAt the end of this course graduates will be able to design, manage, develop, budget and assess a serious gaming device or interactive digital media, linked primarily to training, but also linked to the fields of marketing, communication, and information.",
+	"links": {
+		"website": [
+			"https://www.univ-jfc.fr/masters/audiovisuel-medias-interactifs-numeriques-jeux"
+		]
+	},
+	"path": {
+		"210-256": [
+			[
+				-497,
+				579
+			],
+			[
+				-469,
+				579
+			],
+			[
+				-469,
+				586
+			],
+			[
+				-497,
+				586
+			]
+		]
+	},
+	"center": {
+		"210-256": [
+			-483,
+			583
+		]
+	}
+}
