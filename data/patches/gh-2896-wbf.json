@@ -1,0 +1,32 @@
+{
+	"id": 1715,
+	"name": "WBF",
+	"description": "WBF is a small friend group who idolizes a bald person whose name is Wally Bayola (a famous Filipino entertainer). The rat (Tatiana) and the cat (Chooey) on the left are just two of the many cute fur babies in the WBF family.",
+	"links": {},
+	"path": {
+		"194-198": [
+			[
+				-1355,
+				-669
+			],
+			[
+				-1328,
+				-669
+			],
+			[
+				-1328,
+				-663
+			],
+			[
+				-1354,
+				-663
+			]
+		]
+	},
+	"center": {
+		"194-198": [
+			-1341,
+			-666
+		]
+	}
+}
