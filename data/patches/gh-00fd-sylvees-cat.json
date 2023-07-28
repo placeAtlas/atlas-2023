@@ -1,0 +1,40 @@
+{
+	"id": -1,
+	"name": "Sylvee's Cat",
+	"description": "Cat design based on streamer sylveey's own two cats, Niko and Tesla.\nProtected by streamer Punz's community.",
+	"links": {
+		"website": [
+			"https://www.twitch.tv/sylveey"
+		],
+		"discord": [
+			"xTND7Zs",
+			"punz"
+		]
+	},
+	"path": {
+		"250": [
+			[
+				139,
+				237
+			],
+			[
+				146,
+				237
+			],
+			[
+				146,
+				249
+			],
+			[
+				139,
+				249
+			]
+		]
+	},
+	"center": {
+		"250": [
+			143,
+			243
+		]
+	}
+}
