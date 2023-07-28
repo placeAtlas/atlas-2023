@@ -1,0 +1,105 @@
+{
+	"id": 699,
+	"name": "King Carl XVI Gustaf",
+	"description": "Carl XVI Gustaf is the current king of Sweden, reigning from the 15th of September 1973 to present day. Also known as \"Knugen\" in r/sweden.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Carl_XVI_Gustaf"
+		],
+		"subreddit": [
+			"sweden",
+			"nordics",
+			"place_nordicunion"
+		]
+	},
+	"path": {
+		"240-255, 102-239": [
+			[
+				118,
+				-248
+			],
+			[
+				108,
+				-242
+			],
+			[
+				104,
+				-238
+			],
+			[
+				103,
+				-234
+			],
+			[
+				103,
+				-232
+			],
+			[
+				104,
+				-231
+			],
+			[
+				106,
+				-223
+			],
+			[
+				109,
+				-215
+			],
+			[
+				109,
+				-211
+			],
+			[
+				107,
+				-209
+			],
+			[
+				107,
+				-208
+			],
+			[
+				109,
+				-206
+			],
+			[
+				134,
+				-206
+			],
+			[
+				134,
+				-214
+			],
+			[
+				137,
+				-219
+			],
+			[
+				137,
+				-223
+			],
+			[
+				141,
+				-231
+			],
+			[
+				141,
+				-233
+			],
+			[
+				136,
+				-241
+			],
+			[
+				127,
+				-248
+			]
+		]
+	},
+	"center": {
+		"240-255, 102-239": [
+			122,
+			-230
+		]
+	}
+}
