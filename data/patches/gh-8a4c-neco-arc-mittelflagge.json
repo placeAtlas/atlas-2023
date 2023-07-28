@@ -1,0 +1,96 @@
+{
+	"id": 5484,
+	"name": "Neco-Arc (Mittelflagge)",
+	"description": "Neco-Arc is a Neco Spirit appearing in the Tsukihime visual novel series. She is a pint-size cat girl parody of Arcueid Brunestud, acting as the mascot character of Type-Moon.\n\nMade by the \"amiguitos toxicos\" discord community.\n\nThere's TWO of them Can be found on Nordflagge and Germany Flag / Extension of the Middle.",
+	"links": {
+		"website": [
+			"https://typemoon.fandom.com/wiki/Neco-Arc"
+		]
+	},
+	"path": {
+		"217-256": [
+			[
+				538,
+				-550
+			],
+			[
+				558,
+				-550
+			],
+			[
+				559,
+				-554
+			],
+			[
+				561,
+				-559
+			],
+			[
+				560,
+				-561
+			],
+			[
+				555,
+				-564
+			],
+			[
+				554,
+				-566
+			],
+			[
+				552,
+				-565
+			],
+			[
+				549,
+				-565
+			],
+			[
+				546,
+				-565
+			],
+			[
+				543,
+				-564
+			],
+			[
+				541,
+				-568
+			],
+			[
+				539,
+				-568
+			],
+			[
+				537,
+				-567
+			],
+			[
+				535,
+				-566
+			],
+			[
+				536,
+				-564
+			],
+			[
+				538,
+				-561
+			],
+			[
+				539,
+				-559
+			],
+			[
+				538,
+				-557
+			]
+		]
+	},
+	"center": {
+		"217-256": [
+			548,
+			-558
+		]
+	}
+}
