@@ -1,0 +1,64 @@
+{
+	"id": 1570,
+	"name": "r/osuplace & r/touhou",
+	"description": "The \"Bad Apple!!\" music video above was animated in collaboration between osu! Logo Builders discord server and Touhou r/place discord server.",
+	"links": {
+		"website": [
+			"https://osu.place"
+		],
+		"subreddit": [
+			"osuplace",
+			"touhou"
+		],
+		"discord": [
+			"osuplace",
+			"apl"
+		]
+	},
+	"path": {
+		"14-256": [
+			[
+				147,
+				215
+			],
+			[
+				192,
+				215
+			],
+			[
+				192,
+				218
+			],
+			[
+				191,
+				218
+			],
+			[
+				191,
+				222
+			],
+			[
+				190,
+				222
+			],
+			[
+				190,
+				230
+			],
+			[
+				147,
+				230
+			],
+			[
+				147,
+				215
+			]
+		]
+	},
+	"center": {
+		"14-256": [
+			170,
+			223
+		]
+	}
+}
