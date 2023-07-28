@@ -169,7 +169,6 @@ function toggleFixed(e, tapped) {
 	objectsListOverflowNotice.classList.add("d-none")
 }
 
-window.addEventListener("resize", renderLines)
 window.addEventListener("dblClick", renderLines)
 window.addEventListener("wheel", renderLines)
 
