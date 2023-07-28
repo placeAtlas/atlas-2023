@@ -1,0 +1,42 @@
+{
+	"id": -1,
+	"name": "Camp Jupiter",
+	"description": "Camp Jupiter is a fictional place near the San Francisco Bay Area from the world of \"The Heroes of Olympus\" by Rick Riordan. It is a camp where demigod children and descendants of the Roman gods train to defend themselves from Ancient Hellenistic mythological monsters.\n\nConnected to another piece of banner art at (575, -511) for Camp Jupiter's Greek-demigod alternate: Camp Half-Blood.",
+	"links": {
+		"website": [
+			"https://riordan.fandom.com/wiki/Camp_Jupiter"
+		],
+		"subreddit": [
+			"camphalfblood"
+		],
+		"discord": [
+			"ZZ3zVMM9A6"
+		]
+	},
+	"path": {
+		"227-256": [
+			[
+				-1470,
+				-8
+			],
+			[
+				-1446,
+				-8
+			],
+			[
+				-1446,
+				13
+			],
+			[
+				-1470,
+				13
+			]
+		]
+	},
+	"center": {
+		"227-256": [
+			-1458,
+			3
+		]
+	}
+}
