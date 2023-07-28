@@ -1,0 +1,39 @@
+{
+	"id": 1969,
+	"name": "10D Drawing",
+	"description": "A little drawing by the class 10d of the Musterschule in Frankfurt am Main, Germany. Three students decided to represent the name of their class since it was their last year with their teacher Mr Stroemmer before the class would disband in other seperate groups.",
+	"links": {
+		"website": [
+			"https://infos.musterschule.de/"
+		],
+		"discord": [
+			"7pd4M78VPT"
+		]
+	},
+	"path": {
+		"192-211": [
+			[
+				-1389,
+				-691
+			],
+			[
+				-1377,
+				-691
+			],
+			[
+				-1377,
+				-684
+			],
+			[
+				-1389,
+				-684
+			]
+		]
+	},
+	"center": {
+		"192-211": [
+			-1383,
+			-687
+		]
+	}
+}
