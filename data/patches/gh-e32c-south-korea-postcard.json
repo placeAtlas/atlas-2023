@@ -1,0 +1,90 @@
+{
+	"id": 4305,
+	"name": "South Korea Postcard",
+	"description": "r/Korea_Place was invited to have its artwork included on the French Lattice. The postcard depicts a picture of Gyeongbok Palace and the N Seoul Tower, both in Central Seoul. It was supposed to have two small Flags of France at the bottom, which is unfortunately missing on the final canvas.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Gyeongbokgung",
+			"https://en.wikipedia.org/wiki/N_Seoul_Tower"
+		],
+		"subreddit": [
+			"Korea_Place",
+			"placeFR",
+			"france"
+		],
+		"discord": [
+			"NDGSVQasUK",
+			"placeFR"
+		]
+	},
+	"path": {
+		"157-169": [
+			[
+				-498,
+				552
+			],
+			[
+				-498,
+				578
+			],
+			[
+				-467,
+				578
+			],
+			[
+				-467,
+				552
+			]
+		],
+		"170-185": [
+			[
+				-498,
+				552
+			],
+			[
+				-498,
+				578
+			],
+			[
+				-468,
+				578
+			],
+			[
+				-468,
+				552
+			]
+		],
+		"186-256": [
+			[
+				-499,
+				551
+			],
+			[
+				-499,
+				579
+			],
+			[
+				-467,
+				579
+			],
+			[
+				-467,
+				551
+			]
+		]
+	},
+	"center": {
+		"157-169": [
+			-482,
+			565
+		],
+		"170-185": [
+			-483,
+			565
+		],
+		"186-256": [
+			-483,
+			565
+		]
+	}
+}
