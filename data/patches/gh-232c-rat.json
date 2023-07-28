@@ -1,0 +1,64 @@
+{
+	"id": -1,
+	"name": "Rat",
+	"description": "A rat, eerily similar to Pedro's facial features.",
+	"links": {
+		"website": [
+			"https://www.twitch.tv/caedrel"
+		],
+		"subreddit": [
+			"PedroPeepos"
+		],
+		"discord": [
+			"caedrel"
+		]
+	},
+	"path": {
+		"87-111": [
+			[
+				741,
+				306
+			],
+			[
+				791,
+				306
+			],
+			[
+				790,
+				344
+			],
+			[
+				739,
+				343
+			]
+		],
+		"140-167": [
+			[
+				742,
+				312
+			],
+			[
+				788,
+				313
+			],
+			[
+				786,
+				349
+			],
+			[
+				741,
+				347
+			]
+		]
+	},
+	"center": {
+		"87-111": [
+			765,
+			325
+		],
+		"140-167": [
+			763,
+			330
+		]
+	}
+}
