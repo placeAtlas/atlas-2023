@@ -1,0 +1,89 @@
+{
+	"id": 4304,
+	"name": "Smooth-coated Otter of Singapore",
+	"description": "Due to a lack of natural predators, the smooth-coated otter population in Singapore increased to 170 in 2022. Despite being cute, some of these otters have attacked pedestrians and killed many ornamental pet fish. This artwork was attacked by some members of r/phish for entering their territory, but was successfully defended.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Bishan_otter_family",
+			"https://www.nparks.gov.sg/gardens-parks-and-nature/dos-and-donts/animal-advisories/otters"
+		],
+		"subreddit": [
+			"singapore",
+			"place"
+		]
+	},
+	"path": {
+		"239-256": [
+			[
+				313,
+				-7
+			],
+			[
+				313,
+				-13
+			],
+			[
+				314,
+				-13
+			],
+			[
+				314,
+				-14
+			],
+			[
+				318,
+				-14
+			],
+			[
+				318,
+				-13
+			],
+			[
+				319,
+				-13
+			],
+			[
+				319,
+				-11
+			],
+			[
+				318,
+				-11
+			],
+			[
+				318,
+				-10
+			],
+			[
+				317,
+				-10
+			],
+			[
+				317,
+				-9
+			],
+			[
+				316,
+				-9
+			],
+			[
+				316,
+				-8
+			],
+			[
+				315,
+				-8
+			],
+			[
+				315,
+				-7
+			]
+		]
+	},
+	"center": {
+		"239-256": [
+			315,
+			-12
+		]
+	}
+}
