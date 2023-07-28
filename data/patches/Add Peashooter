@@ -1,0 +1,80 @@
+{
+	"id": -1,
+	"name": "Peashooter",
+	"description": "The Peashooter is arguably the most iconic plant from the Plants vs. Zombies games.\n\nPlants vs. Zombies is a video game franchise developed by PopCap Games, a subsidiary of Electronic Arts (EA). The series follows the affiliates of David \"Crazy Dave\" Blazing as they use his plants to defend against a zombie invasion, led by Dr. Edgar George Zomboss.",
+	"links": {
+		"website": [
+			"https://en.m.wikipedia.org/wiki/Plants_vs._Zombies"
+		],
+		"subreddit": [
+			"placeDE",
+			"de",
+			"PlantsVSZombies"
+		],
+		"discord": [
+			"placeDE"
+		]
+	},
+	"path": {
+		"250": [
+			[
+				885,
+				-429
+			],
+			[
+				861,
+				-429
+			],
+			[
+				861,
+				-423
+			],
+			[
+				873,
+				-423
+			],
+			[
+				874,
+				-418
+			],
+			[
+				874,
+				-417
+			],
+			[
+				868,
+				-417
+			],
+			[
+				868,
+				-410
+			],
+			[
+				888,
+				-410
+			],
+			[
+				889,
+				-418
+			],
+			[
+				884,
+				-418
+			],
+			[
+				883,
+				-418
+			],
+			[
+				885,
+				-425
+			]
+		]
+	},
+	"center": {
+		"250": [
+			879,
+			-423
+		]
+	}
+}
