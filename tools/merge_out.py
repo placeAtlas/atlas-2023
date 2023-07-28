@@ -53,6 +53,7 @@ controversial_entries = set([
 	850, # Azov Brigade
 	1240, # Hoppou
 	1730, 2044, # Atatürk
+	1925, # Fuck Spez
 	2587, # Falklands War memorial
 	2693, # Israel
 	2955, # Lola
