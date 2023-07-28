@@ -1,0 +1,37 @@
+{
+	"id": 3870,
+	"name": "Megumin (Konosuba)",
+	"description": "A character from the Isekai anime Konosuba. Who is known throughout the show for exclusively using explosion magic\nMade by the discord community \"Mix automata\"",
+	"links": {
+		"subreddit": [
+			"konosuba",
+			"Megumin"
+		]
+	},
+	"path": {
+		"228-256": [
+			[
+				1307,
+				-608
+			],
+			[
+				1307,
+				-580
+			],
+			[
+				1331,
+				-580
+			],
+			[
+				1331,
+				-608
+			]
+		]
+	},
+	"center": {
+		"228-256": [
+			1319,
+			-594
+		]
+	}
+}
