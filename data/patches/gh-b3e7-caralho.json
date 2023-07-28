@@ -1,0 +1,36 @@
+{
+	"id": -1,
+	"name": "Caralho",
+	"description": "Caralho (Crow's Nest) were wooden baskets placed atop the main mast, it was known as being the worst place on a vessel, due to rain, heat and shaking, which often lead to seasickness.\n\nThe captain would instruct the sailor \"Vai para o caralho\" (Go to the crow's nest) and from there devoleped the now widely used expression \"Vai pró caralho\".\n\nNow the word is used to describe a bad place, but is used in a wide variety of contexts.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Caralho#Etymology"
+		]
+	},
+	"path": {
+		"67-256": [
+			[
+				534,
+				315
+			],
+			[
+				544,
+				314
+			],
+			[
+				543,
+				321
+			],
+			[
+				534,
+				320
+			]
+		]
+	},
+	"center": {
+		"67-256": [
+			539,
+			318
+		]
+	}
+}
