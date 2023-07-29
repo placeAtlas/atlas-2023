@@ -26,7 +26,7 @@ const maxZoom = 128
 const minZoom = 0.125
 
 let zoomOrigin = [0, 0]
-let scaleZoomOrigin = [0, 0]
+let scaleZoomOrigin = [canvasCenter.x, canvasCenter.y]
 
 let dragging = false
 let lastPosition = [0, 0]
@@ -52,16 +52,15 @@ function applyView() {
 
 }
 
-function setView(targetX, targetY, targetZoom = zoom) {
+function setView(targetX, targetY, targetZoom) {
 	
-	if (isNaN(targetX)) targetX = 0
-	if (isNaN(targetY)) targetY = 0
+	if (isNaN(targetX)) targetX = undefined
+	if (isNaN(targetY)) targetY = undefined
 
-	zoom = targetZoom
-	scaleZoomOrigin = [
-		canvasCenter.x - targetX,
-		canvasCenter.y - targetY
-	]
+	zoom ??= targetZoom
+	if (targetX) scaleZoomOrigin[0] = canvasCenter.x - targetX
+	if (targetY) scaleZoomOrigin[1] = canvasCenter.y - targetY
+
 	applyView()
 
 }
@@ -123,9 +122,9 @@ async function init() {
 	//console.log(document.documentElement.clientWidth, document.documentElement.clientHeight)
 
 	setView(
-		isNaN(hashX) ? 0 : Number(hashX), 
-		isNaN(hashY) ? 0 : Number(hashY), 
-		isNaN(hashZoom) ? 1 : Number(hashZoom)
+		isNaN(hashX) ? canvasCenter.x : Number(hashX), 
+		isNaN(hashY) ? canvasCenter.y : Number(hashY), 
+		isNaN(hashZoom) ? zoom : Number(hashZoom)
 	)
 
 	let initialPinchDistance = 0
