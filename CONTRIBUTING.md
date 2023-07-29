@@ -1,6 +1,6 @@
 # Contributing
 
-This project is open source, and contributions are welcome. In fact, the Atlas relies on user contributions.
+This project is open-source, and contributions are welcome. In fact, the Atlas relies on user contributions.
 
 You may contribute to the project by submitting a Pull Request on the GitHub repo or sending your submissions through [Reddit](https://www.reddit.com/r/placeAtlas2023). Other than that, you can get help from [Discord](https://discord.gg/pJkm23b2nA) or [Reddit](https://www.reddit.com/r/placeAtlas2023).
 
@@ -17,12 +17,11 @@ Multiple periods can be added to represent the changing state of the artwork on 
 When you're happy with the shape you've drawn, press <kbd>Finish</kbd>. You will now be able to enter some information about the entry:
 
 - **Name**: A short, descriptive name.
-- **Description**: A short description that can be understood by somebody not familiar with the topic. Usually, the first sentence on Wikipedia is a good example. If needed, you may include the meta, describing the process of drawing the artwork in the event. To include lengthy, additional information, consider creating a page on [the r/place Wiki](https://place-wiki.stefanocoding.me/).
-- **Links**: Some links that's either most relevant to the topic, or regarding the process of the drawing the artwork in the event.
+- **Description**: A short description that can be understood by somebody not familiar with the topic. If you were involved in drawing this artwork, you may include the meta, describing the process of drawing the artwork in the event. To include lengthy, additional information, consider creating a page on [the r/place Wiki](https://place-wiki.stefanocoding.me/).
+- **Links**: Some links that are most relevant to the topic, and/or regarding the process of the drawing the artwork in the event.
 	- **Website**: If you're describing a project, the project's main website would be suitable here.
 	- **Subreddit**: Format it like `r/subreddit`.
 	- **Discord**: Write the invite code, that the invite link without the `discord.gg/` part.
-	- **Wiki**: The page title of [the r/place Wiki](https://place-wiki.stefanocoding.me/).
 
 All fields but the name are optional. For example, a country flag doesn't necessarily need a description.
 
