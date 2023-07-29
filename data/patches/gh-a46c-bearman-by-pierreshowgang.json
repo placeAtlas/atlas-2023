@@ -1,0 +1,132 @@
+{
+	"id": 5759,
+	"name": "Bearman by PierreShowGang",
+	"description": "A tribute by French Twitch streamer group PierreShowGang to fellow French Twitch streamer La_Cave_TV. After being wiped out firstly by Morocco's bots and secondly by Bolivian streamers, Bearman was successfully revived by Singapore.",
+	"links": {
+		"website": [
+			"https://www.twitch.tv/la_cave_tv"
+		],
+		"subreddit": [
+			"PierreShowGang",
+			"placeSG"
+		]
+	},
+	"path": {
+		"50-76": [
+			[
+				382,
+				-26
+			],
+			[
+				382,
+				-37
+			],
+			[
+				373,
+				-37
+			],
+			[
+				373,
+				-26
+			]
+		],
+		"13-46": [
+			[
+				383,
+				16
+			],
+			[
+				383,
+				6
+			],
+			[
+				383,
+				5
+			],
+			[
+				393,
+				5
+			],
+			[
+				393,
+				16
+			]
+		],
+		"153-256": [
+			[
+				371,
+				-17
+			],
+			[
+				373,
+				-17
+			],
+			[
+				373,
+				-18
+			],
+			[
+				375,
+				-18
+			],
+			[
+				375,
+				-19
+			],
+			[
+				377,
+				-19
+			],
+			[
+				377,
+				-25
+			],
+			[
+				372,
+				-25
+			],
+			[
+				372,
+				-26
+			],
+			[
+				370,
+				-26
+			],
+			[
+				370,
+				-25
+			],
+			[
+				369,
+				-25
+			],
+			[
+				369,
+				-23
+			],
+			[
+				370,
+				-23
+			],
+			[
+				370,
+				-17
+			]
+		]
+	},
+	"center": {
+		"50-76": [
+			378,
+			-31
+		],
+		"13-46": [
+			388,
+			11
+		],
+		"153-256": [
+			373,
+			-22
+		]
+	}
+}
