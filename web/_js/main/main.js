@@ -59,8 +59,8 @@ function setView(targetX, targetY, targetZoom = zoom) {
 
 	zoom = targetZoom
 	scaleZoomOrigin = [
-		-targetX,
-		-targetY
+		canvasCenter.x - targetX,
+		canvasCenter.y - targetY
 	]
 	applyView()
 
