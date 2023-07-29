@@ -1,0 +1,116 @@
+{
+	"id": 2718,
+	"name": "Domtoren",
+	"description": "The Domtoren (Dom Tower) is an iconic landmark in Utrecht, Netherlands. Completed in 1382, it stands at 112 meters tall and is the tallest church tower in the country. Visitors can climb its 465 steps for stunning city views and explore its rich history and bells that chime beautifully across Utrecht.",
+	"links": {
+		"website": [
+			"https://place-wiki.stefanocoding.me/wiki/Dom_Tower",
+			"https://en.wikipedia.org/wiki/Dom_Tower_of_Utrecht",
+			"https://www.domtoren.nl/"
+		],
+		"subreddit": [
+			"PlaceNL"
+		],
+		"discord": [
+			"PlaceNL"
+		]
+	},
+	"path": {
+		"242-256": [
+			[
+				-1419,
+				-459
+			],
+			[
+				-1419,
+				-481
+			],
+			[
+				-1418,
+				-481
+			],
+			[
+				-1418,
+				-494
+			],
+			[
+				-1417,
+				-494
+			],
+			[
+				-1417,
+				-504
+			],
+			[
+				-1416,
+				-505
+			],
+			[
+				-1416,
+				-511
+			],
+			[
+				-1412,
+				-511
+			],
+			[
+				-1412,
+				-505
+			],
+			[
+				-1412,
+				-504
+			],
+			[
+				-1411,
+				-504
+			],
+			[
+				-1411,
+				-494
+			],
+			[
+				-1410,
+				-494
+			],
+			[
+				-1410,
+				-481
+			],
+			[
+				-1409,
+				-481
+			],
+			[
+				-1409,
+				-480
+			],
+			[
+				-1410,
+				-480
+			],
+			[
+				-1411,
+				-480
+			],
+			[
+				-1411,
+				-477
+			],
+			[
+				-1413,
+				-477
+			],
+			[
+				-1413,
+				-462
+			]
+		]
+	},
+	"center": {
+		"242-256": [
+			-1414,
+			-485
+		]
+	}
+}
