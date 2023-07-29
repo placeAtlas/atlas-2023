@@ -20,6 +20,7 @@ for (const variation in variationsConfig) {
 
 const timelineSlider = document.getElementById("timeControlsSlider")
 const timelineList = document.getElementById("timeControlsList")
+const timeSteps = document.getElementById("timeSteps")
 const tooltip = document.getElementById("timeControlsTooltip")
 const image = document.getElementById("image")
 let abortController = new AbortController()
@@ -372,4 +373,30 @@ function getNearestPeriod(entry, targetPeriod, targetVariation) {
 
 	return [ nearestPeriod, nearestVariation, nearestKey ]
 
+}
+
+function updateSteps() {
+	timeSteps.innerHTML = ''
+	variationsConfig.default.versions.forEach((version, index) => {
+		const step = document.createElement('div')
+		step.classList.add('step')
+		timeSteps.appendChild(step)
+
+		const highlightText = Array.isArray(version.timestamp) ? version.timestamp[0] : ''
+		if (!highlightText || !version.highlight) return
+
+		const highlight = document.createElement('div')
+		highlight.addEventListener('click', () => {
+			updateTime(index)
+		})
+		highlight.classList.add('highlight')
+
+		const tooltip = document.createElement('div')
+		tooltip.classList.value = ('tooltip border rounded text-nowrap')
+		tooltip.innerHTML = `<div class="bg-body rounded p-1">${highlightText}</div>`
+		highlight.appendChild(tooltip)
+
+		step.appendChild(highlight)
+
+	})
 }

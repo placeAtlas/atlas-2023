@@ -260,13 +260,15 @@ body[data-init-done] .listTransitioning #innerContainer {
 #variantControls {
 	flex: 1 0 auto;
 }
-
-#timeControls {
-	position: relative;
+#timeControlsContainer {
 	flex: 6 0 300px;
 }
 
-#bottomBar.no-time-slider #timeControls {
+#timeControls {
+	position: relative;
+}
+
+#bottomBar.no-time-slider #timeControlsContainer {
 	display: none;
 }
 
@@ -315,8 +317,8 @@ body[data-init-done] .listTransitioning #innerContainer {
 	}
 }
 
-#timeControls:hover #timeControlsTooltip, 
-#timeControlsSlider:focus + #timeControlsTooltip,
+#timeControlsSlider:hover + #timeControlsTooltip,
+#timeControlsSlider:focus-visible + #timeControlsTooltip,
 body[data-canvas-loading][data-init-done] #timeControlsTooltip,
 body[data-init-done] #timeControlsTooltip[data-force-visible] {
 	opacity: 1;
@@ -354,6 +356,74 @@ body[data-init-done] #timeControlsTooltip[data-force-visible] {
 #timeControlsSlider::-moz-range-track {
 	height: 1rem;
 	border-radius: .25rem;
+}
+
+#timeSteps {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	display: flex;
+	width: 100%;
+	pointer-events: none;
+}
+
+#timeSteps .step {
+	height: 100%;
+	flex: 1 1 auto;
+	position: relative;
+}
+
+#timeSteps .step .highlight {
+	position: absolute;
+	height: .7rem;
+	width: .7rem;
+	bottom: calc(100% + .7rem);
+	left: 50%;
+	transform: translate(-50%, 0);
+	pointer-events: auto;
+	cursor: pointer;
+}
+
+@media (max-width: 767.98px) {
+	#timeSteps .step .highlight {
+		bottom: .5rem;
+		width: .5rem;
+		height: .5rem;
+		pointer-events: none;
+	}
+}
+
+#timeSteps .step .highlight:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background: #e9e9e9;
+	border: 1px solid #515151;
+	transition: transform .15s ease-in-out;
+}
+
+#timeSteps .step .highlight:hover {
+	z-index: 1;
+}
+
+#timeSteps .step .highlight:hover:before {
+	transform: scale(1.5);
+}
+
+#timeSteps .step .highlight:hover .tooltip {
+	opacity: 1;
+}
+
+#timeSteps .step .highlight .tooltip {
+	pointer-events: none;
+	position: absolute;
+	bottom: calc(100% + 5px);
+	left: 50%;
+	transform: translate(-50%, 0);
 }
 
 #entriesList .card {

@@ -489,6 +489,7 @@ async function init() {
 
 	document.body.dataset.initDone = ''
 
+	updateSteps()
 }
 
 function generateAtlasAll(atlas = atlasAll) {
