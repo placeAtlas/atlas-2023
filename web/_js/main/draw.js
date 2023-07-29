@@ -455,6 +455,11 @@ function initDraw() {
 			websiteGroup.replaceChildren()
 			subredditGroup.replaceChildren()
 			discordGroup.replaceChildren()
+			/**
+			 * @instanceonly
+			 * Temporarily remove wikifield 
+			 * Lack of use, used incorrectly more than it is used correctly.
+			 */
 			// wikiGroup.replaceChildren()
 			addWebsiteFields("", 0, [0])
 			addSubredditFields("", 0, [0])
