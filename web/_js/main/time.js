@@ -304,8 +304,8 @@ function formatHash(targetEntry, targetPeriodStart, targetPeriodEnd, targetVaria
 	targetPeriodStart = setReferenceVal(targetPeriodStart, currentPeriod)
 	targetPeriodEnd = setReferenceVal(targetPeriodEnd, currentPeriod)
 	targetVariation = setReferenceVal(targetVariation, currentVariation)
-	targetX = setReferenceVal(targetX, -scaleZoomOrigin[0])
-	targetY = setReferenceVal(targetY, -scaleZoomOrigin[1])
+	targetX = setReferenceVal(targetX, canvasCenter.x - scaleZoomOrigin[0])
+	targetY = setReferenceVal(targetY, canvasCenter.y - scaleZoomOrigin[1])
 	targetZoom = setReferenceVal(targetZoom, zoom)
 	
 	if (targetX) targetX = Math.round(targetX)
