@@ -669,9 +669,9 @@ function updateViewFromHash() {
 	updateTime(targetPeriod, targetVariation, true)
 
 	setView(
-		isNaN(hashX) ? scaleZoomOrigin[0] : Number(hashX), 
-		isNaN(hashY) ? scaleZoomOrigin[1] : Number(hashY), 
-		isNaN(hashZoom) ? zoom : Number(hashZoom)
+		isNaN(hashX) ? undefined : Number(hashX), 
+		isNaN(hashY) ? undefined : Number(hashY), 
+		isNaN(hashZoom) ? undefined : Number(hashZoom)
 	)
 
 	if (!hashEntryId) return
