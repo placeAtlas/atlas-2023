@@ -1,0 +1,40 @@
+{
+	"id": 1562,
+	"name": "Karlsruher U-Strab",
+	"description": "The main public transport system within the city of Karlsruhe.",
+	"links": {
+		"website": [
+			"https://www.kvv.de/",
+			"https://de.wikipedia.org/wiki/Verkehrsbetriebe_Karlsruhe"
+		],
+		"subreddit": [
+			"KaIT"
+		]
+	},
+	"path": {
+		"159-249": [
+			[
+				-585,
+				-368
+			],
+			[
+				-558,
+				-368
+			],
+			[
+				-558,
+				-343
+			],
+			[
+				-585,
+				-343
+			]
+		]
+	},
+	"center": {
+		"159-249": [
+			-571,
+			-355
+		]
+	}
+}
