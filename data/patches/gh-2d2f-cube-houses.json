@@ -1,0 +1,115 @@
+{
+	"id": -1,
+	"name": "Cube Houses",
+	"description": "Cube houses are a set of innovative houses built in the Netherlands, designed by architect Piet Blom.\n\nThe cube houses on the canvas depict the row of houses in Rotterdam on Overblaakstraat.",
+	"links": {
+		"website": [
+			"https://place-wiki.stefanocoding.me/wiki/Cube_Houses",
+			"https://en.wikipedia.org/wiki/Cube_house"
+		],
+		"subreddit": [
+			"PlaceNL"
+		],
+		"discord": [
+			"PlaceNL"
+		]
+	},
+	"path": {
+		"194-256": [
+			[
+				-1493,
+				-451
+			],
+			[
+				-1493,
+				-458
+			],
+			[
+				-1498,
+				-463
+			],
+			[
+				-1498,
+				-468
+			],
+			[
+				-1491,
+				-475
+			],
+			[
+				-1490,
+				-475
+			],
+			[
+				-1485,
+				-470
+			],
+			[
+				-1484,
+				-470
+			],
+			[
+				-1479,
+				-475
+			],
+			[
+				-1478,
+				-475
+			],
+			[
+				-1473,
+				-470
+			],
+			[
+				-1472,
+				-470
+			],
+			[
+				-1467,
+				-475
+			],
+			[
+				-1466,
+				-475
+			],
+			[
+				-1461,
+				-470
+			],
+			[
+				-1460,
+				-470
+			],
+			[
+				-1455,
+				-475
+			],
+			[
+				-1454,
+				-475
+			],
+			[
+				-1447,
+				-468
+			],
+			[
+				-1447,
+				-463
+			],
+			[
+				-1453,
+				-457
+			],
+			[
+				-1453,
+				-451
+			]
+		]
+	},
+	"center": {
+		"194-256": [
+			-1478,
+			-461
+		]
+	}
+}
