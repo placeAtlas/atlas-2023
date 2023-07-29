@@ -1,0 +1,54 @@
+{
+	"id": 3403,
+	"name": "Belgian Firetruck",
+	"description": "This Belgian firetruck was originally built to defend the Atomium from the firebreathing dragon, but got destroyed by the red bot attack. It was built in the middle of the night by about ten people without a template or a leader. Just motivation and a good idea. It was rebuilt facing the bigger dragon.",
+	"links": {},
+	"path": {
+		"217-230": [
+			[
+				1178,
+				755
+			],
+			[
+				1196,
+				755
+			],
+			[
+				1196,
+				779
+			],
+			[
+				1178,
+				779
+			]
+		],
+		"246-256": [
+			[
+				1175,
+				756
+			],
+			[
+				1192,
+				756
+			],
+			[
+				1192,
+				779
+			],
+			[
+				1175,
+				779
+			]
+		]
+	},
+	"center": {
+		"217-230": [
+			1187,
+			767
+		],
+		"246-256": [
+			1184,
+			768
+		]
+	}
+}
