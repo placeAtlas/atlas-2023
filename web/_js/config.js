@@ -1,5 +1,5 @@
 // This script only applies to this instance of the Atlas.
-// Please also check code indicated with "@instance-only" outside this file.
+// Please also check code indicated with "@instanceonly" outside this file.
 // TODO: Avoid having instance-only code inside the main scripts to make updating easier.
 
 const prodDomain = "2023.place-atlas.stefanocoding.me"
