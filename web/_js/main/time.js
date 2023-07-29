@@ -79,7 +79,8 @@ const dispatchTimeUpdateEvent = (period = currentPeriod, variation = currentVari
 
 async function updateBackground(newPeriod = currentPeriod, newVariation = currentVariation) {
 	abortController.abort()
-	abortController = new AbortController()
+	myAbortController = new AbortController()
+	abortController = myAbortController
 	currentUpdateIndex++
 	const myUpdateIndex = currentUpdateIndex
 	const variationConfig = variationsConfig[newVariation]
@@ -109,6 +110,7 @@ async function updateBackground(newPeriod = currentPeriod, newVariation = curren
 
 	layers.length = layerUrls.length 
 	await Promise.all(layerUrls.map(async (url, i) => {
+		const imageBlob = await (await fetch(url, { signal: myAbortController.signal })).blob()
 		const imageLayer = new Image()
 		await new Promise(resolve => {
 			imageLayer.onload = () => {
@@ -117,9 +119,13 @@ async function updateBackground(newPeriod = currentPeriod, newVariation = curren
 				layers[i] = imageLayer
 				resolve()
 			}
-			imageLayer.src = url
+			imageLayer.src = URL.createObjectURL(imageBlob)
 		})
 	}))
+
+	if (myAbortController.signal.aborted || newPeriod !== currentPeriod || newVariation !== currentVariation) {
+		return
+	}
 
 	for (const imageLayer of layers) {
 		context.drawImage(imageLayer, 0, 0)
