@@ -41,6 +41,7 @@ function applyView() {
 
 	scaleZoomOrigin[0] = Math.max(-canvasCenter.x + canvasOffset.x, Math.min(canvasCenter.x - canvasOffset.x, scaleZoomOrigin[0]))
 	scaleZoomOrigin[1] = Math.max(-canvasCenter.y + canvasOffset.y, Math.min(canvasCenter.y - canvasOffset.y, scaleZoomOrigin[1]))
+	zoom = Math.max(minZoom, Math.min(maxZoom, zoom))
 
 	zoomOrigin = [scaleZoomOrigin[0] * zoom, scaleZoomOrigin[1] * zoom]
 
@@ -54,12 +55,12 @@ function applyView() {
 
 function setView(targetX, targetY, targetZoom) {
 	
-	if (isNaN(targetX)) targetX = undefined
-	if (isNaN(targetY)) targetY = undefined
+	if (isNaN(targetX)) targetX = null
+	if (isNaN(targetY)) targetY = null
 
-	zoom ??= targetZoom
-	if (targetX) scaleZoomOrigin[0] = canvasCenter.x - targetX
-	if (targetY) scaleZoomOrigin[1] = canvasCenter.y - targetY
+	zoom = targetZoom ?? zoom
+	if ((targetX ?? null) !== null) scaleZoomOrigin[0] = canvasCenter.x - targetX
+	if ((targetY ?? null) !== null) scaleZoomOrigin[1] = canvasCenter.y - targetY
 
 	applyView()
 
@@ -122,9 +123,9 @@ async function init() {
 	//console.log(document.documentElement.clientWidth, document.documentElement.clientHeight)
 
 	setView(
-		isNaN(hashX) ? canvasCenter.x : Number(hashX), 
-		isNaN(hashY) ? canvasCenter.y : Number(hashY), 
-		isNaN(hashZoom) ? zoom : Number(hashZoom)
+		(isNaN(hashX) || hashX === '') ? canvasCenter.x : Number(hashX), 
+		(isNaN(hashY) || hashY === '') ? canvasCenter.y : Number(hashY), 
+		(isNaN(hashZoom) || hashZoom === '') ? zoom : Number(hashZoom)
 	)
 
 	let initialPinchDistance = 0

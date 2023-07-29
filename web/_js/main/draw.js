@@ -810,9 +810,9 @@ function initDraw() {
 	const [,, hashX, hashY, hashZoom] = hash.split('/')
 
 	setView(
-		isNaN(hashX) ? center[0] : Number(hashX), 
-		isNaN(hashY) ? center[1] : Number(hashY), 
-		isNaN(hashZoom) ? 4 : Number(hashZoom)
+		(isNaN(hashX) || hashX === '') ? center[0] : Number(hashX), 
+		(isNaN(hashY) || hashY === '') ? center[1] : Number(hashY), 
+		(isNaN(hashZoom) || hashZoom === '') ? 4 : Number(hashZoom)
 	)
 	
 	document.addEventListener('timeupdate', () => {
