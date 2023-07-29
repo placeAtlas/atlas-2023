@@ -1,0 +1,32 @@
+{
+	"id": 4200,
+	"name": "OttLight (u/my_name_is_------) Profile Picture",
+	"description": "A downscaled minimalistic image of OttLights profile picture that they decided to make on place 2023.",
+	"links": {},
+	"path": {
+		"222-256": [
+			[
+				1282,
+				355
+			],
+			[
+				1285,
+				355
+			],
+			[
+				1285,
+				358
+			],
+			[
+				1282,
+				358
+			]
+		]
+	},
+	"center": {
+		"222-256": [
+			1284,
+			357
+		]
+	}
+}
