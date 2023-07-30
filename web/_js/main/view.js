@@ -669,9 +669,9 @@ function updateViewFromHash() {
 	updateTime(targetPeriod, targetVariation, true)
 
 	setView(
-		isNaN(hashX) ? scaleZoomOrigin[0] : Number(hashX), 
-		isNaN(hashY) ? scaleZoomOrigin[1] : Number(hashY), 
-		isNaN(hashZoom) ? zoom : Number(hashZoom)
+		(isNaN(hashX) || hashX === '') ? undefined : Number(hashX), 
+		(isNaN(hashY) || hashY === '') ? undefined : Number(hashY), 
+		(isNaN(hashZoom) || hashZoom === '') ? undefined : Number(hashZoom)
 	)
 
 	if (!hashEntryId) return
@@ -704,9 +704,9 @@ function updateViewFromHash() {
 
 	renderBackground(atlas)
 	setView(
-		isNaN(hashX) ? entry.center[0] : Number(hashX), 
-		isNaN(hashY) ? entry.center[1] : Number(hashY), 
-		isNaN(hashZoom) ? setZoomByPath(entry.path) : Number(hashZoom)
+		(isNaN(hashX) || hashX === '') ? entry.center[0] : Number(hashX), 
+		(isNaN(hashY) || hashY === '') ? entry.center[1] : Number(hashY), 
+		(isNaN(hashZoom) || hashZoom === '') ? setZoomByPath(entry.path) : Number(hashZoom)
 	)
 
 	closeObjectsListButton.classList.remove("d-none")
