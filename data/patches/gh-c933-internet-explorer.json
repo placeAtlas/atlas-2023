@@ -1,0 +1,83 @@
+{
+	"id": 2413,
+	"name": "Internet Explorer",
+	"description": "Internet Explorer was the default web browser for Windows operating systems from 1995 to 2016. It was deprecated shortly after the creation of Microsoft Edge in 2015.\n\nThe icon was griefed by Russian trolls around 3 times as of 12:15 AM EST, converting it into a Yandex icon, a Russian web browser and the Steam logo. The logo was rebuilt multiple times.",
+	"links": {
+		"website": [
+			"https://microsoft.com/ie"
+		],
+		"subreddit": [
+			"InternetExplorer"
+		]
+	},
+	"path": {
+		"182-256": [
+			[
+				-1183,
+				973
+			],
+			[
+				-1184,
+				978
+			],
+			[
+				-1186,
+				980
+			],
+			[
+				-1188,
+				985
+			],
+			[
+				-1189,
+				987
+			],
+			[
+				-1190,
+				987
+			],
+			[
+				-1189,
+				991
+			],
+			[
+				-1186,
+				991
+			],
+			[
+				-1184,
+				993
+			],
+			[
+				-1182,
+				996
+			],
+			[
+				-1182,
+				997
+			],
+			[
+				-1182,
+				999
+			],
+			[
+				-1098,
+				999
+			],
+			[
+				-1098,
+				972
+			],
+			[
+				-1184,
+				973
+			]
+		]
+	},
+	"center": {
+		"182-256": [
+			-1141,
+			986
+		]
+	}
+}
