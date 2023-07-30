@@ -1,0 +1,39 @@
+{
+	"id": 1511,
+	"name": "Hong Kong",
+	"description": "This part of the canvas displays various symbols of the pro-democracy movement of Hong Kong (a city in China).\n\nIn the background is the Lion Rock, a mountain in Hong Kong that has been the place of several pro-democracy events while culturally representing the spirit of the Hong Kong people. The yellow banner seen on the side is a reference to the various protest banners hung on Lion Rock over the years, beginning in 2014 with the 「我要真普選」(\"We Demand Genuine Universal Suffrage\") sign.(https://en.wikipedia.org/wiki/Hong_Kong_Way)\n(https://en.wikipedia.org/wiki/Vertical_banner)\n\nIn the middle resides s a Republic of China (Taiwan) flag, in solidarity with Taiwan's plight against the Chinese Communist Party. The flag began as a mainland Chinese (PRC) flag, but was eventually turned into a Taiwanese flag with help from the r/Taiwan community.\n\nThe pig at the forefront is a depiction of one of the mascots of Hong Kong's popular forum board LIHKG. It is seen with a yellow hard hat and gas mask in a black T-shirt, representing the appearance of protesters during the pro-democracy protests. (https://en.wikipedia.org/wiki/LIHKG)",
+	"links": {
+		"subreddit": [
+			"hongkong"
+		],
+		"discord": [
+			"6Qj6ne92de"
+		]
+	},
+	"path": {
+		"174-256": [
+			[
+				-1449,
+				557
+			],
+			[
+				-1449,
+				500
+			],
+			[
+				-1408,
+				500
+			],
+			[
+				-1408,
+				557
+			]
+		]
+	},
+	"center": {
+		"174-256": [
+			-1428,
+			529
+		]
+	}
+}
