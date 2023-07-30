@@ -1,0 +1,42 @@
+{
+	"id": 5015,
+	"name": "New Kids",
+	"description": "The main caracters of New Kids, a popular Dutch comedy tv show, and movie duology about a group of anti-social youths. The New Kids Turbo movie is one of the most visited movies in The Netherlands. The characters are (from left to right) Robbie Schuurmans, Rikkert Biemans, RIchard Batspak, Gerrie van Boven and Barrie Butsers",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/New_Kids"
+		],
+		"subreddit": [
+			"PlaceNL"
+		],
+		"discord": [
+			"PlaceNL"
+		]
+	},
+	"path": {
+		"231-256": [
+			[
+				-622,
+				-501
+			],
+			[
+				-622,
+				-514
+			],
+			[
+				-584,
+				-514
+			],
+			[
+				-584,
+				-501
+			]
+		]
+	},
+	"center": {
+		"231-256": [
+			-603,
+			-507
+		]
+	}
+}
