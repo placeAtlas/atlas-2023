@@ -454,6 +454,11 @@ function initDraw() {
 			websiteGroup.replaceChildren()
 			subredditGroup.replaceChildren()
 			discordGroup.replaceChildren()
+			/**
+			 * @instanceonly
+			 * Temporarily remove wikifield 
+			 * Lack of use, used incorrectly more than it is used correctly.
+			 */
 			// wikiGroup.replaceChildren()
 			addWebsiteFields("", 0, [0])
 			addSubredditFields("", 0, [0])
@@ -803,9 +808,9 @@ function initDraw() {
 	const [,, hashX, hashY, hashZoom] = hash.split('/')
 
 	setView(
-		isNaN(hashX) ? center[0] : Number(hashX), 
-		isNaN(hashY) ? center[1] : Number(hashY), 
-		isNaN(hashZoom) ? 4 : Number(hashZoom)
+		(isNaN(hashX) || hashX === '') ? center[0] : Number(hashX), 
+		(isNaN(hashY) || hashY === '') ? center[1] : Number(hashY), 
+		(isNaN(hashZoom) || hashZoom === '') ? 4 : Number(hashZoom)
 	)
 	
 	document.addEventListener('timeupdate', () => {

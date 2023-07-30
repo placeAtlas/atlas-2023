@@ -676,9 +676,9 @@ async function updateViewFromHash() {
 	await updateTime(targetPeriod, targetVariation)
 
 	setView(
-		isNaN(hashX) ? scaleZoomOrigin[0] : Number(hashX), 
-		isNaN(hashY) ? scaleZoomOrigin[1] : Number(hashY), 
-		isNaN(hashZoom) ? zoom : Number(hashZoom)
+		(isNaN(hashX) || hashX === '') ? undefined : Number(hashX), 
+		(isNaN(hashY) || hashY === '') ? undefined : Number(hashY), 
+		(isNaN(hashZoom) || hashZoom === '') ? undefined : Number(hashZoom)
 	)
 
 	if (!hashEntryId) return
@@ -705,9 +705,9 @@ async function updateViewFromHash() {
 	objectsContainer.appendChild(infoElement)
 
 	setView(
-		isNaN(hashX) ? entry.center[0] : Number(hashX), 
-		isNaN(hashY) ? entry.center[1] : Number(hashY), 
-		isNaN(hashZoom) ? calculateZoomFromPath(entry.path) : Number(hashZoom)
+		(isNaN(hashX) || hashX === '') ? entry.center[0] : Number(hashX), 
+		(isNaN(hashY) || hashY === '') ? entry.center[1] : Number(hashY), 
+		(isNaN(hashZoom) || hashZoom === '') ? calculateZoomFromPath(entry.path) : Number(hashZoom)
 	)
 
 	closeObjectsListButton.classList.remove("d-none")
