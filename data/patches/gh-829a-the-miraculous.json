@@ -1,0 +1,92 @@
+{
+	"id": 157,
+	"name": "The Miraculous",
+	"description": "4 symbols from the french animated childrens show Miraculous: Tales from Ladybug and Cat Noir.\n\nFrom left to right the symbols represent the Miraculous of the bee, of the butterfly, of the black cat and of the ladybug.",
+	"links": {
+		"subreddit": [
+			"miraculousladybug"
+		]
+	},
+	"path": {
+		"21-37": [
+			[
+				70,
+				-280
+			],
+			[
+				65,
+				-283
+			],
+			[
+				66,
+				-292
+			],
+			[
+				72,
+				-296
+			],
+			[
+				123,
+				-295
+			],
+			[
+				124,
+				-299
+			],
+			[
+				124,
+				-301
+			],
+			[
+				126,
+				-299
+			],
+			[
+				128,
+				-299
+			],
+			[
+				130,
+				-301
+			],
+			[
+				130,
+				-299
+			],
+			[
+				132,
+				-296
+			],
+			[
+				136,
+				-291
+			],
+			[
+				137,
+				-283
+			],
+			[
+				132,
+				-280
+			],
+			[
+				130,
+				-279
+			],
+			[
+				69,
+				-280
+			],
+			[
+				71,
+				-281
+			]
+		]
+	},
+	"center": {
+		"21-37": [
+			127,
+			-288
+		]
+	}
+}
