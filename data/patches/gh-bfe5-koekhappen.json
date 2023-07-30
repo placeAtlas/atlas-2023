@@ -1,0 +1,74 @@
+{
+	"id": -1,
+	"name": "Koekhappen",
+	"description": "Koekhappen (literal English translation: cake biting) is a game in the Netherlands that children often play at kid's parties and on events like King's Day (a Dutch holiday). An \"ontbijtkoek\" (literally translated breakfast cake) is attached on a thread and the players have to try to bite the cake off the thread by keeping their hands behind their backs.",
+	"links": {
+		"website": [
+			"https://nl.wikipedia.org/wiki/Koekhappen"
+		],
+		"subreddit": [
+			"PlaceNL"
+		],
+		"discord": [
+			"placenl"
+		]
+	},
+	"path": {
+		"251-256": [
+			[
+				1169,
+				-484
+			],
+			[
+				1170,
+				-473
+			],
+			[
+				1184,
+				-473
+			],
+			[
+				1184,
+				-483
+			],
+			[
+				1180,
+				-484
+			],
+			[
+				1179,
+				-488
+			],
+			[
+				1178,
+				-489
+			],
+			[
+				1178,
+				-504
+			],
+			[
+				1176,
+				-504
+			],
+			[
+				1176,
+				-488
+			],
+			[
+				1174,
+				-486
+			],
+			[
+				1174,
+				-484
+			]
+		]
+	},
+	"center": {
+		"251-256": [
+			1177,
+			-479
+		]
+	}
+}
