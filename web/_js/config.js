@@ -48,9 +48,8 @@ const variationsConfig = {
 			[[115, 152], [-1000, -1000, 999, 499]],
 			[[153, 168], [-1000, -1000, 999, 999]],
 			[[169, 201], [-1500, -1000, 999, 999]],
-			[[202, undefined], [-1500, -1000, 1499, 999]],
+			[[202, 258], [-1500, -1000, 1499, 999]],
 		],
-		// expansions: [],
 		versions: [
 			{ "timestamp": 1689858080, "url": ["./_img/canvas/main-ex/start.png"] },
 			{ "timestamp": 1689859800, "url": ["./_img/canvas/main-2/000.png"] },
@@ -318,16 +317,11 @@ const variationsConfig = {
 }
 window.variationsConfig = variationsConfig
 
-const lastPeriod = variationsConfig.default.versions.length - 1
-// variationsConfig.default.drawablePeriods[1] = lastPeriod
-variationsConfig.default.drawableRegions[6][0][1] = lastPeriod
-
 let defaultVariation = 'default'
 window.defaultVariation = defaultVariation
 
 let defaultPeriod = variationsConfig[defaultVariation].default
 window.defaultPeriod = defaultPeriod
-console.log(window.defaultPeriod);
 
 const useNumericalId = true
 window.useNumericalId = useNumericalId
