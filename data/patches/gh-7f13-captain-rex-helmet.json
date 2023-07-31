@@ -1,0 +1,54 @@
+{
+	"id": 5579,
+	"name": "Captain Rex helmet",
+	"description": "Captain Rex (designation number CT-7567) is a fictional character in the Star Wars franchise created by George Lucas. He was introduced as a main character in the animated The Clone Wars 2008 film and the related television series of the same name. Rex is a clone trooper of the Grand Army of the Republic, cloned from the Mandalorian bounty hunter Jango Fett, and serves the Galactic Republic under the command of Jedi General Anakin Skywalker and Jedi Commander Ahsoka Tano. \n\nSince his introduction in The Clone Wars, he has also appeared in the 2014 Star Wars Rebels television series, the 2021 Star Wars: The Bad Batch television series, the 2022 Tales of the Jedi television series and various spin-off media.",
+	"links": {
+		"website": [
+			"https://starwars.fandom.com/wiki/Rex"
+		],
+		"subreddit": [
+			"StarWars_Place"
+		],
+		"discord": [
+			"TheGalacticRepublic"
+		]
+	},
+	"path": {
+		"220-256": [
+			[
+				1049,
+				-714
+			],
+			[
+				1047,
+				-726
+			],
+			[
+				1054,
+				-723
+			],
+			[
+				1065,
+				-720
+			],
+			[
+				1065,
+				-707
+			],
+			[
+				1051,
+				-706
+			],
+			[
+				1047,
+				-721
+			]
+		]
+	},
+	"center": {
+		"220-256": [
+			1057,
+			-714
+		]
+	}
+}
