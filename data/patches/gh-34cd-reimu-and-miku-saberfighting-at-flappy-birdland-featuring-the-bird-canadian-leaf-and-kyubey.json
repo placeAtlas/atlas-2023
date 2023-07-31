@@ -1,0 +1,56 @@
+{
+	"id": 2255,
+	"name": "Reimu and Miku saberfighting at Flappy Birdland featuring the bird, Canadian leaf and Kyubey",
+	"description": "United as a front in the face of rampant raids from larger communities and livestream viewers, in particular XQC, r/placeVietnam, r/touhou, r/hatsune, r/StarWars_Place, r/placeCanada, r/placeIndonesia, and r/tf2 present this miniaturized recreation of the epic lightsaber battle between Reimu Hakurei and Hatsune Miku, with the supporting cast of Flappy Bird and Kyubey from Madoka Magica. Both heroines don the traditional Vietnam dress of áo dài, with Miku featuring an additional iconic nón lá (bamboo conic hat) and a Canadian maple leaf on Reimu's hair. This battle recreation depicts the unity between vastly different communities coming together in the face of adversity, as well as celebrating our artistic values.",
+	"links": {
+		"subreddit": [
+			"placevietnam",
+			"touhou",
+			"hatsune",
+			"starwars_place",
+			"PlaceCanada",
+			"PlaceIndonesia",
+			"MadokaMagica",
+			"tf2"
+		],
+		"discord": [
+			"hatsune",
+			"apl",
+			"TheGalacticRepublic"
+		]
+	},
+	"path": {
+		"214-256": [
+			[
+				-1362,
+				-701
+			],
+			[
+				-1362,
+				-660
+			],
+			[
+				-1308,
+				-660
+			],
+			[
+				-1308,
+				-662
+			],
+			[
+				-1289,
+				-662
+			],
+			[
+				-1289,
+				-701
+			]
+		]
+	},
+	"center": {
+		"214-256": [
+			-1325,
+			-680
+		]
+	}
+}
