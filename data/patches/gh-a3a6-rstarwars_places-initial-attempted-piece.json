@@ -1,0 +1,47 @@
+{
+	"id": -1,
+	"name": "r/starwars_place's Initial Attempted Piece",
+	"description": "This was where r/starwars_place originally tried to build, before they were overrun by Fuck Spez",
+	"links": {
+		"subreddit": [
+			"starwars_place"
+		],
+		"discord": [
+			"TheGalacticRepublic"
+		]
+	},
+	"path": {
+		"1-11": [
+			[
+				30,
+				231
+			],
+			[
+				98,
+				231
+			],
+			[
+				98,
+				257
+			],
+			[
+				96,
+				257
+			],
+			[
+				96,
+				300
+			],
+			[
+				30,
+				300
+			]
+		]
+	},
+	"center": {
+		"1-11": [
+			63,
+			265
+		]
+	}
+}
