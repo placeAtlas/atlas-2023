@@ -843,6 +843,8 @@ async function loadTemplateData(initUrl, datas, blacklistUrls, level = 0) {
 	datas ??= {}
 	blacklistUrls ??= new Set()
 
+	blacklistUrls.add('https://placeuk.g3v.co.uk/template/ukplace')
+
 	if (datas[initUrl] || blacklistUrls.has(initUrl)) return [ datas, blacklistUrls ]
 
 	datas[initUrl] = {}
