@@ -6,6 +6,12 @@ import tqdm
 pre_extend_times = [250, 254, 255, 256, 257]
 post_extend_time = 258
 
+exclude_extend = set([
+	3030,
+	6135,
+	6157,
+])
+
 if len(pre_extend_times) == 0:
 	pre_extend_times.append(post_extend_time - 1)
 	pre_extend_times.append(post_extend_time - 2)
@@ -56,8 +62,9 @@ def extend_time_key(items):
 				break
 
 for entry in atlas_data:
-	extend_time_key(entry['path'])
-	extend_time_key(entry['center'])
+	if not entry['id'] in exclude_extend:
+		extend_time_key(entry['path'])
+		extend_time_key(entry['center'])
 	
 with open('web/atlas.json', 'w', encoding='utf-8') as atlas_file:
 	per_line_entries(atlas_data, atlas_file)
