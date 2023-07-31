@@ -79,7 +79,7 @@ const dispatchTimeUpdateEvent = (period = currentPeriod, variation = currentVari
 
 async function updateBackground(newPeriod = currentPeriod, newVariation = currentVariation) {
 	abortController.abort()
-	myAbortController = new AbortController()
+	const myAbortController = new AbortController()
 	abortController = myAbortController
 	currentUpdateIndex++
 	const myUpdateIndex = currentUpdateIndex
@@ -96,7 +96,7 @@ async function updateBackground(newPeriod = currentPeriod, newVariation = curren
 		variantsEl.parentElement.classList.remove('input-group')
 	}
 
-	const configObject = variationConfig.versions[currentPeriod]
+	const configObject = variationConfig.versions[newPeriod]
 	let layerUrls = []
 	let layers = []
 
@@ -110,39 +110,59 @@ async function updateBackground(newPeriod = currentPeriod, newVariation = curren
 
 	layers.length = layerUrls.length 
 	await Promise.all(layerUrls.map(async (url, i) => {
-		const imageBlob = await (await fetch(url, { signal: myAbortController.signal })).blob()
-		const imageLayer = new Image()
-		await new Promise(resolve => {
-			imageLayer.onload = () => {
-				context.canvas.width = Math.max(imageLayer.width, context.canvas.width)
-				context.canvas.height = Math.max(imageLayer.height, context.canvas.height)
-				layers[i] = imageLayer
-				resolve()
-			}
-			imageLayer.src = URL.createObjectURL(imageBlob)
-		})
+		try {
+			const imageBlob = await (await fetch(url, { signal: myAbortController.signal })).blob()
+			const imageLayer = new Image()
+			await new Promise(resolve => {
+				imageLayer.onload = () => {
+					context.canvas.width = Math.max(imageLayer.width, context.canvas.width)
+					context.canvas.height = Math.max(imageLayer.height, context.canvas.height)
+					layers[i] = imageLayer
+					resolve()
+				}
+				imageLayer.src = URL.createObjectURL(imageBlob)
+			})
+		} catch (e) {
+			const aborted = myAbortController.signal.aborted
+			if (!aborted) throw e
+		}
 	}))
 
-	if (myAbortController.signal.aborted || newPeriod !== currentPeriod || newVariation !== currentVariation) {
-		return
+	if (currentUpdateIndex !== myUpdateIndex) {
+		return false
 	}
 
 	for (const imageLayer of layers) {
 		context.drawImage(imageLayer, 0, 0)
 	}
-
-	if (currentUpdateIndex !== myUpdateIndex) return [configObject, newPeriod, newVariation]
 	const blob = await new Promise(resolve => canvas.toBlob(resolve))
 	canvasUrl = URL.createObjectURL(blob)
 	image.src = canvasUrl
+
+	return true
+
 }
 
+let loadingTimeout = setTimeout(() => {}, 0)
+
 async function updateTime(newPeriod = currentPeriod, newVariation = currentVariation, forceLoad = false) {
-	if (newPeriod === currentPeriod && !forceLoad) {
-		return;
+	if (newPeriod === currentPeriod && newVariation === currentVariation && !forceLoad) {
+		return
 	}
 	document.body.dataset.canvasLoading = ""
 
+	const loadingEl = document.getElementById("loading")
+	const previouslyHidden = loadingEl.classList.contains("d-none")
+
+	if (previouslyHidden) loadingEl.classList.add("opacity-0", "transition-opacity")
+	clearTimeout(loadingTimeout)
+	loadingTimeout = setTimeout(() => {
+		loadingEl.classList.remove("d-none")
+		if (previouslyHidden) setTimeout(() => {
+			loadingEl.classList.remove("opacity-0")	
+		}, 0)
+	}, 2000)
+	
 	// const oldPeriod = currentPeriod
 	const oldVariation = currentVariation
 
@@ -167,12 +187,18 @@ async function updateTime(newPeriod = currentPeriod, newVariation = currentVaria
 	timelineSlider.value = currentPeriod
 	updateTooltip(newPeriod, newVariation)
 
-	await updateBackground(newPeriod, newVariation)
+	const updateBackgroundResult = await updateBackground(newPeriod, newVariation)
+
+	if (!updateBackgroundResult) return
 
 	atlas = generateAtlasForPeriod(newPeriod, newVariation)
 
 	dispatchTimeUpdateEvent(newPeriod, newVariation, atlas)
 	delete document.body.dataset.canvasLoading
+	clearTimeout(loadingTimeout)
+	document.getElementById("loading").classList.add("d-none")
+	document.getElementById("loading").classList.remove("opacity-0", "opacity-100", "transition-opacity")
+	
 	tooltip.dataset.forceVisible = ""
 	clearTimeout(tooltipDelayHide)
 	tooltipDelayHide = setTimeout(() => {
