@@ -1,0 +1,56 @@
+{
+	"id": 5843,
+	"name": "Mini Skyrim logo",
+	"description": "A group of friends made a mini Skyrim logo, Skyrim is a popular game.\n\nCredits:\nFlick\n4rthurjohn\nHz\nTheKing\nFostin\nJaparanaue",
+	"links": {},
+	"path": {
+		"254-256": [
+			[
+				-1443,
+				808
+			],
+			[
+				-1448,
+				814
+			],
+			[
+				-1447,
+				819
+			],
+			[
+				-1442,
+				825
+			],
+			[
+				-1438,
+				828
+			],
+			[
+				-1431,
+				820
+			],
+			[
+				-1429,
+				816
+			],
+			[
+				-1431,
+				813
+			],
+			[
+				-1435,
+				808
+			],
+			[
+				-1440,
+				807
+			]
+		]
+	},
+	"center": {
+		"254-256": [
+			-1439,
+			816
+		]
+	}
+}
