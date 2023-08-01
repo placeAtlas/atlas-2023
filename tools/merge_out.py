@@ -55,9 +55,9 @@ controversial_entries = set([
 	1730, 2044, # Atatürk
 	1925, # Fuck Spez
 	2023, # Napoleon flag
+	2029, # Lola
 	2587, # Falklands War memorial
 	2693, # Israel
-	2955, # Lola
 	3126, # Foxhole
 	4251, 4263, 4276, # Truscum flag
 ])
