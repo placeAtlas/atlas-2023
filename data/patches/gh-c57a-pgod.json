@@ -1,0 +1,32 @@
+{
+	"id": 4086,
+	"name": "PGOD",
+	"description": "Pro player y streamer de Fortnite actualmente jugador de Dignitas. Nació y creció en Perú hasta que se mudó a los Estados Unidos. Ganador de 5 Twitch Rivals y tiene un don para decir \"OniChan\" de manera provocativa.",
+	"links": {},
+	"path": {
+		"250-256": [
+			[
+				-1122,
+				-713
+			],
+			[
+				-1122,
+				-705
+			],
+			[
+				-1103,
+				-705
+			],
+			[
+				-1103,
+				-713
+			]
+		]
+	},
+	"center": {
+		"250-256": [
+			-1112,
+			-709
+		]
+	}
+}
