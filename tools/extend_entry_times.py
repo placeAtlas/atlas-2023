@@ -8,6 +8,7 @@ post_extend_time = 258
 
 exclude_extend = set([
 	3030,
+	6040,
 	6135,
 	6157,
 ])
