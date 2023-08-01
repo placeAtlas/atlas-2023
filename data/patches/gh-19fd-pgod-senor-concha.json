@@ -1,0 +1,40 @@
+{
+	"id": 4027,
+	"name": "PGOD-señor concha",
+	"description": "Piero Ramírez, mejor conocido como Pgod es un jugador nacido en Perú, actualmente vive es Estados Unidos y es parte del Team Dignitas junto con varios logros como proplayer de Fortnite y ex miembro del trio Onichan.",
+	"links": {
+		"website": [
+			"https://www.twitch.tv/pgod/about"
+		]
+	},
+	"path": {
+		"227-256": [
+			[
+				-1122,
+				-713
+			],
+			[
+				-1122,
+				-705
+			],
+			[
+				-1103,
+				-705
+			],
+			[
+				-1103,
+				-713
+			],
+			[
+				-1122,
+				-713
+			]
+		]
+	},
+	"center": {
+		"227-256": [
+			-1112,
+			-709
+		]
+	}
+}
