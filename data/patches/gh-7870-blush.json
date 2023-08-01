@@ -1,0 +1,36 @@
+{
+	"id": 2673,
+	"name": "Blush",
+	"description": "A nice random guy from Bavaria!",
+	"links": {
+		"website": [
+			"https://www.twitch.tv/blushttv"
+		]
+	},
+	"path": {
+		"225-236": [
+			[
+				-647,
+				-970
+			],
+			[
+				-625,
+				-970
+			],
+			[
+				-625,
+				-964
+			],
+			[
+				-647,
+				-964
+			]
+		]
+	},
+	"center": {
+		"225-236": [
+			-636,
+			-967
+		]
+	}
+}
