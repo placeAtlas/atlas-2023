@@ -1,0 +1,32 @@
+{
+	"id": 4108,
+	"name": "Webos Community",
+	"description": "Our community has Hispanic Dumb Guys, but they have a lot of WEBOS✊🥚",
+	"links": {},
+	"path": {
+		"168-251": [
+			[
+				-689,
+				814
+			],
+			[
+				-689,
+				834
+			],
+			[
+				-672,
+				834
+			],
+			[
+				-672,
+				814
+			]
+		]
+	},
+	"center": {
+		"168-251": [
+			-680,
+			824
+		]
+	}
+}
