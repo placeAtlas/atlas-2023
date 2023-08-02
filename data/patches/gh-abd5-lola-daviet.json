@@ -1,0 +1,110 @@
+{
+	"id": 2029,
+	"name": "Lola Daviet",
+	"description": "Lola Daviet was a 12-year-old French girl who was tortured, raped and killed by an illegal Algerian migrant. The incident garnered controversy after the right and far right used this murder to criticize Emmanuel Macron's policy about migrants under a \"legal obligation to leave French territory\". The family's attorney rejects any use of the tragedy for politics.\n\nThis art was drawn by far-right activist French streamer KrocBlanc as a tribute to Lola. It was later destroyed by German streamers because they misinterpreted the attorney's claim. Her family was on the contrary very touched by this tribute, going so far as to wear this drawing of Lola on their clothes during the solemn march.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Killing_of_Lola_Daviet"
+		]
+	},
+	"path": {
+		"206-244": [
+			[
+				1001,
+				-864
+			],
+			[
+				1000,
+				-711
+			],
+			[
+				1078,
+				-711
+			],
+			[
+				1078,
+				-863
+			],
+			[
+				1001,
+				-863
+			]
+		],
+		"251-256": [
+			[
+				1001,
+				-81
+			],
+			[
+				1001,
+				-35
+			],
+			[
+				1008,
+				-35
+			],
+			[
+				1008,
+				-41
+			],
+			[
+				1010,
+				-45
+			],
+			[
+				1022,
+				-42
+			],
+			[
+				1026,
+				-38
+			],
+			[
+				1026,
+				-33
+			],
+			[
+				1024,
+				-29
+			],
+			[
+				1024,
+				-27
+			],
+			[
+				1036,
+				-27
+			],
+			[
+				1036,
+				-81
+			],
+			[
+				1025,
+				-81
+			],
+			[
+				1025,
+				-85
+			],
+			[
+				1010,
+				-85
+			],
+			[
+				1010,
+				-81
+			]
+		]
+	},
+	"center": {
+		"206-244": [
+			1039,
+			-787
+		],
+		"251-256": [
+			1019,
+			-61
+		]
+	}
+}
