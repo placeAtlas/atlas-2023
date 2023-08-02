@@ -310,13 +310,13 @@ function parsePeriod(periodString) {
 
 function formatPeriod(targetStart, targetEnd, targetVariation, forUrl = false) {
 	targetStart ??= currentPeriod
-	targetEnd ??= undefined
+	targetEnd ??= targetStart
 	targetVariation ??= currentVariation
 
 	let periodString, variationString
 	variationString = variationsConfig[targetVariation].code
 	if (targetStart > targetEnd) [targetStart, targetEnd] = [targetEnd, targetStart]
-	if (targetStart === targetEnd || (targetStart && !targetEnd)) {
+	if (targetStart === targetEnd) {
 		if (forUrl && targetVariation === defaultVariation && targetStart === variationsConfig[defaultVariation].default) {
 			periodString = ""
 		}
@@ -379,24 +379,21 @@ function getNearestPeriod(entry, targetPeriod, targetVariation) {
 		nearestKey = newKey
 	}
 
-	checkEntryPathPeriod: for (const pathKey of pathKeys) {
+	checkPaths: for (const pathKey of pathKeys) {
 		const pathPeriods = pathKey.split(', ')
 
-		for (const j in pathPeriods) {
+		checkPathPeriod: for (const j in pathPeriods) {
 			const [pathStart, pathEnd, pathVariation] = parsePeriod(pathPeriods[j])
 			if (isOnPeriod(pathStart, pathEnd, pathVariation, targetPeriod, targetVariation)) {
 				updateNearest(0, targetPeriod, targetVariation)
+				break checkPaths
+			} else if (pathVariation !== targetVariation) {
+				updateNearest(Infinity, pathStart, pathVariation, pathKey)
+				continue checkPathPeriod
+			} else if (Math.abs(pathStart - targetPeriod) < Math.abs(pathEnd - targetPeriod)) {
+				updateNearest(Math.abs(pathStart - targetPeriod), pathStart, pathVariation, pathKey)
 			} else {
-				if (pathVariation !== targetVariation) {
-					updateNearest(Infinity, pathStart, pathVariation, pathKey)
-					break checkEntryPathPeriod
-				} else {
-					if (Math.abs(pathStart - targetPeriod) < Math.abs(pathEnd - targetPeriod)) {
-						updateNearest(Math.abs(pathStart - targetPeriod), pathStart, pathVariation, pathKey)
-					} else {
-						updateNearest(Math.abs(pathEnd - targetPeriod), pathStart, pathVariation, pathKey)
-					}
-				}
+				updateNearest(Math.abs(pathEnd - targetPeriod), pathStart, pathVariation, pathKey)
 			}
 		}
 
