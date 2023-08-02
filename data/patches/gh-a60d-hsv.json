@@ -1,0 +1,42 @@
+{
+	"id": 2538,
+	"name": "HSV",
+	"description": "The HSV (Hamburger Sport-Verein) is a German sports club based in Hamburg. It is commonly known for its football (soccer) team, which competes in the top tier of German football, the Bundesliga. Founded in 1887, the club has a rich history and a large fan base. The team plays its home matches at the Volksparkstadion in Hamburg. The colors associated with HSV are blue, white, and black.",
+	"links": {
+		"website": [
+			"https://www.hsv.de"
+		],
+		"subreddit": [
+			"hsv"
+		],
+		"discord": [
+			"hsv"
+		]
+	},
+	"path": {
+		"208-247": [
+			[
+				-710,
+				865
+			],
+			[
+				-678,
+				865
+			],
+			[
+				-678,
+				887
+			],
+			[
+				-710,
+				887
+			]
+		]
+	},
+	"center": {
+		"208-247": [
+			-694,
+			876
+		]
+	}
+}
