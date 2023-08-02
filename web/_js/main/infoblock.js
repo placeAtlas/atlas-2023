@@ -44,7 +44,11 @@ function createInfoBlock(entry, mode = 0) {
 	const linkElement = document.createElement("a")
 	linkElement.className = "text-decoration-none d-flex justify-content-between text-body"
 
-	const [nearestPeriod, nearestVariation] = getNearestPeriod(entry, currentPeriod, currentVariation)
+	let nearestPeriod = currentPeriod
+	let nearestVariation = currentVariation
+	if (!atlasDisplay[entry.id]) {
+		[nearestPeriod, nearestVariation] = getNearestPeriod(entry, currentPeriod, currentVariation)
+	}
 
 	if (mode === 2)  {
 		linkElement.href = "#" 
