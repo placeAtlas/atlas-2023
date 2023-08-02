@@ -1,0 +1,48 @@
+{
+	"id": 2945,
+	"name": "Vagos from LuckyV",
+	"description": "Name of the latino gang living in Vespucci, Los Santos. Whole setting takes place on the german GTA roleplay server LuckyV",
+	"links": {
+		"website": [
+			"https://luckyv.de/"
+		]
+	},
+	"path": {
+		"250-256": [
+			[
+				-1344,
+				825
+			],
+			[
+				-1333,
+				845
+			],
+			[
+				-1309,
+				845
+			],
+			[
+				-1309,
+				837
+			],
+			[
+				-1328,
+				837
+			],
+			[
+				-1323,
+				825
+			],
+			[
+				-1344,
+				825
+			]
+		]
+	},
+	"center": {
+		"250-256": [
+			-1333,
+			832
+		]
+	}
+}
