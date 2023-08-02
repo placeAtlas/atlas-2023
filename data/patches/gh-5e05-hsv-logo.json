@@ -1,0 +1,40 @@
+{
+	"id": 2622,
+	"name": "HSV Logo",
+	"description": "This Logo was Made by the HSV Discord Community. The HSV, also called Hamburger Sport Verein, is a football club in the German second division. The logo was made by \"Janosaft\" (HSV fan and tiktoker with mainly Hamburg content), the logo is guarded and maintained by a few people from the HSV Discord Community. NUR DER HSV!",
+	"links": {
+		"website": [
+			"https://www.tiktok.com/@janosaft",
+			"https://linktr.ee/janosaft"
+		],
+		"discord": [
+			"hsv"
+		]
+	},
+	"path": {
+		"227-247": [
+			[
+				-711,
+				864
+			],
+			[
+				-711,
+				888
+			],
+			[
+				-677,
+				888
+			],
+			[
+				-677,
+				864
+			]
+		]
+	},
+	"center": {
+		"227-247": [
+			-694,
+			876
+		]
+	}
+}
