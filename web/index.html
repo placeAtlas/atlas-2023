@@ -137,7 +137,8 @@
 							<ul class="navbar-nav me-auto my-2 my-md-0">
 								<li class="nav-item">
 									<div class="btn-group" role="group">
-										<button id="showListButton" class="btn btn-outline-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasList" aria-controls="offcanvasList">Entries List</button>
+										<button id="showListButton" class="btn btn-outline-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasList" aria-controls="offcanvasList">Menu</button>
+										<a class="btn btn-outline-primary" id="drawLink" href="./?mode=draw">Draw</a>
 									</div>
 								</li>
 							</ul>
@@ -198,8 +199,7 @@
 				</header>
 				<div class="py-3 mx-3 border-bottom">
 					<div class="d-flex gap-2 mb-2">
-						<a class="btn btn-primary w-50" id="drawLink" href="./?mode=draw">Draw</a>
-						<button type="button" class="btn btn-primary dropdown-toggle w-50" id="dropdownModes" data-bs-toggle="dropdown" aria-expanded="false">Modes</button>
+						<button type="button" class="btn btn-primary dropdown-toggle w-100" id="dropdownModes" data-bs-toggle="dropdown" aria-expanded="false">Layer Views</button>
 						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownModes">
 							<li><a class="dropdown-item" href="./">Normal</a></li>
 							<li><a class="dropdown-item" href="./?mode=explore">Explore</a></li>
@@ -294,7 +294,7 @@
 								Redo
 							</button>
 						</div>
-						<button type="button" class="btn btn-primary" id="finishButton" title="Finish drawing" disabled>Finish</button>
+						<button type="button" class="btn btn-primary" id="finishButton" title="Finish drawing" disabled>Next</button>
 						<button type="button" class="btn btn-secondary" id="resetButton">Reset</button>
 
 						<div class="form-check" id="highlightUnchartedLabel">
@@ -327,11 +327,11 @@
 					<form id="objectInfo" class="d-flex flex-column p-3 bg-secondary bg-opacity-10 rounded">
 						<div class="mb-3">
 							<label for="nameField" class="form-label">Title</label>
-							<input type="text" id="nameField" class="form-control" placeholder="A short title" pattern="(.|\s)*\S(.|\s)*" title="Cannot be blank" required>
+							<input type="text" id="nameField" class="form-control" placeholder="A short title" pattern="(.|\s)*\S(.|\s)*" required>
 						</div>
 						<div class="mb-3">
 							<label for="descriptionField" class="form-label">Description</label>
-							<textarea id="descriptionField" class="form-control overflow-hidden" placeholder="A short description to be understood by everyone"></textarea>
+							<textarea id="descriptionField" class="form-control overflow-hidden" placeholder="A short description to be understood by everyone. Not a Wikipedia excerpt."></textarea>
 						</div>
 						<label id="websiteLabel" class="form-label">Website</label>
 						<div id="websiteGroup" class="mb-3 d-flex flex-column gap-2"></div>
