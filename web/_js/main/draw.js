@@ -126,12 +126,17 @@ function initDraw() {
 
 	let highlightUncharted = highlightUnchartedEl.checked
 
-	renderBackground(atlasDisplay)
+	window.updateAtlas = updateAtlas
+
+	updateAtlas()
+
+	document.addEventListener('timeupdate', () => {
+		updateAtlas()
+	})
+
 	applyView()
 
 	container.style.cursor = "crosshair"
-
-	renderHighlight(path)
 
 	container.addEventListener("mousedown", e => {
 		lastPos = [
@@ -557,6 +562,13 @@ function initDraw() {
 		updateCoordsDisplay(e)
 	}
 
+	function updateAtlas() {
+		;[atlas, atlasOrder] = filterAtlas(atlasAll)
+		;[atlasDisplay, atlasOrder] = generateAtlasDisplay(atlas, atlasOrder, currentPeriod, currentVariation)
+		renderBackground(atlasDisplay)
+		renderHighlight(atlasDisplay)
+	}	
+	
 	const getEntry = id => {
 		if (!id) return
 		return atlasAll[id]
@@ -814,7 +826,7 @@ function initDraw() {
 	)
 	
 	document.addEventListener('timeupdate', () => {
-		renderBackground(atlas)
+		renderBackground(atlasDisplay)
 		updatePeriodGroups()
 	})
 
