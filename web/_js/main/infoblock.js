@@ -31,10 +31,7 @@ function createInfoListItem(name, value) {
 	return entryInfoListElement
 }
 
-// mode 0 = normal
-// mode 1 = entry list but none on atlas
-// mode 2 = preview
-function createInfoBlock(entry, mode = 0) {
+function createInfoBlock(entry, isPreview) {
 	const element = document.createElement("div")
 	element.className = "card mb-2 overflow-hidden shadow"
 
@@ -43,31 +40,21 @@ function createInfoBlock(entry, mode = 0) {
 
 	const linkElement = document.createElement("a")
 	linkElement.className = "text-decoration-none d-flex justify-content-between text-body"
-
-	let nearestPeriod = currentPeriod
-	let nearestVariation = currentVariation
-	if (!atlasDisplay[entry.id]) {
-		[nearestPeriod, nearestVariation] = getNearestPeriod(entry, currentPeriod, currentVariation)
-	}
-
-	if (mode === 2)  {
-		linkElement.href = "#" 
-	} else { 
-		const hash = formatHash(entry.id, nearestPeriod, nearestVariation, false, false, false)
-		linkElement.href = hash
-		if (mode === 0) linkElement.addEventListener('click', e => {
+	if (isPreview) linkElement.href = "#"
+	else {
+		linkElement.href = formatHash(entry.id, null, null, null, false, false, false)
+		linkElement.addEventListener('click', e => {
 			e.preventDefault()
-			location.hash = hash
+			location.hash = formatHash(entry.id, null, null, null, false, false, false)
 			window.dispatchEvent(new HashChangeEvent("hashchange"))
 		})
 	}
-
 	const linkNameElement = document.createElement("span")
 	linkNameElement.className = "flex-grow-1 text-break"
 	linkNameElement.textContent = entry.name
 	headerElement.appendChild(linkElement)
 	linkElement.appendChild(linkNameElement)
-	linkElement.insertAdjacentHTML("beforeend", '<i class="bi bi-link-45deg align-self-center link-primary" aria-hidden="true" title="Copy direct link"></i>')
+	linkElement.insertAdjacentHTML("beforeend", '<i class="bi bi-link-45deg align-self-center link-primary" aria-hidden="true"></i>')
 	element.appendChild(headerElement)
 
 	const bodyElement = document.createElement("div")
@@ -105,7 +92,7 @@ function createInfoBlock(entry, mode = 0) {
 	}
 
 	// Entry data submitted to preview does not include center or path
-	if (mode === 0) {
+	if (!isPreview) {
 		const [x, y] = entry?.center
 		listElement.appendChild(createInfoListItem("Position: ", `${Math.floor(x)}, ${Math.floor(y)}`))
 
@@ -183,11 +170,11 @@ function createInfoBlock(entry, mode = 0) {
 	element.appendChild(idElementContainer)
 
 	// Adds edit button only if element is not deleted
-	if (mode < 2 && (!entry.diff || entry.diff !== "delete")) {
+	if (!isPreview && (!entry.diff || entry.diff !== "delete")) {
 		const editElement = document.createElement("a")
-		editElement.innerHTML = '<i class="bi bi-pencil-fill" aria-hidden="true"></i> Edit'
+		editElement.textContent = "Edit"
 		editElement.className = "btn btn-sm btn-outline-primary"
-		editElement.href = "./?mode=draw&id=" + entry.id + formatHash(false, nearestPeriod, nearestVariation, false, false, false)
+		editElement.href = "./?mode=draw&id=" + entry.id + formatHash(false)
 		editElement.title = "Edit " + entry.name
 		idElementContainer.appendChild(editElement)
 	}

@@ -9,16 +9,22 @@ function initOverlap() {
 
 	window.renderBackground = renderBackground
 
-	updateAtlas()
-
 	// const hovered = []
 
+	resetEntriesList()
+	renderBackground(atlas)
+	render()
+
 	document.addEventListener('timeupdate', () => {
-		updateAtlas()
+		atlasDisplay = atlas.slice()
+		resetEntriesList()
+		renderBackground(atlasDisplay)
+		render()
 	})
 
 	applyView()
-	renderLines()
+	render()
+	updateLines()
 
 	if (window.location.hash) {
 		updateViewFromHash()
@@ -31,7 +37,7 @@ function initOverlap() {
 		backgroundContext.fillStyle = "rgba(255, 255, 255, 1)"
 		backgroundContext.fillRect(0, 0, highlightCanvas.width, highlightCanvas.height)
 
-		for (const entry of Object.values(atlas)) {
+		for (const entry of atlas) {
 
 			const path = entry.path
 

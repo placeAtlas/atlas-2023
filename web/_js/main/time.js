@@ -32,9 +32,6 @@ let currentPeriod = defaultPeriod
 window.currentVariation = currentVariation
 window.currentPeriod = currentPeriod
 
-let atlasDisplay = {}
-window.atlasDisplay = atlasDisplay
-
 // SETUP
 if (variationsConfig[currentVariation].versions.length === 1) bottomBar.classList.add('no-time-slider')
 
@@ -73,7 +70,7 @@ const dispatchTimeUpdateEvent = (period = currentPeriod, variation = currentVari
 		detail: {
 			period: period,
 			variation: variation,
-			periodString: formatPeriod(period, null, variation),
+			periodString: formatPeriod(period, period, variation),
 			atlas: atlas
 		}
 	})
@@ -194,6 +191,8 @@ async function updateTime(newPeriod = currentPeriod, newVariation = currentVaria
 
 	if (!updateBackgroundResult) return
 
+	atlas = generateAtlasForPeriod(newPeriod, newVariation)
+
 	dispatchTimeUpdateEvent(newPeriod, newVariation, atlas)
 	delete document.body.dataset.canvasLoading
 	clearTimeout(loadingTimeout)
@@ -208,30 +207,24 @@ async function updateTime(newPeriod = currentPeriod, newVariation = currentVaria
 
 }
 
-function generateAtlasDisplay(prevAtlas, prevAtlasOrder, newPeriod = currentPeriod, newVariation = currentVariation) {
-	
-	const newAtlas = {}
-	const newAtlasOrderDisplayed = []
-	const newAtlasOrderNotDisplayed = []
+function generateAtlasForPeriod(newPeriod = currentPeriod, newVariation = currentVariation) {
 
-	for (const id of prevAtlasOrder) {
-
-		newAtlasOrderNotDisplayed.push(id)
-		const entry = prevAtlas[id]
-
+	const atlas = []
+	for (const entry of atlasAll) {
 		let chosenIndex
 
 		const validPeriods2 = Object.keys(entry.path)
 
-		periodCheck: for (const i in validPeriods2) {
+		for (const i in validPeriods2) {
 			const validPeriods = validPeriods2[i].split(', ')
 			for (const j in validPeriods) {
 				const [start, end, variation] = parsePeriod(validPeriods[j])
 				if (isOnPeriod(start, end, variation, newPeriod, newVariation)) {
 					chosenIndex = i
-					break periodCheck
+					break
 				}
 			}
+			if (chosenIndex !== undefined) break
 		}
 
 		if (chosenIndex === undefined) continue
@@ -240,18 +233,14 @@ function generateAtlasDisplay(prevAtlas, prevAtlasOrder, newPeriod = currentPeri
 
 		if (pathChosen === undefined) continue
 
-		newAtlas[id] = {
+		atlas.push({
 			...entry,
 			path: pathChosen,
 			center: centerChosen,
-		}
-
-		newAtlasOrderNotDisplayed.pop()
-		newAtlasOrderDisplayed.push(id)
-
+		})
 	}
 
-	return [newAtlas, [...newAtlasOrderDisplayed, ...newAtlasOrderNotDisplayed]]
+	return atlas
 
 }
 
@@ -310,7 +299,7 @@ function parsePeriod(periodString) {
 
 function formatPeriod(targetStart, targetEnd, targetVariation, forUrl = false) {
 	targetStart ??= currentPeriod
-	targetEnd ??= targetStart
+	targetEnd ??= currentPeriod
 	targetVariation ??= currentVariation
 
 	let periodString, variationString
@@ -334,11 +323,12 @@ function setReferenceVal(reference, newValue) {
 	else return reference ?? newValue
 }
 
-function formatHash(targetEntry, targetPeriod, targetVariation, targetX, targetY, targetZoom) {
+function formatHash(targetEntry, targetPeriodStart, targetPeriodEnd, targetVariation, targetX, targetY, targetZoom) {
 	let hashData = window.location.hash.substring(1).split('/')
 
 	targetEntry = setReferenceVal(targetEntry, hashData[0])
-	targetPeriod = setReferenceVal(targetPeriod, currentPeriod)
+	targetPeriodStart = setReferenceVal(targetPeriodStart, currentPeriod)
+	targetPeriodEnd = setReferenceVal(targetPeriodEnd, currentPeriod)
 	targetVariation = setReferenceVal(targetVariation, currentVariation)
 	targetX = setReferenceVal(targetX, canvasCenter.x - scaleZoomOrigin[0])
 	targetY = setReferenceVal(targetY, canvasCenter.y - scaleZoomOrigin[1])
@@ -349,8 +339,8 @@ function formatHash(targetEntry, targetPeriod, targetVariation, targetX, targetY
 	if (targetZoom) targetZoom = targetZoom.toFixed(3).replace(/\.?0+$/, '')
 
 	const result = [targetEntry]
-	const targetPeriodFormat = formatPeriod(targetPeriod, null, targetVariation, true)
-	result.push(targetPeriodFormat, targetX, targetY, targetZoom)
+	const targetPeriod = formatPeriod(targetPeriodStart, targetPeriodEnd, targetVariation, true)
+	result.push(targetPeriod, targetX, targetY, targetZoom)
 	if (!result.some(el => el || el === 0)) return ''
 	return '#' + result.join('/').replace(/\/+$/, '')
 }
@@ -363,42 +353,4 @@ function downloadCanvas() {
 	document.body.appendChild(linkEl)
 	linkEl.click()
 	document.body.removeChild(linkEl)
-}
-
-function getNearestPeriod(entry, targetPeriod, targetVariation) {
-	
-	const pathKeys = Object.keys(entry.path)
-	
-	let nearestScore, nearestPeriod, nearestVariation, nearestKey
-
-	function updateNearest(newScore, newPeriod, newVariation, newKey) {
-		if (newScore >= nearestScore) return
-		nearestScore = newScore
-		nearestPeriod = newPeriod
-		nearestVariation = newVariation
-		nearestKey = newKey
-	}
-
-	checkPaths: for (const pathKey of pathKeys) {
-		const pathPeriods = pathKey.split(', ')
-
-		checkPathPeriod: for (const j in pathPeriods) {
-			const [pathStart, pathEnd, pathVariation] = parsePeriod(pathPeriods[j])
-			if (isOnPeriod(pathStart, pathEnd, pathVariation, targetPeriod, targetVariation)) {
-				updateNearest(0, targetPeriod, targetVariation)
-				break checkPaths
-			} else if (pathVariation !== targetVariation) {
-				updateNearest(Infinity, pathStart, pathVariation, pathKey)
-				continue checkPathPeriod
-			} else if (Math.abs(pathStart - targetPeriod) < Math.abs(pathEnd - targetPeriod)) {
-				updateNearest(Math.abs(pathStart - targetPeriod), pathStart, pathVariation, pathKey)
-			} else {
-				updateNearest(Math.abs(pathEnd - targetPeriod), pathStart, pathVariation, pathKey)
-			}
-		}
-
-	}
-
-	return [ nearestPeriod, nearestVariation, nearestKey ]
-
 }
