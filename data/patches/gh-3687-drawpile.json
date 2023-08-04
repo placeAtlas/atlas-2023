@@ -1,0 +1,79 @@
+{
+	"id": -1,
+	"name": "Drawpile",
+	"description": "Drawpile is a digital drawing application for PC, Mac, and Linux that lets you connect with other users and draw on a shared canvas.\n\nThis pixel art was created by PlaceNL, the Dutch r/Place community. PlaceNL uses Drawpile for maintaining the template with multiple people. A few hours after one of the admins asked in the Drawpile Discord server whether it was possible to view the mouse coordinates, the developers released an update with that feature added. As a thank you, PlaceNL put the Drawpile logo on the canvas.",
+	"links": {
+		"website": [
+			"https://drawpile.net/"
+		],
+		"subreddit": [
+			"PlaceNL"
+		],
+		"discord": [
+			"placenl",
+			"M3yyMpC"
+		]
+	},
+	"path": {
+		"250": [
+			[
+				-865,
+				481
+			],
+			[
+				-870,
+				482
+			],
+			[
+				-872,
+				484
+			],
+			[
+				-873,
+				487
+			],
+			[
+				-873,
+				493
+			],
+			[
+				-872,
+				496
+			],
+			[
+				-870,
+				499
+			],
+			[
+				-862,
+				499
+			],
+			[
+				-859,
+				497
+			],
+			[
+				-857,
+				493
+			],
+			[
+				-857,
+				487
+			],
+			[
+				-859,
+				484
+			],
+			[
+				-862,
+				481
+			]
+		]
+	},
+	"center": {
+		"250": [
+			-865,
+			490
+		]
+	}
+}
