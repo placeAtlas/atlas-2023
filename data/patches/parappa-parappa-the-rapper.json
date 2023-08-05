@@ -1,0 +1,60 @@
+{
+	"id": -1,
+	"name": "PaRappa (PaRappa the Rapper)",
+	"description": "Parappa the Rapper (Or Parappa for short) is the main character from the Parappa the Rapper franchise who was created by American artist Rodney Greenblat & Japanese Musician Masaya Matsuura. The character made his first appearance in the video game Parappa the Rapper (1995).",
+	"links": {
+		"subreddit": [
+			"parappa"
+		]
+	},
+	"path": {
+		"250": [
+			[
+				-1458,
+				-258
+			],
+			[
+				-1463,
+				-252
+			],
+			[
+				-1462,
+				-250
+			],
+			[
+				-1461,
+				-251
+			],
+			[
+				-1459,
+				-248
+			],
+			[
+				-1455,
+				-248
+			],
+			[
+				-1453,
+				-251
+			],
+			[
+				-1452,
+				-250
+			],
+			[
+				-1451,
+				-252
+			],
+			[
+				-1457,
+				-259
+			]
+		]
+	},
+	"center": {
+		"250": [
+			-1457,
+			-253
+		]
+	}
+}
