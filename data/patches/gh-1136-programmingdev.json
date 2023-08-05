@@ -1,0 +1,69 @@
+{
+	"id": 3228,
+	"name": "programming.dev",
+	"description": "programming.dev is a Reddit alternative focused around topics relating to programmers. Initially set up next to Black Company, they reached out to that group to join forces and get the logo established as part of their template in a safer spot.",
+	"links": {
+		"website": [
+			"https://programming.dev"
+		],
+		"discord": [
+			"kwyxvYEYt4"
+		]
+	},
+	"path": {
+		"13-256": [
+			[
+				51,
+				-10
+			],
+			[
+				51,
+				-4
+			],
+			[
+				54,
+				-4
+			],
+			[
+				60,
+				-5
+			],
+			[
+				61,
+				-7
+			],
+			[
+				61,
+				-10
+			]
+		],
+		"8-12": [
+			[
+				77,
+				0
+			],
+			[
+				77,
+				-8
+			],
+			[
+				88,
+				-8
+			],
+			[
+				88,
+				0
+			]
+		]
+	},
+	"center": {
+		"13-256": [
+			54,
+			-7
+		],
+		"8-12": [
+			83,
+			-4
+		]
+	}
+}
