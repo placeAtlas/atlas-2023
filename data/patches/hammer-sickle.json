@@ -1,0 +1,32 @@
+{
+	"id": -1,
+	"name": "Hammer & Sickle",
+	"description": "The hammer & sickle is a communist symbol that is meant to represent a unity between agricultural workers and industrial workers. The symbol is notable for being used in the flags of the Soviet Union and its republics. ",
+	"links": {},
+	"path": {
+		"250": [
+			[
+				303,
+				716
+			],
+			[
+				315,
+				716
+			],
+			[
+				315,
+				728
+			],
+			[
+				303,
+				728
+			]
+		]
+	},
+	"center": {
+		"250": [
+			309,
+			722
+		]
+	}
+}
