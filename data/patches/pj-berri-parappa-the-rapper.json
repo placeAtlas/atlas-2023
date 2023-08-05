@@ -1,0 +1,56 @@
+{
+	"id": -1,
+	"name": "PJ Berri (Parappa the Rapper)",
+	"description": "PJ Berri is a character who appears in the Parappa the Rapper franchise.  He is the best friend of the main character Parappa and is known for his personality of having a big appetite and being tired all the time. \n\nTo celebrate the 20th anniversary of the franchise PJ Berri starred in a spinoff of anime shorts titled \"PJ Berri no Mogu Mogu Munya Munya\"",
+	"links": {
+		"subreddit": [
+			"parappa"
+		]
+	},
+	"path": {
+		"250": [
+			[
+				-1466,
+				-257
+			],
+			[
+				-1467,
+				-258
+			],
+			[
+				-1466,
+				-259
+			],
+			[
+				-1459,
+				-259
+			],
+			[
+				-1460,
+				-257
+			],
+			[
+				-1459,
+				-255
+			],
+			[
+				-1462,
+				-252
+			],
+			[
+				-1465,
+				-252
+			],
+			[
+				-1467,
+				-253
+			]
+		]
+	},
+	"center": {
+		"250": [
+			-1463,
+			-255
+		]
+	}
+}
