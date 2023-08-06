@@ -49,6 +49,7 @@ filenames.append(permanent_patch_file)
 controversial_entries = set([
 	46, 2085, 2106, # Portugal
 	330, 379, # Morocco
+	347, # Foxhole
 	696, # lturepublic
 	850, # Azov Brigade
 	1240, # Hoppou
@@ -58,7 +59,6 @@ controversial_entries = set([
 	2029, # Lola
 	2587, # Falklands War memorial
 	2693, # Israel
-	3126, # Foxhole
 	4251, 4263, 4276, # Truscum flag
 ])
 edited_controversial_entries = set()
