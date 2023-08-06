@@ -1,0 +1,46 @@
+{
+	"id": 2961,
+	"name": "The Red Nose",
+	"description": "After being invaded by LTU the Foxhole group decided to place a red nose onto the duke's face as a last act of defiance. \nThought A medium sized streamer named TheXanos who was allied with LTURepublic put up a great defence and defended the nose for 3 days.",
+	"links": {
+		"website": [
+			"https://www.twitch.tv/thexanos"
+		],
+		"subreddit": [
+			"foxholegame",
+			"BABYMETAL",
+			"TheXanos",
+			"LTURepublic"
+		]
+	},
+	"path": {
+		"235-249, 188-215": [
+			[
+				-105,
+				60
+			],
+			[
+				-107,
+				63
+			],
+			[
+				-105,
+				67
+			],
+			[
+				-100,
+				66
+			],
+			[
+				-102,
+				61
+			]
+		]
+	},
+	"center": {
+		"235-249, 188-215": [
+			-104,
+			63
+		]
+	}
+}
