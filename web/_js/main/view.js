@@ -142,10 +142,10 @@ bottomBar.addEventListener("mouseover", () => {
 })
 
 function clearObjectsList() {
-	renderLines()
-	renderHighlight()
 	hovered = []
 	fixed = false
+	renderLines()
+	renderHighlight()
 	document.title = pageTitle
 	closeObjectsListButton.classList.add("d-none")
 	objectsListOverflowNotice.classList.add("d-none")
