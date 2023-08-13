@@ -1,0 +1,69 @@
+{
+	"id": -1,
+	"name": "T logo (the 1st one)",
+	"description": "This logo was originally made by u/Tuanviet1243. It's a combination of black, white and the chaos or r/place event. The idea is inspired by the art of Titanfall. This logo was built and defended by himself",
+	"links": {
+		"website": [
+			"https://www.reddit.com/user/Tuanviet1243",
+			"https://twitter.com/tuanviet1243"
+		]
+	},
+	"path": {
+		"212-250": [
+			[
+				-1362,
+				374
+			],
+			[
+				-1361,
+				373
+			],
+			[
+				-1357,
+				373
+			],
+			[
+				-1356,
+				374
+			],
+			[
+				-1355,
+				375
+			],
+			[
+				-1355,
+				379
+			],
+			[
+				-1356,
+				380
+			],
+			[
+				-1357,
+				381
+			],
+			[
+				-1361,
+				381
+			],
+			[
+				-1362,
+				380
+			],
+			[
+				-1363,
+				379
+			],
+			[
+				-1363,
+				375
+			]
+		]
+	},
+	"center": {
+		"212-250": [
+			-1359,
+			377
+		]
+	}
+}
