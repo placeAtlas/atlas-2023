@@ -1,0 +1,113 @@
+{
+	"id": 4648,
+	"name": "Flipper Zero",
+	"description": "Flipper Zero is a tiny piece of hardware with a curious personality of a cyber-dolphin. It can interact with digital systems in real life and grow while you use it. Explore any kind of access control system, RFID, radio protocols, and debug hardware using GPIO pins.",
+	"links": {
+		"website": [
+			"https://flipperzero.one/",
+			"https://flipperzero.one/",
+			"https://www.youtube.com/flipperzero",
+			"https://github.com/flipperdevices"
+		],
+		"subreddit": [
+			"flipperzero"
+		],
+		"discord": [
+			"y5E5m8jbgb"
+		]
+	},
+	"path": {
+		"205-256": [
+			[
+				462,
+				-492
+			],
+			[
+				462,
+				-496
+			],
+			[
+				463,
+				-498
+			],
+			[
+				467,
+				-501
+			],
+			[
+				464,
+				-504
+			],
+			[
+				464,
+				-508
+			],
+			[
+				466,
+				-509
+			],
+			[
+				466,
+				-511
+			],
+			[
+				473,
+				-517
+			],
+			[
+				480,
+				-517
+			],
+			[
+				486,
+				-513
+			],
+			[
+				488,
+				-507
+			],
+			[
+				490,
+				-501
+			],
+			[
+				489,
+				-500
+			],
+			[
+				489,
+				-495
+			],
+			[
+				487,
+				-494
+			],
+			[
+				484,
+				-497
+			],
+			[
+				480,
+				-499
+			],
+			[
+				475,
+				-499
+			],
+			[
+				470,
+				-498
+			],
+			[
+				464,
+				-494
+			]
+		]
+	},
+	"center": {
+		"205-256": [
+			477,
+			-508
+		]
+	}
+}
