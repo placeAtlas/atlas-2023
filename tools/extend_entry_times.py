@@ -11,6 +11,8 @@ exclude_extend = set([
 	6040,
 	6135,
 	6157,
+	6482,
+	6483,
 ])
 
 if len(pre_extend_times) == 0:
@@ -20,7 +22,7 @@ post_extend_time = str(post_extend_time)
 
 while not os.path.exists('README.md'):
 	os.chdir('..')
-	
+
 with open('web/atlas.json', 'r', encoding='utf-8') as atlas_file:
 	atlas_data = json.loads(atlas_file.read())
 
@@ -66,6 +68,6 @@ for entry in atlas_data:
 	if not entry['id'] in exclude_extend:
 		extend_time_key(entry['path'])
 		extend_time_key(entry['center'])
-	
+
 with open('web/atlas.json', 'w', encoding='utf-8') as atlas_file:
 	per_line_entries(atlas_data, atlas_file)
