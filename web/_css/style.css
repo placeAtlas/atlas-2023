@@ -262,7 +262,7 @@ body[data-init-done] .listTransitioning #innerContainer {
 }
 
 #author {
-	flex: 1 1 auto;
+	flex: 0.5 1 auto;
 }
 
 #variantControls {
