@@ -520,20 +520,25 @@ function generateAtlasAll(atlas = atlasAll) {
 	return newAtlas
 }
 
-// Announcement system
+// Notice system
 
-const announcementEl = document.querySelector("#headerAnnouncement")
-const announcementButton = announcementEl.querySelector('[role=button]')
-const announcementText = announcementEl.querySelector('p').textContent.trim()
+const noticeEl = document.querySelector("#headerNotice")
+const noticeButton = noticeEl.querySelector('[role=button]')
+const noticeText = noticeEl.querySelector('p').textContent.trim()
 
-if (announcementText && announcementText !== window.localStorage.getItem('announcement-closed')) {
-	announcementButton.click()
+if (window.localStorage.getItem('announcement-closed')) {
+	window.localStorage.setItem('closed-notice', window.localStorage.getItem('announcement-closed'))
+	window.localStorage.removeItem('announcement-closed')
+}
+
+if (noticeText && noticeText !== window.localStorage.getItem('closed-notice')) {
+	noticeButton.click()
 	setTimeout(() => {
-		document.body.style.setProperty("--global-top-padding", announcementEl.offsetHeight + 'px')
+		document.body.style.setProperty("--global-top-padding", noticeEl.offsetHeight + 'px')
 	}, 500)
 }
 
-announcementEl.querySelector('[role=button]').addEventListener('click', () => {
-	window.localStorage.setItem('announcement-closed', announcementText)
+noticeEl.querySelector('[role=button]').addEventListener('click', () => {
+	window.localStorage.setItem('closed-notice', noticeText)
 	document.body.style.setProperty("--global-top-padding", null)
 })
