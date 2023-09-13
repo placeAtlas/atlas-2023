@@ -448,6 +448,12 @@ body:not([data-dev]) .show-only-on-dev {
 	display: none !important
 }
 
+#objectsList,
+#offcanvasList,
+#offcanvasDraw {
+	margin-top: var(--global-top-padding);
+}
+
 /* about.html */
 
 #credits a {

@@ -528,10 +528,12 @@ const announcementText = announcementEl.querySelector('p').textContent.trim()
 
 if (announcementText && announcementText !== window.localStorage.getItem('announcement-closed')) {
 	announcementButton.click()
-	document.querySelector('#objectsList').style.marginTop = '2.8rem'
+	setTimeout(() => {
+		document.body.style.setProperty("--global-top-padding", announcementEl.offsetHeight + 'px')
+	}, 500)
 }
 
 announcementEl.querySelector('[role=button]').addEventListener('click', () => {
 	window.localStorage.setItem('announcement-closed', announcementText)
-	document.querySelector('#objectsList').style.marginTop = '0'
+	document.body.style.setProperty("--global-top-padding", null)
 })
