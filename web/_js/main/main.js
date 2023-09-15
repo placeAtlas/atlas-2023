@@ -100,6 +100,17 @@ async function init() {
 		}
 	}
 
+	// Experimental: TemplateManager support
+	// Add a .json file of TemplateManager on the "template" URL param.
+	// e.g. ?template=https://osu.place/e/osuplace2023.json
+	// CORS bypass is required (e.g. a proxy, CORS Anywhere).
+	if (params.get("template")) {
+		const [ templateDatas ] = await loadTemplateData(params.get("template"))
+		const templateLayers = await loadTemplateImages(templateDatas)
+		additionalLayers.push(...templateLayers)
+		updateAdditionalLayer(additionalLayers)
+	}
+
 	if (mode === "about") window.location.replace("./about.html")
 
 	// For Reviewing Reddit Changes

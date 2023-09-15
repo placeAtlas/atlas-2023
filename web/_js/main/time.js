@@ -35,6 +35,9 @@ window.currentPeriod = currentPeriod
 let atlasDisplay = {}
 window.atlasDisplay = atlasDisplay
 
+const additionalLayers = []
+const additionalLayerCanvas = document.createElement('canvas')
+
 // SETUP
 if (variationsConfig[currentVariation].versions.length === 1) bottomBar.classList.add('no-time-slider')
 
@@ -131,13 +134,21 @@ async function updateBackground(newPeriod = currentPeriod, newVariation = curren
 		}
 	}))
 
-	if (currentUpdateIndex !== myUpdateIndex) {
+	if (myAbortController.signal.aborted || newPeriod !== currentPeriod || newVariation !== currentVariation || currentUpdateIndex !== myUpdateIndex) {
 		return false
 	}
-
+	
 	for (const imageLayer of layers) {
 		context.drawImage(imageLayer, 0, 0)
 	}
+
+	context.drawImage(additionalLayerCanvas, 0, 0)
+
+	if (myAbortController.signal.aborted || newPeriod !== currentPeriod || newVariation !== currentVariation || currentUpdateIndex !== myUpdateIndex) {
+		return false
+	}
+
+	if (currentUpdateIndex !== myUpdateIndex) return [configObject, newPeriod, newVariation]
 	const blob = await new Promise(resolve => canvas.toBlob(resolve))
 	canvasUrl = URL.createObjectURL(blob)
 	image.src = canvasUrl
@@ -401,4 +412,25 @@ function getNearestPeriod(entry, targetPeriod, targetVariation) {
 
 	return [ nearestPeriod, nearestVariation, nearestKey ]
 
+}
+
+const updateAdditionalLayer = () => {
+	const layers = additionalLayers
+	const canvas = additionalLayerCanvas
+	const context = additionalLayerCanvas.getContext('2d')
+	canvas.width = 0
+	canvas.height = 0
+
+
+	for (const layer of layers) {
+		if (!layer.imageLayer) continue
+		canvas.width = Math.max(layer.x + layer.imageLayer.width, canvas.width)
+		canvas.height = Math.max(layer.y + layer.imageLayer.height, canvas.height)
+	}
+
+	for (const layer of layers) {
+		if (!layer.imageLayer) continue
+		context.drawImage(layer.imageLayer, layer.x, layer.y)
+		console.log(layer.imageLayer)
+	}
 }
