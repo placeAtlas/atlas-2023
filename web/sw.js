@@ -24,7 +24,7 @@ workbox.routing.registerRoute(
 
 workbox.routing.registerRoute(
     ({ url }) => url.pathname.startsWith('/_img/canvas/'),
-    new workbox.strategies.StaleWhileRevalidate({
+    new workbox.strategies.CacheFirst({
         cacheName: "canvas",
         plugins: [
             new workbox.backgroundSync.BackgroundSyncPlugin(
