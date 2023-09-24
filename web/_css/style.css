@@ -262,16 +262,16 @@ body[data-init-done] .listTransitioning #innerContainer {
 }
 
 #author {
-	flex: 0.5 1 auto;
+	flex: 1 1 auto;
 }
 
 #variantControls {
-	flex: 1 0 auto;
+	flex: 2 0 auto;
 }
 
 #timeControls {
 	position: relative;
-	flex: 6 0 300px;
+	flex: 12 0 300px;
 }
 
 #bottomBar.no-time-slider #timeControls {
