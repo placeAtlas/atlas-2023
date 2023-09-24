@@ -1,8 +1,22 @@
 /*
   Access-Control-Allow-Origin: *
-  
-/_img/canvas/*/*.png
-  Cache-Control: public, max-age=2419200
+  Cache-Control: public
+
+# Hashed resources: 4 weeks
+
+/_js/*
+  Cache-Control: immutable, max-age=2419200
+
+/_css/*
+  Cache-Control: immutable, max-age=2419200
+
+# Canvas images: 1 year
+
+/_img/canvas/*
+  Cache-Control: max-age=31536000
 
 /_img/canvas/*.png
-  Cache-Control: public, max-age=2419200
+  Cache-Control: max-age=31536000
+
+/_img/canvas/*/*.png
+  Cache-Control: max-age=31536000
