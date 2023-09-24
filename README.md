@@ -26,11 +26,13 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) to learn how to submit a new entr
 
 ## Contributors
 
+> **Note**: For more credits, please see [the Credits sections on the About page](https://2023.place-atlas.stefanocoding.me/about#credits).
+
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat)](#contributors)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+Many thanks to these wonderful people for contributing on the scope of this repository. ([emoji key](https://allcontributors.org/docs/en/emoji-key)).
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
