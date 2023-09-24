@@ -7,7 +7,7 @@ self.addEventListener("message", event => {
 });
 
 workbox.routing.registerRoute(
-    ({ url }) => {!url.pathname.startsWith('/_img/canvas/')},
+    ({ url }) => !url.pathname.startsWith('/_img/canvas/'),
     // `workbox.strategies.StaleWhileRevalidate` is used to reduce server contact.
     // Change to `workbox.strategies.NetworkFirst` when updating is required. 
     new workbox.strategies.NetworkFirst({
