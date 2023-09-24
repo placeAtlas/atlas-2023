@@ -27,7 +27,8 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) to learn how to submit a new entr
 ## Contributors
 
 > [!NOTE]
-> For more credits, please see [the Credits sections on the About page](https://2023.place-atlas.stefanocoding.me/about#credits).
+>
+> For more credits, including entry contributors, please see [the Credits sections on the About page](https://2023.place-atlas.stefanocoding.me/about#credits).
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat)](#contributors)
