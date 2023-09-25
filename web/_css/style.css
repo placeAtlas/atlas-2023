@@ -454,6 +454,11 @@ body:not([data-dev]) .show-only-on-dev {
 	margin-top: var(--global-top-padding);
 }
 
+.copyleft {
+	display: inline-block;
+	transform: rotateY(180deg);
+}
+
 /* about.html */
 
 #credits a {
