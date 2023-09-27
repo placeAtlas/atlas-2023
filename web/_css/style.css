@@ -450,7 +450,8 @@ body:not([data-dev]) .show-only-on-dev {
 
 #objectsList,
 #offcanvasList,
-#offcanvasDraw {
+#offcanvasDraw,
+#closeObjectsListButton {
 	margin-top: var(--global-top-padding);
 }
 
