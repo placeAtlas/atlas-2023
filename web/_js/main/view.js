@@ -137,7 +137,7 @@ offcanvasList.addEventListener('hidden.bs.offcanvas', e => {
 
 closeObjectsListButton.addEventListener("click", clearObjectsList)
 
-bottomBar.addEventListener("mouseover", () => {
+container.addEventListener("mouseleave", () => {
 	if (!fixed) clearObjectsList()
 })
 
@@ -595,7 +595,7 @@ function updateHovering(e, tapped) {
 	const pos = updateCoordsDisplay(e)
 
 	if (!(pos[0] <= canvasSize.x + canvasOffset.x + 200 && pos[0] >= canvasOffset.x - 200 && pos[1] <= canvasSize.y + canvasOffset.y + 200 && pos[1] >= canvasOffset.x - 200)) return
-	
+
 	let newHovered = []
 	for (const entry of Object.values(atlasDisplay)) {
 		if (pointIsInPolygon(pos, entry.path)) newHovered.push(entry)
@@ -787,7 +787,7 @@ function initGlobal() {
 		}
 	})
 
-	document.addEventListener('timeupdate', event => {
+	document.addEventListener('timeupdate', () => {
 		updateHash()
 	})
 }
