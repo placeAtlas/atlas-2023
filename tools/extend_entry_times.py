@@ -40,29 +40,43 @@ def per_line_entries(entries: list, file: TextIOWrapper):
 
 def extend_time_key(items):
 	for key, value in list(items.items()):
+		old_key = key
+
 		if key == '':
-			del items[key]
-			items[f'{pre_extend_times[0]}-{post_extend_time}'] = value
-			continue
+			key = f'{pre_extend_times[0]}-{post_extend_time}'
 		elif key == '250' or key == '254' or key == '254-258':
-			del items[key]
-			items[f'250-258'] = value
-			continue
+			key = '250-258'
 
 		times = key.split(', ')
 		for time in times:
+
+			# Parse keys for analysis
+			variation = ''
+			start_time = None
+			end_time = None
+			if ':' in time:
+				variation = time[:time.find(':')]
+				time = time[time.find(':') + 1:]
 			if '-' in time:
-				end_time = time[time.find('-') + 1:]
+				start_time = int(time[:time.find('-')]) 
+				end_time = int(time[time.find('-') + 1:])
 			else:
-				end_time = time
-			if int(end_time) in pre_extend_times:
+				start_time = end_time = int(time)
+			
+			# Extend default canvas periods
+			if end_time in pre_extend_times:
 				if '-' in key:
-					new_key = key.replace(end_time, post_extend_time)
+					key = key.replace(end_time, post_extend_time)
 				else:
-					new_key = key.replace(end_time, f'{key}-{post_extend_time}')
-				del items[key]
-				items[new_key] = value
-				break
+					key = key.replace(end_time, f'{key}-{post_extend_time}')
+
+			# Extend default canvas to TFC
+			if variation == '' and start_time <= 250 and 250 <= end_time:
+				key = key + ', T'
+
+		if old_key != key:
+			del items[old_key]
+			items[key] = value
 
 for entry in atlas_data:
 	if not entry['id'] in exclude_extend:
