@@ -34,6 +34,8 @@ fetch('all-authors.txt')
 				userEl.href = 'https://reddit.com/user/' + contributor
 				userEl.textContent = contributor
 			}
+			userEl.target = '_blank'
+			userEl.rel = 'noreferrer'
 			contributorsEl.appendChild(userEl)
 			contributorsEl.appendChild(document.createTextNode(' '))
 		}
