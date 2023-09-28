@@ -18,7 +18,6 @@ exclude_extend = set([
 if len(pre_extend_times) == 0:
 	pre_extend_times.append(post_extend_time - 1)
 	pre_extend_times.append(post_extend_time - 2)
-post_extend_time = str(post_extend_time)
 
 while not os.path.exists('README.md'):
 	os.chdir('..')
@@ -48,7 +47,10 @@ def extend_time_key(items):
 			key = '250-258'
 
 		times = key.split(', ')
-		for time in times:
+		new_times = []
+		to_add_tfc = 0
+
+		for time in times.copy():
 
 			# Parse keys for analysis
 			variation = ''
@@ -57,22 +59,48 @@ def extend_time_key(items):
 			if ':' in time:
 				variation = time[:time.find(':')]
 				time = time[time.find(':') + 1:]
+			elif time.isalpha():
+				variation = time
+				time = ''
 			if '-' in time:
 				start_time = int(time[:time.find('-')]) 
 				end_time = int(time[time.find('-') + 1:])
-			else:
+			elif time:
 				start_time = end_time = int(time)
 			
 			# Extend default canvas periods
 			if end_time in pre_extend_times:
-				if '-' in key:
-					key = key.replace(end_time, post_extend_time)
+				end_time = post_extend_time
+
+			# Rebuild period string before adding it
+			if start_time and end_time:
+				if start_time == end_time:
+					time = str(start_time)
 				else:
-					key = key.replace(end_time, f'{key}-{post_extend_time}')
+					time = f'{start_time}-{end_time}'
+			else:
+				time = ''
+
+			if time == '':
+				time = variation
+			else:
+				if variation:
+					time = f'{variation}:{time}'
+			
+			new_times.append(time)
 
 			# Extend default canvas to TFC
+			if variation == 'T':
+				to_add_tfc = -1
 			if variation == '' and start_time <= 250 and 250 <= end_time:
-				key = key + ', T'
+				if to_add_tfc == 0:
+					to_add_tfc = 1 
+
+		if to_add_tfc == 1:
+			new_times.append('T')
+
+		new_times = list(filter(lambda x: x, list(dict.fromkeys(new_times))))
+		key = ', '.join(new_times)
 
 		if old_key != key:
 			del items[old_key]
