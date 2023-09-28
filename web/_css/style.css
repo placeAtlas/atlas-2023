@@ -462,11 +462,11 @@ body:not([data-dev]) .show-only-on-dev {
 
 /* about.html */
 
-#credits a {
+#entry-contributors-wrapper a {
 	text-decoration: none;
 }
 
-#credits a:hover {
+#entry-contributors-wrapper a:hover {
 	text-decoration: underline;
 }
 

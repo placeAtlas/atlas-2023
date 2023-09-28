@@ -5,7 +5,7 @@
  * Licensed under AGPL-3.0 (https://2023.place-atlas.stefanocoding.me/license.txt)
  */
 
-const contributorsEl = document.querySelector('#contributors-wrapper')
+const contributorsEl = document.querySelector('#entry-contributors-wrapper')
 
 // <i aria-label="GitHub" class="bi bi-github"></i>
 const gitHubEl = document.createElement("i")
