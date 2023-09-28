@@ -24,7 +24,7 @@ workbox.routing.registerRoute(
 
 workbox.routing.registerRoute(
     ({ url }) => url.pathname.startsWith('/_img/canvas/'),
-    // `workbox.strategies.CacheFirst` is used to reduce server contact.
+    // `workbox.strategies.CacheFirst` is used to minimize server contact, due to their size.
     // Change to `workbox.strategies.StateWhileRevalidate` when updating is required. 
     new workbox.strategies.CacheFirst({
         cacheName: "canvas"
