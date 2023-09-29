@@ -1,7 +1,7 @@
 /*!
  * The 2023 r/place Atlas
  * Copyright (c) 2017 Roland Rytz <roland@draemm.li>
- * Copyright (c) 2023 Place Atlas contributors
+ * Copyright (c) 2023 Place Atlas Initiative and contributors
  * Licensed under AGPL-3.0 (https://2023.place-atlas.stefanocoding.me/license.txt)
  */
 
@@ -98,6 +98,17 @@ async function init() {
 			newLocation.search = params
 			window.history.replaceState({}, '', newLocation)
 		}
+	}
+
+	// Experimental: TemplateManager support
+	// Add a .json file of TemplateManager on the "template" URL param.
+	// e.g. ?template=https://osu.place/e/osuplace2023.json
+	// CORS bypass is required (e.g. a proxy, CORS Anywhere).
+	if (params.get("template")) {
+		const [ templateDatas ] = await loadTemplateData(params.get("template"))
+		const templateLayers = await loadTemplateImages(templateDatas)
+		additionalLayers.push(...templateLayers)
+		updateAdditionalLayer(additionalLayers)
 	}
 
 	if (mode === "about") window.location.replace("./about.html")
@@ -520,18 +531,31 @@ function generateAtlasAll(atlas = atlasAll) {
 	return newAtlas
 }
 
-// Announcement system
+// Notice system
 
-const announcementEl = document.querySelector("#headerAnnouncement")
-const announcementButton = announcementEl.querySelector('[role=button]')
-const announcementText = announcementEl.querySelector('p').textContent.trim()
+const noticeEl = document.querySelector("#headerNotice")
+const noticeButton = noticeEl.querySelector('[role=button]')
+const noticeText = noticeEl.querySelector('p').textContent.trim()
 
-if (announcementText && announcementText !== window.localStorage.getItem('announcement-closed')) {
-	announcementButton.click()
-	document.querySelector('#objectsList').style.marginTop = '2.8rem'
+const resizeGlobalTopPadding = () => {
+	document.body.style.setProperty("--global-top-padding", noticeEl.offsetHeight + 'px')
 }
 
-announcementEl.querySelector('[role=button]').addEventListener('click', () => {
-	window.localStorage.setItem('announcement-closed', announcementText)
-	document.querySelector('#objectsList').style.marginTop = '0'
+if (window.localStorage.getItem('announcement-closed')) {
+	window.localStorage.setItem('closed-notice', window.localStorage.getItem('announcement-closed'))
+	window.localStorage.removeItem('announcement-closed')
+}
+
+if (noticeText && noticeText !== window.localStorage.getItem('closed-notice')) {
+	noticeButton.click()
+	setTimeout(() => {
+		document.body.style.setProperty("--global-top-padding", noticeEl.offsetHeight + 'px')
+	}, 500)
+	window.addEventListener('resize', resizeGlobalTopPadding)
+}
+
+noticeEl.querySelector('[role=button]').addEventListener('click', () => {
+	window.localStorage.setItem('closed-notice', noticeText)
+	window.removeEventListener('resize', resizeGlobalTopPadding)
+	document.body.style.setProperty("--global-top-padding", null)
 })

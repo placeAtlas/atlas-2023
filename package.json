@@ -18,7 +18,8 @@
 	},
 	"parcelIgnore": [
 		"sw.js",
-		"_img/.+"
+		"_img/.+",
+		"atlas.json"
 	],
 	"browserslist": [
 		">= 0.5%",

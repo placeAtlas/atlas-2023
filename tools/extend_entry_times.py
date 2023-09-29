@@ -18,7 +18,6 @@ exclude_extend = set([
 if len(pre_extend_times) == 0:
 	pre_extend_times.append(post_extend_time - 1)
 	pre_extend_times.append(post_extend_time - 2)
-post_extend_time = str(post_extend_time)
 
 while not os.path.exists('README.md'):
 	os.chdir('..')
@@ -40,29 +39,72 @@ def per_line_entries(entries: list, file: TextIOWrapper):
 
 def extend_time_key(items):
 	for key, value in list(items.items()):
+		old_key = key
+
 		if key == '':
-			del items[key]
-			items[f'{pre_extend_times[0]}-{post_extend_time}'] = value
-			continue
+			key = f'{pre_extend_times[0]}-{post_extend_time}'
 		elif key == '250' or key == '254' or key == '254-258':
-			del items[key]
-			items[f'250-258'] = value
-			continue
+			key = '250-258'
 
 		times = key.split(', ')
-		for time in times:
+		new_times = []
+		to_add_tfc = 0
+
+		for time in times.copy():
+
+			# Parse keys for analysis
+			variation = ''
+			start_time = None
+			end_time = None
+			if ':' in time:
+				variation = time[:time.find(':')]
+				time = time[time.find(':') + 1:]
+			elif time.isalpha():
+				variation = time
+				time = ''
 			if '-' in time:
-				end_time = time[time.find('-') + 1:]
-			else:
-				end_time = time
-			if int(end_time) in pre_extend_times:
-				if '-' in key:
-					new_key = key.replace(end_time, post_extend_time)
+				start_time = int(time[:time.find('-')]) 
+				end_time = int(time[time.find('-') + 1:])
+			elif time:
+				start_time = end_time = int(time)
+			
+			# Extend default canvas periods
+			if end_time in pre_extend_times:
+				end_time = post_extend_time
+
+			# Rebuild period string before adding it
+			if start_time and end_time:
+				if start_time == end_time:
+					time = str(start_time)
 				else:
-					new_key = key.replace(end_time, f'{key}-{post_extend_time}')
-				del items[key]
-				items[new_key] = value
-				break
+					time = f'{start_time}-{end_time}'
+			else:
+				time = ''
+
+			if time == '':
+				time = variation
+			else:
+				if variation:
+					time = f'{variation}:{time}'
+			
+			new_times.append(time)
+
+			# Extend default canvas to TFC
+			if variation == 'T':
+				to_add_tfc = -1
+			if variation == '' and start_time <= 250 and 250 <= end_time:
+				if to_add_tfc == 0:
+					to_add_tfc = 1 
+
+		if to_add_tfc == 1:
+			new_times.append('T')
+
+		new_times = list(filter(lambda x: x, list(dict.fromkeys(new_times))))
+		key = ', '.join(new_times)
+
+		if old_key != key:
+			del items[old_key]
+			items[key] = value
 
 for entry in atlas_data:
 	if not entry['id'] in exclude_extend:

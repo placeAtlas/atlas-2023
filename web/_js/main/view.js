@@ -1,7 +1,7 @@
 /*!
  * The 2023 r/place Atlas
  * Copyright (c) 2017 Roland Rytz <roland@draemm.li>
- * Copyright (c) 2023 Place Atlas contributors
+ * Copyright (c) 2023 Place Atlas Initiative and contributors
  * Licensed under AGPL-3.0 (https://2023.place-atlas.stefanocoding.me/license.txt)
  */
 
@@ -137,7 +137,7 @@ offcanvasList.addEventListener('hidden.bs.offcanvas', e => {
 
 closeObjectsListButton.addEventListener("click", clearObjectsList)
 
-bottomBar.addEventListener("mouseover", () => {
+container.addEventListener("mouseleave", () => {
 	if (!fixed) clearObjectsList()
 })
 
@@ -595,7 +595,7 @@ function updateHovering(e, tapped) {
 	const pos = updateCoordsDisplay(e)
 
 	if (!(pos[0] <= canvasSize.x + canvasOffset.x + 200 && pos[0] >= canvasOffset.x - 200 && pos[1] <= canvasSize.y + canvasOffset.y + 200 && pos[1] >= canvasOffset.x - 200)) return
-	
+
 	let newHovered = []
 	for (const entry of Object.values(atlasDisplay)) {
 		if (pointIsInPolygon(pos, entry.path)) newHovered.push(entry)
@@ -787,7 +787,7 @@ function initGlobal() {
 		}
 	})
 
-	document.addEventListener('timeupdate', event => {
+	document.addEventListener('timeupdate', () => {
 		updateHash()
 	})
 }
@@ -836,4 +836,78 @@ function initViewGlobal() {
 	document.addEventListener('timeupdate', event => {
 		drawButton.href = "./?mode=draw" + formatHash(null, event.detail.period, event.detail.variation)
 	})
+}
+
+
+async function loadTemplateData(initUrl, datas, blacklistUrls, level = 0) {
+	datas ??= {}
+	blacklistUrls ??= new Set()
+
+	if (datas[initUrl] || blacklistUrls.has(initUrl)) return [ datas, blacklistUrls ]
+
+	datas[initUrl] = {}
+
+	try {
+		const data = await (await fetch(initUrl)).json()
+		datas[initUrl] = data
+		for (const blacklisted of data?.blacklist) {
+			blacklistUrls.add(blacklisted.url)
+		}
+		await Promise.all(data?.whitelist.map(async wl => {
+			const [ wlDatas, wlBlacklistUrls ] = await loadTemplateData(wl.url, datas, blacklistUrls, level + 1)
+			Object.assign(datas, wlDatas)
+			blacklistUrls.add(...wlBlacklistUrls)
+		}))
+	} catch (e) {}
+
+	return [ datas, [...blacklistUrls] ]
+}
+
+async function loadTemplateImages(datas) {
+
+	const templates = []
+
+	for (const data of Object.values(datas)) {
+		if (!data?.templates) continue
+		for (const template of data?.templates) {
+			templates.push(template)
+		}
+	}
+
+	await Promise.all(templates.map(async (template, i) => {
+
+		if (!template.sources) return
+
+		for (const source of template.sources) {
+			try {
+				const sourceResponse = await (await fetch(source)).blob()
+				template.blob = URL.createObjectURL(sourceResponse)
+				break
+			} catch (e) {}
+		}
+		delete template.sources
+
+		if (!template.blob) return
+
+		const imageLayer = new Image()
+		await new Promise(resolve => {
+			imageLayer.onload = () => {
+				template.imageLayer = imageLayer
+				delete template.blob
+				resolve()
+			}
+			imageLayer.onerror = () => {
+				delete template
+				resolve()
+			}
+			imageLayer.src = template.blob
+		})
+	}))
+
+	for (const layer of templates) {
+		if (!layer.imageLayer) delete layer
+	}
+
+	return templates
+
 }

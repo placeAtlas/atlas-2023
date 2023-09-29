@@ -9,3 +9,7 @@
 [context.deploy-preview]
 	command = "FILE=tools/ci/build-preview.sh; rm -rf dist/; if [ -f $FILE ]; then bash $FILE; else cp -r web/ dist/; fi"
 	ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF data/patches/ web/ tools/ .parcelrc netlify.toml package-lock.json package.json postcss.config.js"
+
+[context.branch-deploy]
+	command = "FILE=tools/ci/build-preview.sh; rm -rf dist/; if [ -f $FILE ]; then bash $FILE; else cp -r web/ dist/; fi"
+	ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF data/patches/ web/ tools/ .parcelrc netlify.toml package-lock.json package.json postcss.config.js"

@@ -8,13 +8,15 @@
 
 # The 2023 r/place Atlas
 
-The 2023 r/place Atlas is a project aiming to chart all the artworks created during the r/place April Fools event on Reddit in 2023. It is made with information to each artwork of the canvas provided by the community.
+The 2023 r/place Atlas is an interactive map aiming to chart all the artworks created during the r/place April Fools event on Reddit in 2023. It is made with information to each artwork of the canvas provided by the community.
 
-This project was established by Roland Rytz for the event in 2017, and further developed and maintained by the Place Atlas team and contributors. 
+This project was established by Roland Rytz for the event in 2017, and further developed and maintained by the [Place Atlas Initiative](https://place-atlas.stefanocoding.me) and [contributors](https://github.com/placeAtlas/atlas-2023/graphs/contributors).
+
+Read more about the project from [the announcement on Reddit](https://www.reddit.com/r/placeAtlas2023/comments/154z3q4).
 
 This project is licensed under the [GNU Affero General Public License v3.0](LICENSE).
 
-You can check out the website by visiting [2023.place-atlas.stefanocoding.me](https://2023.place-atlas.stefanocoding.me/). If you want to keep distance from GitHub, you may visit [r/placeAtlas2023](https://www.reddit.com/r/placeAtlas2023/).
+You can check out the website by visiting [2023.place-atlas.stefanocoding.me](https://2023.place-atlas.stefanocoding.me/). The subreddit, [r/placeAtlas2023](https://www.reddit.com/r/placeAtlas2023/), is available for communications via Reddit.
 
 ## Contributing
 
@@ -26,11 +28,14 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) to learn how to submit a new entr
 
 ## Contributors
 
+> [!NOTE]
+> For more credits, including entry contributors, please see [the Credits sections on the About page](https://2023.place-atlas.stefanocoding.me/about#credits).
+
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat)](#contributors)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+Many thanks to these wonderful people for contributing on the scope of this repository. ([emoji key](https://allcontributors.org/docs/en/emoji-key)).
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
