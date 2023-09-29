@@ -15,6 +15,17 @@ exclude_extend = set([
 	6483,
 ])
 
+exclude_tfc = set([
+	696,
+	3201,
+	3230,
+	3292,
+	4475,
+	4836,
+	5391,
+	6311,
+])
+
 if len(pre_extend_times) == 0:
 	pre_extend_times.append(post_extend_time - 1)
 	pre_extend_times.append(post_extend_time - 2)
@@ -37,7 +48,7 @@ def per_line_entries(entries: list, file: TextIOWrapper):
 		line_temp = json.dumps(entry, ensure_ascii=False)
 	file.write(line_temp + "\n]")
 
-def extend_time_key(items):
+def extend_time_key(entry_id, items):
 	for key, value in list(items.items()):
 		old_key = key
 
@@ -63,11 +74,11 @@ def extend_time_key(items):
 				variation = time
 				time = ''
 			if '-' in time:
-				start_time = int(time[:time.find('-')]) 
+				start_time = int(time[:time.find('-')])
 				end_time = int(time[time.find('-') + 1:])
 			elif time:
 				start_time = end_time = int(time)
-			
+
 			# Extend default canvas periods
 			if end_time in pre_extend_times:
 				end_time = post_extend_time
@@ -86,7 +97,7 @@ def extend_time_key(items):
 			else:
 				if variation:
 					time = f'{variation}:{time}'
-			
+
 			new_times.append(time)
 
 			# Extend default canvas to TFC
@@ -94,9 +105,9 @@ def extend_time_key(items):
 				to_add_tfc = -1
 			if variation == '' and start_time <= 250 and 250 <= end_time:
 				if to_add_tfc == 0:
-					to_add_tfc = 1 
+					to_add_tfc = 1
 
-		if to_add_tfc == 1:
+		if to_add_tfc == 1 and entry_id not in exclude_tfc:
 			new_times.append('T')
 
 		new_times = list(filter(lambda x: x, list(dict.fromkeys(new_times))))
@@ -107,9 +118,10 @@ def extend_time_key(items):
 			items[key] = value
 
 for entry in atlas_data:
-	if not entry['id'] in exclude_extend:
-		extend_time_key(entry['path'])
-		extend_time_key(entry['center'])
+	entry_id = entry['id']
+	if not entry_id in exclude_extend:
+		extend_time_key(entry_id, entry['path'])
+		extend_time_key(entry_id, entry['center'])
 
 with open('web/atlas.json', 'w', encoding='utf-8') as atlas_file:
 	per_line_entries(atlas_data, atlas_file)
