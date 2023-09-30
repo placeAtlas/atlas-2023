@@ -142,7 +142,7 @@ async function updateBackground(newPeriod = currentPeriod, newVariation = curren
 		context.drawImage(imageLayer, 0, 0)
 	}
 
-	context.drawImage(additionalLayerCanvas, 0, 0)
+	if (additionalLayerCanvas.width !== 0 && additionalLayerCanvas.height !== 0) context.drawImage(additionalLayerCanvas, 0, 0)
 
 	if (myAbortController.signal.aborted || newPeriod !== currentPeriod || newVariation !== currentVariation || currentUpdateIndex !== myUpdateIndex) {
 		return false
