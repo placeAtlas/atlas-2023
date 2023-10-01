@@ -1,0 +1,40 @@
+{
+	"id": -1,
+	"name": "Intersex Pride Flag",
+	"description": "",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Intersex"
+		]
+	},
+	"path": {
+		"T": [
+			[
+				-914,
+				760
+			],
+			[
+				-905,
+				760
+			],
+			[
+				-905,
+				767
+			],
+			[
+				-914,
+				767
+			],
+			[
+				-914,
+				760
+			]
+		]
+	},
+	"center": {
+		"T": [
+			-909,
+			764
+		]
+	}
+}
