@@ -1,0 +1,48 @@
+{
+	"id": 2287,
+	"name": "Petare Gang 9295",
+	"description": "Obra que representa la comunidad del streamer Samulx_ y el lugar donde nacio, Petare, Venezuela. 9295 significa la calle de la misma. La boca y los ojos de la obra es ela foto de perfil que lo ha acompañado en toda su trayectoria como streamer",
+	"links": {
+		"website": [
+			"https://kick.com/samulx"
+		]
+	},
+	"path": {
+		"216-238": [
+			[
+				-1010,
+				776
+			],
+			[
+				-1031,
+				775
+			],
+			[
+				-972,
+				774
+			],
+			[
+				-971,
+				812
+			],
+			[
+				-1033,
+				812
+			],
+			[
+				-1033,
+				774
+			],
+			[
+				-973,
+				774
+			]
+		]
+	},
+	"center": {
+		"216-238": [
+			-990,
+			793
+		]
+	}
+}
