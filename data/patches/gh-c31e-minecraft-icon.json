@@ -1,0 +1,44 @@
+{
+	"id": -1,
+	"name": "Minecraft Icon",
+	"description": "Minecraft is a 3D sandbox game created by Swedish game developer Markus \"Notch\" Persson and maintained by Mojang Studios.",
+	"links": {
+		"website": [
+			"https://www.minecraft.net/en-us",
+			"https://minecraft.wiki/"
+		],
+		"subreddit": [
+			"minecraft"
+		]
+	},
+	"path": {
+		"T": [
+			[
+				-1037,
+				791
+			],
+			[
+				-1037,
+				797
+			],
+			[
+				-1031,
+				797
+			],
+			[
+				-1031,
+				791
+			],
+			[
+				-1037,
+				791
+			]
+		]
+	},
+	"center": {
+		"T": [
+			-1034,
+			794
+		]
+	}
+}
