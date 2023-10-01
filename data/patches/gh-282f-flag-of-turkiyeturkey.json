@@ -1,0 +1,43 @@
+{
+	"id": -1,
+	"name": "Flag of Türkiye/Turkey",
+	"description": "",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Turkey"
+		],
+		"subreddit": [
+			"Turkey"
+		]
+	},
+	"path": {
+		"T": [
+			[
+				-894,
+				715
+			],
+			[
+				-894,
+				721
+			],
+			[
+				-884,
+				721
+			],
+			[
+				-884,
+				715
+			],
+			[
+				-894,
+				715
+			]
+		]
+	},
+	"center": {
+		"T": [
+			-889,
+			718
+		]
+	}
+}
