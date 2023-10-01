@@ -1,0 +1,43 @@
+{
+	"id": -1,
+	"name": "Ness",
+	"description": "Ness is the main protagonist of the video game \"EarthBound\" (also known as \"Mother 2\" in Japan).",
+	"links": {
+		"website": [
+			"https://wikibound.info/wiki/Ness"
+		],
+		"subreddit": [
+			"earthbound"
+		]
+	},
+	"path": {
+		"T": [
+			[
+				-999,
+				702
+			],
+			[
+				-984,
+				702
+			],
+			[
+				-984,
+				726
+			],
+			[
+				-1000,
+				726
+			],
+			[
+				-1000,
+				703
+			]
+		]
+	},
+	"center": {
+		"T": [
+			-992,
+			714
+		]
+	}
+}
