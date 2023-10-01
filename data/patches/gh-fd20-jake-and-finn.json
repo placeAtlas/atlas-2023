@@ -1,0 +1,52 @@
+{
+	"id": -1,
+	"name": "Jake and Finn",
+	"description": "Jake the Dog (left) and Finn the Human (right) are the protagonists of the American animated television series \"Adventure Time.\"",
+	"links": {
+		"website": [
+			"https://adventuretime.fandom.com/wiki/Jake",
+			"https://adventuretime.fandom.com/wiki/Finn"
+		],
+		"subreddit": [
+			"adventuretime"
+		]
+	},
+	"path": {
+		"T": [
+			[
+				-999,
+				687
+			],
+			[
+				-983,
+				687
+			],
+			[
+				-983,
+				694
+			],
+			[
+				-990,
+				694
+			],
+			[
+				-990,
+				693
+			],
+			[
+				-999,
+				693
+			],
+			[
+				-999,
+				687
+			]
+		]
+	},
+	"center": {
+		"T": [
+			-988,
+			690
+		]
+	}
+}
