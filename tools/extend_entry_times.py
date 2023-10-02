@@ -16,6 +16,7 @@ exclude_extend = set([
 ])
 
 exclude_tfc = set([
+	166,
 	696,
 	3056,
 	3201,
