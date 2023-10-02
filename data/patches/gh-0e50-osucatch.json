@@ -1,0 +1,76 @@
+{
+	"id": -1,
+	"name": "osu!catch",
+	"description": "Likely the least popular osu! game mode, osu!catch has players catching fruit in a basket. Nobody really knows if it's inspired by any other rhythm game.",
+	"links": {
+		"website": [
+			"https://osu.ppy.sh/wiki/en/Game_mode#osu!catch"
+		],
+		"subreddit": [
+			"osuplace",
+			"osugame"
+		]
+	},
+	"path": {
+		"T": [
+			[
+				278,
+				214
+			],
+			[
+				281,
+				217
+			],
+			[
+				281,
+				229
+			],
+			[
+				279,
+				231
+			],
+			[
+				270,
+				231
+			],
+			[
+				265,
+				226
+			],
+			[
+				265,
+				220
+			],
+			[
+				266,
+				219
+			],
+			[
+				266,
+				218
+			],
+			[
+				268,
+				216
+			],
+			[
+				271,
+				215
+			],
+			[
+				277,
+				214
+			],
+			[
+				278,
+				214
+			]
+		]
+	},
+	"center": {
+		"T": [
+			273,
+			223
+		]
+	}
+}
