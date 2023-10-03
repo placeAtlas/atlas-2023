@@ -1,0 +1,58 @@
+{
+	"id": 3812,
+	"name": "Flag of Turkey",
+	"description": "An icon representing the flag of the Republic of Turkey (Türkiye), a country in Southeastern Europe and Western Asia.\n\nOriginally Turkey invaded the start button at the bottom left of the taskbar, but later moved to this spot, which was intended to belong to BaconReader, a third-party Reddit client app for Apple devices. As Turkey did not have permission to be here, the taskbar community continually attempted to stop Turkey and restore BaconReader. However, in the final moments of the canvas, the community shifted to protecting the Start button.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Turkey",
+			"https://discord.com/channels/297922153750200322/1132769645334630420/1133427389033099314",
+			"https://discord.com/channels/297922153750200322/1132769645334630420/1133430893856432239",
+			"https://cdn.discordapp.com/attachments/1131630764388257822/1132257003012620298/v4-3000.png"
+		],
+		"discord": [
+			"XcBujggwty"
+		]
+	},
+	"path": {
+		"236-256": [
+			[
+				-1226,
+				976
+			],
+			[
+				-1229,
+				979
+			],
+			[
+				-1229,
+				990
+			],
+			[
+				-1226,
+				993
+			],
+			[
+				-1215,
+				993
+			],
+			[
+				-1212,
+				990
+			],
+			[
+				-1212,
+				979
+			],
+			[
+				-1215,
+				976
+			]
+		]
+	},
+	"center": {
+		"236-256": [
+			-1220,
+			985
+		]
+	}
+}
