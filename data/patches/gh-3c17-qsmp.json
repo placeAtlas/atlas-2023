@@ -1,0 +1,81 @@
+{
+	"id": 1467,
+	"name": "QSMP",
+	"description": "QSMP is a survival multiplayer server in the game Minecraft featuring many Minecraft-focused YouTubers who speak various languages. It is known as \"the world's first multilingual Minecraft server\".",
+	"links": {
+		"website": [
+			"https://qsmp.fandom.com/wiki/QSMP"
+		],
+		"subreddit": [
+			"placestart"
+		]
+	},
+	"path": {
+		"165-256": [
+			[
+				-149,
+				971
+			],
+			[
+				-151,
+				973
+			],
+			[
+				-151,
+				996
+			],
+			[
+				-149,
+				998
+			],
+			[
+				-53,
+				998
+			],
+			[
+				-51,
+				996
+			],
+			[
+				-51,
+				973
+			],
+			[
+				-53,
+				971
+			]
+		],
+		"T": [
+			[
+				-141,
+				971
+			],
+			[
+				-141,
+				999
+			],
+			[
+				-52,
+				999
+			],
+			[
+				-52,
+				971
+			],
+			[
+				-141,
+				971
+			]
+		]
+	},
+	"center": {
+		"165-256": [
+			-101,
+			985
+		],
+		"T": [
+			-96,
+			985
+		]
+	}
+}
