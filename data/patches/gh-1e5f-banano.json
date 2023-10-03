@@ -1,0 +1,47 @@
+{
+	"id": -1,
+	"name": "BANANO",
+	"description": "Banano is a feeless, instant, rich in potassium cryptocurrency powered by DAG technology disrupting the meme economy.\nOriginally, this piece was in the third party app area, but was moved to the rightmost edge of the taskbar by the r/TheFinalClean team.",
+	"links": {
+		"website": [
+			"https://banano.cc/",
+			"https://www.reddit.com/r/banano/comments/1595sr0/rplacestart/"
+		],
+		"subreddit": [
+			"banano"
+		],
+		"discord": [
+			"XcBujggwty"
+		]
+	},
+	"path": {
+		"T": [
+			[
+				587,
+				974
+			],
+			[
+				587,
+				994
+			],
+			[
+				616,
+				994
+			],
+			[
+				616,
+				974
+			],
+			[
+				587,
+				974
+			]
+		]
+	},
+	"center": {
+		"T": [
+			602,
+			984
+		]
+	}
+}
