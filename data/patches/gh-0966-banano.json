@@ -1,0 +1,43 @@
+{
+	"id": 3742,
+	"name": "BANANO",
+	"description": "Banano is a feeless, instant, rich in potassium cryptocurrency powered by DAG technology disrupting the meme economy. As this part of the taskbar was originally meant for Reddit api apps, Banano wasn't originally planned to be on the taskbar. However, through diplomacy they later acquired permission to be there.",
+	"links": {
+		"website": [
+			"https://banano.cc/",
+			"https://www.reddit.com/r/banano/comments/1595sr0/rplacestart/"
+		],
+		"subreddit": [
+			"banano"
+		],
+		"discord": [
+			"XcBujggwty"
+		]
+	},
+	"path": {
+		"215-256": [
+			[
+				-1304,
+				971
+			],
+			[
+				-1304,
+				999
+			],
+			[
+				-1276,
+				999
+			],
+			[
+				-1276,
+				971
+			]
+		]
+	},
+	"center": {
+		"215-256": [
+			-1290,
+			985
+		]
+	}
+}
