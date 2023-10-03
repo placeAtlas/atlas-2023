@@ -1,0 +1,40 @@
+{
+	"id": -1,
+	"name": "Flag of Turkey",
+	"description": "An icon representing the flag of the Republic of Turkey (Türkiye), a country in Southeastern Europe and Western Asia.\nOriginally, this piece was in the third party app area, but was moved to the rightmost edge of the taskbar by the r/TheFinalClean team.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Turkey"
+		]
+	},
+	"path": {
+		"T": [
+			[
+				616,
+				974
+			],
+			[
+				616,
+				993
+			],
+			[
+				635,
+				993
+			],
+			[
+				635,
+				974
+			],
+			[
+				616,
+				974
+			]
+		]
+	},
+	"center": {
+		"T": [
+			626,
+			984
+		]
+	}
+}
