@@ -16,12 +16,12 @@ exclude_extend = set([
 ])
 
 exclude_tfc = set([
-	166,
 	696,
-	3056,
 	3201,
 	3230,
 	3292,
+	3742,
+	3812,
 	4475,
 	4836,
 	5391,
@@ -51,6 +51,7 @@ def per_line_entries(entries: list, file: TextIOWrapper):
 	file.write(line_temp + "\n]")
 
 def extend_time_key(entry_id, items):
+	can_add_tfc = entry_id not in exclude_tfc and not any('T' in key for key in items.keys())
 	for key, value in list(items.items()):
 		old_key = key
 
@@ -61,7 +62,7 @@ def extend_time_key(entry_id, items):
 
 		times = key.split(', ')
 		new_times = []
-		to_add_tfc = 0
+		add_tfc = False
 
 		for time in times.copy():
 
@@ -103,13 +104,9 @@ def extend_time_key(entry_id, items):
 			new_times.append(time)
 
 			# Extend default canvas to TFC
-			if variation == 'T':
-				to_add_tfc = -1
-			if variation == '' and start_time <= 250 and 250 <= end_time:
-				if to_add_tfc == 0:
-					to_add_tfc = 1
+			add_tfc = add_tfc or (variation == '' and start_time <= 250 and 250 <= end_time)
 
-		if to_add_tfc == 1 and entry_id not in exclude_tfc:
+		if add_tfc == 1 and can_add_tfc:
 			new_times.append('T')
 
 		new_times = list(filter(lambda x: x, list(dict.fromkeys(new_times))))
