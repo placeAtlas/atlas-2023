@@ -24,8 +24,10 @@ exclude_tfc = set([
 	3812,
 	4475,
 	4836,
+	5190,
 	5391,
 	6311,
+	6447,
 ])
 
 if len(pre_extend_times) == 0:
