@@ -1,0 +1,136 @@
+{
+	"id": -1,
+	"name": "Yellow Budgie (Parrot Dash Recolor)",
+	"description": "During the event, Parrot Dash's piece was temporarily colored yellow at the request of a user in her discord server in order to depict said user's pet budgie.",
+	"links": {
+		"website": [
+			"https://www.twitch.tv/parrot_dash",
+			"https://www.youtube.com/@ParrotDash"
+		],
+		"discord": [
+			"parrotdash"
+		]
+	},
+	"path": {
+		"187": [
+			[
+				-551,
+				-245
+			],
+			[
+				-549,
+				-245
+			],
+			[
+				-546,
+				-242
+			],
+			[
+				-546,
+				-241
+			],
+			[
+				-547,
+				-240
+			],
+			[
+				-548,
+				-241
+			],
+			[
+				-549,
+				-240
+			],
+			[
+				-549,
+				-239
+			],
+			[
+				-548,
+				-238
+			],
+			[
+				-548,
+				-237
+			],
+			[
+				-550,
+				-235
+			],
+			[
+				-550,
+				-234
+			],
+			[
+				-551,
+				-233
+			],
+			[
+				-552,
+				-233
+			],
+			[
+				-553,
+				-234
+			],
+			[
+				-554,
+				-234
+			],
+			[
+				-555,
+				-233
+			],
+			[
+				-557,
+				-233
+			],
+			[
+				-558,
+				-234
+			],
+			[
+				-559,
+				-234
+			],
+			[
+				-560,
+				-235
+			],
+			[
+				-559,
+				-236
+			],
+			[
+				-558,
+				-236
+			],
+			[
+				-555,
+				-239
+			],
+			[
+				-555,
+				-240
+			],
+			[
+				-554,
+				-241
+			],
+			[
+				-554,
+				-242
+			],
+			[
+				-551,
+				-245
+			]
+		]
+	},
+	"center": {
+		"187": [
+			-552,
+			-238
+		]
+	}
+}
