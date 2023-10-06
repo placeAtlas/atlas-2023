@@ -1,0 +1,95 @@
+{
+	"id": 469,
+	"name": "Aromantic flag",
+	"description": "A pride flag representing the aromatic community. Aromantic people experience little to no romantic attraction.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Romantic_orientation#Aromanticism"
+		],
+		"subreddit": [
+			"aromantic"
+		]
+	},
+	"path": {
+		"66-122": [
+			[
+				138,
+				90
+			],
+			[
+				138,
+				96
+			],
+			[
+				154,
+				96
+			],
+			[
+				154,
+				90
+			],
+			[
+				139,
+				90
+			]
+		],
+		"123-256": [
+			[
+				124,
+				90
+			],
+			[
+				124,
+				95
+			],
+			[
+				146,
+				95
+			],
+			[
+				146,
+				90
+			],
+			[
+				124,
+				90
+			]
+		],
+		"T": [
+			[
+				124,
+				90
+			],
+			[
+				124,
+				95
+			],
+			[
+				143,
+				95
+			],
+			[
+				143,
+				90
+			],
+			[
+				124,
+				90
+			]
+		]
+	},
+	"center": {
+		"66-122": [
+			146,
+			93
+		],
+		"123-256": [
+			135,
+			93
+		],
+		"T": [
+			134,
+			93
+		]
+	}
+}
