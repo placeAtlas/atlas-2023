@@ -1,0 +1,83 @@
+{
+	"id": 2165,
+	"name": "Ducks United",
+	"description": "The great union of ducks from mutliple subreddit all united under one banner (https://discord.gg/ySXpJwzTzs)",
+	"links": {
+		"subreddit": [
+			"placeducks",
+			"duck_place",
+			"shareducks"
+		],
+		"discord": [
+			"ySXpJwzTzs"
+		]
+	},
+	"path": {
+		"211-232": [
+			[
+				1368,
+				719
+			],
+			[
+				1368,
+				754
+			],
+			[
+				1388,
+				754
+			],
+			[
+				1388,
+				733
+			],
+			[
+				1381,
+				733
+			],
+			[
+				1381,
+				719
+			]
+		],
+		"T": [
+			[
+				1356,
+				746
+			],
+			[
+				1356,
+				768
+			],
+			[
+				1392,
+				768
+			],
+			[
+				1392,
+				761
+			],
+			[
+				1399,
+				761
+			],
+			[
+				1399,
+				746
+			],
+			[
+				1356,
+				746
+			]
+		]
+	},
+	"center": {
+		"211-232": [
+			1378,
+			742
+		],
+		"T": [
+			1378,
+			757
+		]
+	}
+}
