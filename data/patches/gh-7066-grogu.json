@@ -1,0 +1,121 @@
+{
+	"id": -1,
+	"name": "Grogu",
+	"description": "Grogu (colloquially referred to as Baby Yoda) is a character from the Star Wars series \"The Mandalorian\" and \"The Book of Boba Fett.\"",
+	"links": {
+		"website": [
+			"https://starwars.fandom.com/wiki/Din_Grogu",
+			"https://en.wikipedia.org/wiki/Grogu"
+		],
+		"subreddit": [
+			"StarWars",
+			"TheMandalorianTV"
+		]
+	},
+	"path": {
+		"T": [
+			[
+				436,
+				973
+			],
+			[
+				439,
+				973
+			],
+			[
+				441,
+				971
+			],
+			[
+				446,
+				971
+			],
+			[
+				448,
+				973
+			],
+			[
+				451,
+				973
+			],
+			[
+				452,
+				974
+			],
+			[
+				449,
+				977
+			],
+			[
+				449,
+				978
+			],
+			[
+				448,
+				979
+			],
+			[
+				448,
+				980
+			],
+			[
+				447,
+				981
+			],
+			[
+				447,
+				983
+			],
+			[
+				446,
+				984
+			],
+			[
+				441,
+				984
+			],
+			[
+				440,
+				983
+			],
+			[
+				440,
+				981
+			],
+			[
+				439,
+				980
+			],
+			[
+				439,
+				979
+			],
+			[
+				438,
+				978
+			],
+			[
+				438,
+				977
+			],
+			[
+				436,
+				975
+			],
+			[
+				435,
+				974
+			],
+			[
+				436,
+				973
+			]
+		]
+	},
+	"center": {
+		"T": [
+			443,
+			976
+		]
+	}
+}
