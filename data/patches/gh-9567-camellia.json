@@ -1,0 +1,44 @@
+{
+	"id": 1627,
+	"name": "Camellia",
+	"description": "Camellia (Japanese: かめりあ), real name Masaya Ōya (Japanese: 大箭将也), also known as Cametek, is a Japanese electronic music producer famous for his prolific history of contributing songs to rhythm games, including Sound Voltex, osu!, and Dance Dance Revolution. His songs are known for being very challenging, often with diverse genre switches and complex rhythms.\n\nThis art was built by the r/camellia community and their allies.",
+	"links": {
+		"website": [
+			"https://linktr.ee/cametek",
+			"https://www.youtube.com/channel/UCV4ggxLd_Vz-I-ePGSKfFog",
+			"https://open.spotify.com/artist/4bwIf0yXJf0F9AmOl2J78M"
+		],
+		"subreddit": [
+			"Camellia"
+		],
+		"discord": [
+			"camellia"
+		]
+	},
+	"path": {
+		"T, 177-256": [
+			[
+				-1374,
+				-287
+			],
+			[
+				-1500,
+				-287
+			],
+			[
+				-1500,
+				-327
+			],
+			[
+				-1374,
+				-327
+			]
+		]
+	},
+	"center": {
+		"T, 177-256": [
+			-1437,
+			-307
+		]
+	}
+}
