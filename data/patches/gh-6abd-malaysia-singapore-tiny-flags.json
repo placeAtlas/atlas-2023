@@ -1,0 +1,53 @@
+{
+	"id": 5756,
+	"name": "Malaysia-Singapore tiny flags",
+	"description": "Tiny flags of the neighbouring countries, which are part of a collection of small flags. They were wiped out by Counter-Strike, which was succeeded by Italy.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Malaysia",
+			"https://en.wikipedia.org/wiki/Singapore"
+		],
+		"subreddit": [
+			"placeMY",
+			"PlaceSG",
+			"malaysia",
+			"malaysians",
+			"Bolehland",
+			"singapore"
+		],
+		"discord": [
+			"hG9XJpDRPw",
+			"MY2bMNdApa"
+		]
+	},
+	"path": {
+		"178-199": [
+			[
+				32,
+				-736
+			],
+			[
+				20,
+				-736
+			],
+			[
+				20,
+				-745
+			],
+			[
+				46,
+				-745
+			],
+			[
+				46,
+				-736
+			]
+		]
+	},
+	"center": {
+		"178-199": [
+			33,
+			-740
+		]
+	}
+}

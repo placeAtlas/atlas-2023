@@ -1,0 +1,71 @@
+{
+	"id": -1,
+	"name": "Ireland heart",
+	"description": "A heart depicting the flag of Ireland, representing the alliance between Ireland and Malaysia in r/place.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Ireland"
+		],
+		"subreddit": [
+			"PlaceIreland",
+			"ireland"
+		],
+		"discord": [
+			"gael-boogaloo-959445700406546463"
+		]
+	},
+	"path": {
+		"T, 99-250": [
+			[
+				-754,
+				21
+			],
+			[
+				-757,
+				18
+			],
+			[
+				-757,
+				16
+			],
+			[
+				-756,
+				15
+			],
+			[
+				-755,
+				15
+			],
+			[
+				-754,
+				16
+			],
+			[
+				-753,
+				15
+			],
+			[
+				-752,
+				15
+			],
+			[
+				-751,
+				16
+			],
+			[
+				-751,
+				18
+			],
+			[
+				-754,
+				21
+			]
+		]
+	},
+	"center": {
+		"T, 99-250": [
+			-754,
+			18
+		]
+	}
+}

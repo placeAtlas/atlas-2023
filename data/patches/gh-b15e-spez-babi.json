@@ -1,0 +1,46 @@
+{
+	"id": -1,
+	"name": "Spez babi",
+	"description": "\"Spez babi\" means \"Spez is a pig\" in Malay. \"Babi\" is a derogatory term in Malaysia as the majority of its population are Muslims who don't eat pork.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/2023_Reddit_API_controversy",
+			"https://en.wikipedia.org/wiki/Steve_Huffman"
+		],
+		"subreddit": [
+			"placeMY",
+			"malaysia",
+			"malaysians",
+			"Bolehland"
+		],
+		"discord": [
+			"hG9XJpDRPw"
+		]
+	},
+	"path": {
+		"T, 138-250": [
+			[
+				-735,
+				17
+			],
+			[
+				-713,
+				17
+			],
+			[
+				-713,
+				23
+			],
+			[
+				-735,
+				23
+			]
+		]
+	},
+	"center": {
+		"T, 138-250": [
+			-724,
+			20
+		]
+	}
+}
