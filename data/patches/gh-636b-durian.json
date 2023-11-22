@@ -1,0 +1,117 @@
+{
+	"id": -1,
+	"name": "Durian",
+	"description": "The durian is the edible fruit of several tree species belonging to the genus Durio. There are 30 recognised Durio species, at least nine of which produce edible fruit. Durio zibethinus, native to Borneo and Sumatra, is the only species available in the international market. It has over 300 named varieties in Thailand and 100 in Malaysia, as of 1987. Other species are sold in their local regions.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Durian"
+		],
+		"subreddit": [
+			"placeMY",
+			"Malaysia",
+			"Malaysians",
+			"bolehland"
+		],
+		"discord": [
+			"hG9XJpDRPw"
+		]
+	},
+	"path": {
+		"T, 137-250": [
+			[
+				-747,
+				13
+			],
+			[
+				-744,
+				13
+			],
+			[
+				-743,
+				14
+			],
+			[
+				-742,
+				14
+			],
+			[
+				-739,
+				17
+			],
+			[
+				-739,
+				18
+			],
+			[
+				-738,
+				18
+			],
+			[
+				-737,
+				19
+			],
+			[
+				-739,
+				21
+			],
+			[
+				-740,
+				21
+			],
+			[
+				-741,
+				22
+			],
+			[
+				-745,
+				22
+			],
+			[
+				-746,
+				21
+			],
+			[
+				-747,
+				21
+			],
+			[
+				-750,
+				18
+			],
+			[
+				-750,
+				15
+			],
+			[
+				-751,
+				15
+			],
+			[
+				-753,
+				13
+			],
+			[
+				-752,
+				12
+			],
+			[
+				-751,
+				12
+			],
+			[
+				-749,
+				14
+			],
+			[
+				-748,
+				14
+			]
+		]
+	},
+	"center": {
+		"T, 137-250": [
+			-745,
+			17
+		]
+	}
+}
