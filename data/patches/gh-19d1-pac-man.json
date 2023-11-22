@@ -1,0 +1,64 @@
+{
+	"id": -1,
+	"name": "Pac-Man",
+	"description": "Pac-Man (パックマン Pakkuman, formerly known as Puck Man in Japan) is the titular main protagonist of the Pac-Man series, and is the mascot of Namco and its successor company, Bandai Namco Entertainment.\n\nThe three Pac-Man at the top depict the flag of Malaysia, while the one at the bottom depicts the flag of Ireland.",
+	"links": {
+		"website": [
+			"https://pacman.fandom.com/wiki/Pac-Man",
+			"https://twitch.tv/dkincc",
+			"https://twitch.tv/dkincc",
+			"https://en.wikipedia.org/wiki/Malaysia",
+			"https://en.wikipedia.org/wiki/Ireland"
+		],
+		"subreddit": [
+			"placeMY",
+			"PlaceIreland",
+			"malaysia",
+			"ireland",
+			"malaysians",
+			"Bolehland"
+		],
+		"discord": [
+			"hG9XJpDRPw",
+			"gael-boogaloo-959445700406546463"
+		]
+	},
+	"path": {
+		"T, 150-250": [
+			[
+				-795,
+				-2
+			],
+			[
+				-759,
+				-2
+			],
+			[
+				-759,
+				18
+			],
+			[
+				-777,
+				18
+			],
+			[
+				-777,
+				8
+			],
+			[
+				-791,
+				8
+			],
+			[
+				-795,
+				4
+			]
+		]
+	},
+	"center": {
+		"T, 150-250": [
+			-768,
+			8
+		]
+	}
+}
