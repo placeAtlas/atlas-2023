@@ -1,0 +1,109 @@
+{
+	"id": -1,
+	"name": "Nasi lemak",
+	"description": "Nasi lemak is a dish originating in Malay cuisine that consists of fragrant rice cooked in coconut milk and pandan leaf. It is commonly found in Malaysia, where it is considered the national dish. It is also the native dish in neighbouring areas with significant Malay populations such as Singapore, Brunei, and Southern Thailand.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Nasi_lemak"
+		],
+		"subreddit": [
+			"placeMY",
+			"malaysia",
+			"malaysians",
+			"Bolehland"
+		],
+		"discord": [
+			"hG9XJpDRPw"
+		]
+	},
+	"path": {
+		"T, 137-250": [
+			[
+				-700,
+				11
+			],
+			[
+				-699,
+				11
+			],
+			[
+				-695,
+				15
+			],
+			[
+				-695,
+				16
+			],
+			[
+				-696,
+				17
+			],
+			[
+				-697,
+				17
+			],
+			[
+				-701,
+				21
+			],
+			[
+				-702,
+				21
+			],
+			[
+				-703,
+				22
+			],
+			[
+				-705,
+				22
+			],
+			[
+				-706,
+				21
+			],
+			[
+				-707,
+				21
+			],
+			[
+				-711,
+				17
+			],
+			[
+				-710,
+				16
+			],
+			[
+				-709,
+				16
+			],
+			[
+				-708,
+				15
+			],
+			[
+				-707,
+				15
+			],
+			[
+				-703,
+				11
+			],
+			[
+				-702,
+				11
+			],
+			[
+				-701,
+				12
+			]
+		]
+	},
+	"center": {
+		"T, 137-250": [
+			-703,
+			16
+		]
+	}
+}
