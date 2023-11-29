@@ -14,6 +14,7 @@ exclude_extend = set([
 	6482,
 	6483,
 	6751,
+	6760,
 ])
 
 exclude_tfc = set([
