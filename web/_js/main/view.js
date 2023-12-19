@@ -69,7 +69,7 @@ const moreEntriesObserver = new IntersectionObserver(entries => {
 
 moreEntriesObserver.observe(moreEntriesButton)
 
-let defaultSort = sortInput.value 
+let defaultSort = sortInput.value
 
 let lastPos = [0, 0]
 
@@ -136,10 +136,6 @@ offcanvasList.addEventListener('hidden.bs.offcanvas', e => {
 })
 
 closeObjectsListButton.addEventListener("click", clearObjectsList)
-
-container.addEventListener("mouseleave", () => {
-	if (!fixed) clearObjectsList()
-})
 
 function clearObjectsList() {
 	hovered = []
@@ -403,7 +399,7 @@ async function resetEntriesList() {
 
 		if (entriesList.contains(moreEntriesButton)) {
 			entriesList.removeChild(moreEntriesButton)
-		}	
+		}
 
 		let entriesLeft = entriesLimit
 		let element
@@ -412,7 +408,7 @@ async function resetEntriesList() {
 
 			if (atlasDisplay[atlasOrder[entriesOffset]]) {
 				// console.log(i, entriesLeft)
-	
+
 				let entry = atlasDisplay[atlasOrder[entriesOffset]]
 				element = createInfoBlock(entry)
 
@@ -475,16 +471,16 @@ async function resetEntriesList() {
 
 			entriesOffset += 1
 			entriesLeft -= 1
-	
+
 			entriesList.appendChild(element)
-	
+
 		}
-	
+
 		if (atlasOrder.length > entriesOffset) {
 			moreEntriesButton.innerHTML = "Show " + Math.min(entriesLimit, atlasOrder.length - entriesOffset) + " more"
 			entriesList.appendChild(moreEntriesButton)
 		}
-	
+
 	}
 	moreEntriesButton.addEventListener('click', showMoreEntries)
 	showMoreEntries()
@@ -676,8 +672,8 @@ async function updateViewFromHash() {
 	await updateTime(targetPeriod, targetVariation)
 
 	setView(
-		(isNaN(hashX) || hashX === '') ? undefined : Number(hashX), 
-		(isNaN(hashY) || hashY === '') ? undefined : Number(hashY), 
+		(isNaN(hashX) || hashX === '') ? undefined : Number(hashX),
+		(isNaN(hashY) || hashY === '') ? undefined : Number(hashY),
 		(isNaN(hashZoom) || hashZoom === '') ? undefined : Number(hashZoom)
 	)
 
@@ -705,8 +701,8 @@ async function updateViewFromHash() {
 	objectsContainer.appendChild(infoElement)
 
 	setView(
-		(isNaN(hashX) || hashX === '') ? entry.center[0] : Number(hashX), 
-		(isNaN(hashY) || hashY === '') ? entry.center[1] : Number(hashY), 
+		(isNaN(hashX) || hashX === '') ? entry.center[0] : Number(hashX),
+		(isNaN(hashY) || hashY === '') ? entry.center[1] : Number(hashY),
 		(isNaN(hashZoom) || hashZoom === '') ? calculateZoomFromPath(entry.path) : Number(hashZoom)
 	)
 
@@ -835,6 +831,10 @@ function initViewGlobal() {
 
 	document.addEventListener('timeupdate', event => {
 		drawButton.href = "./?mode=draw" + formatHash(null, event.detail.period, event.detail.variation)
+	})
+
+	document.addEventListener("mouseleave", () => {
+		if (!fixed) clearObjectsList()
 	})
 }
 

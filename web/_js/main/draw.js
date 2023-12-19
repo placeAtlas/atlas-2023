@@ -107,7 +107,7 @@ function initDraw() {
 	showListButton.parentElement.appendChild(drawBackButton)
 	showListButton.remove()
 	drawButton.remove()
-	
+
 	// Opens draw menu
 	wrapper.classList.remove('listHidden')
 	bsOffcanvasDraw.show()
@@ -338,7 +338,7 @@ function initDraw() {
 		if (exportArea.value > 40000) {
 			exportArea.value = "    " + miniJsonString
 		}
-		
+
 		// Reddit
 
 		let redditPostJsonString = "    " + prettyJsonString.split("\n").join("\n    ")
@@ -461,7 +461,7 @@ function initDraw() {
 			discordGroup.replaceChildren()
 			/**
 			 * @instanceonly
-			 * Temporarily remove wikifield 
+			 * Temporarily remove wikifield
 			 * Lack of use, used incorrectly more than it is used correctly.
 			 */
 			// wikiGroup.replaceChildren()
@@ -502,7 +502,7 @@ function initDraw() {
 		for (const entry of Object.values(atlas)) {
 
 			const path = entry.path
-	
+
 			backgroundContext.beginPath()
 
 			if (path[0]) {
@@ -567,8 +567,8 @@ function initDraw() {
 		;[atlasDisplay, atlasOrder] = generateAtlasDisplay(atlas, atlasOrder, currentPeriod, currentVariation)
 		renderBackground(atlasDisplay)
 		renderHighlight(atlasDisplay)
-	}	
-	
+	}
+
 	const getEntry = id => {
 		if (!id) return
 		return atlasAll[id]
@@ -820,11 +820,11 @@ function initDraw() {
 	const [,, hashX, hashY, hashZoom] = hash.split('/')
 
 	setView(
-		(isNaN(hashX) || hashX === '') ? center[0] : Number(hashX), 
-		(isNaN(hashY) || hashY === '') ? center[1] : Number(hashY), 
+		(isNaN(hashX) || hashX === '') ? center[0] : Number(hashX),
+		(isNaN(hashY) || hashY === '') ? center[1] : Number(hashY),
 		(isNaN(hashZoom) || hashZoom === '') ? 4 : Number(hashZoom)
 	)
-	
+
 	document.addEventListener('timeupdate', () => {
 		renderBackground(atlasDisplay)
 		updatePeriodGroups()
@@ -877,7 +877,7 @@ function initPeriodGroups() {
 		const periodCopyEl = periodGroupEl.querySelector('.period-copy')
 		const periodDuplicateEl = periodGroupEl.querySelector('.period-duplicate')
 		const periodDeleteEl = periodGroupEl.querySelector('.period-delete')
-		
+
 		const periodVariationEl = periodGroupEl.querySelector('.period-variation')
 		const periodStatusEl = periodGroupEl.querySelector('.period-status')
 
@@ -941,19 +941,19 @@ function initPeriodGroups() {
 		})
 		startPeriodViewEl.addEventListener('click', () => {
 			updateTime(parseInt(startPeriodEl.value), getCurrentVariation())
-			
+
 			// Set zoom view
 			periodCenter = calculateCenter(path)
 			setView(periodCenter[0], periodCenter[1], setZoomByPath(path))
 		})
-		
+
 		function getCurrentVariation() {
 			return periodVariationEl[periodVariationEl.selectedIndex].value
 		}
 
 		function startPeriodUpdate(value) {
 			endPeriodListEl.innerHTML = '<option value="' + (parseInt(value) + 1) + '"></option>'
-			
+
 			// Update time only when value changes
 			if (startPeriodEl.value !== timelineSlider.value) {
 				timelineSlider.value = value
