@@ -1,0 +1,40 @@
+{
+	"id": -1,
+	"name": "LGBTQ+ Pride Flag",
+	"description": "The rainbow flag is a pride flag that is associated with the LGBTQ+ community. The original eight-striped rainbow pride flag was created by Gilbert Baker, however the hot pink stripe was removed due to scarcity and high cost, and turquoise was removed because the committee that was organizing the 1979 Gay Freedom Day Parade wanted to hang the flag in as two halves from light poles.  ",
+	"links": {
+		"website": [
+			"https://www.hrc.org/resources/lgbtq-pride-flags",
+			"https://www.washingtonpost.com/news/wonk/wp/2015/06/29/how-the-rainbow-became-the-symbol-of-gay-pride/"
+		],
+		"subreddit": [
+			"lgbt"
+		]
+	},
+	"path": {
+		"250": [
+			[
+				1000,
+				-864
+			],
+			[
+				1000,
+				-821
+			],
+			[
+				1043,
+				-821
+			],
+			[
+				1043,
+				-864
+			]
+		]
+	},
+	"center": {
+		"250": [
+			1022,
+			-842
+		]
+	}
+}
