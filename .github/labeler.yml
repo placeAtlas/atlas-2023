@@ -1,5 +1,15 @@
 'atlas data: patch':
+- changed-files:
   - data/patches/**
 
 'atlas data: direct':
+- changed-files:
   - web/atlas.json
+
+staging merge:
+- all:
+  - base-branch:
+    - master
+  - head-branch:
+    - cleanup
+    - staging/'
