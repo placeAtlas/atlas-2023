@@ -1,10 +1,10 @@
 'atlas data: patch':
 - changed-files:
-  - data/patches/**
+  - any-glob-to-any-file: data/patches/**
 
 'atlas data: direct':
 - changed-files:
-  - web/atlas.json
+  - any-glob-to-any-file: web/atlas.json
 
 staging merge:
 - all:
