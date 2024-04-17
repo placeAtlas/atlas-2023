@@ -1,0 +1,71 @@
+{
+	"id": -1,
+	"name": "Grimace Coin",
+	"description": "Grimace Coin is a cryptocurrency that originated from a social media exchange between McDonalds and Elon Musk, based off of Grimace, a character from McDonalds. A \"Grimace shake\" was a berry-flavored milkshake sold at McDonalds that became the focus of a TikTok trend.",
+	"links": {
+		"website": [
+			"https://grimacedoge.com",
+			"https://en.wikipedia.org/wiki/Grimace_Shake"
+		],
+		"subreddit": [
+			"grimacedogechain",
+			"GrimaceArbitrum"
+		]
+	},
+	"path": {
+		"T": [
+			[
+				-1265,
+				64
+			],
+			[
+				-1265,
+				83
+			],
+			[
+				-1213,
+				83
+			],
+			[
+				-1213,
+				64
+			]
+		],
+		"236-256": [
+			[
+				-1215,
+				44
+			],
+			[
+				-1264,
+				44
+			],
+			[
+				-1265,
+				44
+			],
+			[
+				-1265,
+				83
+			],
+			[
+				-1214,
+				83
+			],
+			[
+				-1214,
+				44
+			]
+		]
+	},
+	"center": {
+		"T": [
+			-1239,
+			74
+		],
+		"236-256": [
+			-1239,
+			64
+		]
+	}
+}
