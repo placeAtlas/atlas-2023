@@ -1,0 +1,43 @@
+{
+	"id": -1,
+	"name": "Yi_Taz banner",
+	"description": "Yi_Taz is a Twitch streamer who plays Call of Duty.",
+	"links": {
+		"website": [
+			"https://www.twitch.tv/yi_taz/videos"
+		],
+		"subreddit": [
+			"Yi_Taz"
+		]
+	},
+	"path": {
+		"T": [
+			[
+				201,
+				729
+			],
+			[
+				201,
+				736
+			],
+			[
+				245,
+				736
+			],
+			[
+				245,
+				729
+			],
+			[
+				201,
+				729
+			]
+		]
+	},
+	"center": {
+		"T": [
+			223,
+			733
+		]
+	}
+}
