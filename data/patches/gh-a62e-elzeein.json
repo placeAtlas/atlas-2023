@@ -1,0 +1,113 @@
+{
+	"id": 1023,
+	"name": "ElZeein",
+	"description": "ElZeein (también conocido como Andynsane) es un popular YouTuber y streamer peruano. Nació en Tarma, una ciudad en la región Junín de Perú, pero actualmente reside en los Estados Unidos. Actualmente es un streamer de Twitch, donde organizó los premios Luminy para la comunida peruana, tiene a su mascota llamada Grumpy la cual es muy querida por la comunidad de la Frente Army o Zeiners. \n\nENGLISH\nElZeein (also known as Andynsane) is a popular Peruvian YouTuber and streamer. He was born in Tarma, a city in the Junín region of Peru, but currently resides in the United States. He is currently a Twitch streamer, where he organized the Luminy awards for the Peruvian community, he has his pet called Grumpy which is very loved by the community of the Army Front or Zeiners.",
+	"links": {
+		"website": [
+			"https://www.twitch.tv/elzeein",
+			"https://www.youtube.com/@elzeein",
+			"https://www.instagram.com/andynsane/",
+			"https://twitter.com/ElZeeeein"
+		]
+	},
+	"path": {
+		"74-93": [
+			[
+				-138,
+				-26
+			],
+			[
+				-138,
+				97
+			],
+			[
+				-43,
+				97
+			],
+			[
+				-43,
+				-26
+			]
+		],
+		"120-170": [
+			[
+				-1001,
+				-755
+			],
+			[
+				-1001,
+				-611
+			],
+			[
+				-774,
+				-611
+			],
+			[
+				-774,
+				-755
+			]
+		],
+		"171-204": [
+			[
+				-1048,
+				-754
+			],
+			[
+				-1048,
+				-611
+			],
+			[
+				-775,
+				-611
+			],
+			[
+				-775,
+				-755
+			],
+			[
+				-1048,
+				-754
+			]
+		],
+		"T, 205-256": [
+			[
+				-1195,
+				-755
+			],
+			[
+				-1195,
+				-611
+			],
+			[
+				-775,
+				-611
+			],
+			[
+				-775,
+				-755
+			],
+			[
+				-1195,
+				-755
+			]
+		]
+	},
+	"center": {
+		"74-93": [
+			-90,
+			36
+		],
+		"120-170": [
+			-887,
+			-683
+		],
+		"171-204": [
+			-911,
+			-683
+		],
+		"T, 205-256": [
+			-985,
+			-683
+		]
+	}
+}
