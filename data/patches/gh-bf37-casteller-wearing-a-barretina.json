@@ -1,0 +1,97 @@
+{
+	"id": -1,
+	"name": "Casteller wearing a Barretina",
+	"description": "A Casteller wearing a barretina standing atop the Columbus Monument (Monument a Colom). A barretina is a traditional hat that was frequently worn by men in parts of the Christian cultures of the Mediterranean Sea, now a symbol of Catalan identity.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Barretina"
+		],
+		"subreddit": [
+			"Catalunya"
+		]
+	},
+	"path": {
+		"T": [
+			[
+				-783,
+				260
+			],
+			[
+				-783,
+				257
+			],
+			[
+				-783,
+				256
+			],
+			[
+				-784,
+				256
+			],
+			[
+				-784,
+				255
+			],
+			[
+				-782,
+				253
+			],
+			[
+				-780,
+				253
+			],
+			[
+				-780,
+				260
+			],
+			[
+				-783,
+				260
+			]
+		],
+		"113-256": [
+			[
+				-783,
+				260
+			],
+			[
+				-783,
+				257
+			],
+			[
+				-784,
+				256
+			],
+			[
+				-784,
+				255
+			],
+			[
+				-782,
+				253
+			],
+			[
+				-780,
+				253
+			],
+			[
+				-780,
+				260
+			],
+			[
+				-783,
+				260
+			]
+		]
+	},
+	"center": {
+		"T": [
+			-781,
+			257
+		],
+		"113-256": [
+			-782,
+			256
+		]
+	}
+}
