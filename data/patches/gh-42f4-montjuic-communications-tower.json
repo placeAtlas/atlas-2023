@@ -1,0 +1,43 @@
+{
+	"id": -1,
+	"name": "Montjuïc Communications Tower",
+	"description": "The Montjuïc Communications Tower, also known as Torre Calatrava and Torre Telefónica, is a telecommunication tower in Barcelona, Catalonia, Spain. It was built for the 1992 Summer Olympic Games in Barcelona, to transmit Telefónica television coverage.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Montju%C3%AFc_Communications_Tower"
+		],
+		"subreddit": [
+			"Catalunya"
+		]
+	},
+	"path": {
+		"140-256, T": [
+			[
+				-860,
+				271
+			],
+			[
+				-860,
+				249
+			],
+			[
+				-851,
+				249
+			],
+			[
+				-851,
+				271
+			],
+			[
+				-860,
+				271
+			]
+		]
+	},
+	"center": {
+		"140-256, T": [
+			-855,
+			260
+		]
+	}
+}
