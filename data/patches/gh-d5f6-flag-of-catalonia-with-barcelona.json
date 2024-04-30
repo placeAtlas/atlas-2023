@@ -1,0 +1,107 @@
+{
+	"id": 651,
+	"name": "Flag of Catalonia with Barcelona",
+	"description": "A pixel art rendition of Barcelona's skyline on the Senyera, the flag of Catalonia. \n\nLeft to right: \n1 FC Barcelona Crests. \n2 The Montjuïc Communications Tower. \n3 The W Barcelona Hotel ( l'Hotel Vela). \n4 The Sagrada Família, \n5 The Venetian Towers (Les Torres Venetianes). \n6 The Four Coluumns (Les Quatre Columnes), between the Venetian Towers.\n7 The Montjuïc Cable Car (El Telefèric de Montjuïc) in the background. (The cable car didn't make it into the final canvas)\n8 A Casteller wearing a Barretina standing atop the Columbus Monument (Monument a Colom). \n\nSkyline designed, built and maintained by r/PlaceCatalunya in collaboration with r/Catalunya & r/Barna. Alliance hearts at intersections with surrounding communities.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Catalonia",
+			"https://en.wikipedia.org/wiki/Flag_of_Catalonia",
+			"https://en.wikipedia.org/wiki/Barcelona",
+			"https://en.wikipedia.org/wiki/FC_Barcelona"
+		],
+		"subreddit": [
+			"placeCatalunya",
+			"barna",
+			"catalunya"
+		],
+		"discord": [
+			"t9Xar6XW9J"
+		]
+	},
+	"path": {
+		"88-106": [
+			[
+				-868,
+				245
+			],
+			[
+				-868,
+				273
+			],
+			[
+				-773,
+				273
+			],
+			[
+				-773,
+				245
+			]
+		],
+		"107-153": [
+			[
+				-1001,
+				245
+			],
+			[
+				-1001,
+				273
+			],
+			[
+				-770,
+				273
+			],
+			[
+				-770,
+				257
+			],
+			[
+				-768,
+				257
+			],
+			[
+				-768,
+				245
+			]
+		],
+		"T, 154-256": [
+			[
+				-869,
+				245
+			],
+			[
+				-869,
+				273
+			],
+			[
+				-770,
+				273
+			],
+			[
+				-770,
+				257
+			],
+			[
+				-768,
+				257
+			],
+			[
+				-768,
+				245
+			]
+		]
+	},
+	"center": {
+		"88-106": [
+			-820,
+			259
+		],
+		"107-153": [
+			-884,
+			259
+		],
+		"T, 154-256": [
+			-818,
+			259
+		]
+	}
+}
