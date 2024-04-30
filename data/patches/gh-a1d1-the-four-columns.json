@@ -1,0 +1,51 @@
+{
+	"id": -1,
+	"name": "The Four Columns",
+	"description": "The Four Columns are four Ionic columns originally created by Josep Puig i Cadafalch in Barcelona, Catalonia, Spain. They symbolized the four stripes of the Catalan flag. They were demolished in 1928 during the dictatorship of Primo de Rivera because of their connection to Catalan nationalism, but were eventually rebuilt nearby in 2010.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/The_Four_Columns"
+		],
+		"subreddit": [
+			"Catalunya"
+		]
+	},
+	"path": {
+		"114-256, T": [
+			[
+				-805,
+				271
+			],
+			[
+				-804,
+				270
+			],
+			[
+				-804,
+				265
+			],
+			[
+				-794,
+				265
+			],
+			[
+				-794,
+				270
+			],
+			[
+				-793,
+				271
+			],
+			[
+				-805,
+				271
+			]
+		]
+	},
+	"center": {
+		"114-256, T": [
+			-799,
+			268
+		]
+	}
+}
