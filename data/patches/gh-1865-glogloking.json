@@ -1,0 +1,78 @@
+{
+	"id": -1,
+	"name": "Glogloking",
+	"description": "Glogloking is a streamer from Peru whose mascot is a pink panther. Community members blacked out prior artwork to draw him, but Toha Heavy Industries and the Touhou Project took over before the final canvas. Parts of the yellow circle on the black background, along with the two pink panther faces and the peruvian flag, survived.",
+	"links": {
+		"website": [
+			"https://www.twitch.tv/elglogloking/"
+		]
+	},
+	"path": {
+		"219-256": [
+			[
+				-1500,
+				-611
+			],
+			[
+				-1500,
+				-683
+			],
+			[
+				-1425,
+				-683
+			],
+			[
+				-1425,
+				-659
+			],
+			[
+				-1428,
+				-658
+			],
+			[
+				-1428,
+				-611
+			],
+			[
+				-1500,
+				-611
+			]
+		],
+		"T": [
+			[
+				-1495,
+				-683
+			],
+			[
+				-1497,
+				-650
+			],
+			[
+				-1431,
+				-651
+			],
+			[
+				-1430,
+				-670
+			],
+			[
+				-1425,
+				-672
+			],
+			[
+				-1425,
+				-683
+			]
+		]
+	},
+	"center": {
+		"219-256": [
+			-1464,
+			-647
+		],
+		"T": [
+			-1463,
+			-667
+		]
+	}
+}
