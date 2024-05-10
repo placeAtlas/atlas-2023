@@ -16,6 +16,7 @@ exclude_extend = set([
 	6751,
 	6756,
 	6760,
+	6916,
 ])
 
 exclude_tfc = set([
@@ -36,6 +37,7 @@ exclude_tfc = set([
 	6760,
 	6761,
 	6797,
+	6916,
 ])
 
 if len(pre_extend_times) == 0:
