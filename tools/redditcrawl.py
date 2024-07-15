@@ -31,7 +31,7 @@ import traceback
 from aformatter import format_all, validate
 from pathlib import Path
 import humanize
-from datetime import datetime
+from datetime import datetime, UTC
 import os
 
 while not os.path.exists('README.md'):
@@ -87,7 +87,7 @@ with open('temp-atlas-manual.txt', 'w', encoding='utf-8') as FAIL_FILE:
 	for submission in reddit.subreddit('placeAtlas2023').new(limit=1000):
 		total_all_flairs += 1
 
-		print(f"{submission.id}: Submitted {humanize.naturaltime(datetime.utcnow() - datetime.utcfromtimestamp(submission.created_utc))}.")
+		print(f"{submission.id}: Submitted {humanize.naturaltime(datetime.now(UTC) - datetime.fromtimestamp(submission.created_utc, UTC))}.")
 
 		# print(patches_dir + 'reddit-' + submission.id + '.json')
 		if submission.id in existing_ids or Path(patches_dir + 'reddit-' + submission.id + '.json').is_file():
@@ -123,7 +123,7 @@ with open('temp-atlas-manual.txt', 'w', encoding='utf-8') as FAIL_FILE:
 						assert submission_json["id"] != -1, "Edit invalid because ID is tampered, it must not be -1!"
 					else:
 						assert submission_json["id"] == -1, "Addition invalid because ID is tampered, it must be -1!"
-						
+
 					submission_json_dummy = {"id": submission_json["id"], "_reddit_id": submission.id, "_author": submission.author.name}
 
 					for key in submission_json:
@@ -134,7 +134,7 @@ with open('temp-atlas-manual.txt', 'w', encoding='utf-8') as FAIL_FILE:
 
 					assert validation_status < 3, \
 						"Submission invalid after validation. This may be caused by not enough points on the path."
-					
+
 					with open(f'{patches_dir}reddit-{submission.id}-{"-".join(submission.name.split()).lower()}.json', 'w', encoding='utf-8') as out_file:
 						out_file.write(json.dumps(submission_json, ensure_ascii=False))
 
