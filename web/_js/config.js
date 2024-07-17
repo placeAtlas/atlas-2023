@@ -342,6 +342,82 @@ window.defaultPeriod = defaultPeriod
 const useNumericalId = true
 window.useNumericalId = useNumericalId
 
+const externalLinksConfig = [
+	{
+		name: "Website",
+		id: "website",
+		generateLink: (link) => link,
+		listingClass: "bi-globe",
+		generateListingName: (link) => {
+			try {
+				const urlObject = new URL(link)
+				return urlObject.hostname.replace(/^www./, "")
+			} catch (e) {
+				return "Website"
+			}
+		},
+		displayHTML: "{urlid}",
+		placeholder: "https://example.org",
+		configureInputField: (inputField) => {
+			inputField.type = "url"
+			inputField.placeholder = "https://example.com"
+			inputField.pattern = "https?://.*"
+			inputField.title = "Website URL using the http:// or https:// protocol"
+		}
+	},
+	{
+		name: "Discord",
+		id: "discord",
+		generateLink: (link) => "https://discord.gg/" + link,
+		generateListingName: (link) => link,
+		listingClass: "bi-discord",
+		editorPrefix: "discord.gg/",
+		placeholder: "r/example",
+		configureInputField: (inputField) => {
+			inputField.placeholder = "pJkm23b2nA"
+		},
+		extractId: (content) => {
+			const discordPattern = /^(?:(?:https?:\/\/)?(?:www\.)?(?:(?:discord)?\.?gg|discord(?:app)?\.com\/invite)\/)?([^\s/]+?)(?=\b)$/
+			id = content.trim().match(discordPattern)?.[1]
+			if (id) {
+				return id;
+			}
+			return content;
+		}
+	},
+	{
+		name: "Subreddit",
+		id: "subreddit",
+		generateLink: (link) => "https://reddit.com/" + link,
+		listingClass: "bi-reddit",
+		generateListingName: (link) => "r/" + link,
+		editorPrefix: "reddit.com/",
+		placeholder: "pJkm23b2nA",
+		configureInputField: (inputField) => {
+			inputField.placeholder = "r/example"
+			inputField.pattern = "^r\/[A-Za-z0-9][A-Za-z0-9_]{1,50}$"
+			inputField.title = "Subreddit in format of r/example"
+			inputField.minLength = "4"
+			inputField.maxLength = "50"
+		},
+		extractId: (content) => {
+			const subredditPattern = /^(?:(?:(?:(?:(?:https?:\/\/)?(?:(?:www|old|new|np)\.)?)?reddit\.com)?\/)?[rR]\/)?([A-Za-z0-9][A-Za-z0-9_]{1,20})(?:\/[^" ]*)*$/
+			id = content.trim().match(subredditPattern)?.[1]
+			if (id) {
+				return id;
+			}
+			return content;
+		},
+		formatIdInEditor: (content) => {
+			if (content != "") {
+				return "r/" + content;
+			}
+			return "";
+		}
+
+	}
+];
+
 console.info(`%cThe 2023 r/place Atlas
 %cCopyright (c) 2017 Roland Rytz <roland@draemm.li>
 Copyright (c) 2023 Place Atlas Initiative and contributors

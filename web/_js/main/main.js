@@ -509,10 +509,6 @@ function generateAtlasAll(atlas = atlasAll) {
 		entry._index = index
 		const currentLinks = entry.links
 		entry.links = {
-			website: [],
-			subreddit: [],
-			discord: [],
-			wiki: [],
 			...currentLinks
 		}
 		const currentPath = entry.path
