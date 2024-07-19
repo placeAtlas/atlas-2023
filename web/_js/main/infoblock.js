@@ -115,62 +115,28 @@ function createInfoBlock(entry, mode = 0) {
 		}
 	}
 
-	if (entry.links?.subreddit?.length) {
-		const subredditGroupElement = baseGroupElement.cloneNode()
-		linkListElement.appendChild(subredditGroupElement)
+	for (const linkConfig of externalLinksConfig) {
+		if (entry.links) {
+			if (entry.links[linkConfig.id]?.length) {
+				const groupElement = baseGroupElement.cloneNode()
+				linkListElement.appendChild(groupElement)
 
-		entry.links.subreddit.forEach(subreddit => {
-			if (!subreddit) return
-			subreddit = "r/" + subreddit
-			const subredditLinkElement = baseLinkElement.cloneNode()
-			subredditLinkElement.href = "https://reddit.com/" + subreddit
-			subredditLinkElement.innerHTML = `<i class="bi bi-reddit" aria-hidden="true"></i> ${subreddit}`
-			subredditGroupElement.appendChild(subredditLinkElement)
-		})
-	}
+				entry.links[linkConfig.id].forEach(link => {
+					if (!link) return
+					const linkElement = baseLinkElement.cloneNode()
+					linkElement.href = linkConfig.generateLink(link)
 
-	if (entry.links?.website?.length) {
-		const websiteGroupElement = baseGroupElement.cloneNode()
-		linkListElement.appendChild(websiteGroupElement)
+					let logoChild = document.createElement("i");
+					logoChild.classList.add("bi");
+					logoChild.classList.add(linkConfig.listingClass);
+					logoChild.setAttribute("aria-hidden", "true");
+					linkElement.appendChild(logoChild);
 
-		entry.links.website.forEach(link => {
-			if (!link) return
-			const websiteLinkElement = baseLinkElement.cloneNode()
-			websiteLinkElement.href = link
-			try {
-				const urlObject = new URL(link)
-				websiteLinkElement.innerHTML = `<i class="bi bi-globe" aria-hidden="true"></i> ${urlObject.hostname.replace(/^www./, "")}`
-			} catch (e) {
-				websiteLinkElement.innerHTML = `<i class="bi bi-globe" aria-hidden="true"></i> Website`
+					linkElement.append(" " + linkConfig.generateListingName(link))
+					groupElement.appendChild(linkElement)
+				})
 			}
-			websiteGroupElement.appendChild(websiteLinkElement)
-		})
-	}
-
-	if (entry.links?.discord?.length) {
-		const discordGroupElement = baseGroupElement.cloneNode()
-		linkListElement.appendChild(discordGroupElement)
-
-		entry.links.discord.forEach(link => {
-			if (!link) return
-			const discordLinkElement = baseLinkElement.cloneNode()
-			discordLinkElement.href = "https://discord.gg/" + link
-			discordLinkElement.innerHTML = `<i class="bi bi-discord" aria-hidden="true"></i> ${link}`
-			discordGroupElement.appendChild(discordLinkElement)
-		})
-	}
-
-	if (entry.links?.wiki?.length) {
-		const wikiGroupElement = baseGroupElement.cloneNode()
-		linkListElement.appendChild(wikiGroupElement)
-
-		entry.links.wiki.forEach(link => {
-			if (!link) return
-			const wikiLinkElement = baseLinkElement.cloneNode()
-			wikiLinkElement.href = "https://place-wiki.stefanocoding.me/wiki/" + link.replace(/ /g, '_')
-			wikiLinkElement.innerHTML = `<i class="bi bi-book" aria-hidden="true"></i> r/place Wiki Article`
-			wikiGroupElement.appendChild(wikiLinkElement)
-		})
+		}
 	}
 
 	// Adds id footer

@@ -35,23 +35,11 @@ const exportModal = new bootstrap.Modal(exportModalElement)
 
 const nameField = document.getElementById("nameField")
 const descriptionField = document.getElementById("descriptionField")
-const websiteGroup = document.getElementById("websiteGroup")
-const subredditGroup = document.getElementById("subredditGroup")
-const discordGroup = document.getElementById("discordGroup")
-const wikiGroup = document.getElementById("wikiGroup")
 const exportArea = document.getElementById("exportString")
-
-const subredditPattern = /^(?:(?:(?:(?:(?:https?:\/\/)?(?:(?:www|old|new|np)\.)?)?reddit\.com)?\/)?[rR]\/)?([A-Za-z0-9][A-Za-z0-9_]{1,20})(?:\/[^" ]*)*$/
-const discordPattern = /^(?:(?:https?:\/\/)?(?:www\.)?(?:(?:discord)?\.?gg|discord(?:app)?\.com\/invite)\/)?([^\s/]+?)(?=\b)$/
 
 let entry
 let path = []
 let center = [canvasCenter.x, canvasCenter.y]
-
-let websiteGroupElements = []
-let subredditGroupElements = []
-let discordGroupElements = []
-let wikiGroupElements = []
 
 let pathWithPeriods = []
 let periodGroupElements = []
@@ -88,6 +76,15 @@ baseInputField.type = "text"
 		this.style.height = (this.scrollHeight) + "px"
 	})
 })
+
+let linkEditButtonListener = new WeakMap(); // store the "click" listener of button for later unmapping
+
+let externalLinksConfigIndexById = {};
+let linkGroupElements = {};
+for (let i in externalLinksConfig) {
+	externalLinksConfigIndexById[externalLinksConfig[i].id] = i;
+	linkGroupElements[externalLinksConfig[i].id] = []
+}
 
 // https://gist.github.com/codeguy/6684588?permalink_comment_id=3243980#gistcomment-3243980
 function slugify(text) {
@@ -310,15 +307,19 @@ function initDraw() {
 			exportObject.center[key] = calculateCenter(value).map(int => int - 0.5)
 		})
 
-		const inputWebsite = websiteGroupElements.map(element => element.value.trim()).filter(element => element)
-		const inputSubreddit = subredditGroupElements.map(element => element.value.trim().match(subredditPattern)?.[1]).filter(element => element)
-		const inputDiscord = discordGroupElements.map(element => element.value.trim().match(discordPattern)?.[1]).filter(element => element)
-		const inputWiki = wikiGroupElements.map(element => element.value.trim().replace(/ /g, '_')).filter(element => element)
+		for (const linkConfig of externalLinksConfig) {
+			const groupsElement = linkGroupElements[linkConfig.id];
 
-		if (inputWebsite.length) exportObject.links.website = inputWebsite
-		if (inputSubreddit.length) exportObject.links.subreddit = inputSubreddit
-		if (inputDiscord.length) exportObject.links.discord = inputDiscord
-		if (inputWiki.length) exportObject.links.wiki = inputWiki
+			let linksToExport = [];
+			const exportArray = groupsElement
+				.map(element => element.value.trim())
+				.map(element => linkConfig.extractId ? linkConfig.extractId(element) : element)
+				.filter(element => element);
+
+			if (exportArray.length) {
+				exportObject.links[linkConfig.id] = exportArray
+			}
+		}
 
 		return exportObject
 	}
@@ -449,26 +450,14 @@ function initDraw() {
 			nameField.value = ""
 			descriptionField.value = ""
 
-			// Clears input array
-			websiteGroupElements = []
-			subredditGroupElements = []
-			discordGroupElements = []
-			wikiGroupElements = []
-
 			// Rebuilds multi-input list
-			websiteGroup.replaceChildren()
-			subredditGroup.replaceChildren()
-			discordGroup.replaceChildren()
-			/**
-			 * @instanceonly
-			 * Temporarily remove wikifield
-			 * Lack of use, used incorrectly more than it is used correctly.
-			 */
-			// wikiGroup.replaceChildren()
-			addWebsiteFields("", 0, [0])
-			addSubredditFields("", 0, [0])
-			addDiscordFields("", 0, [0])
-			addWikiFields("", 0, [0])
+			for (const linkConfig of externalLinksConfig) {
+				document.getElementById(linkConfig.id + "Group").replaceChildren();
+			}
+
+			for (const linkConfig of externalLinksConfig) {
+				clearLinkGroup(linkConfig.id);
+			}
 
 			// Resets periods
 			pathWithPeriods = []
@@ -574,225 +563,150 @@ function initDraw() {
 		return atlasAll[id]
 	}
 
-	function addFieldButton(inputButton, inputGroup, array, index, name) {
-		if (inputButton.title === "Remove " + name) {
-			removeFieldButton(inputGroup, array, index)
-			return
-		}
-		inputButton.className = "btn btn-outline-secondary"
-		inputButton.title = "Remove " + name
-		inputButton.innerHTML = '<i class="bi bi-trash-fill" aria-hidden="true"></i>'
-		if (name === "website") {
-			addWebsiteFields(null, array.length, array)
-		} else if (name === "subreddit") {
-			addSubredditFields(null, array.length, array)
-		} else if (name === "Discord invite") {
-			addDiscordFields(null, array.length, array)
-		} else if (name === "wiki page") {
-			addWikiFields(null, array.length, array)
-		}
+	function getLinkGroup(linkTypeId) {
+		return document.getElementById(linkTypeId + "Group");
 	}
 
-	function removeFieldButton(inputGroup, array, index) {
-		delete array[index]
-		inputGroup.remove()
+	function getLinkConfig(linkTypeId) {
+		return externalLinksConfig[externalLinksConfigIndexById[linkTypeId]]
 	}
 
-	function addWebsiteFields(link, index, array) {
-		const inputGroup = baseInputGroup.cloneNode()
-		websiteGroup.appendChild(inputGroup)
+	/**
+	 * Clear the link group of the provided tag in the editor, ensuring there only remain a single empty field
+	 * @param {String} linkTypeId
+	 */
+	function clearLinkGroup(linkTypeId) {
+		getLinkGroup(linkTypeId).replaceChildren()
+		linkGroupElements[linkTypeId] = []
+		addFieldGeneric("", linkTypeId);
+	}
 
-		const inputField = baseInputField.cloneNode()
-		inputField.type = "url"
-		inputField.id = "websiteField" + index
-		inputField.placeholder = "https://example.com"
-		inputField.pattern = "https?://.*"
-		inputField.title = "Website URL using the http:// or https:// protocol"
-		inputField.setAttribute("aria-labelledby", "websiteLabel")
-		inputField.value = link
-		inputGroup.appendChild(inputField)
-		websiteGroupElements.push(inputField)
+	function addFieldGeneric(link, linkTypeId) {
+		const inputGroup = baseInputGroup.cloneNode();
+		const linkConfig = getLinkConfig(linkTypeId)
+		let linkGroup = getLinkGroup(linkTypeId)
+		linkGroup.appendChild(inputGroup);
+
+		let addonId = null;
+		if (linkConfig.editorPrefix) {
+			const inputAddon = baseInputAddon.cloneNode()
+			inputAddon.textContent = linkConfig.editorPrefix
+			addonId = linkTypeId + "Field" + linkGroupElements.length + "-addon"
+			inputAddon.id = addonId
+			inputGroup.appendChild(inputAddon)
+		}
+
+		const inputField = baseInputField.cloneNode();
+		inputField.id = linkTypeId + "Field" + linkGroupElements.length
+		if (linkConfig.formatIdInEditor) {
+			inputField.value = linkConfig.formatIdInEditor(link)
+		} else {
+			inputField.value = link
+		}
+
+		inputField.setAttribute("aria-labelledby", linkTypeId + "Label")
+		if (addonId) {
+			inputField.setAttribute("aria-describedby", addonId)
+		}
+
+		if (linkConfig.extractId) {
+			inputField.addEventListener('paste', event => {
+				let paste = (event.clipboardData || window.clipboardData).getData('text')
+				let valueId = linkConfig.extractId(paste);
+				if (valueId) {
+					if (linkConfig.formatIdInEditor) {
+						event.target.value = linkConfig.formatIdInEditor(valueId)
+					} else {
+						event.target.value = valueId
+					}
+					event.preventDefault()
+				}
+			})
+		}
+
+		linkConfig.configureInputField(inputField)
+		inputGroup.appendChild(inputField);
+		linkGroupElements[linkTypeId].push(inputField);
 
 		const inputButton = document.createElement("button")
 		inputButton.type = "button"
-		// If button is the last in the array give it the add button
-		if (array.length === index + 1) {
-			inputButton.className = "btn btn-secondary"
-			inputButton.title = "Add website"
-			inputButton.innerHTML = '<i class="bi bi-plus-lg" aria-hidden="true"></i>'
-			inputButton.addEventListener('click', () => addFieldButton(inputButton, inputGroup, websiteGroupElements, index, "website"))
-		} else {
-			inputButton.className = "btn btn-outline-secondary"
-			inputButton.title = "Remove website"
-			inputButton.innerHTML = '<i class="bi bi-trash-fill" aria-hidden="true"></i>'
-			inputButton.addEventListener('click', () => removeFieldButton(inputGroup, websiteGroupElements, index))
-		}
 		inputGroup.appendChild(inputButton)
+
+		if (linkConfig.hideInput) {
+			inputField.setAttribute("style", "display:none")
+			inputButton.setAttribute("style", "display:none")
+		}
+
+		refreshLinkGroupButtons(linkTypeId)
 	}
 
-	function addSubredditFields(link, index, array) {
-		const inputGroup = baseInputGroup.cloneNode()
-		subredditGroup.appendChild(inputGroup)
-
-		const inputAddon = baseInputAddon.cloneNode()
-		inputAddon.id = "subredditField" + index + "-addon"
-		inputAddon.textContent = "reddit.com/"
-		inputGroup.appendChild(inputAddon)
-
-		const inputField = baseInputField.cloneNode()
-		inputField.id = "subredditField" + index
-		inputField.placeholder = "r/example"
-		inputField.pattern = "^r\/[A-Za-z0-9][A-Za-z0-9_]{1,50}$"
-		inputField.title = "Subreddit in format of r/example"
-		inputField.minLength = "4"
-		inputField.maxLength = "50"
-		inputField.setAttribute("aria-labelledby", "subredditLabel")
-		inputField.setAttribute("aria-describedby", "subredditField" + index + "-addon")
-		if (link) {
-			inputField.value = "r/" + link
-		} else {
-			inputField.value = ""
-		}
-		inputGroup.appendChild(inputField)
-		subredditGroupElements.push(inputField)
-
-		const inputButton = document.createElement("button")
-		inputButton.type = "button"
-		// If button is the last in the array give it the add button
-		if (array.length === index + 1) {
-			inputButton.className = "btn btn-secondary"
-			inputButton.title = "Add subreddit"
-			inputButton.innerHTML = '<i class="bi bi-plus-lg" aria-hidden="true"></i>'
-			inputButton.addEventListener('click', () => addFieldButton(inputButton, inputGroup, subredditGroupElements, index, "subreddit"))
-		} else {
-			inputButton.className = "btn btn-outline-secondary"
-			inputButton.title = "Remove subreddit"
-			inputButton.innerHTML = '<i class="bi bi-trash-fill" aria-hidden="true"></i>'
-			inputButton.addEventListener('click', () => removeFieldButton(inputGroup, subredditGroupElements, index))
-		}
-
-		inputField.addEventListener('paste', event => {
-			let paste = (event.clipboardData || window.clipboardData).getData('text')
-			paste = paste.trim().match(subredditPattern)?.[1]
-			if (paste) {
-				event.target.value = "r/" + paste
-				event.preventDefault()
+	function refreshLinkGroupButtons(linkTypeId) {
+		const linkGroup = getLinkGroup(linkTypeId);
+		const linkConfig = getLinkConfig(linkTypeId)
+		const children = linkGroup.children;
+		for (let i = 0; i < children.length; i++) {
+			const button = children[i].getElementsByTagName("button")[0];
+			if (linkEditButtonListener.get(button) != undefined) {
+				button.removeEventListener('click', linkEditButtonListener.get(button))
 			}
-		})
+			let listener;
+			if (children.length == i + 1) {
+				button.className = "btn btn-secondary";
+				button.title = "Add " + linkConfig.name
+				button.innerHTML = '<i class="bi bi-plus-lg" aria-hidden="true"></i>'
 
-		inputGroup.appendChild(inputButton)
-	}
+				listener = () => addFieldGeneric("", linkTypeId);
+			} else {
+				button.className = "btn btn-outline-secondary"
+				button.title = "Remove " + linkConfig.name
+				button.innerHTML = '<i class="bi bi-trash-fill" aria-hidden="true"></i>'
 
-	function addDiscordFields(link, index, array) {
-		const inputGroup = baseInputGroup.cloneNode()
-		discordGroup.appendChild(inputGroup)
-
-		const inputAddon = baseInputAddon.cloneNode()
-		inputAddon.id = "discordField" + index + "-addon"
-		inputAddon.textContent = "discord.gg/"
-		inputGroup.appendChild(inputAddon)
-
-		const inputField = baseInputField.cloneNode()
-		inputField.id = "discordField" + index
-		inputField.placeholder = "pJkm23b2nA"
-		inputField.setAttribute("aria-labelledby", "discordLabel")
-		inputField.setAttribute("aria-describedby", "discordField" + index + "-addon")
-		inputField.value = link
-		inputGroup.appendChild(inputField)
-		discordGroupElements.push(inputField)
-
-		const inputButton = document.createElement("button")
-		inputButton.type = "button"
-		// If button is the last in the array give it the add button
-		if (array.length === index + 1) {
-			inputButton.className = "btn btn-secondary"
-			inputButton.title = "Add Discord invite"
-			inputButton.innerHTML = '<i class="bi bi-plus-lg" aria-hidden="true"></i>'
-			inputButton.addEventListener('click', () => addFieldButton(inputButton, inputGroup, discordGroupElements, index, "Discord invite"))
-		} else {
-			inputButton.className = "btn btn-outline-secondary"
-			inputButton.title = "Remove Discord invite"
-			inputButton.innerHTML = '<i class="bi bi-trash-fill" aria-hidden="true"></i>'
-			inputButton.addEventListener('click', () => removeFieldButton(inputGroup, discordGroupElements, index))
-		}
-
-		inputField.addEventListener('paste', event => {
-			let paste = (event.clipboardData || window.clipboardData).getData('text')
-			paste = paste.trim().match(discordPattern)?.[1]
-			if (paste) {
-				event.target.value = paste
-				event.preventDefault()
+				const childToRemove = children[i];
+				listener = () => {
+					linkGroupElements[linkTypeId].splice(i, 1);
+					linkGroup.removeChild(childToRemove);
+					refreshLinkGroupButtons(linkTypeId);
+				}
 			}
-		})
-
-		inputGroup.appendChild(inputButton)
-	}
-
-	function addWikiFields(link, index, array) {
-		const inputGroup = baseInputGroup.cloneNode()
-		// wikiGroup.appendChild(inputGroup)
-
-		const inputField = baseInputField.cloneNode()
-		inputField.id = "wikiField" + index
-		inputField.placeholder = "Page title"
-		inputField.setAttribute("aria-labelledby", "wikiLabel")
-		inputField.value = link
-		inputGroup.appendChild(inputField)
-		wikiGroupElements.push(inputField)
-
-		const inputButton = document.createElement("button")
-		inputButton.type = "button"
-		// If button is the last in the array give it the add button
-		if (array.length === index + 1) {
-			inputButton.className = "btn btn-secondary"
-			inputButton.title = "Add wiki page"
-			inputButton.innerHTML = '<i class="bi bi-plus-lg" aria-hidden="true"></i>'
-			inputButton.addEventListener('click', () => addFieldButton(inputButton, inputGroup, wikiGroupElements, index, "wiki page"))
-		} else {
-			inputButton.className = "btn btn-outline-secondary"
-			inputButton.title = "Remove wiki page"
-			inputButton.innerHTML = '<i class="bi bi-trash-fill" aria-hidden="true"></i>'
-			inputButton.addEventListener('click', () => removeFieldButton(inputGroup, wikiGroupElements, index))
+			linkEditButtonListener.set(button, listener)
+			button.addEventListener('click', listener)
 		}
-		inputGroup.appendChild(inputButton)
 	}
 
 	const params = new URLSearchParams(document.location.search)
 	const entryId = params.get('id')
 	entry = getEntry(entryId)
 
+	const linkContainer = document.getElementById("linkContainer");
+	if (linkContainer) {
+		linkContainer.replaceChildren();
+		for (const linkConfig of externalLinksConfig) {
+			linkLabel = document.createElement("label");
+			linkLabel.id = linkConfig.id + "Label";
+			linkLabel.className = "form-label";
+			linkLabel.textContent = linkConfig.name;
+			linkContainer.appendChild(linkLabel);
+
+			linkGroup = document.createElement("div");
+			linkGroup.id = linkConfig.id + "Group";
+			linkGroup.className = "mb-3 d-flex flex-column gap-2";
+			linkContainer.appendChild(linkGroup);
+		}
+	}
+
 	if (entry) {
 
 		nameField.value = entry.name
 		descriptionField.value = entry.description
 
-		if (entry.links.website.length) {
-			entry.links.website.forEach((link, index, array) => {
-				addWebsiteFields(link, index, array)
-			})
-		} else {
-			addWebsiteFields("", -1, entry.links.website)
-		}
-		if (entry.links.subreddit.length) {
-			entry.links.subreddit.forEach((link, index, array) => {
-				addSubredditFields(link, index, array)
-			})
-		} else {
-			addSubredditFields("", -1, entry.links.subreddit)
-		}
-		if (entry.links.discord.length) {
-			entry.links.discord.forEach((link, index, array) => {
-				addDiscordFields(link, index, array)
-			})
-		} else {
-			addDiscordFields("", -1, entry.links.discord)
-		}
-		if (entry.links.wiki.length) {
-			entry.links.wiki.forEach((link, index, array) => {
-				addWikiFields(link, index, array)
-			})
-		} else {
-			addWikiFields("", -1, entry.links.wiki)
+		for (const linkConfig of externalLinksConfig) {
+			if (entry.links[linkConfig.id].length) {
+				for (const link of entry.links[linkConfig.id]) {
+					addFieldGeneric(link, linkConfig.id)
+				}
+			} else {
+				clearLinkGroup(linkConfig.id)
+			}
 		}
 		redoButton.disabled = true
 		undoButton.disabled = false
@@ -808,10 +722,9 @@ function initDraw() {
 		pathWithPeriods.push([formatPeriod(currentPeriod, null, currentVariation), []])
 
 		// Builds multi-input list
-		addWebsiteFields("", 0, [0])
-		addSubredditFields("", 0, [0])
-		addDiscordFields("", 0, [0])
-		addWikiFields("", 0, [0])
+		for (const linkConfig of externalLinksConfig) {
+			clearLinkGroup(linkConfig.id);
+		}
 	}
 
 	initPeriodGroups()
