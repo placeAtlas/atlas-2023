@@ -632,6 +632,11 @@ function initDraw() {
 		inputButton.type = "button"
 		inputGroup.appendChild(inputButton)
 
+		if (linkConfig.hideInput) {
+			inputField.setAttribute("style", "display:none")
+			inputButton.setAttribute("style", "display:none")
+		}
+
 		refreshLinkGroupButtons(linkTypeId)
 	}
 
@@ -673,18 +678,20 @@ function initDraw() {
 	entry = getEntry(entryId)
 
 	const linkContainer = document.getElementById("linkContainer");
-	linkContainer.replaceChildren();
-	for (const linkConfig of externalLinksConfig) {
-		linkLabel = document.createElement("label");
-		linkLabel.id = linkConfig.id + "Label";
-		linkLabel.className = "form-label";
-		linkLabel.textContent = linkConfig.name;
-		linkContainer.appendChild(linkLabel);
+	if (linkContainer) {
+		linkContainer.replaceChildren();
+		for (const linkConfig of externalLinksConfig) {
+			linkLabel = document.createElement("label");
+			linkLabel.id = linkConfig.id + "Label";
+			linkLabel.className = "form-label";
+			linkLabel.textContent = linkConfig.name;
+			linkContainer.appendChild(linkLabel);
 
-		linkGroup = document.createElement("div");
-		linkGroup.id = linkConfig.id + "Group";
-		linkGroup.className = "mb-3 d-flex flex-column gap-2";
-		linkContainer.appendChild(linkGroup);
+			linkGroup = document.createElement("div");
+			linkGroup.id = linkConfig.id + "Group";
+			linkGroup.className = "mb-3 d-flex flex-column gap-2";
+			linkContainer.appendChild(linkGroup);
+		}
 	}
 
 	if (entry) {

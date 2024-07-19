@@ -414,8 +414,18 @@ const externalLinksConfig = [
 			}
 			return "";
 		}
-
-	}
+	},
+	{
+		name: "Wiki",
+		id: "wiki",
+		generateLink: (link) => "https://place-wiki.stefanocoding.me/wiki/" + link,
+		listingClass: "bi-wiki",
+		generateListingName: () => "r/place Wiki Article",
+		displayHTML: "{urlid}",
+		placeholder: "r/place Wiki Article",
+		configureInputField: () => {},
+		hideInput: true
+	},
 ];
 
 console.info(`%cThe 2023 r/place Atlas
