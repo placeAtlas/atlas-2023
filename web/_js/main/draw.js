@@ -700,7 +700,7 @@ function initDraw() {
 		descriptionField.value = entry.description
 
 		for (const linkConfig of externalLinksConfig) {
-			if (entry.links[linkConfig.id].length) {
+			if (entry.links[linkConfig.id]?.length) {
 				for (const link of entry.links[linkConfig.id]) {
 					addFieldGeneric(link, linkConfig.id)
 				}
