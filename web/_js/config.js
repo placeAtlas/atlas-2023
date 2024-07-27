@@ -388,7 +388,7 @@ const externalLinksConfig = [
 	{
 		name: "Subreddit",
 		id: "subreddit",
-		generateLink: (link) => "https://reddit.com/" + link,
+		generateLink: (link) => "https://reddit.com/r/" + link,
 		listingClass: "bi-reddit",
 		generateListingName: (link) => "r/" + link,
 		editorPrefix: "reddit.com/",
