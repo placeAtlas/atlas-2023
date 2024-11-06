@@ -126,18 +126,20 @@ Other than contributing to the Atlas data, code contributions are also accepted.
 
 This website is built using classic HTML 5 (no JS frameworks such as Vue, React, etc are used). Bootstrap 5 is used as a CSS framework.
 
-Opening the HTML file on your browser is adequate enough to edit. If it doesn't work, you can try running a local HTTP server.
+You need a local HTTP server to open the site properly. If you have either Python or Node.js, try using one of these options.
 
 ```sh
 # Run it inside the web/ folder.
 cd web 
 
 # Choose one of the following:
-python -m SimpleHTTPServer 8000   # Python 2
-python -m http.server 8000        # Python 3
-npx http-server                   # Node.js (http-server)
-npx serve                         # Node.js (serve)
+python -m SimpleHTTPServer 8000    # Python 2
+python -m http.server              # Python 3
+npx http-server                    # Node.js (http-server)
+npx serve                          # Node.js (serve)
 ```
+
+If you have Visual Studio Code, you can use an extension such as [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer), [Five Server](https://marketplace.visualstudio.com/items?itemName=yandeu.five-server), or [Live Preview](https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server) to run a local HTTP server. For better results, ensure that the root is set to `web/`.
 
 ### Tools
 
