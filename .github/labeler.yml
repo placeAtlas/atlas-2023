@@ -8,8 +8,7 @@
 
 staging merge:
 - all:
-  - base-branch:
-    - master
-  - head-branch:
-    - cleanup
-    - staging/'
+  - base-branch: "master"
+  - head-branch: 
+    - "^cleanup$"
+    - "^staging/.+$"
