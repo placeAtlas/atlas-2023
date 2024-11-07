@@ -142,7 +142,7 @@ async function updateBackground(newPeriod = currentPeriod, newVariation = curren
 		context.drawImage(imageLayer, 0, 0)
 	}
 
-	context.drawImage(additionalLayerCanvas, 0, 0)
+	if (additionalLayerCanvas.width !== 0 && additionalLayerCanvas.height !== 0) context.drawImage(additionalLayerCanvas, 0, 0)
 
 	if (myAbortController.signal.aborted || newPeriod !== currentPeriod || newVariation !== currentVariation || currentUpdateIndex !== myUpdateIndex) {
 		return false
@@ -421,7 +421,6 @@ const updateAdditionalLayer = () => {
 	canvas.width = 0
 	canvas.height = 0
 
-
 	for (const layer of layers) {
 		if (!layer.imageLayer) continue
 		canvas.width = Math.max(layer.x + layer.imageLayer.width, canvas.width)
@@ -431,6 +430,5 @@ const updateAdditionalLayer = () => {
 	for (const layer of layers) {
 		if (!layer.imageLayer) continue
 		context.drawImage(layer.imageLayer, layer.x, layer.y)
-		console.log(layer.imageLayer)
 	}
 }
