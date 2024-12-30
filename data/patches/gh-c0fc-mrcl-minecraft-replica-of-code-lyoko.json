@@ -1,0 +1,42 @@
+{
+	"id": -1,
+	"name": "MRCL : Minecraft Replica of Code Lyoko",
+	"description": "A Minecraft server, a recreation of the universe of Code Lyoko, with Kadic, the factory and the virtual world of Lyoko. It uses only a ressource pack (client-side), command blocks and server plugins.",
+	"links": {
+		"website": [
+			"https://mrcl.cc"
+		],
+		"discord": [
+			"hUBR7Ra"
+		],
+		"subreddit": [
+			"CodeLyoko"
+		]
+	},
+	"path": {
+		"250": [
+			[
+				855,
+				-704
+			],
+			[
+				870,
+				-704
+			],
+			[
+				870,
+				-700
+			],
+			[
+				855,
+				-700
+			]
+		]
+	},
+	"center": {
+		"250": [
+			863,
+			-702
+		]
+	}
+}
