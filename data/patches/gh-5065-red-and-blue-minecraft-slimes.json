@@ -1,0 +1,36 @@
+{
+	"id": -1,
+	"name": "Red and blue Minecraft Slimes",
+	"description": "It's a reference to Minecraft with this two slimes (red and blue) but they changed the base color of the Minecraft Slime which is green.\n\nSlimes are bouncy, cube-shaped hostile mobs that spawn deep underground in three sizes in particular chunks, or on the surface in swamp biomes. They attack by jumping at their targets. They come in three sizes, and larger slimes split into smaller ones on death.",
+	"links": {
+		"website": [
+			"https://minecraft.wiki/w/Slime"
+		]
+	},
+	"path": {
+		"250": [
+			[
+				1002,
+				-129
+			],
+			[
+				1017,
+				-129
+			],
+			[
+				1017,
+				-114
+			],
+			[
+				1002,
+				-114
+			]
+		]
+	},
+	"center": {
+		"250": [
+			1010,
+			-121
+		]
+	}
+}
