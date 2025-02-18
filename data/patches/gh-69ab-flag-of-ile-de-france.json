@@ -1,0 +1,37 @@
+{
+	"id": -1,
+	"name": "Flag of Île de France",
+	"description": "Île de France is a region in France where there is the famous city of Paris",
+	"links": {
+		"website": [
+			"https://www.iledefrance.fr",
+			"https://fr.wikipedia.org/wiki/Île-de-France"
+		]
+	},
+	"path": {
+		"207-256": [
+			[
+				-470,
+				273
+			],
+			[
+				-462,
+				273
+			],
+			[
+				-462,
+				278
+			],
+			[
+				-470,
+				278
+			]
+		]
+	},
+	"center": {
+		"207-256": [
+			-466,
+			276
+		]
+	}
+}
