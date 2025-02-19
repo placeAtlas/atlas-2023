@@ -1,0 +1,76 @@
+{
+	"id": -1,
+	"name": "Pikachu",
+	"description": "This is pikachu from the famous films, video games and series Pokemon. He is the main character with Sacha of some of the pokemon products.",
+	"links": {
+		"website": [
+			"https://www.pokepedia.fr/Pikachu"
+		]
+	},
+	"path": {
+		"245-256": [
+			[
+				-755,
+				933
+			],
+			[
+				-755,
+				937
+			],
+			[
+				-754,
+				937
+			],
+			[
+				-754,
+				940
+			],
+			[
+				-750,
+				940
+			],
+			[
+				-750,
+				939
+			],
+			[
+				-749,
+				939
+			],
+			[
+				-749,
+				937
+			],
+			[
+				-748,
+				937
+			],
+			[
+				-748,
+				936
+			],
+			[
+				-749,
+				936
+			],
+			[
+				-750,
+				936
+			],
+			[
+				-750,
+				933
+			],
+			[
+				-755,
+				933
+			]
+		]
+	},
+	"center": {
+		"245-256": [
+			-753,
+			935
+		]
+	}
+}
