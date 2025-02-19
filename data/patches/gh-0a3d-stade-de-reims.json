@@ -1,0 +1,81 @@
+{
+	"id": -1,
+	"name": "Stade de Reims",
+	"description": "Stade de Reims is a French professional football club based in Reims. The club was formed in 1931 and plays in Ligue 1, the top level of Football in France. Reims plays home matches at the Stade Auguste Delaune and is managed by Luka Elsner.\n\nReims is one of the most successful clubs in French football history having won six Ligue 1 titles, two Coupe de France trophies, and five Trophée des champions titles. The club has also performed well on European level having finished as runners-up in the 1956 and 1959 editions of the European Cup,[3] and winning the Latin Cup and Coppa delle Alpi in 1953 and 1977, respectively. However, since the 1980s, Reims have struggled to get back to their zenith. The club hovered between Ligue 2 and the Championnat National for over thirty years after their relegation from the top flight in 1979. In 2012, they were promoted back to Ligue 1, were relegated again in 2016, but returned two years later.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Stade_de_Reims",
+			"https://www.stade-de-reims.com"
+		]
+	},
+	"path": {
+		"231-256": [
+			[
+				980,
+				-794
+			],
+			[
+				980,
+				-788
+			],
+			[
+				983,
+				-787
+			],
+			[
+				983,
+				-785
+			],
+			[
+				984,
+				-783
+			],
+			[
+				985,
+				-780
+			],
+			[
+				989,
+				-779
+			],
+			[
+				990,
+				-763
+			],
+			[
+				990,
+				-761
+			],
+			[
+				992,
+				-759
+			],
+			[
+				994,
+				-758
+			],
+			[
+				997,
+				-758
+			],
+			[
+				998,
+				-760
+			],
+			[
+				999,
+				-763
+			],
+			[
+				999,
+				-794
+			]
+		]
+	},
+	"center": {
+		"231-256": [
+			992,
+			-786
+		]
+	}
+}
