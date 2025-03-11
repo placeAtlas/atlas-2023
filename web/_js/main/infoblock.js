@@ -158,6 +158,73 @@ function createInfoBlock(entry, mode = 0) {
 		idElementContainer.appendChild(editElement)
 	}
 
+	// Adds giscus button
+	const giscusButton = createGiscusButton(entry)
+	idElementContainer.appendChild(giscusButton)
+
+function createGiscusButton(entry) {
+	const button = document.createElement("button")
+	button.className = "btn btn-sm btn-outline-primary"
+	button.innerHTML = '<i class="bi bi-chat-dots" aria-hidden="true"></i> Comments'
+	button.addEventListener("click", () => showCommentsModal(entry))
+	return button
+}
+
+function showCommentsModal(entry) {
+	const modal = createModal(entry)
+	document.body.appendChild(modal)
+	
+	const bsModal = new bootstrap.Modal(modal)
+	bsModal.show()
+	
+	modal.addEventListener('shown.bs.modal', () => initGiscus(modal, entry))
+	modal.addEventListener('hidden.bs.modal', () => modal.remove())
+}
+
+function createModal(entry) {
+	const modal = document.createElement("div")
+	modal.className = "modal fade"
+	modal.tabIndex = -1
+	modal.innerHTML = `
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Comments for ${entry.name} (${entry.id})</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<div class="giscus"></div>
+				</div>
+			</div>
+		</div>`
+	return modal
+}
+
+function initGiscus(modal, entry) {
+	const giscusContainer = modal.querySelector('.giscus')
+	setTimeout(() => {
+		const script = document.createElement('script')
+		script.src = "https://giscus.app/client.js"
+		script.setAttribute("data-repo", "placeAtlas/atlas-2023")
+		script.setAttribute("data-repo-id", "R_kgDOJyrvYg")
+		script.setAttribute("data-category", "Entry Discussion")
+		script.setAttribute("data-category-id", "DIC_kwDOJyrvYs4Cn1UC")
+		script.setAttribute("data-mapping", "specific")
+		script.setAttribute("data-term", `${entry.name} (${entry.id})`)
+		script.setAttribute("data-strict", "0")
+		script.setAttribute("data-reactions-enabled", "1")
+		script.setAttribute("data-emit-metadata", "0")
+		script.setAttribute("data-input-position", "top")
+		script.setAttribute("data-theme", "preferred_color_scheme")
+		script.setAttribute("data-lang", "en")
+		script.setAttribute("data-loading", "lazy")
+		script.setAttribute("crossorigin", "anonymous")
+		script.async = true
+		giscusContainer.appendChild(script)
+	}, 100)
+}
+	idElementContainer.appendChild(giscusButton)
+
 	// Removes empty elements
 	if (!bodyElement.hasChildNodes()) bodyElement.remove()
 	if (!linkListElement.hasChildNodes()) linkListElement.remove()
