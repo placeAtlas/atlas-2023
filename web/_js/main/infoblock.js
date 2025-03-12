@@ -159,8 +159,18 @@ function createInfoBlock(entry, mode = 0) {
 	}
 
 	// Adds giscus button
-	const giscusButton = createGiscusButton(entry)
-	idElementContainer.appendChild(giscusButton)
+	if (entry.id >= 0) {
+		const giscusButton = createGiscusButton(entry)
+		idElementContainer.appendChild(giscusButton)
+	}
+
+	// Removes empty elements
+	if (!bodyElement.hasChildNodes()) bodyElement.remove()
+	if (!linkListElement.hasChildNodes()) linkListElement.remove()
+	if (!listElement.hasChildNodes()) listElement.remove()
+
+	return element
+}
 
 function createGiscusButton(entry) {
 	const button = document.createElement("button")
@@ -222,13 +232,4 @@ function initGiscus(modal, entry) {
 		script.async = true
 		giscusContainer.appendChild(script)
 	}, 100)
-}
-	idElementContainer.appendChild(giscusButton)
-
-	// Removes empty elements
-	if (!bodyElement.hasChildNodes()) bodyElement.remove()
-	if (!linkListElement.hasChildNodes()) linkListElement.remove()
-	if (!listElement.hasChildNodes()) listElement.remove()
-
-	return element
 }
