@@ -77,8 +77,6 @@ window.atlasAll = atlasAll
 
 if (document.location.host !== prodDomain) document.body.dataset.dev = ""
 
-init()
-
 async function init() {
 
 	const args = window.location.search
@@ -555,3 +553,30 @@ noticeEl.querySelector('[role=button]').addEventListener('click', () => {
 	window.removeEventListener('resize', resizeGlobalTopPadding)
 	document.body.style.setProperty("--global-top-padding", null)
 })
+
+// Function to check if the user has previously dismissed the NSFW warning infobox
+function hasDismissedNsfwWarning() {
+	return localStorage.getItem('nsfwWarningDismissed') === 'true';
+}
+
+// Show the NSFW warning infobox if the user has not previously dismissed it
+function showNsfwWarning() {
+	const nsfwWarningModal = new bootstrap.Modal(document.getElementById('nsfwWarningModal'), {
+		backdrop: 'static',
+		keyboard: false
+	});
+	nsfwWarningModal.show();
+
+	document.getElementById('acceptNsfwWarning').addEventListener('click', () => {
+		localStorage.setItem('nsfwWarningDismissed', 'true');
+		nsfwWarningModal.hide();
+		init();
+	});
+}
+
+// Prevent loading the data (atlas.json) until the popup has been accepted
+if (nsfwWarningConfig.showWarning && !hasDismissedNsfwWarning()) {
+	showNsfwWarning();
+} else {
+	init();
+}
