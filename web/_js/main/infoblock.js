@@ -144,25 +144,35 @@ function createInfoBlock(entry, mode = 0) {
 	idElement.className = "py-1"
 	createLabel("ID: ", entry.id, idElement)
 	const idElementContainer = document.createElement("div")
-	idElementContainer.className = "card-footer d-flex justify-content-between align-items-center"
+	// Removed justify-content-between; using align-items-center only
+	idElementContainer.className = "card-footer d-flex align-items-center"
+	// Append id label to the left
 	idElementContainer.appendChild(idElement)
-	element.appendChild(idElementContainer)
+
+	// Create a container for the action buttons which is pushed to the right
+	const actionsContainer = document.createElement("div")
+	actionsContainer.className = "d-flex gap-2 ms-auto"
 
 	// Adds edit button only if element is not deleted
 	if (mode < 2 && (!entry.diff || entry.diff !== "delete")) {
 		const editElement = document.createElement("a")
-		editElement.innerHTML = '<i class="bi bi-pencil-fill" aria-hidden="true"></i> Edit'
+		// Hide text on narrow widths using a responsive span
+		editElement.innerHTML = '<i class="bi bi-pencil-fill" aria-hidden="true"></i> <span class="d-none d-md-inline">Edit</span>'
 		editElement.className = "btn btn-sm btn-outline-primary"
 		editElement.href = "./?mode=draw&id=" + entry.id + formatHash(false, nearestPeriod, nearestVariation, false, false, false)
 		editElement.title = "Edit " + entry.name
-		idElementContainer.appendChild(editElement)
+		actionsContainer.appendChild(editElement)
 	}
 
-	// Adds giscus button
-	if (entry.id >= 0) {
+	// Adds giscus (comments) button
+	if (entry.id >= 0 && mode < 2 && (!entry.diff || entry.diff !== "delete")) {
 		const giscusButton = createGiscusButton(entry)
-		idElementContainer.appendChild(giscusButton)
+		actionsContainer.appendChild(giscusButton)
 	}
+
+	// Append the actions container to the footer
+	idElementContainer.appendChild(actionsContainer)
+	element.appendChild(idElementContainer)
 
 	// Removes empty elements
 	if (!bodyElement.hasChildNodes()) bodyElement.remove()
@@ -173,11 +183,11 @@ function createInfoBlock(entry, mode = 0) {
 }
 
 function createGiscusButton(entry) {
-	const button = document.createElement("button")
-	button.className = "btn btn-sm btn-outline-primary"
-	button.innerHTML = '<i class="bi bi-chat-dots" aria-hidden="true"></i> Comments'
-	button.addEventListener("click", () => showCommentsModal(entry))
-	return button
+    const button = document.createElement("button")
+    button.className = "btn btn-sm btn-outline-primary"
+    button.innerHTML = '<i class="bi bi-chat-dots-fill" aria-hidden="true"></i> <span class="d-none d-md-inline">Comments</span>'
+    button.addEventListener("click", () => showCommentsModal(entry))
+    return button
 }
 
 function showCommentsModal(entry) {
@@ -199,7 +209,7 @@ function createModal(entry) {
 		<div class="modal-dialog modal-lg">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title">Comments for ${entry.id}</h5>
+					<h5 class="modal-title">Comments for ${entry.name}</h5>
 					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
 				<div class="modal-body">
