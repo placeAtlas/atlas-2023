@@ -199,7 +199,7 @@ function createModal(entry) {
 		<div class="modal-dialog modal-lg">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title">Comments for ${entry.name} (${entry.id})</h5>
+					<h5 class="modal-title">Comments for ${entry.id}</h5>
 					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
 				<div class="modal-body">
@@ -215,20 +215,20 @@ function initGiscus(modal, entry) {
 	setTimeout(() => {
 		const script = document.createElement('script')
 		script.src = "https://giscus.app/client.js"
-		script.setAttribute("data-repo", "placeAtlas/atlas-2023")
-		script.setAttribute("data-repo-id", "R_kgDOJyrvYg")
-		script.setAttribute("data-category", "Entry Discussion")
-		script.setAttribute("data-category-id", "DIC_kwDOJyrvYs4Cn1UC")
-		script.setAttribute("data-mapping", "specific")
-		script.setAttribute("data-term", `${entry.name} (${entry.id})`)
-		script.setAttribute("data-strict", "0")
-		script.setAttribute("data-reactions-enabled", "1")
-		script.setAttribute("data-emit-metadata", "0")
-		script.setAttribute("data-input-position", "top")
-		script.setAttribute("data-theme", "preferred_color_scheme")
-		script.setAttribute("data-lang", "en")
-		script.setAttribute("data-loading", "lazy")
-		script.setAttribute("crossorigin", "anonymous")
+		script.setAttribute("data-repo", window.giscusConfig.repo)
+		script.setAttribute("data-repo-id", window.giscusConfig.repoId)
+		script.setAttribute("data-category", window.giscusConfig.category)
+		script.setAttribute("data-category-id", window.giscusConfig.categoryId)
+		script.setAttribute("data-mapping", window.giscusConfig.mapping)
+		script.setAttribute("data-term", window.giscusConfig.term.replace("{ENTRY_ID}", entry.id))
+		script.setAttribute("data-strict", window.giscusConfig.strict)
+		script.setAttribute("data-reactions-enabled", window.giscusConfig.reactionsEnabled)
+		script.setAttribute("data-emit-metadata", window.giscusConfig.emitMetadata)
+		script.setAttribute("data-input-position", window.giscusConfig.inputPosition)
+		script.setAttribute("data-theme", window.giscusConfig.theme)
+		script.setAttribute("data-lang", window.giscusConfig.lang)
+		script.setAttribute("data-loading", window.giscusConfig.loading)
+		script.setAttribute("crossorigin", window.giscusConfig.crossorigin)
 		script.async = true
 		giscusContainer.appendChild(script)
 	}, 100)
