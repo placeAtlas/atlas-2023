@@ -555,28 +555,28 @@ noticeEl.querySelector('[role=button]').addEventListener('click', () => {
 })
 
 // Function to check if the user has previously dismissed the NSFW warning infobox
-function hasDismissedNsfwWarning() {
-	return localStorage.getItem('nsfwWarningDismissed') === 'true';
+function hasDismisseddisclaimer() {
+	return localStorage.getItem('disclaimerDismissed') === 'true';
 }
 
 // Show the NSFW warning infobox if the user has not previously dismissed it
-function showNsfwWarning() {
-	const nsfwWarningModal = new bootstrap.Modal(document.getElementById('nsfwWarningModal'), {
+function showdisclaimer() {
+	const disclaimerModal = new bootstrap.Modal(document.getElementById('disclaimerModal'), {
 		backdrop: 'static',
 		keyboard: false
 	});
-	nsfwWarningModal.show();
+	disclaimerModal.show();
 
-	document.getElementById('acceptNsfwWarning').addEventListener('click', () => {
-		localStorage.setItem('nsfwWarningDismissed', 'true');
-		nsfwWarningModal.hide();
+	document.getElementById('acceptDisclaimer').addEventListener('click', () => {
+		localStorage.setItem('disclaimerDismissed', 'true');
+		disclaimerModal.hide();
 		init();
 	});
 }
 
-// Prevent loading the data (atlas.json) until the popup has been accepted
-if (nsfwWarningConfig.showWarning && !hasDismissedNsfwWarning()) {
-	showNsfwWarning();
+// Prevent loading the data (atlas.json) until the popup has been accepted and ONLY if you are on the production domain
+if (disclaimerConfig.showWarning && !hasDismisseddisclaimer() && document.location.host.includes(prodDomain)) {
+	showdisclaimer();
 } else {
 	init();
 }
