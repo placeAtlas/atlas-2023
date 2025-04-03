@@ -1,0 +1,50 @@
+{
+	"id": 2725,
+	"name": "Idolcorp",
+	"description": "Idolcorp is a VTuber agency founded by Aviel Basin and based in Israel. Its first line of talents debuted in 2022.",
+	"links": {
+		"website": [
+			"https://idol-company.com"
+		],
+		"discord": [
+			"idolcorp"
+		],
+		"subreddit": [
+			"idol"
+		]
+	},
+	"path": {
+		"T, 149-256": [
+			[
+				-343,
+				-912
+			],
+			[
+				-343,
+				-891
+			],
+			[
+				-326,
+				-891
+			],
+			[
+				-324,
+				-893
+			],
+			[
+				-321,
+				-893
+			],
+			[
+				-321,
+				-912
+			]
+		]
+	},
+	"center": {
+		"T, 149-256": [
+			-332,
+			-901
+		]
+	}
+}
