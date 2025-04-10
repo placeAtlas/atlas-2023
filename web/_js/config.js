@@ -428,10 +428,6 @@ const externalLinksConfig = [
 	},
 ];
 
-const disclaimerConfig = {
-	showWarning: true
-};
-window.disclaimerConfig = disclaimerConfig;
 
 console.info(`%cThe 2023 r/place Atlas
 %cCopyright (c) 2017 Roland Rytz <roland@draemm.li>

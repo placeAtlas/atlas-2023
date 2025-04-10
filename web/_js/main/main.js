@@ -77,6 +77,12 @@ window.atlasAll = atlasAll
 
 if (document.location.host !== prodDomain) document.body.dataset.dev = ""
 
+// Move the disclaimer configuration here
+const disclaimerConfig = {
+    showWarning: true
+};
+window.disclaimerConfig = disclaimerConfig;
+
 async function init() {
 
 	const args = window.location.search
