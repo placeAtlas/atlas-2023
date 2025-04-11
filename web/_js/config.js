@@ -446,6 +446,7 @@ const externalLinksConfig = [
 	},
 ];
 
+
 console.info(`%cThe 2023 r/place Atlas
 %cCopyright (c) 2017 Roland Rytz <roland@draemm.li>
 Copyright (c) 2023 Place Atlas Initiative and contributors
