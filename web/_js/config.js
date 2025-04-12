@@ -333,6 +333,24 @@ const variationsConfig = {
 }
 window.variationsConfig = variationsConfig
 
+const giscusConfig = {
+    repo: "placeAtlas/atlas-2023",
+    repoId: "R_kgDOJyrvYg",
+    category: "Entry Discussion",
+    categoryId: "DIC_kwDOJyrvYs4Cn1UC",
+    mapping: "specific",
+    strict: "1",
+	term: "{ENTRY_ID}",
+    reactionsEnabled: "1",
+    emitMetadata: "0",
+    inputPosition: "top",
+    theme: "preferred_color_scheme",
+    lang: "en",
+    loading: "lazy",
+    crossorigin: "anonymous"
+}
+window.giscusConfig = giscusConfig
+
 let defaultVariation = 'default'
 window.defaultVariation = defaultVariation
 
@@ -427,6 +445,7 @@ const externalLinksConfig = [
 		hideInput: true
 	},
 ];
+
 
 console.info(`%cThe 2023 r/place Atlas
 %cCopyright (c) 2017 Roland Rytz <roland@draemm.li>

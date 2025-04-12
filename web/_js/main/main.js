@@ -77,7 +77,11 @@ window.atlasAll = atlasAll
 
 if (document.location.host !== prodDomain) document.body.dataset.dev = ""
 
-init()
+// Move the disclaimer configuration here
+const disclaimerConfig = {
+    showWarning: true
+};
+window.disclaimerConfig = disclaimerConfig;
 
 async function init() {
 
@@ -555,3 +559,30 @@ noticeEl.querySelector('[role=button]').addEventListener('click', () => {
 	window.removeEventListener('resize', resizeGlobalTopPadding)
 	document.body.style.setProperty("--global-top-padding", null)
 })
+
+// Function to check if the user has previously dismissed the NSFW warning infobox
+function hasDismisseddisclaimer() {
+	return localStorage.getItem('disclaimerDismissed') === 'true';
+}
+
+// Show the NSFW warning infobox if the user has not previously dismissed it
+function showdisclaimer() {
+	const disclaimerModal = new bootstrap.Modal(document.getElementById('disclaimerModal'), {
+		backdrop: 'static',
+		keyboard: false
+	});
+	disclaimerModal.show();
+
+	document.getElementById('acceptDisclaimer').addEventListener('click', () => {
+		localStorage.setItem('disclaimerDismissed', 'true');
+		disclaimerModal.hide();
+		init();
+	});
+}
+
+// Prevent loading the data (atlas.json) until the popup has been accepted and ONLY if you are on the production domain
+if (disclaimerConfig.showWarning && !hasDismisseddisclaimer() && document.location.host.includes(prodDomain)) {
+	showdisclaimer();
+} else {
+	init();
+}

@@ -144,19 +144,35 @@ function createInfoBlock(entry, mode = 0) {
 	idElement.className = "py-1"
 	createLabel("ID: ", entry.id, idElement)
 	const idElementContainer = document.createElement("div")
-	idElementContainer.className = "card-footer d-flex justify-content-between align-items-center"
+	// Removed justify-content-between; using align-items-center only
+	idElementContainer.className = "card-footer d-flex align-items-center"
+	// Append id label to the left
 	idElementContainer.appendChild(idElement)
-	element.appendChild(idElementContainer)
+
+	// Create a container for the action buttons which is pushed to the right
+	const actionsContainer = document.createElement("div")
+	actionsContainer.className = "d-flex gap-2 ms-auto"
 
 	// Adds edit button only if element is not deleted
 	if (mode < 2 && (!entry.diff || entry.diff !== "delete")) {
 		const editElement = document.createElement("a")
-		editElement.innerHTML = '<i class="bi bi-pencil-fill" aria-hidden="true"></i> Edit'
+		// Hide text on narrow widths using a responsive span
+		editElement.innerHTML = '<i class="bi bi-pencil-fill" aria-hidden="true"></i> <span class="d-none d-md-inline">Edit</span>'
 		editElement.className = "btn btn-sm btn-outline-primary"
 		editElement.href = "./?mode=draw&id=" + entry.id + formatHash(false, nearestPeriod, nearestVariation, false, false, false)
 		editElement.title = "Edit " + entry.name
-		idElementContainer.appendChild(editElement)
+		actionsContainer.appendChild(editElement)
 	}
+
+	// Adds giscus (comments) button
+	if (entry.id >= 0 && mode < 2 && (!entry.diff || entry.diff !== "delete")) {
+		const giscusButton = createGiscusButton(entry)
+		actionsContainer.appendChild(giscusButton)
+	}
+
+	// Append the actions container to the footer
+	idElementContainer.appendChild(actionsContainer)
+	element.appendChild(idElementContainer)
 
 	// Removes empty elements
 	if (!bodyElement.hasChildNodes()) bodyElement.remove()
@@ -164,4 +180,66 @@ function createInfoBlock(entry, mode = 0) {
 	if (!listElement.hasChildNodes()) listElement.remove()
 
 	return element
+}
+
+function createGiscusButton(entry) {
+    const button = document.createElement("button")
+    button.className = "btn btn-sm btn-outline-primary"
+    button.innerHTML = '<i class="bi bi-chat-dots-fill" aria-hidden="true"></i> <span class="d-none d-md-inline">Comments</span>'
+    button.addEventListener("click", () => showCommentsModal(entry))
+    return button
+}
+
+function showCommentsModal(entry) {
+	const modal = createModal(entry)
+	document.body.appendChild(modal)
+	
+	const bsModal = new bootstrap.Modal(modal)
+	bsModal.show()
+	
+	modal.addEventListener('shown.bs.modal', () => initGiscus(modal, entry))
+	modal.addEventListener('hidden.bs.modal', () => modal.remove())
+}
+
+function createModal(entry) {
+	const modal = document.createElement("div")
+	modal.className = "modal fade"
+	modal.tabIndex = -1
+	modal.innerHTML = `
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Commenting on: ${entry.name} (${entry.id})</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<div class="giscus"></div>
+				</div>
+			</div>
+		</div>`
+	return modal
+}
+
+function initGiscus(modal, entry) {
+	const giscusContainer = modal.querySelector('.giscus')
+	setTimeout(() => {
+		const script = document.createElement('script')
+		script.src = "https://giscus.app/client.js"
+		script.setAttribute("data-repo", window.giscusConfig.repo)
+		script.setAttribute("data-repo-id", window.giscusConfig.repoId)
+		script.setAttribute("data-category", window.giscusConfig.category)
+		script.setAttribute("data-category-id", window.giscusConfig.categoryId)
+		script.setAttribute("data-mapping", window.giscusConfig.mapping)
+		script.setAttribute("data-term", window.giscusConfig.term.replace("{ENTRY_ID}", entry.id))
+		script.setAttribute("data-strict", window.giscusConfig.strict)
+		script.setAttribute("data-reactions-enabled", window.giscusConfig.reactionsEnabled)
+		script.setAttribute("data-emit-metadata", window.giscusConfig.emitMetadata)
+		script.setAttribute("data-input-position", window.giscusConfig.inputPosition)
+		script.setAttribute("data-theme", window.giscusConfig.theme)
+		script.setAttribute("data-lang", window.giscusConfig.lang)
+		script.setAttribute("data-loading", window.giscusConfig.loading)
+		script.setAttribute("crossorigin", window.giscusConfig.crossorigin)
+		script.async = true
+		giscusContainer.appendChild(script)
+	}, 100)
 }
