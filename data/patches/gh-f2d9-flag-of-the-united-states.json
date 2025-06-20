@@ -1,0 +1,103 @@
+{
+	"id": 33,
+	"name": "Flag of the United States",
+	"description": "The United States is a country in North America.\nThis is the primary flag of r/AmericanFlagInPlace. The Americans fended off streamers, coordinated attacks, and formed alliances with many other communities.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/United_States",
+			"https://en.wikipedia.org/wiki/Flag_of_the_United_States"
+		],
+		"discord": [
+			"afip"
+		],
+		"subreddit": [
+			"AmericanFlagInPlace"
+		]
+	},
+	"path": {
+		"1-15": [
+			[
+				250,
+				335
+			],
+			[
+				250,
+				415
+			],
+			[
+				400,
+				415
+			],
+			[
+				400,
+				335
+			]
+		],
+		"16-19": [
+			[
+				30,
+				381
+			],
+			[
+				30,
+				455
+			],
+			[
+				55,
+				455
+			],
+			[
+				55,
+				432
+			],
+			[
+				147,
+				432
+			],
+			[
+				147,
+				411
+			],
+			[
+				164,
+				411
+			],
+			[
+				164,
+				381
+			]
+		],
+		"T, 24-256": [
+			[
+				-187,
+				96
+			],
+			[
+				-187,
+				176
+			],
+			[
+				2,
+				176
+			],
+			[
+				2,
+				96
+			]
+		]
+	},
+	"center": {
+		"1-15": [
+			325,
+			375
+		],
+		"16-19": [
+			118,
+			407
+		],
+		"T, 24-256": [
+			-92,
+			136
+		]
+	}
+}
