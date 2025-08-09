@@ -54,7 +54,7 @@ function applyView() {
 }
 
 function setView(targetX, targetY, targetZoom) {
-	
+
 	if (isNaN(targetX)) targetX = null
 	if (isNaN(targetY)) targetY = null
 
@@ -136,8 +136,8 @@ async function init() {
 	//console.log(document.documentElement.clientWidth, document.documentElement.clientHeight)
 
 	setView(
-		(isNaN(hashX) || hashX === '') ? canvasCenter.x : Number(hashX), 
-		(isNaN(hashY) || hashY === '') ? canvasCenter.y : Number(hashY), 
+		(isNaN(hashX) || hashX === '') ? canvasCenter.x : Number(hashX),
+		(isNaN(hashY) || hashY === '') ? canvasCenter.y : Number(hashY),
 		(isNaN(hashZoom) || hashZoom === '') ? zoom : Number(hashZoom)
 	)
 
@@ -313,8 +313,8 @@ async function init() {
 			// This creates a smoother experience
 			zoom -= e.deltaY * (0.001 * zoom)
 		} else {
-			if (e.deltaY > 0) zoom /= 2
-			else if (e.deltaY < 0) zoom *= 2
+			if (e.deltaY > 0) zoom /= 1.3
+			else if (e.deltaY < 0) zoom *= 1.3
 		}
 
 		zoom = Math.max(minZoom, Math.min(maxZoom, zoom))
