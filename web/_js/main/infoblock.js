@@ -51,8 +51,8 @@ function createInfoBlock(entry, mode = 0) {
 	}
 
 	if (mode === 2)  {
-		linkElement.href = "#" 
-	} else { 
+		linkElement.href = "#"
+	} else {
 		const hash = formatHash(entry.id, nearestPeriod, nearestVariation, false, false, false)
 		linkElement.href = hash
 		if (mode === 0) linkElement.addEventListener('click', e => {
@@ -155,11 +155,15 @@ function createInfoBlock(entry, mode = 0) {
 
 	// Adds edit button only if element is not deleted
 	if (mode < 2 && (!entry.diff || entry.diff !== "delete")) {
+		const editParams = queryParameterToConserve();
+		editParams.append("mode", "draw");
+		editParams.append("id", entry.id)
+
 		const editElement = document.createElement("a")
 		// Hide text on narrow widths using a responsive span
 		editElement.innerHTML = '<i class="bi bi-pencil-fill" aria-hidden="true"></i> <span class="d-none d-md-inline">Edit</span>'
 		editElement.className = "btn btn-sm btn-outline-primary"
-		editElement.href = "./?mode=draw&id=" + entry.id + formatHash(false, nearestPeriod, nearestVariation, false, false, false)
+		editElement.href = "./?" + editParams.toString() + formatHash(false, nearestPeriod, nearestVariation, false, false, false)
 		editElement.title = "Edit " + entry.name
 		actionsContainer.appendChild(editElement)
 	}
@@ -193,10 +197,10 @@ function createGiscusButton(entry) {
 function showCommentsModal(entry) {
 	const modal = createModal(entry)
 	document.body.appendChild(modal)
-	
+
 	const bsModal = new bootstrap.Modal(modal)
 	bsModal.show()
-	
+
 	modal.addEventListener('shown.bs.modal', () => initGiscus(modal, entry))
 	modal.addEventListener('hidden.bs.modal', () => modal.remove())
 }

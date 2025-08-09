@@ -59,6 +59,17 @@ moreEntriesButton.className = "btn btn-primary d-block mb-2 mx-auto"
 moreEntriesButton.id = "moreEntriesButton"
 let showMoreEntries = () => {}
 
+function queryParameterToConserve() {
+	const args = window.location.search
+	const params = new URLSearchParams(args)
+
+	const paramStringBuilder = new URLSearchParams();
+	if (params.get("atlas") != null) {
+		paramStringBuilder.append("atlas", params.get("atlas"))
+	}
+	return params
+}
+
 const moreEntriesObserver = new IntersectionObserver(entries => {
 	for (const entry of entries) {
 		if (!entry.isIntersecting) continue
