@@ -1,0 +1,48 @@
+{
+	"id": 465,
+	"name": "86",
+	"description": "86 is an anime, light novel and manga series written by Asato Asato, with season one of the anime series finishing in March 2022.",
+	"links": {
+		"website": [
+			"https://anime-86.com/",
+			"https://en.wikipedia.org/wiki/86_(novel_series)"
+		],
+		"subreddit": [
+			"EightySix"
+		]
+	},
+	"path": {
+		"47-118, T, 148-256": [
+			[
+				118,
+				-12
+			],
+			[
+				118,
+				37
+			],
+			[
+				168,
+				37
+			],
+			[
+				168,
+				-11
+			],
+			[
+				125,
+				-11
+			],
+			[
+				125,
+				-12
+			]
+		]
+	},
+	"center": {
+		"47-118, T, 148-256": [
+			143,
+			13
+		]
+	}
+}
