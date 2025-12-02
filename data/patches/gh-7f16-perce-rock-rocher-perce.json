@@ -1,0 +1,43 @@
+{
+	"id": -1,
+	"name": "Percé Rock (Rocher Percé)",
+	"description": "Percé Rock (French: Rocher Percé, lit. 'pierced rock') is a huge sheer rock formation in the Gulf of Saint Lawrence on the tip of the Gaspé Peninsula in Québec, Canada, off Percé Bay. Percé Rock appears from a distance like a ship under sail.\n\nThis one was later relocated on the right side of the Quebec Flag.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/Perc%C3%A9_Rock"
+		],
+		"discord": [
+			"aMkwGazsWX",
+			"WaQvdxU"
+		],
+		"subreddit": [
+			"Quebec"
+		]
+	},
+	"path": {
+		"120-135": [
+			[
+				490,
+				154
+			],
+			[
+				490,
+				160
+			],
+			[
+				511,
+				160
+			],
+			[
+				511,
+				154
+			]
+		]
+	},
+	"center": {
+		"120-135": [
+			501,
+			157
+		]
+	}
+}
