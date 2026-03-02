@@ -1,0 +1,70 @@
+{
+	"id": 4527,
+	"name": "Flag of India",
+	"description": "The Flag of India featuring some of their messiest artworks and a few good ones too.",
+	"links": {
+		"website": [
+			"https://en.wikipedia.org/wiki/India",
+			"https://en.wikipedia.org/wiki/Flag_of_India"
+		],
+		"subreddit": [
+			"IndiaPlace"
+		]
+	},
+	"path": {
+		"171-179": [
+			[
+				-1278,
+				-191
+			],
+			[
+				-1278,
+				-120
+			],
+			[
+				-1142,
+				-120
+			],
+			[
+				-1142,
+				-191
+			]
+		],
+		"180-256": [
+			[
+				-1200,
+				-191
+			],
+			[
+				-1200,
+				-117
+			],
+			[
+				-1001,
+				-117
+			],
+			[
+				-1001,
+				-152
+			],
+			[
+				-1000,
+				-152
+			],
+			[
+				-1000,
+				-191
+			]
+		]
+	},
+	"center": {
+		"171-179": [
+			-1210,
+			-155
+		],
+		"180-256": [
+			-1100,
+			-154
+		]
+	}
+}
