@@ -3,7 +3,7 @@
 	command = "FILE=tools/ci/build-prod.sh; rm -rf dist/; if [ -f $FILE ]; then bash $FILE; else cp -r web/ dist/; fi"
 
 [build.environment]
-	PYTHON_VERSION = "3.8"
+	PYTHON_VERSION = "3.15"
 
 [context.deploy-preview]
 	command = "FILE=tools/ci/build-preview.sh; rm -rf dist/; if [ -f $FILE ]; then bash $FILE; else cp -r web/ dist/; fi"
